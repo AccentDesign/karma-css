@@ -1,12 +1,12 @@
 // Variables
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// The default font family.
+// the default font family.
 $font-family: "Raleway", sans-serif !default;
 
 
 
-// The font sizes for h1-h6.
+// the font sizes for h1-h6.
 $h1-font-size:        3.6rem !default; 
 $h2-font-size:        3rem !default; 
 $h3-font-size:        2.4rem !default; 
@@ -18,7 +18,7 @@ $h6-font-size:        1.2rem !default;
 
 // Grid System
 
-// Breakpoints
+// breakpoints
 $breakpoints: (
         xs: 0,
         sm: 544px,
@@ -29,9 +29,10 @@ $breakpoints: (
 
 
 
-// Enable Grid
+// enable grid
 $enable-grid-classes: true !default;
 
+// grid setup
 $grid-breakpoints: (
         xs: 0,
         sm: 576px,
@@ -59,7 +60,7 @@ $grid-gutter-widths: (
 
 
 
-// Colors
+// colors
 $colors: (
         white:          white,
         black:          black,
@@ -100,3 +101,11 @@ $field-height: 3.8rem;
 $global-radius:         .25rem !default;
 $table-cell-padding:    .85rem .85rem !default;
 $darken-hover-percent:  10%;
+
+
+
+// defined z-indexes
+// and get with zindex('default')
+$z-layers: (
+        'default':              1
+);

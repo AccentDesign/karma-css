@@ -4,10 +4,11 @@
 /* utilities */
 @import "normalize.css/normalize";
 
-/* system wide mixins & functions */
+/* system wide functions */
 @import "functions/color";
+@import "functions/zindex";
 
-/* mixins */
+/* system wide mixins */
 @import "mixins/breakpoint";
 @import "mixins/clearfix";
 @import "mixins/grid-framework";
