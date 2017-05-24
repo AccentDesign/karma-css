@@ -1,0 +1,38 @@
+// Padding
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// axis = ('', 'x', 'y', 't', 'r', 'b', 'l')
+// sizes in variables
+// @include padding('x', '1h'):
+//      padding-left: 1.5rem; padding-right: 1.5rem
+
+@mixin padding($axis: '', $size: '0') {
+    // get padding by spacer and prop
+    @if not map-has-key($spacers, $size) {
+        @warn "No spacer found for `#{$size}` in $spacers map. Property omitted.";
+    }
+    
+    $size: map-get($spacers, $size);
+
+    @if $axis == 'x' {
+        padding: {
+            left: $size;
+            right: $size;
+        }
+    } @else if $axis == 'y' {
+        padding: {
+            top: $size;
+            bottom: $size;
+        }
+    } @else if $axis == 't' {
+        padding-top: $size;
+    } @else if $axis == 'r' {
+        padding-right: $size;
+    } @else if $axis == 'b' {
+        padding-bottom: $size;
+    } @else if $axis == 'l' {
+        padding-left: $size;
+    } @else {
+        padding: $size;
+    }
+}

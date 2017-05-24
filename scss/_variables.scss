@@ -104,6 +104,24 @@ $darken-hover-percent:  10%;
 
 
 
+// padding & margins
+// examples at 1rem:
+// padding: .p-1, px-1, py-1 .pl-1, .pt-1, .pr-1, .pb-1
+// margin: .m-1, mx-1, my-1 .ml-1, .mt-1, .mr-1, .mb-1
+$spacers: (
+        '0':            0,
+        'h':            .5rem,
+        '1':            1rem,
+        '1h':           1.5rem,
+        '2':            2rem,
+        '2h':           2.5rem,
+        '3':            3rem,
+        '5':            5rem,
+        '10':           10rem,
+) !default;
+
+
+
 // defined z-indexes
 // and get with zindex('default')
 $z-layers: (

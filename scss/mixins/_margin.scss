@@ -1,0 +1,38 @@
+// Margin
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// axis = ('', 'x', 'y', 't', 'r', 'b', 'l')
+// sizes in variables
+// @include margin('x', '1h'):
+//      margin-left: 1.5rem; margin-right: 1.5rem
+
+@mixin margin($axis: '', $size: '0') {
+    // get margin by spacer and prop
+    @if not map-has-key($spacers, $size) {
+        @warn "No spacer found for `#{$size}` in $spacers map. Property omitted.";
+    }
+    
+    $size: map-get($spacers, $size);
+
+    @if $axis == 'x' {
+        margin: {
+            left: $size;
+            right: $size;
+        }
+    } @else if $axis == 'y' {
+        margin: {
+            top: $size;
+            bottom: $size;
+        }
+    } @else if $axis == 't' {
+        margin-top: $size;
+    } @else if $axis == 'r' {
+        margin-right: $size;
+    } @else if $axis == 'b' {
+        margin-bottom: $size;
+    } @else if $axis == 'l' {
+        margin-left: $size;
+    } @else {
+        margin: $size;
+    }
+}
