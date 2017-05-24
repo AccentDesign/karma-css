@@ -1,0 +1,9 @@
+// Push Auto
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@mixin push--auto {
+    margin: { 
+        left: auto;
+        right: auto;
+    }
+}

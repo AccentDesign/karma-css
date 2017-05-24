@@ -1,0 +1,60 @@
+// Helpers
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+/* clearfix */
+.clearfix                   { @include clearfix; }
+
+/* width and height */
+.full-height                { height: 100%; }
+.full-visual-height         { height: 100vh; }
+.max-full-width             { max-width: 100%; box-sizing: border-box; }
+.full-width                 { width: 100%; box-sizing: border-box; }
+.half-width                 { width: 50%; box-sizing: border-box; }
+.quarter-width              { width: 25%; box-sizing: border-box; }
+
+/* alignment */
+.pull-left                  { float: left; }
+.pull-right                 { float: right; }
+.push-auto                  { @include push--auto; }
+
+.text-left                  { text-align: left; }
+.text-right                 { text-align: right; }
+.text-center                { text-align: center; }
+.text-just                  { text-align: justify; }
+
+.align-top                  { vertical-align: top; }
+.align-bottom               { vertical-align: bottom; }
+.align-middle               { vertical-align: middle; }
+.align-baseline             { vertical-align: baseline; }
+.align-self-center          { align-self: center; }
+
+/* positions */
+.fixed                      { position: fixed; }
+.relative                   { position: relative; }
+.absolute                   { position: absolute; }
+
+/* list */
+.list-style-none            { list-style: none; }
+
+/* typography */
+.bold                       { font-weight: bold; }
+.regular                    { font-weight: normal; }
+.italic                     { font-style: italic; }
+.muted                      { opacity: .4; }
+.nowrap                     { white-space: nowrap; }
+.uppercase                  { text-transform: uppercase; }
+.underline                  { text-decoration: underline; }
+
+/* display */
+.hidden                     { display: none; }
+.inline                     { display: inline; }
+.inline-block               { display: inline-block; }
+.block                      { display: block; }
+.flex                       { display: flex; }
+
+/* display prexix to avoid confusion with any table.table */
+.display-table              { display: table; }
+.display-table-cell         { display: table-cell; }
+
+/* scroll */
+.scroll-x                   { overflow-x: auto; }

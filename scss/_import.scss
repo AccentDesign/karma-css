@@ -7,10 +7,14 @@
 /* system wide mixins & functions */
 @import "functions/color";
 
-/* grid */
+/* mixins */
 @import "mixins/breakpoint";
+@import "mixins/clearfix";
 @import "mixins/grid-framework";
 @import "mixins/grid";
+@import "mixins/push-auto";
+
+/* grid */
 @import "core/grid";
 
 /* core building blocks */
@@ -25,3 +29,6 @@
 @import "core/spacing";
 @import "core/table";
 @import "core/typography";
+
+/* utility helpers */
+@import "utilities/helpers"; 
