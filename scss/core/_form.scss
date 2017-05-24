@@ -1,0 +1,101 @@
+// Form
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+textarea,
+select {
+    height: $field-height;
+    padding: .6rem 1rem;
+    background-color: $input-background;
+    border: 1px solid $border-color;
+    border-radius: $global-radius;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+// Removes awkward default styles on some inputs for iOS
+input {
+    &[type="email"],
+    &[type="number"],
+    &[type="search"],
+    &[type="text"],
+    &[type="date"],
+    &[type="tel"],
+    &[type="url"],
+    &[type="password"] {
+        appearance: none;
+    }
+}
+
+textarea {
+    appearance: none;
+    min-height: 10rem;
+    padding: .6rem 1rem;
+}
+
+input {
+    &[type="email"],
+    &[type="number"],
+    &[type="search"],
+    &[type="text"],
+    &[type="date"],
+    &[type="tel"],
+    &[type="url"],
+    &[type="password"] {
+        height: $field-height;
+        padding: .6rem 1rem;
+        background-color: $input-background;
+        border: 1px solid $border-color;
+        border-radius: $global-radius;
+        box-shadow: none;
+        box-sizing: border-box;
+        &:focus {
+            border: 1px solid color(primary);
+            outline: 0;
+        }
+    }
+}
+
+textarea:focus,
+select:focus {
+    border: 1px solid color(primary);
+    outline: 0;
+}
+
+label,
+legend {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+fieldset {
+    padding: 0;
+    border-width: 0;
+}
+
+// try so make sensible defaults for radios and checkboxes
+input {
+    &[type="checkbox"],
+    &[type="radio"] {
+        display: inline;
+        // margin is only sensible if text is after
+        // TODO: find better solution or remove
+        margin-right: 1.5rem;
+    }
+}
+
+// either the label can carry the class
+label {
+    &.checkbox,
+    &.radio {
+        font-weight: normal;
+    }
+}
+
+// or label can be a sibling
+.radio,
+.checkbox {
+    label {
+        font-weight: normal;
+    }
+}

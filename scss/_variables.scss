@@ -1,0 +1,59 @@
+// Variables
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// The default font family.
+$font-family: "Raleway", sans-serif !default;
+
+
+
+// The font sizes for h1-h6.
+$h1-font-size:        3.6rem !default; 
+$h2-font-size:        3rem !default; 
+$h3-font-size:        2.4rem !default; 
+$h4-font-size:        1.8rem !default; 
+$h5-font-size:        1.4rem !default; 
+$h6-font-size:        1.2rem !default; 
+
+
+
+// Colors
+$colors: (
+        white:          white,
+        black:          black,
+        primary:          rgb(51, 195, 240),
+        secondary:        rgb(240, 240, 240),
+) !default;
+
+
+
+// defined colors
+$body-background:         map-get($colors, white);
+$font-color:              rgb(51, 51, 51);
+$link-color:              map-get($colors, primary);
+$border-color:            rgb(230, 230, 230);
+$input-background:        map-get($colors, white);
+$code-background:         rgb(240, 240, 240);
+
+
+
+// buttons name: (background colour) (font colour)
+// button classes created: .button-primary, .button-secondary
+$buttons: (
+        primary:        map-get($colors, primary)      map-get($colors, white),
+        secondary:      map-get($colors, secondary)    map-get($colors, black)
+) !default;
+$button-font-size: 1.1rem;
+$button-height: 3.8rem;
+$button-padding-x: 3rem;
+
+
+
+// forms
+$field-height: 3.8rem;
+
+
+
+// misc
+$global-radius:         .25rem !default;
+$table-cell-padding:    .85rem .85rem !default;
+$darken-hover-percent:  10%;

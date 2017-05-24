@@ -1,0 +1,10 @@
+// Anchor
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+a {
+    color: $link-color;
+    text-decoration: none;
+    &:hover {
+        color: darken($link-color, $darken-hover-percent);
+    }
+}
