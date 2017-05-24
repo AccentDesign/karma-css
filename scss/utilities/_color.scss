@@ -1,0 +1,15 @@
+// Color
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// creates color helpers for each color
+//      .b-primary {...}
+//      .c-primary {...}
+
+@each $name, $color in $colors {
+    .b-#{$name} {
+        background: $color;
+    }
+    .c-#{$name} {
+        color: $color;
+    }
+}

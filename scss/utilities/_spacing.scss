@@ -1,0 +1,18 @@
+// Spacing
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// creates padding and margin helper
+// examples at 1rem:
+//      padding: .p-1, px-1, py-1 .pl-1, .pt-1, .pr-1, .pb-1
+//      margin: .m-1, mx-1, my-1 .ml-1, .mt-1, .mr-1, .mb-1
+
+@each $size in map-keys($spacers) {
+    @each $axis in ('', 'x', 'y', 't', 'r', 'b', 'l') {
+        .p#{$axis}-#{$size} { 
+            @include padding($axis, $size); 
+        }
+        .m#{$axis}-#{$size} { 
+            @include margin($axis, $size); 
+        }
+    }
+}

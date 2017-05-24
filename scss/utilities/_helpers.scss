@@ -8,9 +8,6 @@
 .full-height                { height: 100%; }
 .full-visual-height         { height: 100vh; }
 .max-full-width             { max-width: 100%; box-sizing: border-box; }
-.full-width                 { width: 100%; box-sizing: border-box; }
-.half-width                 { width: 50%; box-sizing: border-box; }
-.quarter-width              { width: 25%; box-sizing: border-box; }
 
 /* alignment */
 .pull-left                  { float: left; }
@@ -58,39 +55,3 @@
 
 /* scroll */
 .scroll-x                   { overflow-x: auto; }
-
-/* padding and margin */
-@each $size in map-keys($spacers) {
-    @each $axis in ('', 'x', 'y', 't', 'r', 'b', 'l') {
-        .p#{$axis}-#{$size} { 
-            @include padding($axis, $size); 
-        }
-        .m#{$axis}-#{$size} { 
-            @include margin($axis, $size); 
-        }
-    }
-}
-
-/* colors */
-@each $name, $color in $colors {
-    .b-#{$name} {
-        background: $color;
-    }
-    .c-#{$name} {
-        color: $color;
-    }
-}
-
-/* visibility at breakpoint */
-@each $bp in map-keys($grid-breakpoints) {
-    .hidden-#{$bp}-up {
-        @include media-breakpoint-up($bp) {
-            display: none !important;
-        }
-    }
-    .hidden-#{$bp}-down {
-        @include media-breakpoint-down($bp) {
-            display: none !important;
-        }
-    }
-}
