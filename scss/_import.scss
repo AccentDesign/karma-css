@@ -7,10 +7,14 @@
 /* system wide mixins & functions */
 @import "functions/color";
 
-/* core styling */
-@import "core";
+/* grid */
+@import "mixins/breakpoint";
+@import "mixins/grid-framework";
+@import "mixins/grid";
+@import "core/grid";
 
 /* core building blocks */
+@import "core/base";
 @import "core/anchor";
 @import "core/button";
 @import "core/code";
