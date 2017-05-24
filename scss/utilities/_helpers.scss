@@ -62,7 +62,21 @@
 /* padding and margin */
 @each $size in map-keys($spacers) {
     @each $axis in ('', 'x', 'y', 't', 'r', 'b', 'l') {
-        .p#{$axis}-#{$size} { @include padding($axis, $size); }
-        .m#{$axis}-#{$size} { @include margin($axis, $size); }
+        .p#{$axis}-#{$size} { 
+            @include padding($axis, $size); 
+        }
+        .m#{$axis}-#{$size} { 
+            @include margin($axis, $size); 
+        }
+    }
+}
+
+/* colors */
+@each $name, $color in $colors {
+    .b-#{$name} {
+        background: $color;
+    }
+    .c-#{$name} {
+        color: $color;
     }
 }
