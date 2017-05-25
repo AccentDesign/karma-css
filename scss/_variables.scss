@@ -2,17 +2,17 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 // the default font family.
-$font-family: "Raleway", sans-serif !default;
+$font-family: "Open Sans", sans-serif !default;
 
 
 
 // the font sizes for h1-h6.
-$h1-font-size:        3.6rem !default; 
-$h2-font-size:        3rem !default; 
-$h3-font-size:        2.4rem !default; 
-$h4-font-size:        1.8rem !default; 
-$h5-font-size:        1.4rem !default; 
-$h6-font-size:        1.2rem !default; 
+$h1-font-size:        4rem !default; 
+$h2-font-size:        3.2rem !default; 
+$h3-font-size:        2.8rem !default; 
+$h4-font-size:        2.4rem !default; 
+$h5-font-size:        2rem !default; 
+$h6-font-size:        1.6rem !default; 
 
 
 
@@ -115,9 +115,7 @@ $spacers: (
         '1h':           1.5rem,
         '2':            2rem,
         '2h':           2.5rem,
-        '3':            3rem,
-        '5':            5rem,
-        '10':           10rem,
+        '3':            3rem
 ) !default;
 
 

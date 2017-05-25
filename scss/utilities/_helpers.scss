@@ -7,6 +7,7 @@
 /* width and height */
 .full-height                { height: 100%; }
 .full-visual-height         { height: 100vh; }
+.full-width                 { width: 100%; box-sizing: border-box; }
 .max-full-width             { max-width: 100%; box-sizing: border-box; }
 
 /* alignment */
