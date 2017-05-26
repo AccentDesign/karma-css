@@ -101,9 +101,11 @@ $border-color:            rgb(230, 230, 230) !default;
 $input-background:        map-get($colors, white) !default;
 $code-background:         rgb(240, 240, 240) !default;
 
-// buttons name: (background colour) (font colour)
-// button classes created: .button-primary, .button-secondary
+// button classes created: 
+//      .button-primary
+//      .button-secondary
 $buttons: (
+        // name         color                          font-color
         primary:        map-get($colors, primary)      map-get($colors, white),
         secondary:      map-get($colors, secondary)    map-get($colors, black)
 ) !default;
