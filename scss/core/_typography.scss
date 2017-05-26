@@ -20,3 +20,9 @@ h6 small {
 p {
     margin-top: 0;
 }
+
+blockquote {
+    margin: 0 0 1.5rem;
+    padding: 1rem 1.5rem;
+    border-left: .3rem solid $border-color;
+}
