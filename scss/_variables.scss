@@ -87,8 +87,8 @@ $grid-gutter-widths: (
 
 // colors
 $colors: (
-        white:          white,
-        black:          black,
+        white:          rgb(255, 255, 255),
+        black:          rgb(0, 0, 0),
         primary:          rgb(51, 195, 240),
         secondary:        rgb(240, 240, 240),
 ) !default;
