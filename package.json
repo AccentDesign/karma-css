@@ -21,7 +21,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "normalize.css": "^7.0.0"
+    "normalize-scss": "^7.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",

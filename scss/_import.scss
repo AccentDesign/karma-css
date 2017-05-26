@@ -1,8 +1,9 @@
 // Import
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-/* utilities */
-@import "normalize.css/normalize";
+/* normalize */
+@import "normalize-scss/sass/normalize";
+@include normalize();
 
 /* system wide functions */
 @import "functions/color";
