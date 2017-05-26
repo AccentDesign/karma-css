@@ -9,8 +9,8 @@
   "bugs": {
     "url": "https://github.com/accentdesign/karma-css/issues"
   },
-  "homepage": "https://github.com/accentdesign/karma-css",
-  "author": "Accent Design <support@accentdesign.co.uk>",
+  "homepage": "http://karmacss.com",
+  "author": "Accent Design <npm@accentdesign.co.uk>",
   "keywords": [
     "karma",
     "css",
