@@ -8,11 +8,13 @@
 
 @each $size in map-keys($spacers) {
     @each $axis in ('', 'x', 'y', 't', 'r', 'b', 'l') {
+        $rem: map-get($spacers, $size);
+
         .p#{$axis}-#{$size} { 
-            @include padding($axis, $size); 
+            @include padding($axis, $rem); 
         }
         .m#{$axis}-#{$size} { 
-            @include margin($axis, $size); 
+            @include margin($axis, $rem); 
         }
     }
 }
