@@ -2,8 +2,8 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 hr {
-    margin-top: 3rem;
-    margin-bottom: 3.5rem;
+    @include margin('t', 3rem);
+    @include margin('b', 3.5rem);
     border-width: 0;
     border-top: 1px solid $border-color;
 }

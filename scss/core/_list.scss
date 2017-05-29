@@ -2,9 +2,9 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 ul {
+    @include padding('l', 0);
+    @include margin('t', 0);
     list-style: circle inside;
-    padding-left: 0;
-    margin-top: 0;
     ul, ol {
         margin: 1.5rem 0 1.5rem 3rem;
         font-size: 90%;
@@ -12,9 +12,9 @@ ul {
 }
 
 ol {
+    @include padding('l', 0);
+    @include margin('t', 0);
     list-style: decimal inside;
-    padding-left: 0;
-    margin-top: 0;
     ol, ul {
         margin: 1.5rem 0 1.5rem 2rem;
         font-size: 90%;
@@ -22,5 +22,5 @@ ol {
 }
 
 li {
-    margin-bottom: 1rem;
+    @include margin('b', 1rem);
 }

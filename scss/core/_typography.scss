@@ -2,8 +2,8 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    margin-bottom: 1rem;
+    @include margin('t', 0);
+    @include margin('b', 1rem);
     font-weight: 500;
 }
 
@@ -18,7 +18,7 @@ h6 small {
 }
 
 p {
-    margin-top: 0;
+    @include margin('t', 0);
 }
 
 blockquote {

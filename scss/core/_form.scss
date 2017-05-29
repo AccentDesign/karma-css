@@ -3,8 +3,9 @@
 
 textarea,
 select {
+    @include padding('y', .6rem);
+    @include padding('x', 1rem);
     height: $field-height;
-    padding: .6rem 1rem;
     background-color: $input-background;
     border: 1px solid $border-color;
     border-radius: $global-radius;
@@ -27,9 +28,10 @@ input {
 }
 
 textarea {
+    @include padding('y', .6rem);
+    @include padding('x', 1rem);
     appearance: none;
     min-height: 10rem;
-    padding: .6rem 1rem;
 }
 
 input {
@@ -41,8 +43,9 @@ input {
     &[type="tel"],
     &[type="url"],
     &[type="password"] {
+        @include padding('y', .6rem);
+        @include padding('x', 1rem);
         height: $field-height;
-        padding: .6rem 1rem;
         background-color: $input-background;
         border: 1px solid $border-color;
         border-radius: $global-radius;
@@ -69,7 +72,7 @@ legend {
 }
 
 fieldset {
-    padding: 0;
+    @include padding('', 0);
     border-width: 0;
 }
 
@@ -77,10 +80,8 @@ fieldset {
 input {
     &[type="checkbox"],
     &[type="radio"] {
+        @include margin('r', 1.5rem);
         display: inline;
-        // margin is only sensible if text is after
-        // TODO: find better solution or remove
-        margin-right: 1.5rem;
     }
 }
 

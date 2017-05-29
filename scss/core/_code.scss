@@ -11,8 +11,9 @@ code {
 }
 
 pre > code {
+    @include padding('y', 1rem);
+    @include padding('x', 1.5rem);
     display: block;
-    padding: 1rem 1.5rem;
     white-space: pre;
     overflow-x: auto;
 }
