@@ -4,7 +4,7 @@ This is a simple responsive css boilerplace which includes:
 * normalize-scss
 * basic styles
 * grid system
-* several helpers for color, margins, padding etc
+* several useful css utility helpers and mixins
 * and more
 
 The documentation which includes examples can be found at [http://karmacss.com/](http://karmacss.com/).
