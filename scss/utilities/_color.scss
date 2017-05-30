@@ -7,7 +7,7 @@
 
 @each $name, $color in $colors {
     .b-#{$name} {
-        background: $color;
+        background-color: $color;
     }
     .c-#{$name} {
         color: $color;
