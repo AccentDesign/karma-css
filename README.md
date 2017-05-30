@@ -11,11 +11,16 @@ The documentation which includes examples can be found at [http://karmacss.com/]
 
 ## Installation
 Npm
-```
+```bash
 $ npm install karma-css
 ```
 
 Git
-```
+```bash
 $ git clone https://github.com/accentdesign/karma-css.git
+```
+
+CDN
+```html
+<link rel="stylesheet" href="https://unpkg.com/karma-css@<version>/dist/karma.min.css">
 ```
