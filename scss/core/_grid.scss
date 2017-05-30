@@ -22,11 +22,13 @@
 
     // Remove the negative margin from default .row
     .no-gutters {
-        @include margin('x', 0);
+        margin-left: 0;
+        margin-right: 0;
 
         > .col,
         > [class*="col-"] {
-            @include padding('x', 0);
+            padding-left: 0;
+            padding-right: 0;
         }
     }
 

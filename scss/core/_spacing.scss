@@ -7,7 +7,7 @@ select,
 fieldset,
 .button,
 button {
-    @include margin('b', 1.5rem);
+    margin-bottom: 1.5rem;
 }
 
 pre,
@@ -19,5 +19,5 @@ p,
 ul,
 ol,
 form {
-    @include margin('b', 1.5rem);
+    margin-bottom: 1.5rem;
 }
