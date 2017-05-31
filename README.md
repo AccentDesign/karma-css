@@ -7,7 +7,7 @@ This includes normalize, bootstrap 4's flex grid, all base styles, useful mixins
 
 Minified and gzipped it weighs only 3.9k.
 
-The documentation can be found at [karmacss.com](http://karmacss.com/). We also have some useful component examples like
+The documentation can be found at [karmacss.com](http://karmacss.com). We also have some useful component examples like
 button dropdowns and tooltips, more of which are being added daily. 
 
 We welcome all comments and contributions via [Github](https://github.com/AccentDesign/karma-css)
