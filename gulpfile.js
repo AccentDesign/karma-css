@@ -1,24 +1,31 @@
 var $ = require('gulp-load-plugins')();
 var gulp = require('gulp');
-var prefixer = require('autoprefixer');
 var runSequence = require('run-sequence');
 
 var config = {
-    nodeDir: 'node_modules',
     publicDir: 'dist',
-    scssDir: 'scss'
+    scssDir: 'scss',
+    autoprefixer: {
+        "browsers": [
+            "last 2 versions",
+            "IE 9",
+            "Safari 8"
+        ],
+        "cascade": false
+    },
+    sass: {
+        "includePaths": [
+            'node_modules'
+        ]
+    }
 };
 
 gulp.task('scss', function() {
     return gulp.src(config.scssDir + '/karma.scss')
     .pipe($.sourcemaps.init())
-    .pipe($.sass({
-        "includePaths": [
-            config.nodeDir
-        ]
-    }))
-    .pipe($.postcss([prefixer({browsers: ['last 1 version']})]))
-    .pipe($.sourcemaps.write())
+    .pipe($.sass(config.sass))
+    .pipe($.autoprefixer(config.autoprefixer))
+    .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest(config.publicDir));
 });
 
