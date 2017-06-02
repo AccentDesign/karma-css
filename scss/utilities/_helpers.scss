@@ -11,8 +11,8 @@
 .max-full-width             { max-width: 100%; box-sizing: border-box; }
 
 /* alignment */
-.pull-left                  { float: left; }
-.pull-right                 { float: right; }
+.pull-left                  { float: left !important; }
+.pull-right                 { float: right !important; }
 .push-auto                  { @include push--auto; }
 
 .text-left                  { text-align: left; }
@@ -32,7 +32,7 @@
 .absolute                   { position: absolute; }
 
 /* list */
-.list-style-none            { list-style: none; }
+.list-style-none            { list-style: none !important; }
 
 /* typography */
 .muted                      { opacity: .7; }
@@ -40,7 +40,7 @@
 .uppercase                  { text-transform: uppercase; }
 
 /* display */
-.hidden                     { display: none; }
+.hidden                     { display: none !important; }
 .inline                     { display: inline; }
 .inline-block               { display: inline-block; }
 .block                      { display: block; }

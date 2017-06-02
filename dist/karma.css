@@ -1226,10 +1226,10 @@ blockquote {
 
 /* alignment */
 .pull-left {
-  float: left; }
+  float: left !important; }
 
 .pull-right {
-  float: right; }
+  float: right !important; }
 
 .push-auto {
   margin-left: auto;
@@ -1276,7 +1276,7 @@ blockquote {
 
 /* list */
 .list-style-none {
-  list-style: none; }
+  list-style: none !important; }
 
 /* typography */
 .muted {
@@ -1290,7 +1290,7 @@ blockquote {
 
 /* display */
 .hidden {
-  display: none; }
+  display: none !important; }
 
 .inline {
   display: inline; }
