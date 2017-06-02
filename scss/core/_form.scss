@@ -19,6 +19,10 @@ input {
     &[type="search"],
     &[type="text"],
     &[type="date"],
+    &[type="month"],
+    &[type="week"],
+    &[type="datetime"],
+    &[type="datetime-local"],
     &[type="tel"],
     &[type="url"],
     &[type="password"] {
@@ -38,6 +42,10 @@ input {
     &[type="search"],
     &[type="text"],
     &[type="date"],
+    &[type="month"],
+    &[type="week"],
+    &[type="datetime"],
+    &[type="datetime-local"],
     &[type="tel"],
     &[type="url"],
     &[type="password"] {
