@@ -17,3 +17,20 @@ td {
 td {
     border-top: 1px solid $border-color;
 }
+
+// visual alternatives
+table.table-bordered {
+    border: solid 1px $border-color;
+}
+
+table.table-headed th {
+    background-color: $table-headed-color;
+}
+
+table.table-striped tbody tr:nth-child(odd) {
+    background-color: $table-striped-color;
+}
+
+table.table-hover tbody tr:hover {
+    background-color: $table-hover-color;
+}
