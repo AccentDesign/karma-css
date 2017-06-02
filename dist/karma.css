@@ -1,4 +1,5 @@
 /*! Karma-CSS v1.0.6 | MIT License | http://karmacss.com | https://github.com/accentdesign/karma-css */
+/* core */
 /* normalize */
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
@@ -1173,6 +1174,8 @@ blockquote {
   padding: 1rem 1.5rem;
   border-left: 0.3rem solid #e6e6e6; }
 
+/* add your custom modules here */
+/* utilities */
 /* utility helpers */
 .b-white {
   background-color: white; }
