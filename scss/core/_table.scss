@@ -19,18 +19,18 @@ td {
 }
 
 // visual alternatives
-table.table-bordered {
+.table-bordered {
     border: solid 1px $border-color;
 }
 
-table.table-headed th {
+.table-headed th {
     background-color: $table-headed-color;
 }
 
-table.table-striped tbody tr:nth-child(odd) {
+.table-striped tbody tr:nth-child(odd) {
     background-color: $table-striped-color;
 }
 
-table.table-hover tbody tr:hover {
+.table-hover tbody tr:hover {
     background-color: $table-hover-color;
 }

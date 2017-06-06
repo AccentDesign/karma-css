@@ -968,45 +968,21 @@ input[type="button"] {
     border-color: #cdcdcd;
     outline: 0; }
 
-.button.button-primary,
-button.button-primary,
-input[type="submit"].button-primary,
-input[type="reset"].button-primary,
-input[type="button"].button-primary {
+.button-primary {
   color: white;
   background-color: #33c3f0;
   border-color: #1bbcee; }
-  .button.button-primary:hover, .button.button-primary:focus,
-  button.button-primary:hover,
-  button.button-primary:focus,
-  input[type="submit"].button-primary:hover,
-  input[type="submit"].button-primary:focus,
-  input[type="reset"].button-primary:hover,
-  input[type="reset"].button-primary:focus,
-  input[type="button"].button-primary:hover,
-  input[type="button"].button-primary:focus {
+  .button-primary:hover, .button-primary:focus {
     color: white;
     background-color: #10aee0;
     border-color: #0f9cc8;
     outline: 0; }
 
-.button.button-secondary,
-button.button-secondary,
-input[type="submit"].button-secondary,
-input[type="reset"].button-secondary,
-input[type="button"].button-secondary {
+.button-secondary {
   color: black;
   background-color: #f0f0f0;
   border-color: #e3e3e3; }
-  .button.button-secondary:hover, .button.button-secondary:focus,
-  button.button-secondary:hover,
-  button.button-secondary:focus,
-  input[type="submit"].button-secondary:hover,
-  input[type="submit"].button-secondary:focus,
-  input[type="reset"].button-secondary:hover,
-  input[type="reset"].button-secondary:focus,
-  input[type="button"].button-secondary:hover,
-  input[type="button"].button-secondary:focus {
+  .button-secondary:hover, .button-secondary:focus {
     color: black;
     background-color: #d7d7d7;
     border-color: #cacaca;
@@ -1151,16 +1127,16 @@ td {
 td {
   border-top: 1px solid #e6e6e6; }
 
-table.table-bordered {
+.table-bordered {
   border: solid 1px #e6e6e6; }
 
-table.table-headed th {
+.table-headed th {
   background-color: #f0f0f0; }
 
-table.table-striped tbody tr:nth-child(odd) {
+.table-striped tbody tr:nth-child(odd) {
   background-color: #fafafa; }
 
-table.table-hover tbody tr:hover {
+.table-hover tbody tr:hover {
   background-color: whitesmoke; }
 
 h1, h2, h3, h4, h5, h6 {
