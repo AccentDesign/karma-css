@@ -109,7 +109,7 @@ $buttons: (
         primary:        map-get($colors, primary)      map-get($colors, white),
         secondary:      map-get($colors, secondary)    map-get($colors, black)
 ) !default;
-$button-font-size: 1.1rem !default;
+$button-font-size: 1.3rem !default;
 $button-height: 3.8rem !default;
 $button-padding-x: 3rem !default;
 
