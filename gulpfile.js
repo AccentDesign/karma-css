@@ -1,7 +1,12 @@
 var $ = require('gulp-load-plugins')();
 var gulp = require('gulp');
 var runSequence = require('run-sequence');
+
+// postcss
 var autoprefixer = require('autoprefixer');
+var discardempty = require('postcss-discard-empty');
+var discardcomments = require('postcss-discard-comments');
+var mergerules = require('postcss-merge-rules');
 
 var config = {
     publicDir: 'dist',
@@ -33,6 +38,9 @@ gulp.task('scss', function() {
     .pipe($.sourcemaps.init())
     .pipe($.sass(config.sass))
     .pipe($.postcss([
+        discardcomments(),
+        discardempty(),
+        mergerules(),
         autoprefixer(config.autoprefixer)
     ]))
     .pipe($.sourcemaps.write('.'))
