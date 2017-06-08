@@ -994,6 +994,8 @@ blockquote{
   display:table-cell; }
 .scroll-x{
   overflow-x:auto; }
+.margin-zero{
+  margin:0; }
 
 .hidden-xs-up{
   display:none !important; }
