@@ -30,7 +30,9 @@ var config = {
             'node_modules'
         ]
     },
-    csso: {}
+    csso: {
+        restructure: false
+    }
 };
 
 gulp.task('scss', function() {
