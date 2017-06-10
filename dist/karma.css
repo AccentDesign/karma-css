@@ -2,6 +2,7 @@
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 html{
   font-family:"Open Sans", sans-serif;
+  font-size:93.75%;
   line-height:1.15;
   -ms-text-size-adjust:100%;
   -webkit-text-size-adjust:100%; }
@@ -638,8 +639,8 @@ html{
   font-size:62.5%; }
 
 body{
-  font-size:1.5em;
-  line-height:1.6;
+  font-size:15px;
+  line-height:24px;
   font-weight:400;
   font-family:"Open Sans", sans-serif;
   color:#3e3e3e;
