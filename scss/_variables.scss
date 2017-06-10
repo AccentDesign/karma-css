@@ -7,7 +7,7 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 // The font size set on the root html element.
-$base-font-size: 16px !default;
+$base-font-size: 15px !default;
 
 // The base line height determines the basic unit of vertical rhythm.
 $base-line-height: 24px !default;
@@ -101,6 +101,8 @@ $border-color:            rgb(230, 230, 230) !default;
 $input-background:        map-get($colors, white) !default;
 $code-background:         rgb(240, 240, 240) !default;
 
+
+
 // button classes created: 
 //      .button-primary
 //      .button-secondary
@@ -113,18 +115,26 @@ $button-font-size: 1.3rem !default;
 $button-height: 3.8rem !default;
 $button-padding-x: 3rem !default;
 
+
+
 // forms
 $field-height: 3.8rem !default;
+
+
 
 // misc
 $global-radius:         .25rem !default;
 $darken-hover-percent:  10% !default;
+
+
 
 // table
 $table-cell-padding:    .85rem .85rem !default;
 $table-striped-color:   rgb(250, 250, 250) !default;
 $table-headed-color:    rgb(240, 240, 240) !default;
 $table-hover-color:     rgb(245, 245, 245) !default;
+
+
 
 // defined z-indexes
 // and get with zindex('default')
