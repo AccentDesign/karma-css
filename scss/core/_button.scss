@@ -4,11 +4,7 @@
 $button-padding-y: ($button-height - $button-font-size) / 2 - .2rem;
 
 // default buttons and inputs
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
+.button {
     display: inline-block;
     vertical-align: top;
     height: $button-height;
@@ -38,26 +34,20 @@ input[type="button"] {
 
 // button variations
 @each $button, $colors in $buttons {
-
+    
     // start with a border x % of the main background
     $default-border-color: darken(nth($colors, 1), 5%);
 
-    .button,
-    button,
-    input[type="submit"],
-    input[type="reset"],
-    input[type="button"] {
-        &.button-#{$button} {
+    .button.button-#{$button} {
+        color: nth($colors, 2);
+        background-color: nth($colors, 1);
+        border-color: $default-border-color;
+        &:hover,
+        &:focus {
             color: nth($colors, 2);
-            background-color: nth($colors, 1);
-            border-color: $default-border-color;
-            &:hover,
-            &:focus {
-                color: nth($colors, 2);
-                background-color: darken(nth($colors, 1), $darken-hover-percent);
-                border-color: darken($default-border-color, $darken-hover-percent);
-                outline: 0;
-            }
+            background-color: darken(nth($colors, 1), $darken-hover-percent);
+            border-color: darken($default-border-color, $darken-hover-percent);
+            outline: 0;
         }
     }
 }

@@ -651,11 +651,7 @@ a{
   a:hover{
     color:#10aee0; }
 
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"]{
+.button{
   display:inline-block;
   vertical-align:top;
   height:3.8rem;
@@ -679,58 +675,26 @@ input[type="button"]{
   -moz-user-select:none;
   -ms-user-select:none;
   user-select:none; }
-  .button:hover, .button:focus,
-  button:hover,
-  button:focus,
-  input[type="submit"]:hover,
-  input[type="submit"]:focus,
-  input[type="reset"]:hover,
-  input[type="reset"]:focus,
-  input[type="button"]:hover,
-  input[type="button"]:focus{
+  .button:hover, .button:focus{
     color:#3e3e3e;
     border-color:#cdcdcd;
     outline:0; }
 
-.button.button-primary,
-button.button-primary,
-input[type="submit"].button-primary,
-input[type="reset"].button-primary,
-input[type="button"].button-primary{
+.button.button-primary{
   color:white;
   background-color:#33c3f0;
   border-color:#1bbcee; }
-  .button.button-primary:hover, .button.button-primary:focus,
-  button.button-primary:hover,
-  button.button-primary:focus,
-  input[type="submit"].button-primary:hover,
-  input[type="submit"].button-primary:focus,
-  input[type="reset"].button-primary:hover,
-  input[type="reset"].button-primary:focus,
-  input[type="button"].button-primary:hover,
-  input[type="button"].button-primary:focus{
+  .button.button-primary:hover, .button.button-primary:focus{
     color:white;
     background-color:#10aee0;
     border-color:#0f9cc8;
     outline:0; }
 
-.button.button-secondary,
-button.button-secondary,
-input[type="submit"].button-secondary,
-input[type="reset"].button-secondary,
-input[type="button"].button-secondary{
+.button.button-secondary{
   color:black;
   background-color:#f0f0f0;
   border-color:#e3e3e3; }
-  .button.button-secondary:hover, .button.button-secondary:focus,
-  button.button-secondary:hover,
-  button.button-secondary:focus,
-  input[type="submit"].button-secondary:hover,
-  input[type="submit"].button-secondary:focus,
-  input[type="reset"].button-secondary:hover,
-  input[type="reset"].button-secondary:focus,
-  input[type="button"].button-secondary:hover,
-  input[type="button"].button-secondary:focus{
+  .button.button-secondary:hover, .button.button-secondary:focus{
     color:black;
     background-color:#d7d7d7;
     border-color:#cacaca;
