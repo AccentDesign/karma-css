@@ -18,6 +18,11 @@ Npm
 $ npm install karma-css
 ```
 
+Bower
+```bash
+$ bower install karma-css
+```
+
 Git
 ```bash
 $ git clone https://github.com/accentdesign/karma-css.git

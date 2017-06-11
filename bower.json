@@ -1,0 +1,30 @@
+{
+  "name": "karma-css",
+  "description": "The Official Sass Version of Karma-CSS: A Simple, Responsive Boilerplate for Mobile-Friendly Development.",
+  "main": [
+    "scss/karma.scss"
+  ],
+  "dependencies": {
+    "normalize-scss": "~7.0.0"
+  },
+  "authors": [
+    "Accent Design <npm@accentdesign.co.uk>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "karma",
+    "css",
+    "sass",
+    "scss",
+    "responsive",
+    "boilerplate"
+  ],
+  "homepage": "http://karmacss.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
