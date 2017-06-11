@@ -958,6 +958,9 @@ blockquote{
 
 .uppercase{
   text-transform:uppercase; }
+
+.small{
+  font-size:80%; }
 .hidden{
   display:none !important; }
 
