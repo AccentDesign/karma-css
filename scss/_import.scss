@@ -6,22 +6,10 @@
 @include normalize();
 
 /* system wide functions */
-@import "functions/color";
-@import "functions/zindex";
+@import "functions";
 
 /* system wide mixins */
-@import "mixins/abs-position";
-@import "mixins/box-shadow";
-@import "mixins/breakpoint";
-@import "mixins/clearfix";
-@import "mixins/grid-framework";
-@import "mixins/grid";
-@import "mixins/margin";
-@import "mixins/padding";
-@import "mixins/pseudo";
-@import "mixins/push-auto";
-@import "mixins/triangle";
-@import "mixins/truncate";
+@import "mixins";
 
 /* grid */
 @import "core/grid";
