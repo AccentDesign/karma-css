@@ -39,6 +39,12 @@
 .nowrap                     { white-space: nowrap; }
 .uppercase                  { text-transform: uppercase; }
 .small                      { font-size: 80%; }
+.lead                       { font-weight: 300; }
+
+/* dont increase lead font size on mobiles */
+@media (min-width: 768px) { 
+    .lead                   { font-size: 120%; } 
+}
 
 /* display */
 .hidden                     { display: none !important; }

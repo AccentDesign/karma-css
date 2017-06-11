@@ -961,6 +961,12 @@ blockquote{
 
 .small{
   font-size:80%; }
+
+.lead{
+  font-weight:300; }
+@media (min-width: 768px){
+  .lead{
+    font-size:120%; } }
 .hidden{
   display:none !important; }
 
