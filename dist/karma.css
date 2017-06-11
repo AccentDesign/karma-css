@@ -983,6 +983,9 @@ blockquote{
 
 .display-table-cell{
   display:table-cell; }
+.img-fluid{
+  max-width:100%;
+  height:auto; }
 .scroll-x{
   overflow-x:auto; }
 .margin-zero{

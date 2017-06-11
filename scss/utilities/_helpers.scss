@@ -51,6 +51,9 @@
 .display-table              { display: table; }
 .display-table-cell         { display: table-cell; }
 
+/* images */
+.img-fluid                  { max-width: 100%; height: auto; }
+
 /* scroll */
 .scroll-x                   { overflow-x: auto; }
 
