@@ -940,6 +940,12 @@ blockquote{
   -webkit-align-self:center;
   -ms-flex-item-align:center;
   align-self:center; }
+
+.justify-content-center{
+  -webkit-box-pack:center;
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center; }
 .fixed{
   position:fixed; }
 
