@@ -1,8 +1,6 @@
 /*! Karma-CSS v1.1.1 | MIT License | http://karmacss.com | https://github.com/accentdesign/karma-css */
-/*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html{
-  font-family:"Open Sans", sans-serif;
-  font-size:93.75%;
   line-height:1.15;
   -ms-text-size-adjust:100%;
   -webkit-text-size-adjust:100%; }
@@ -19,7 +17,8 @@ h1{
   font-size:2em;
   margin:0.67em 0; }
 figcaption,
-figure{
+figure,
+main{
   display:block; }
 figure{
   margin:1em 40px; }
@@ -28,8 +27,6 @@ hr{
   box-sizing:content-box;
   height:0;
   overflow:visible; }
-main{
-  display:block; }
 pre{
   font-family:monospace, monospace;
   font-size:1em; }
@@ -87,7 +84,8 @@ textarea{
   font-size:100%;
   line-height:1.15;
   margin:0; }
-button{
+button,
+input{
   overflow:visible; }
 button,
 select{
@@ -97,19 +95,32 @@ html [type="button"],
 [type="reset"],
 [type="submit"]{
   -webkit-appearance:button; }
-  button::-moz-focus-inner,
-  [type="button"]::-moz-focus-inner,
-  [type="reset"]::-moz-focus-inner,
-  [type="submit"]::-moz-focus-inner{
-    border-style:none;
-    padding:0; }
-  button:-moz-focusring,
-  [type="button"]:-moz-focusring,
-  [type="reset"]:-moz-focusring,
-  [type="submit"]:-moz-focusring{
-    outline:1px dotted ButtonText; }
-input{
-  overflow:visible; }
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner{
+  border-style:none;
+  padding:0; }
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring{
+  outline:1px dotted ButtonText; }
+fieldset{
+  padding:0.35em 0.75em 0.625em; }
+legend{
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  color:inherit;
+  display:table;
+  max-width:100%;
+  padding:0;
+  white-space:normal; }
+progress{
+  display:inline-block;
+  vertical-align:baseline; }
+textarea{
+  overflow:auto; }
 [type="checkbox"],
 [type="radio"]{
   -webkit-box-sizing:border-box;
@@ -121,32 +132,17 @@ input{
 [type="search"]{
   -webkit-appearance:textfield;
   outline-offset:-2px; }
-  [type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration{
-    -webkit-appearance:none; }
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration{
+  -webkit-appearance:none; }
 ::-webkit-file-upload-button{
   -webkit-appearance:button;
   font:inherit; }
-fieldset{
-  padding:0.35em 0.75em 0.625em; }
-legend{
-  -webkit-box-sizing:border-box;
-  box-sizing:border-box;
-  display:table;
-  max-width:100%;
-  padding:0;
-  color:inherit;
-  white-space:normal; }
-progress{
-  display:inline-block;
-  vertical-align:baseline; }
-textarea{
-  overflow:auto; }
-details{
+details,
+menu{
   display:block; }
 summary{
   display:list-item; }
-menu{
-  display:block; }
 canvas{
   display:inline-block; }
 template,[hidden]{
@@ -640,7 +636,7 @@ html{
 
 body{
   font-size:15px;
-  line-height:24px;
+  line-height:1.6;
   font-weight:400;
   font-family:"Open Sans", sans-serif;
   color:#3e3e3e;
@@ -842,7 +838,25 @@ td{
 
 h1, h2, h3, h4, h5, h6{
   margin:0 0 1rem;
-  font-weight:500; }
+  font-weight:400; }
+
+h1{
+  font-size:30px; }
+
+h2{
+  font-size:22.5px; }
+
+h3{
+  font-size:17.55px; }
+
+h4{
+  font-size:15px; }
+
+h5{
+  font-size:12.45px; }
+
+h6{
+  font-size:10.05px; }
 
 h1 small,
 h2 small,
