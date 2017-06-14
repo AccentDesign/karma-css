@@ -841,22 +841,28 @@ h1, h2, h3, h4, h5, h6{
   font-weight:400; }
 
 h1{
-  font-size:30px; }
+  font-size:30px;
+  line-height:1.2; }
 
 h2{
-  font-size:22.5px; }
+  font-size:22.5px;
+  line-height:1.25; }
 
 h3{
-  font-size:17.55px; }
+  font-size:17.55px;
+  line-height:1.3; }
 
 h4{
-  font-size:15px; }
+  font-size:15px;
+  line-height:1.35; }
 
 h5{
-  font-size:12.45px; }
+  font-size:12.45px;
+  line-height:1.5; }
 
 h6{
-  font-size:10.05px; }
+  font-size:10.05px;
+  line-height:1.6; }
 
 h1 small,
 h2 small,
