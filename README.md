@@ -5,7 +5,7 @@ The project builds upon where the original skeleton css project left off. This i
 
 This includes normalize, bootstrap 4's flex grid, all base styles, useful mixins, the ability to set your own button colors and more. 
 
-Minified and gzipped it weighs only 4.0kb.
+Minified and gzipped it weighs only 4kb.
 
 The documentation can be found at [karmacss.com](http://karmacss.com). We also have some useful component examples like
 button dropdowns and tooltips, more of which are being added daily. 

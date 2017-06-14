@@ -4,9 +4,7 @@
   "main": [
     "scss/karma.scss"
   ],
-  "dependencies": {
-    "normalize-scss": "~7.0.0"
-  },
+  "dependencies": {},
   "authors": [
     "Accent Design <npm@accentdesign.co.uk>"
   ],
