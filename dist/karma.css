@@ -711,8 +711,7 @@ pre > code{
   white-space:pre;
   overflow-x:auto; }
 
-*[disabled],
-.disabled{
+*[disabled]{
   cursor:not-allowed; }
 
 textarea,
@@ -922,6 +921,8 @@ blockquote{
   max-width:100%;
   -webkit-box-sizing:border-box;
   box-sizing:border-box; }
+.margin-zero{
+  margin:0; }
 .pull-left{
   float:left !important; }
 
@@ -990,6 +991,9 @@ blockquote{
 
 .lead{
   font-weight:300; }
+
+.text-shadow{
+  text-shadow:0px 2px 4px rgba(0, 0, 0, 0.5); }
 @media (min-width: 768px){
   .lead{
     font-size:120%; } }
@@ -1020,8 +1024,11 @@ blockquote{
   height:auto; }
 .scroll-x{
   overflow-x:auto; }
-.margin-zero{
-  margin:0; }
+.disabled{
+  cursor:not-allowed; }
+
+.pointer{
+  cursor:pointer; }
 
 .hidden-xs-up{
   display:none !important; }
