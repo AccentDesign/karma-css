@@ -10,6 +10,9 @@
 .full-width                 { width: 100%; box-sizing: border-box; }
 .max-full-width             { max-width: 100%; box-sizing: border-box; }
 
+/* margin */
+.margin-zero                { margin: 0; }
+
 /* alignment */
 .pull-left                  { float: left !important; }
 .pull-right                 { float: right !important; }
@@ -64,9 +67,6 @@
 
 /* scroll */
 .scroll-x                   { overflow-x: auto; }
-
-/* misc */
-.margin-zero                { margin: 0; }
 
 /* cursors */
 .disabled                   { cursor: not-allowed; }

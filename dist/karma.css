@@ -921,6 +921,8 @@ blockquote{
   max-width:100%;
   -webkit-box-sizing:border-box;
   box-sizing:border-box; }
+.margin-zero{
+  margin:0; }
 .pull-left{
   float:left !important; }
 
@@ -1022,8 +1024,6 @@ blockquote{
   height:auto; }
 .scroll-x{
   overflow-x:auto; }
-.margin-zero{
-  margin:0; }
 .disabled{
   cursor:not-allowed; }
 
