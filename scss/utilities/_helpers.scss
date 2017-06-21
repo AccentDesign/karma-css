@@ -67,6 +67,7 @@
 
 /* scroll */
 .scroll-x                   { overflow-x: auto; }
+.noscroll                   { overflow:hidden; }
 
 /* cursors */
 .disabled                   { cursor: not-allowed; }
