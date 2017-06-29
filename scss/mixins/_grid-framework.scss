@@ -52,12 +52,11 @@
         }
       }
 
-      // `$columns - 1` because offsetting by the width of an entire row isn't possible
-      @for $i from 0 through ($columns - 1) {
-        @if not ($infix == "" and $i == 0) { // Avoid emitting useless .offset-xs-0
-          .offset#{$infix}-#{$i} {
-            @include make-col-modifier(offset, $i, $columns)
-          }
+      // Do not emit a full row width as cannot offset by this
+      // Avoid emitting useless .offset-xs-0
+      @for $i from 1 through ($columns - 1) {
+        .offset#{$infix}-#{$i} {
+          @include make-col-modifier(offset, $i, $columns)
         }
       }
     }

@@ -620,8 +620,6 @@ template,[hidden]{
     left:91.66667%; }
   .push-sm-12{
     left:100%; }
-  .offset-sm-0{
-    margin-left:0%; }
   .offset-sm-1{
     margin-left:8.33333%; }
   .offset-sm-2{
@@ -785,8 +783,6 @@ template,[hidden]{
     left:91.66667%; }
   .push-md-12{
     left:100%; }
-  .offset-md-0{
-    margin-left:0%; }
   .offset-md-1{
     margin-left:8.33333%; }
   .offset-md-2{
@@ -950,8 +946,6 @@ template,[hidden]{
     left:91.66667%; }
   .push-lg-12{
     left:100%; }
-  .offset-lg-0{
-    margin-left:0%; }
   .offset-lg-1{
     margin-left:8.33333%; }
   .offset-lg-2{
@@ -1115,8 +1109,6 @@ template,[hidden]{
     left:91.66667%; }
   .push-xl-12{
     left:100%; }
-  .offset-xl-0{
-    margin-left:0%; }
   .offset-xl-1{
     margin-left:8.33333%; }
   .offset-xl-2{
