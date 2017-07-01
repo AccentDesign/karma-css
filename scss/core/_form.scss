@@ -1,40 +1,9 @@
 // Form
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-textarea,
-select {
-    padding: .6rem 1rem;
-    height: $field-height;
-    background-color: $input-background;
-    border: 1px solid $border-color;
-    border-radius: $global-radius;
-    box-shadow: none;
-    box-sizing: border-box;
-}
-
-// Removes awkward default styles on some inputs for iOS
-input {
-    &[type="email"],
-    &[type="number"],
-    &[type="search"],
-    &[type="text"],
-    &[type="date"],
-    &[type="month"],
-    &[type="week"],
-    &[type="datetime"],
-    &[type="datetime-local"],
-    &[type="tel"],
-    &[type="url"],
-    &[type="password"] {
-        appearance: none;
-    }
-}
-
-textarea {
-    padding: .6rem 1rem;
-    appearance: none;
-    min-height: 10rem;
-}
+// try to calculate the height for the inputs
+// so the likes of date, select are the same as basic ones
+$input-height: round(($field-padding-y * 2) + ($field-font-size * 1.25) + .2rem);
 
 input {
     &[type="email"],
@@ -49,13 +18,15 @@ input {
     &[type="tel"],
     &[type="url"],
     &[type="password"] {
-        padding: .6rem 1rem;
-        height: $field-height;
+        font-size: $field-font-size;
+        padding: $field-padding-y $field-padding-x;
+        line-height: 1.25;
         background-color: $input-background;
         border: 1px solid $border-color;
         border-radius: $global-radius;
         box-shadow: none;
         box-sizing: border-box;
+        height: $input-height;
         &:focus {
             border: 1px solid color(primary);
             outline: 0;
@@ -63,17 +34,31 @@ input {
     }
 }
 
-textarea:focus,
-select:focus {
-    border: 1px solid color(primary);
-    outline: 0;
+textarea,
+select {
+    font-size: $field-font-size;
+    padding: $field-padding-y $field-padding-x;
+    line-height: 1.25;
+    background-color: $input-background;
+    border: 1px solid $border-color;
+    border-radius: $global-radius;
+    box-shadow: none;
+    box-sizing: border-box;
+    &:focus {
+        border: 1px solid color(primary);
+        outline: 0;
+    }
+}
+
+select:not([multiple]) {
+    height: $input-height;
 }
 
 label,
 legend {
     display: block;
     margin-bottom: .5rem;
-    font-weight: 600;
+    font-weight: $label-font-weight;
 }
 
 fieldset {

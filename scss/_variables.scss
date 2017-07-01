@@ -71,8 +71,8 @@ $grid-gutter-widths: (
 
 // colors
 $colors: (
-        white:          rgb(255, 255, 255),
-        black:          rgb(0, 0, 0),
+        white:            rgb(255, 255, 255),
+        black:            rgb(0, 0, 0),
         primary:          rgb(51, 195, 240),
         secondary:        rgb(240, 240, 240),
 ) !default;
@@ -95,14 +95,19 @@ $buttons: (
         primary:        map-get($colors, primary)      map-get($colors, white),
         secondary:      map-get($colors, secondary)    map-get($colors, black)
 ) !default;
-$button-font-size: 1.3rem !default;
-$button-height: 3.8rem !default;
-$button-padding-x: 3rem !default;
+$button-font-size: 1.5rem !default;
+$button-font-weight: 400 !default;
+$button-padding-y: 1rem !default;
+$button-padding-x: 1rem !default;
 
 
 
 // forms
-$field-height: 3.8rem !default;
+$field-font-size: 1.5rem !default;
+$field-padding-y: 1rem !default;
+$field-padding-x: 1rem !default;
+
+$label-font-weight: 600 !default;
 
 
 
