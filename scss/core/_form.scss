@@ -29,6 +29,7 @@ input {
         box-sizing: border-box;
         height: $input-height;
         &:focus {
+            background: $input-background-focus;
             border: $input-border-focus;
             outline: 0;
         }
@@ -56,6 +57,7 @@ select {
     box-shadow: none;
     box-sizing: border-box;
     &:focus {
+        background: $input-background-focus;
         border: $input-border-focus;
         outline: 0;
     }
