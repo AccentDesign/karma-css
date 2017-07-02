@@ -1,4 +1,4 @@
-[<img src="images/logo-portrait.png">](http://karmacss.com/)
+[<img src="images/banner.png">](http://karmacss.com/)
 
 Karma CSS is a great starting point if you only want a barebones css boilerplate.
 The project builds upon where the original skeleton css project left off. This is not a UI framework but it is the starting point for one.
