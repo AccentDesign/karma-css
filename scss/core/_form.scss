@@ -35,6 +35,16 @@ input {
     }
 }
 
+// remove awkward defaults on ios
+textarea {
+    appearance: none;
+}
+
+// set the height to match the inputs
+select:not([multiple]) {
+    height: $input-height;
+}
+
 textarea,
 select {
     font-size: $field-font-size;
@@ -49,10 +59,6 @@ select {
         border: 1px solid color(primary);
         outline: 0;
     }
-}
-
-select:not([multiple]) {
-    height: $input-height;
 }
 
 label,

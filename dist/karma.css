@@ -1234,6 +1234,14 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
     border:1px solid #33c3f0;
     outline:0; }
 
+textarea{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none; }
+
+select:not([multiple]){
+  height:4rem; }
+
 textarea,
 select{
   font-size:1.5rem;
@@ -1250,9 +1258,6 @@ select{
   select:focus{
     border:1px solid #33c3f0;
     outline:0; }
-
-select:not([multiple]){
-  height:4rem; }
 
 label,
 legend{
