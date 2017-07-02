@@ -18,6 +18,7 @@ input {
     &[type="tel"],
     &[type="url"],
     &[type="password"] {
+        appearance: none; // remove awkward defaults on ios
         font-size: $field-font-size;
         padding: $field-padding-y $field-padding-x;
         line-height: 1.25;

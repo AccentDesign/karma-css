@@ -1216,6 +1216,9 @@ pre > code{
   cursor:not-allowed; }
 
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="date"], input[type="month"], input[type="week"], input[type="datetime"], input[type="datetime-local"], input[type="tel"], input[type="url"], input[type="password"]{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
   font-size:1.5rem;
   padding:1rem 1rem;
   line-height:1.25;
