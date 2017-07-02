@@ -1222,8 +1222,8 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   font-size:1.5rem;
   padding:1rem 1rem;
   line-height:1.25;
-  background-color:white;
-  border:1px solid #e6e6e6;
+  background:white;
+  border:solid 1px #e6e6e6;
   border-radius:0.25rem;
   -webkit-box-shadow:none;
   box-shadow:none;
@@ -1231,7 +1231,7 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   box-sizing:border-box;
   height:4rem; }
   input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus{
-    border:1px solid #33c3f0;
+    border:solid 1px #33c3f0;
     outline:0; }
 
 textarea{
@@ -1247,8 +1247,8 @@ select{
   font-size:1.5rem;
   padding:1rem 1rem;
   line-height:1.25;
-  background-color:white;
-  border:1px solid #e6e6e6;
+  background:white;
+  border:solid 1px #e6e6e6;
   border-radius:0.25rem;
   -webkit-box-shadow:none;
   box-shadow:none;
@@ -1256,7 +1256,7 @@ select{
   box-sizing:border-box; }
   textarea:focus,
   select:focus{
-    border:1px solid #33c3f0;
+    border:solid 1px #33c3f0;
     outline:0; }
 
 label,

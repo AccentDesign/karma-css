@@ -80,10 +80,15 @@ $colors: (
 // defined colors
 $body-background:         rgb(255, 255, 255) !default;
 $code-background:         rgb(240, 240, 240) !default;
-$input-background:        rgb(255, 255, 255) !default;
 $border-color:            rgb(230, 230, 230) !default;
 $font-color:              rgb(62, 62, 62) !default;
 $link-color:              map-get($colors, primary) !default;
+
+
+
+// misc
+$global-radius:         .25rem !default;
+$darken-hover-percent:  10% !default;
 
 
 
@@ -103,17 +108,15 @@ $button-padding-x: 1rem !default;
 
 
 // forms
-$field-font-size: 1.5rem !default;
-$field-padding-y: 1rem !default;
-$field-padding-x: 1rem !default;
+$input-background:      rgb(255, 255, 255) !default;
+$input-border-radius:   $global-radius !default;
+$input-border:          solid 1px $border-color !default;
+$input-border-focus:    solid 1px map-get($colors, primary) !default;
+$input-font-size:       1.5rem !default;
+$input-padding-y:       1rem !default;
+$input-padding-x:       1rem !default;
 
 $label-font-weight: 600 !default;
-
-
-
-// misc
-$global-radius:         .25rem !default;
-$darken-hover-percent:  10% !default;
 
 
 
