@@ -51,6 +51,12 @@
           order: $i;
         }
       }
+
+      @for $i from 1 through ($columns - 1) { 
+        .offset#{$infix}-#{$i} { 
+          margin-left: percentage($i / $columns); 
+        }
+      }
     }
   }
 }
