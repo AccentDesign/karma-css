@@ -1,15 +1,21 @@
 // Variables
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+// Options
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$enable-grid-classes:           true !default;
+
+
 
 // Typography
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 // Base font
-$base-font-size: 15px !default;
-$base-line-height: 1.6 !default;
-$base-font-weight: 400 !default;
-$base-font-family: "Open Sans", sans-serif !default;
+$base-font-size:                15px !default;
+$base-line-height:              1.6 !default;
+$base-font-weight:              400 !default;
+$base-font-family:              "Open Sans", sans-serif !default;
 
 // The font sizes for h1-h6.
 $h1-font-size: 2    * $base-font-size !default;
@@ -35,9 +41,6 @@ $breakpoints: (
         xl: 1200px
 ) !default;
 
-// enable grid
-$enable-grid-classes: true !default;
-
 // grid setup
 $grid-breakpoints: (
         xs: 0,
@@ -54,8 +57,8 @@ $container-max-widths: (
         xl: 1140px
 ) !default;
 
-$grid-columns:               12 !default;
-$grid-gutter-width-base:     30px !default;
+$grid-columns:                  12 !default;
+$grid-gutter-width-base:        30px !default;
 $grid-gutter-widths: (
         xs: $grid-gutter-width-base,
         sm: $grid-gutter-width-base,
@@ -66,44 +69,49 @@ $grid-gutter-widths: (
 
 
 
-// Generic
+// Styling
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 // colors
 $colors: (
-        white:            rgb(255, 255, 255),
-        black:            rgb(0, 0, 0),
-        primary:          rgb(51, 195, 240),
-        secondary:        rgb(240, 240, 240),
+        white:                rgb(255, 255, 255),
+        black:                rgb(0, 0, 0),
+        primary:                rgb(51, 195, 240),
+        secondary:              rgb(240, 240, 240),
 ) !default;
 
 // defined colors
-$body-background:         rgb(255, 255, 255) !default;
-$code-background:         rgb(240, 240, 240) !default;
-$border-color:            rgb(230, 230, 230) !default;
-$font-color:              rgb(62, 62, 62) !default;
-$link-color:              map-get($colors, primary) !default;
+$body-background:               rgb(255, 255, 255) !default;
+$code-background:               rgb(240, 240, 240) !default;
+$border-color:                  rgb(230, 230, 230) !default;
+$font-color:                    rgb(62, 62, 62) !default;
 
 
 
 // misc
-$global-radius:         .25rem !default;
-$darken-hover-percent:  10% !default;
+$global-radius:                 .25rem !default;
+$darken-hover-percent:          10% !default; // used within hovers in links and buttons
 
 
 
-// button classes created: 
-//      .button-primary
-//      .button-secondary
+// links
+$link-color:                    map-get($colors, primary) !default;
+$link-color-hover:              darken($link-color, $darken-hover-percent) !default;
+$link-decoration:               none !default;
+$link-decoration-hover:         none !default;
+
+
+
+// buttons
 $buttons: (
         // name         color                          font-color
         primary:        map-get($colors, primary)      map-get($colors, white),
         secondary:      map-get($colors, secondary)    map-get($colors, black)
 ) !default;
-$button-font-size: 1.5rem !default;
-$button-font-weight: 400 !default;
-$button-padding-y: 1rem !default;
-$button-padding-x: 1rem !default;
+$button-font-size:              1.5rem !default;
+$button-font-weight:            400 !default;
+$button-padding-y:              1rem !default;
+$button-padding-x:              1rem !default;
 
 
 
@@ -121,11 +129,11 @@ $label-font-weight: 600 !default;
 
 
 
-// table
-$table-cell-padding:    .85rem .85rem !default;
-$table-striped-color:   rgb(250, 250, 250) !default;
-$table-headed-color:    rgb(240, 240, 240) !default;
-$table-hover-color:     rgb(245, 245, 245) !default;
+// tables
+$table-cell-padding:            .85rem .85rem !default;
+$table-striped-color:           rgb(250, 250, 250) !default;
+$table-headed-color:            rgb(240, 240, 240) !default;
+$table-hover-color:             rgb(245, 245, 245) !default;
 
 
 

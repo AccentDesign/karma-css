@@ -1146,7 +1146,8 @@ body{
   background:white; }
 
 a{
-  color:#33c3f0;
+  color:#33c3f0; }
+  a,a:hover{
   text-decoration:none; }
   a:hover{
     color:#10aee0; }

@@ -3,8 +3,9 @@
 
 a {
     color: $link-color;
-    text-decoration: none;
+    text-decoration: $link-decoration;
     &:hover {
-        color: darken($link-color, $darken-hover-percent);
+        color: $link-color-hover;
+        text-decoration: $link-decoration-hover;
     }
 }
