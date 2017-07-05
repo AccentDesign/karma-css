@@ -3,7 +3,7 @@
 
 @if $enable-grid-classes {
 
-    // Container
+    // Containers
     .container {
         @include make-container();
         @include make-container-max-widths();
@@ -20,19 +20,18 @@
         @include make-row();
     }
 
-    // Remove the negative margin from default .row
+    // No gutters.
     .no-gutters {
-        margin-left: 0;
         margin-right: 0;
+        margin-left: 0;
 
         > .col,
         > [class*="col-"] {
-            padding-left: 0;
             padding-right: 0;
+            padding-left: 0;
         }
     }
 
     // Columns
     @include make-grid-columns();
-
 }
