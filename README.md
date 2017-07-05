@@ -3,7 +3,7 @@
 Karma CSS is a great starting point if you only want a barebones css boilerplate.
 The project builds upon where the original skeleton css project left off. This is not a UI framework but it is the starting point for one.
 
-This includes normalize, bootstrap 4's flex grid, all base styles, useful mixins, the ability to set your own button colors and more. 
+This includes normalize, a powerful mobile-first flexbox grid system, all base styles, useful mixins, the ability to set your own button colors and more. 
 
 Minified and gzipped it weighs less than 5kb.
 
