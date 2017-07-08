@@ -1469,7 +1469,7 @@ blockquote{
   font-weight:300; }
 
 .text-shadow{
-  text-shadow:0px 2px 4px rgba(0, 0, 0, 0.5); }
+  text-shadow:0 2px 4px rgba(0, 0, 0, 0.5); }
 @media (min-width: 768px){
   .lead{
     font-size:120%; } }
