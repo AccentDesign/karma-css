@@ -1,5 +1,7 @@
 [<img src="images/banner.png">](http://karmacss.com/)
 
+[![CircleCI](https://circleci.com/gh/AccentDesign/karma-css/tree/master.svg?style=svg)](https://circleci.com/gh/AccentDesign/karma-css/tree/master)
+
 Karma CSS is a great starting point if you only want a barebones css boilerplate.
 The project builds upon where the original skeleton css project left off. This is not a UI framework but it is the starting point for one.
 
