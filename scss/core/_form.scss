@@ -29,6 +29,7 @@ input {
         box-shadow: none;
         box-sizing: border-box;
         height: $input-height;
+        margin-bottom: $input-margin-bottom;
         &:focus {
             background: $input-background-focus;
             border: $input-border-focus;
@@ -58,6 +59,7 @@ select {
     border-radius: $input-border-radius;
     box-shadow: none;
     box-sizing: border-box;
+    margin-bottom: $input-margin-bottom;
     &:focus {
         background: $input-background-focus;
         border: $input-border-focus;
@@ -75,6 +77,7 @@ legend {
 fieldset {
     padding: 0;
     border-width: 0;
+    margin-bottom: $input-margin-bottom;
 }
 
 // try so make sensible defaults for radios and checkboxes

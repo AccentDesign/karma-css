@@ -1201,7 +1201,8 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   box-shadow:none;
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
-  height:4rem; }
+  height:4rem;
+  margin-bottom:1.5rem; }
   input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus{
     background:white;
     border:solid 1px #33c3f0;
@@ -1227,7 +1228,8 @@ select{
   -webkit-box-shadow:none;
   box-shadow:none;
   -webkit-box-sizing:border-box;
-  box-sizing:border-box; }
+  box-sizing:border-box;
+  margin-bottom:1.5rem; }
   textarea:focus,
   select:focus{
     background:white;
@@ -1242,7 +1244,8 @@ legend{
 
 fieldset{
   padding:0;
-  border-width:0; }
+  border-width:0;
+  margin-bottom:1.5rem; }
 
 input[type="checkbox"], input[type="radio"]{
   margin-right:1.5rem;
@@ -1273,10 +1276,7 @@ ol{
     margin:0 0 0 2rem;
     font-size:90%; }
 
-input:not(.button):not([type=checkbox]):not([type=radio]),
-textarea,
-select,
-fieldset,pre,
+pre,
 blockquote,
 dl,
 figure,
