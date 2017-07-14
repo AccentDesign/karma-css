@@ -8,6 +8,7 @@ Changelog
  * Added basic grid examples to test.html
  * Fixed 0px lint warning
  * Removed vertical align from button due to odd inline issue
+ * Added variable $input-font-color to set all inputs
 
 1.3.0 - 05-Jul-2017
 ~~~~~~~~~~~~~~~~~~~

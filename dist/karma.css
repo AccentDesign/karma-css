@@ -1191,6 +1191,7 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   -moz-appearance:none;
   appearance:none;
   font-size:1.5rem;
+  color:#3e3e3e;
   padding:1rem 1rem;
   line-height:1.25;
   background:white;
@@ -1217,6 +1218,7 @@ select:not([multiple]){
 textarea,
 select{
   font-size:1.5rem;
+  color:#3e3e3e;
   padding:1rem 1rem;
   line-height:1.25;
   background:white;

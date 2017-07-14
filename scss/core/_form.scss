@@ -20,6 +20,7 @@ input {
     &[type="password"] {
         appearance: none; // remove awkward defaults on ios
         font-size: $input-font-size;
+        color: $input-font-color;
         padding: $input-padding-y $input-padding-x;
         line-height: 1.25;
         background: $input-background;
@@ -49,6 +50,7 @@ select:not([multiple]) {
 textarea,
 select {
     font-size: $input-font-size;
+    color: $input-font-color;
     padding: $input-padding-y $input-padding-x;
     line-height: 1.25;
     background: $input-background;
