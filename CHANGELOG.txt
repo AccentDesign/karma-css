@@ -1,8 +1,8 @@
 Changelog
 =========
 
-1.3.2 - IN DEVELOPMENT
-~~~~~~~~~~~~~~~~~~~~~~
+1.3.2 - 19-Jul-2017
+~~~~~~~~~~~~~~~~~~~
 
  * Removed duplicate blockquote margin bottom from core
  * Added variable $generic-margin-bottom for pre, dl, figure, table, p, ul, ol, form, blockquote
