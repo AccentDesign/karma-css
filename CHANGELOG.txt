@@ -7,6 +7,7 @@ Changelog
  * Removed duplicate blockquote margin bottom from core
  * Added variable $generic-margin-bottom for pre, dl, figure, table, p, ul, ol, form, blockquote
  * Added variable $header-margin-bottom for h1-h6
+ * Added variable $button-default-bg-color for the base button
  
 1.3.1 - 14-Jul-2017
 ~~~~~~~~~~~~~~~~~~~

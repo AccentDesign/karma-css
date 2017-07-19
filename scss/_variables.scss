@@ -97,7 +97,8 @@ $button-font-size:              1.5rem !default;
 $button-font-weight:            400 !default;
 $button-padding-y:              1rem !default;
 $button-padding-x:              1rem !default;
-
+// the below applies to the default button class only `.button`
+$button-default-bg-color:       map-get($colors, white) !default;
 
 
 // forms
