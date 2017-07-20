@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.3.3 - IN DEVELOPMENT
+~~~~~~~~~~~~~~~~~~~~~~
+
+ * Created sample blog and thumbnail listing page
+
 1.3.2 - 19-Jul-2017
 ~~~~~~~~~~~~~~~~~~~
 
