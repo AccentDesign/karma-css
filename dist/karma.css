@@ -36,7 +36,6 @@ a{
 abbr[title]{
   border-bottom:none;
   text-decoration:underline;
-  -webkit-text-decoration:underline dotted;
   text-decoration:underline dotted; }
 b,
 strong{
@@ -1126,7 +1125,6 @@ a{
 .button{
   display:inline-block;
   padding:1rem 1rem;
-  color:#3e3e3e;
   text-align:center;
   font-family:"Open Sans", sans-serif;
   font-size:1.5rem;
@@ -1134,7 +1132,6 @@ a{
   line-height:1.25;
   text-decoration:none;
   white-space:nowrap;
-  background-color:white;
   border-radius:0.25rem;
   border:1px solid #e6e6e6;
   cursor:pointer;
@@ -1144,8 +1141,10 @@ a{
   -moz-user-select:none;
   -ms-user-select:none;
   user-select:none; }
+  .button,.button:hover, .button:focus{
+  color:#3e3e3e;
+  background-color:white; }
   .button:hover, .button:focus{
-    color:#3e3e3e;
     border-color:#cdcdcd;
     outline:0; }
 

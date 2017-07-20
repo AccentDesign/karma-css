@@ -1,0 +1,40 @@
+// Button
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// the base styles for a button
+@mixin button {
+    display: inline-block;
+    padding: $button-padding-y $button-padding-x;
+    color: $font-color;
+    text-align: center;
+    font-family: $base-font-family;
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
+    line-height: 1.25;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: $button-default-bg-color;
+    border-radius: $global-radius;
+    border: 1px solid $border-color;
+    cursor: pointer;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+// the styles required to create a colored variation
+@mixin button-color-variation($color, $background-color, $border-color) {
+    color: $color;
+    background-color: $background-color;
+    border-color: $border-color;
+}
+
+// hover and focus state 
+@mixin button-hover($color, $background-color, $border-color) {
+    &:hover,
+    &:focus {
+        color: $color;
+        background-color: $background-color;
+        border-color: $border-color;
+        outline: 0;
+    }
+}
