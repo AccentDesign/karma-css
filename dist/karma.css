@@ -36,6 +36,7 @@ a{
 abbr[title]{
   border-bottom:none;
   text-decoration:underline;
+  -webkit-text-decoration:underline dotted;
   text-decoration:underline dotted; }
 b,
 strong{
@@ -1186,6 +1187,7 @@ pre > code{
   cursor:not-allowed; }
 
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="date"], input[type="month"], input[type="week"], input[type="datetime"], input[type="datetime-local"], input[type="tel"], input[type="url"], input[type="password"]{
+  max-width:100%;
   -webkit-appearance:none;
   -moz-appearance:none;
   appearance:none;
@@ -1217,6 +1219,7 @@ select:not([multiple]){
 
 textarea,
 select{
+  max-width:100%;
   font-size:1.5rem;
   color:#3e3e3e;
   padding:1rem 1rem;

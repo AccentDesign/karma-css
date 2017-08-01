@@ -18,6 +18,7 @@ input {
     &[type="tel"],
     &[type="url"],
     &[type="password"] {
+        @include input-width;
         appearance: none; // remove awkward defaults on ios
         font-size: $input-font-size;
         color: $input-font-color;
@@ -50,6 +51,7 @@ select:not([multiple]) {
 
 textarea,
 select {
+    @include input-width;
     font-size: $input-font-size;
     color: $input-font-color;
     padding: $input-padding-y $input-padding-x;
