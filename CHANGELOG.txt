@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.3.5 - IN DEVELOPMENT
+~~~~~~~~~~~~~~~~~~~~~~
+
+ * Removed font size in nested ul's due to ever decreasing in deeply nested 
+
 1.3.4 - 01-Aug-2017
 ~~~~~~~~~~~~~~~~~~~
 
