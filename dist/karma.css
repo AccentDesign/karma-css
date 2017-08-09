@@ -1267,16 +1267,14 @@ ul{
   margin-top:0;
   list-style:circle inside; }
   ul ul, ul ol{
-    margin:0 0 0 2rem;
-    font-size:90%; }
+    margin:0 0 0 2rem; }
 
 ol{
   padding-left:0;
   margin-top:0;
   list-style:decimal inside; }
   ol ol, ol ul{
-    margin:0 0 0 2rem;
-    font-size:90%; }
+    margin:0 0 0 2rem; }
 
 pre,
 dl,
