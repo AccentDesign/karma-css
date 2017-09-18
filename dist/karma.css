@@ -1187,7 +1187,6 @@ pre > code{
   cursor:not-allowed; }
 
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="date"], input[type="month"], input[type="week"], input[type="datetime"], input[type="datetime-local"], input[type="tel"], input[type="url"], input[type="password"]{
-  max-width:100%;
   -webkit-appearance:none;
   -moz-appearance:none;
   appearance:none;
@@ -1202,8 +1201,11 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   box-shadow:none;
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
+  margin-bottom:1.5rem;
+  font-size:1.5rem;
+  padding:1rem 1rem;
   height:4rem;
-  margin-bottom:1.5rem; }
+  max-width:100%; }
   input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus{
     background:white;
     border:solid 1px #33c3f0;
@@ -1212,14 +1214,7 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
 textarea{
   -webkit-appearance:none;
   -moz-appearance:none;
-  appearance:none; }
-
-select:not([multiple]){
-  height:4rem; }
-
-textarea,
-select{
-  max-width:100%;
+  appearance:none;
   font-size:1.5rem;
   color:#3e3e3e;
   padding:1rem 1rem;
@@ -1231,12 +1226,36 @@ select{
   box-shadow:none;
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
-  margin-bottom:1.5rem; }
-  textarea:focus,
+  margin-bottom:1.5rem;
+  max-width:100%; }
+  textarea:focus{
+    background:white;
+    border:solid 1px #33c3f0;
+    outline:0; }
+
+select{
+  font-size:1.5rem;
+  color:#3e3e3e;
+  padding:1rem 1rem;
+  line-height:1.25;
+  background:white;
+  border:solid 1px #e6e6e6;
+  border-radius:0.25rem;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  margin-bottom:1.5rem;
+  font-size:1.5rem;
+  padding:1rem 1rem;
+  height:4rem;
+  max-width:100%; }
   select:focus{
     background:white;
     border:solid 1px #33c3f0;
     outline:0; }
+  select[multiple]{
+    height:auto; }
 
 label,
 legend{

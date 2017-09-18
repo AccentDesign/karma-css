@@ -1,0 +1,12 @@
+// Input
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@function input-height($padding-y, $font-size, $border-width) {
+    // calculate the height for the inputs as they vary between types
+    // ie date increases the height due to the icons inside it
+    $total-padding: ($padding-y * 2);
+    $total-font-area: ($font-size * 1.25);
+    $border: ($border-width * 2);
+    $height: $total-padding + $total-font-area + $border;
+    @return decimal-floor($height, 1);
+}

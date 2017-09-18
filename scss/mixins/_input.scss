@@ -1,0 +1,46 @@
+// Inputs
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+// base input css
+@mixin input {
+    font-size: $input-font-size;
+    color: $input-font-color;
+    padding: $input-padding-y $input-padding-x;
+    line-height: 1.25;
+    background: $input-background;
+    border: $input-border;
+    border-radius: $input-border-radius;
+    box-shadow: none;
+    box-sizing: border-box;
+    margin-bottom: $input-margin-bottom;
+}
+
+// input focus state 
+@mixin input-focus {
+    &:focus {
+        background: $input-background-focus;
+        border: $input-border-focus;
+        outline: 0;
+    }
+}
+
+// returns the width of the form fields based on the variable used
+@mixin input-width {
+    @if $input-use-full-width {
+        width: 100%;
+    } @else {
+        max-width: 100%;
+    }
+}
+
+// create an input size variation
+@mixin input-size(
+    $padding-y: $input-padding-y, 
+    $padding-x: $input-padding-x, 
+    $font-size: $input-font-size, 
+    $border-width: .1rem) {
+    font-size: $font-size;
+    padding: $padding-y $padding-x;
+    height: input-height($padding-y, $font-size, $border-width);
+}
