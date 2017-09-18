@@ -49,7 +49,7 @@ $ npm install
 
 and 
 ```bash
-$ gulp watch
+$ npm run watch
 ```
 
 ## Additional installation methods include

@@ -20,6 +20,9 @@
     "boilerplate"
   ],
   "license": "MIT",
+  "scripts": {
+    "watch": "gulp watch"
+  },
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^7.1.4",
