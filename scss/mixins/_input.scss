@@ -9,18 +9,19 @@
     padding: $input-padding-y $input-padding-x;
     line-height: 1.25;
     background: $input-background;
-    border: $input-border;
-    border-radius: $input-border-radius;
     box-shadow: none;
     box-sizing: border-box;
     margin-bottom: $input-margin-bottom;
+    border: $input-border;
+    border-radius: $input-border-radius;
+    transition: border-color ease-in-out .15s;
 }
 
 // input focus state 
 @mixin input-focus {
     &:focus {
         background: $input-background-focus;
-        border: $input-border-focus;
+        border-color: $input-border-color-focus;
         outline: 0;
     }
 }

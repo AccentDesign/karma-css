@@ -1195,20 +1195,23 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   padding:1rem 1rem;
   line-height:1.25;
   background:white;
-  border:solid 1px #e6e6e6;
-  border-radius:0.25rem;
   -webkit-box-shadow:none;
   box-shadow:none;
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
   margin-bottom:1.5rem;
+  border:1px solid #e6e6e6;
+  border-radius:0.25rem;
+  -webkit-transition:border-color ease-in-out .15s;
+  -o-transition:border-color ease-in-out .15s;
+  transition:border-color ease-in-out .15s;
   font-size:1.5rem;
   padding:1rem 1rem;
   height:4rem;
   max-width:100%; }
   input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus{
     background:white;
-    border:solid 1px #33c3f0;
+    border-color:#33c3f0;
     outline:0; }
 
 textarea{
@@ -1220,17 +1223,20 @@ textarea{
   padding:1rem 1rem;
   line-height:1.25;
   background:white;
-  border:solid 1px #e6e6e6;
-  border-radius:0.25rem;
   -webkit-box-shadow:none;
   box-shadow:none;
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
   margin-bottom:1.5rem;
+  border:1px solid #e6e6e6;
+  border-radius:0.25rem;
+  -webkit-transition:border-color ease-in-out .15s;
+  -o-transition:border-color ease-in-out .15s;
+  transition:border-color ease-in-out .15s;
   max-width:100%; }
   textarea:focus{
     background:white;
-    border:solid 1px #33c3f0;
+    border-color:#33c3f0;
     outline:0; }
 
 select{
@@ -1239,20 +1245,23 @@ select{
   padding:1rem 1rem;
   line-height:1.25;
   background:white;
-  border:solid 1px #e6e6e6;
-  border-radius:0.25rem;
   -webkit-box-shadow:none;
   box-shadow:none;
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
   margin-bottom:1.5rem;
+  border:1px solid #e6e6e6;
+  border-radius:0.25rem;
+  -webkit-transition:border-color ease-in-out .15s;
+  -o-transition:border-color ease-in-out .15s;
+  transition:border-color ease-in-out .15s;
   font-size:1.5rem;
   padding:1rem 1rem;
   height:4rem;
   max-width:100%; }
   select:focus{
     background:white;
-    border:solid 1px #33c3f0;
+    border-color:#33c3f0;
     outline:0; }
   select[multiple]{
     height:auto; }

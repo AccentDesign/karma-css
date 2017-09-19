@@ -104,15 +104,16 @@ $button-default-bg-color:       map-get($colors, white) !default;
 // forms
 $input-use-full-width:          false !default; // false = max-width:100%, true = width:100%
 $input-background:              rgb(255, 255, 255) !default;
-$input-background-focus:        $input-background !default;
 $input-border-radius:           $global-radius !default;
-$input-border:                  solid 1px $border-color !default;
-$input-border-focus:            solid 1px map-get($colors, primary) !default;
+$input-border:                  1px solid $border-color !default;
 $input-font-size:               1.5rem !default;
 $input-font-color:              $font-color !default;
 $input-padding-y:               1rem !default;
 $input-padding-x:               1rem !default;
 $input-margin-bottom:           1.5rem !default;
+
+$input-background-focus:        $input-background !default;
+$input-border-color-focus:      map-get($colors, primary) !default;
 
 $label-font-weight:             600 !default;
 
