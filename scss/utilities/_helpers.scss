@@ -12,6 +12,10 @@
 
 /* margin */
 .margin-zero                { margin: 0; }
+.mt-auto                    { margin-top: auto; }
+.mr-auto                    { margin-right: auto; }
+.mb-auto                    { margin-bottom: auto; }
+.ml-auto                    { margin-left: auto; }
 
 /* alignment */
 .pull-left                  { float: left !important; }
@@ -27,8 +31,6 @@
 .align-bottom               { vertical-align: bottom; }
 .align-middle               { vertical-align: middle; }
 .align-baseline             { vertical-align: baseline; }
-.align-self-center          { align-self: center; }
-.justify-content-center     { justify-content: center; }
 
 /* positions */
 .fixed                      { position: fixed; }
@@ -52,11 +54,12 @@
 }
 
 /* display */
+.d-block                    { display: block; }
 .d-hidden                   { display: none !important; }
+.d-flex                     { display: flex; }
 .d-inline                   { display: inline; }
 .d-inline-block             { display: inline-block; }
-.d-block                    { display: block; }
-.d-flex                     { display: flex; }
+.d-inline-flex              { display: inline-flex; }
 .d-table                    { display: table; }
 .d-table-cell               { display: table-cell; }
 
@@ -70,3 +73,39 @@
 /* cursors */
 .disabled                   { cursor: not-allowed; }
 .pointer                    { cursor: pointer; }
+
+/* flex */
+
+// directions
+.flex-row                   { flex-direction: row; }
+.flex-column                { flex-direction: column; }
+
+// reverse directions
+.flex-row-reverse           { flex-direction: row-reverse; }
+.flex-column-reverse        { flex-direction: column-reverse; }
+
+// use in conjunction with .d-flex to justify the items within the container
+.justify-content-start      { justify-content: flex-start; }
+.justify-content-end        { justify-content: flex-end; }
+.justify-content-center     { justify-content: center; }
+.justify-content-between    { justify-content: space-between; }
+.justify-content-around     { justify-content: space-around; }
+
+// use in conjunction with .d-flex to align the items within the container
+.align-items-start          { align-items: flex-start; }
+.align-items-end            { align-items: flex-end; }
+.align-items-center         { align-items: center; }
+.align-items-baseline       { align-items: baseline; }
+.align-items-stretch        { align-items: stretch; }
+
+// use in conjunction with .d-flex to apply wrapping of the items within the container
+.flex-nowrap                { flex-wrap: nowrap; }
+.flex-wrap                  { flex-wrap: wrap; }
+.flex-wrap-reverse          { flex-wrap: wrap-reverse; }
+
+// use in conjunction with .d-flex on the parent container to align each item individually
+.align-self-start           { align-self: flex-start; }
+.align-self-end             { align-self: flex-end; }
+.align-self-center          { align-self: center; }
+.align-self-baseline        { align-self: baseline; }
+.align-self-stretch         { align-self: stretch; }

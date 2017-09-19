@@ -13,7 +13,8 @@ Changelog
     - button-size
  * Added some default values to the mixin button-hover
  * Added a transition to input focus
-
+ * Added some flex and margin auto helpers
+ 
  * BREAKING CHANGES
     - variable $input-border-focus has been replaced with $input-border-color-focus
     - Renaming of helper classes
