@@ -29,7 +29,10 @@
 }
 
 // hover and focus state 
-@mixin button-hover($color, $background-color, $border-color) {
+@mixin button-hover(
+        $color: $font-color,
+        $background-color: $button-default-bg-color, 
+        $border-color: darken($border-color, $darken-hover-percent)) {
     &:hover,
     &:focus {
         color: $color;
@@ -37,4 +40,13 @@
         border-color: $border-color;
         outline: 0;
     }
+}
+
+// create a button size variation
+@mixin button-size(
+        $padding-y: $button-padding-y, 
+        $padding-x: $button-padding-x, 
+        $font-size: $button-font-size) {
+    font-size: $font-size;
+    padding: $padding-y $padding-x;
 }

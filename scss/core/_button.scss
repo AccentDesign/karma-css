@@ -4,7 +4,7 @@
 // default buttons style
 .button {
     @include button;
-    @include button-hover($font-color, $button-default-bg-color, darken($border-color, $darken-hover-percent))
+    @include button-hover;
 }
 
 // button color variations

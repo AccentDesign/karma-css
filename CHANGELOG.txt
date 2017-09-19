@@ -9,6 +9,9 @@ Changelog
     - input-width
     - input-size
     - input-focus
+ * Added 1 new mixin to build buttons:
+    - button-size
+ * Added some default values to the mixin button-hover
 
 1.3.6 - 08-Sep-2017
 ~~~~~~~~~~~~~~~~~~~
