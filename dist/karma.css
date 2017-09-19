@@ -1502,27 +1502,28 @@ blockquote{
 @media (min-width: 768px){
   .lead{
     font-size:120%; } }
-.hidden{
+.d-hidden{
   display:none !important; }
 
-.inline{
+.d-inline{
   display:inline; }
 
-.inline-block{
+.d-inline-block{
   display:inline-block; }
 
-.block{
+.d-block{
   display:block; }
 
-.flex{
+.d-flex{
   display:-webkit-box;
   display:-webkit-flex;
   display:-ms-flexbox;
   display:flex; }
-.display-table{
+
+.d-table{
   display:table; }
 
-.display-table-cell{
+.d-table-cell{
   display:table-cell; }
 .img-fluid{
   max-width:100%;

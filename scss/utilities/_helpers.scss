@@ -52,15 +52,13 @@
 }
 
 /* display */
-.hidden                     { display: none !important; }
-.inline                     { display: inline; }
-.inline-block               { display: inline-block; }
-.block                      { display: block; }
-.flex                       { display: flex; }
-
-/* display prefix to avoid confusion with any table.table */
-.display-table              { display: table; }
-.display-table-cell         { display: table-cell; }
+.d-hidden                   { display: none !important; }
+.d-inline                   { display: inline; }
+.d-inline-block             { display: inline-block; }
+.d-block                    { display: block; }
+.d-flex                     { display: flex; }
+.d-table                    { display: table; }
+.d-table-cell               { display: table-cell; }
 
 /* images */
 .img-fluid                  { max-width: 100%; height: auto; }
