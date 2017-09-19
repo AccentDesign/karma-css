@@ -2,18 +2,18 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 input {
-    &[type="email"],
-    &[type="number"],
-    &[type="search"],
-    &[type="text"],
     &[type="date"],
-    &[type="month"],
-    &[type="week"],
     &[type="datetime"],
     &[type="datetime-local"],
+    &[type="email"],
+    &[type="month"],
+    &[type="number"],
+    &[type="password"],
+    &[type="search"],
     &[type="tel"],
+    &[type="text"],
     &[type="url"],
-    &[type="password"] {
+    &[type="week"] {
         appearance: none; // remove awkward defaults on ios
         @include input;
         @include input-size; 
