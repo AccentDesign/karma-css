@@ -1,8 +1,8 @@
 Changelog
 =========
 
-1.4.0 - IN DEVELOPMENT
-~~~~~~~~~~~~~~~~~~~~~~
+1.4.0 - 20-Sep-2017
+~~~~~~~~~~~~~~~~~~~
 
  * Added 4 new mixin to build inputs:
     - input
