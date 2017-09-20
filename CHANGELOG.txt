@@ -25,6 +25,9 @@ Changelog
         - .flex > .d-flex
         - .display-table > .d-table
         - .display-table-cell > .d-table-cell
+      The originals have been moved into a `utilities/_helpers-depreciated.scss` which you can include in your own project
+      to avoid renaming any.
+        - `@include "karma-css/scss/utilities/helpers-depreciated";` 
 
 1.3.6 - 08-Sep-2017
 ~~~~~~~~~~~~~~~~~~~

@@ -1,0 +1,11 @@
+// Helpers that have been renamed or removed
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+/* display */
+.block                      { @extend .d-block; }
+.flex                       { @extend .d-flex; }
+.hidden                     { @extend .d-hidden; }
+.inline                     { @extend .d-inline; }
+.inline-block               { @extend .d-inline-block; }
+.display-table              { @extend .d-table; }
+.display-table-cell         { @extend .d-table-cell; }
