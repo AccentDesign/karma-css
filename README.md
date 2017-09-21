@@ -11,8 +11,6 @@ Our aim is to provide a sensible set css defaults that DO NOT impose any style o
 
 We support all modern browsers and back to IE10, please see the full [list](http://karmacss.com).
 
-Minified and gzipped it weighs less than 5kb.
-
 ## Whats included?
 
 * Normalize
