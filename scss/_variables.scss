@@ -17,6 +17,8 @@ $base-line-height:              1.6 !default;
 $base-font-weight:              400 !default;
 $base-font-family:              "Open Sans", sans-serif !default;
 
+$code-font-family:              monospace, monospace !default; // https://github.com/necolas/normalize.css/issues/519#issuecomment-197131966
+
 // The font sizes for h1-h6.
 $h1-font-size: 2    * $base-font-size !default;
 $h2-font-size: 1.5  * $base-font-size !default;

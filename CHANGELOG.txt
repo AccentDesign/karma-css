@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.4.1 - IN DEVELOPMENT
+~~~~~~~~~~~~~~~~~~~~~~
+
+ * Added $code-font-family variable
+
 1.4.0 - 20-Sep-2017
 ~~~~~~~~~~~~~~~~~~~
 
