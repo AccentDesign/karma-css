@@ -30,6 +30,12 @@ Minified and gzipped it weighs less than 5kb.
     * see [docs](http://karmacss.com/documentation/mixins)
 * Lots of additional helper classes. See [docs](http://karmacss.com/documentation/utilities)
 
+## Samples
+
+Though simple, with minimal effort, overriding 4 variables and adding 70 lines of css.
+
+![sample 1](/images/sample1.png)
+
 ## Where can I read more?
 
 The documentation can be found at [karmacss.com](http://karmacss.com).
