@@ -11,6 +11,10 @@ code {
     border-radius: $global-radius;
 }
 
+pre {
+    margin-top: 0;
+}
+
 pre > code {
     padding: 1rem 1.5rem;
     display: block;

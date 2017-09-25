@@ -5,6 +5,7 @@ Changelog
 ~~~~~~~~~~~~~~~~~~~~~~
 
   * Added mixin responsive-ratio
+  * Removed margin top from pre
 
 1.4.1 - 21-Sep-2017
 ~~~~~~~~~~~~~~~~~~~~~~
