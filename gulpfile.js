@@ -30,7 +30,7 @@ var config = {
             'node_modules'
         ]
     },
-    csso: {}
+    cssmin: {}
 };
 
 gulp.task('scss', function() {
@@ -49,7 +49,7 @@ gulp.task('scss', function() {
 
 gulp.task('min', function () {
   return gulp.src(config.publicDir + '/karma.css')
-    .pipe($.csso(config.csso))
+    .pipe($.cssmin(config.cssmin))
     .pipe($.rename({suffix: '.min'}))
     .pipe(gulp.dest(config.publicDir))
     .pipe($.livereload());
