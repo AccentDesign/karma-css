@@ -8,7 +8,8 @@ Changelog
   * Removed margin top from pre
   * Added modernizr mixin for touch-hover
   * Added modernizr mixin for transition-no-touch
-
+  * Added animation speeds for forms, links & buttons
+  
 1.4.1 - 21-Sep-2017
 ~~~~~~~~~~~~~~~~~~~~~~
 
