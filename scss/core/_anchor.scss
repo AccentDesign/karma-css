@@ -4,6 +4,7 @@
 a {
     color: $link-color;
     text-decoration: $link-decoration;
+    transition: all ease-in-out $input-transision-speed;
     &:hover {
         color: $link-color-hover;
         text-decoration: $link-decoration-hover;

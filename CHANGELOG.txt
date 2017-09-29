@@ -6,6 +6,11 @@ Changelog
 
   * Added mixin responsive-ratio
   * Removed margin top from pre
+  * Added modernizr mixin for touch-hover
+  * Added modernizr mixin for transition-no-touch
+  * Added animation speeds for forms, links & buttons
+  * Added colour palette from http://clrs.cc/
+  * Added colour palette for social media from https://www.materialui.co/socialcolors
 
 1.4.1 - 21-Sep-2017
 ~~~~~~~~~~~~~~~~~~~~~~

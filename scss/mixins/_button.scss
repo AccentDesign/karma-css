@@ -19,6 +19,7 @@
     cursor: pointer;
     box-sizing: border-box;
     user-select: none;
+    transition: all ease-in-out $button-transision-speed;
 }
 
 // the styles required to create a colored variation

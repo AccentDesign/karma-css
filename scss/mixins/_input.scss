@@ -14,7 +14,7 @@
     margin-bottom: $input-margin-bottom;
     border: $input-border;
     border-radius: $input-border-radius;
-    transition: border-color ease-in-out .15s;
+    transition: all ease-in-out $input-transision-speed;
 }
 
 // input focus state 
