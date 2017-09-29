@@ -15,12 +15,26 @@
  *     }
  * }
  */
- @mixin touch-hover() {
+@mixin touch-hover() {
     .no-js &:hover, // the fallback
     .no-js &:focus, 
     .js.no-touch &:hover, // enhanced for no-touch
     .js.no-touch &:focus,
     .js.touch &:active { // relay same styles to active for touch devices
         @content; 
+    }
+}
+
+
+/*
+ * Applies transition to element but removes it from the same element on touch devices.
+ * Useful for making all pseudo hover effects on mobile instant on click.
+ *
+ * @requires Modernizr
+ */
+@mixin transition-no-touch($properties) {
+    transition: $properties;
+    .js.touch & { 
+        transition: none; 
     }
 }
