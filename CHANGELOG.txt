@@ -6,6 +6,7 @@ Changelog
 
   * Added mixin responsive-ratio
   * Removed margin top from pre
+  * Added modernizr mixin for touch-hover
 
 1.4.1 - 21-Sep-2017
 ~~~~~~~~~~~~~~~~~~~~~~
