@@ -1118,9 +1118,9 @@ body{
 
 a{
   color:#33c3f0;
-  -webkit-transition:all ease-in-out 400ms;
-  -o-transition:all ease-in-out 400ms;
-  transition:all ease-in-out 400ms; }
+  -webkit-transition:all ease-in-out 250ms;
+  -o-transition:all ease-in-out 250ms;
+  transition:all ease-in-out 250ms; }
   a,a:hover{
   text-decoration:none; }
   a:hover{
@@ -1145,9 +1145,9 @@ a{
   -moz-user-select:none;
   -ms-user-select:none;
   user-select:none;
-  -webkit-transition:all ease-in-out 400ms;
-  -o-transition:all ease-in-out 400ms;
-  transition:all ease-in-out 400ms; }
+  -webkit-transition:all ease-in-out 250ms;
+  -o-transition:all ease-in-out 250ms;
+  transition:all ease-in-out 250ms; }
   .button,.button:hover, .button:focus{
   color:#3e3e3e;
   background-color:white; }
@@ -1212,9 +1212,9 @@ input[type="date"], input[type="datetime"], input[type="datetime-local"], input[
   margin-bottom:1.5rem;
   border:1px solid #e6e6e6;
   border-radius:0.25rem;
-  -webkit-transition:all ease-in-out 400ms;
-  -o-transition:all ease-in-out 400ms;
-  transition:all ease-in-out 400ms;
+  -webkit-transition:all ease-in-out 250ms;
+  -o-transition:all ease-in-out 250ms;
+  transition:all ease-in-out 250ms;
   font-size:1.5rem;
   padding:1rem 1rem;
   height:4rem;
@@ -1240,9 +1240,9 @@ textarea{
   margin-bottom:1.5rem;
   border:1px solid #e6e6e6;
   border-radius:0.25rem;
-  -webkit-transition:all ease-in-out 400ms;
-  -o-transition:all ease-in-out 400ms;
-  transition:all ease-in-out 400ms;
+  -webkit-transition:all ease-in-out 250ms;
+  -o-transition:all ease-in-out 250ms;
+  transition:all ease-in-out 250ms;
   max-width:100%; }
   textarea:focus{
     background:white;
@@ -1262,9 +1262,9 @@ select{
   margin-bottom:1.5rem;
   border:1px solid #e6e6e6;
   border-radius:0.25rem;
-  -webkit-transition:all ease-in-out 400ms;
-  -o-transition:all ease-in-out 400ms;
-  transition:all ease-in-out 400ms;
+  -webkit-transition:all ease-in-out 250ms;
+  -o-transition:all ease-in-out 250ms;
+  transition:all ease-in-out 250ms;
   font-size:1.5rem;
   padding:1rem 1rem;
   height:4rem;
