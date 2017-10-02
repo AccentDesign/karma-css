@@ -1,49 +1,51 @@
 // Typography
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-h1, h2, h3, h4, h5, h6 {
+%h {
     margin: 0 0 $header-margin-bottom;
     font-weight: $heading-font-weight;
+    
+    small {
+        font-size: 65%;
+        line-height: 1;
+    }
+
 }
 
-h1 {
+h1, .h1 {
+    @extend %h;
     font-size: $h1-font-size;
     line-height: 1.2;
 }
 
-h2 {
+h2, .h2 {
+    @extend %h;
     font-size: $h2-font-size;
     line-height: 1.25;
 }
 
-h3 {
+h3, .h3 {
+    @extend %h;
     font-size: $h3-font-size;
     line-height: 1.3;
 }
 
-h4 {
+h4, .h4 {
+    @extend %h;
     font-size: $h4-font-size;
     line-height: 1.35;
 }
 
-h5 {
+h5, .h5 {
+    @extend %h;
     font-size: $h5-font-size;
     line-height: 1.5;
 }
 
-h6 {
+h6, .h6 {
+    @extend %h;
     font-size: $h6-font-size;
     line-height: 1.6;
-}
-
-h1 small,
-h2 small,
-h3 small,
-h4 small,
-h5 small,
-h6 small {
-    font-size: 65%;
-    line-height: 1;
 }
 
 p {
