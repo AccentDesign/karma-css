@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.5.0 - IN-DEVELOPMENT
+1.5.0 - 02-Oct-2017
 ~~~~~~~~~~~~~~~~~~~~~~
 
   * Added mixin responsive-ratio
