@@ -1802,6 +1802,11 @@ blockquote{
   -ms-flex-item-align:stretch;
   align-self:stretch; }
 
+@media print{
+  .no-print,
+  .no-print *{
+    display:none !important; } }
+
 .hidden-xs-up{
   display:none !important; }
 

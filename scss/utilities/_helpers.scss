@@ -109,3 +109,11 @@
 .align-self-center          { align-self: center; }
 .align-self-baseline        { align-self: baseline; }
 .align-self-stretch         { align-self: stretch; }
+
+// print
+@media print {
+    .no-print, 
+    .no-print * {
+        display: none !important;
+    }
+}

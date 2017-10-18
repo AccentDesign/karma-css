@@ -1,8 +1,13 @@
 Changelog
 =========
 
-1.5.0 - 02-Oct-2017
+1.6.0 - IN DEVELOPMENT
 ~~~~~~~~~~~~~~~~~~~~~~
+
+ * Added .no-print helper
+
+1.5.0 - 02-Oct-2017
+~~~~~~~~~~~~~~~~~~~
 
   * Added mixin responsive-ratio
   * Removed margin top from pre
@@ -14,7 +19,7 @@ Changelog
   * Added .h1 > .h6
 
 1.4.1 - 21-Sep-2017
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
 
  * Added $code-font-family variable
 
