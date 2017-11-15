@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.6.0 - IN DEVELOPMENT
+~~~~~~~~~~~~~~~~~~~
+ * Added content columns mixin
+
 1.5.1 - 23-Oct-2017
 ~~~~~~~~~~~~~~~~~~~
 
