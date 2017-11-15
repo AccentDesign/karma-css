@@ -1,0 +1,9 @@
+// Content Columns
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// allowing for content to be spread evenly between specified number of columns
+
+@mixin col-overflow($col: 2, $gap:2rem) {
+    column-count: $col;
+    column-gap: $gap;
+}
