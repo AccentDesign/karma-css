@@ -1175,8 +1175,10 @@ a{
     border-color:#cacaca;
     outline:0; }
 
+code, kbd, pre, samp{
+  font-family:monospace, monospace; }
+
 code{
-  font-family:monospace, monospace;
   padding:.2rem .5rem;
   font-size:90%;
   white-space:nowrap;

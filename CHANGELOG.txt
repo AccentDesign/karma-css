@@ -4,6 +4,7 @@ Changelog
 1.6.0 - IN DEVELOPMENT
 ~~~~~~~~~~~~~~~~~~~
  * Added content columns mixin
+ * Added code font to all code, kbd, pre, samp elements
 
 1.5.1 - 23-Oct-2017
 ~~~~~~~~~~~~~~~~~~~
