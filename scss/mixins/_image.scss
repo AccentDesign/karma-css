@@ -1,0 +1,10 @@
+// Image
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@mixin img-fluid() {
+    min-height: 1px;
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    height: auto;
+}

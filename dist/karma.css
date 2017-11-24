@@ -1,4 +1,4 @@
-/*! Karma-CSS v1.5.1 MIT License | http://karmacss.com | https://github.com/accentdesign/karma-css */
+/*! Karma-CSS v1.6.0 MIT License | http://karmacss.com | https://github.com/accentdesign/karma-css */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html{
   line-height:1.15;
@@ -1665,7 +1665,10 @@ blockquote{
 .d-table-cell{
   display:table-cell; }
 .img-fluid{
+  min-height:1px;
   max-width:100%;
+  width:100%;
+  display:block;
   height:auto; }
 .scroll-x{
   overflow-x:auto; }

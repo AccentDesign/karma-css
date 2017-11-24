@@ -64,7 +64,7 @@
 .d-table-cell               { display: table-cell; }
 
 /* images */
-.img-fluid                  { max-width: 100%; height: auto; }
+.img-fluid                  { @include img-fluid; }
 
 /* scroll */
 .scroll-x                   { overflow-x: auto; }

@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.6.1 - IN DEVELOPMENT
+~~~~~~~~~~~~~~~~~~~~~~
+
+* Refactor img-fluid to use a mixin
+
 1.6.0 - 23-Nov-2017
 ~~~~~~~~~~~~~~~~~~~
 
