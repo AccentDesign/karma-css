@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.6.2 - IN DEVELOPMENT
+~~~~~~~~~~~~~~~~~~~~~~
+
+* Remove font size in code element
+
 1.6.1 - 13-Dec-2017
 ~~~~~~~~~~~~~~~~~~~~~~
 
