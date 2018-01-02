@@ -5,6 +5,7 @@ Changelog
 ~~~~~~~~~~~~~~~~~~~~~~
 
 * Remove font size in code element
+* Remove bottom margin on last child of blockquote
 
 1.6.1 - 13-Dec-2017
 ~~~~~~~~~~~~~~~~~~~~~~
