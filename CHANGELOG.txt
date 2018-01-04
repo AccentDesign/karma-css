@@ -1,6 +1,15 @@
 Changelog
 =========
 
+1.7 - IN DEVELOPMENT
+~~~~~~~~~~~~~~~~~~~~
+
+* Added a new mixin flip to flip an element on it's x/y/both axis's
+* Added new css helpers:
+    - .flip-x
+    - .flip-y
+    - .flip-both
+
 1.6.2 - 02-Jan-2018
 ~~~~~~~~~~~~~~~~~~~
 

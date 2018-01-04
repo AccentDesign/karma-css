@@ -74,6 +74,11 @@
 .disabled                   { cursor: not-allowed; }
 .pointer                    { cursor: pointer; }
 
+/* other */
+.flip-x                     { @include flip($x: true); }
+.flip-y                     { @include flip($y: true); }
+.flip-both                  { @include flip($x: true, $y: true); }
+
 /* flex */
 
 // directions
