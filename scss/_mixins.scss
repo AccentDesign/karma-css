@@ -1,5 +1,4 @@
 /* system wide mixins */
-@import "mixins/abs-position";
 @import "mixins/button";
 @import "mixins/box-shadow";
 @import "mixins/breakpoint";
@@ -12,6 +11,7 @@
 @import "mixins/margin";
 @import "mixins/modernizr";
 @import "mixins/padding";
+@import "mixins/position";
 @import "mixins/pseudo";
 @import "mixins/push-auto";
 @import "mixins/responsive-ratio";
