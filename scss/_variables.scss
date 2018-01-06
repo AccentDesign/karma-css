@@ -57,8 +57,9 @@ $grid-gutter-width:             30px !default;
 // Styling
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// colors
-$colors: (
+// colours
+$colors: () !default;
+$colors: map-merge((
         // required base colours
         white:                  rgb(255, 255, 255),
         black:                  rgb(17, 17, 17),
@@ -75,6 +76,7 @@ $colors: (
         green:                  rgb(46, 204, 64),
         olive:                  rgb(61, 153, 112),
         lime:                   rgb(1, 255, 112),
+
         // Warm
         yellow:                 rgb(255, 220, 0),
         orange:                 rgb(255, 133, 27),
@@ -82,6 +84,7 @@ $colors: (
         fuchsia:                rgb(240, 18, 190),
         purple:                 rgb(177, 13, 201),
         maroon:                 rgb(133, 20, 75),
+
         // Other Greyscale
         silver:                 rgb(221, 221, 221),
         gray:                   rgb(170, 170, 170),
@@ -93,7 +96,8 @@ $colors: (
         googleplus:             rgb(221, 75, 57),
         instagram:              rgb(228, 64, 95),
         pinterest:              rgb(189, 8, 28)
-) !default;
+), $colors);
+
 
 // defined colors
 $body-background:               rgb(255, 255, 255) !default;
