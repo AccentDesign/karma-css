@@ -14,6 +14,8 @@ Changelog
 * BREAKING CHANGES
     - Mixin 'abs-position' renamed to 'position' and has additional optional parameter $position
         - @mixin position($top: auto, $right: auto, $bottom: auto, $left: auto, $position: absolute)
+    - Mixin 'vertical-align' has been replaced with 'centerer'
+        - @mixin centerer($horizontal: true, $vertical: true, $position: absolute)
 
 1.6.2 - 02-Jan-2018
 ~~~~~~~~~~~~~~~~~~~
