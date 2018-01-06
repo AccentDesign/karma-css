@@ -130,11 +130,13 @@ $link-transition-speed:         $animation-speed-fast !default;
 
 
 // buttons
-$buttons: (
+$buttons: () !default;
+$buttons: map-merge((
         // name         color                          font-color
         primary:        map-get($colors, primary)      map-get($colors, white),
         secondary:      map-get($colors, secondary)    map-get($colors, black)
-) !default;
+), $buttons);
+
 $button-font-size:              1.5rem !default;
 $button-font-weight:            400 !default;
 $button-padding-y:              1rem !default;

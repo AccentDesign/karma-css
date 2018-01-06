@@ -4,6 +4,7 @@ Changelog
 1.7.0 - IN DEVELOPMENT
 ~~~~~~~~~~~~~~~~~~~~~~
 
+* You only now need to define additional or overwrite existing colours and buttons within your variables.
 * Added a new mixin flip to flip an element on it's x/y/both axis's
 * Added new css helpers:
     - .flip-x
