@@ -39,7 +39,6 @@
     "node-sass": "^4.7.2",
     "postcss-discard-comments": "^2.0.4",
     "postcss-discard-empty": "^2.1.0",
-    "postcss-merge-rules": "^2.1.2",
     "run-sequence": "^2.2.0"
   }
 }

@@ -40,7 +40,9 @@ abbr[title]{
   text-decoration:underline dotted; }
 b,
 strong{
-  font-weight:inherit;
+  font-weight:inherit; }
+b,
+strong{
   font-weight:bolder; }
 code,
 kbd,
@@ -146,7 +148,9 @@ summary{
   display:list-item; }
 canvas{
   display:inline-block; }
-template,[hidden]{
+template{
+  display:none; }
+[hidden]{
   display:none; }
 .container{
   margin-right:auto;
@@ -1118,17 +1122,18 @@ body{
 
 a{
   color:#33c3f0;
+  text-decoration:none;
   -webkit-transition:all ease-in-out 250ms;
   -o-transition:all ease-in-out 250ms;
   transition:all ease-in-out 250ms; }
-  a,a:hover{
-  text-decoration:none; }
   a:hover{
-    color:#10aee0; }
+    color:#10aee0;
+    text-decoration:none; }
 
 .button{
   display:inline-block;
   padding:1rem 1rem;
+  color:#3e3e3e;
   text-align:center;
   font-family:"Open Sans", sans-serif;
   font-size:1.5rem;
@@ -1136,6 +1141,7 @@ a{
   line-height:1.25;
   text-decoration:none;
   white-space:nowrap;
+  background-color:white;
   border-radius:0.25rem;
   border:1px solid #e6e6e6;
   cursor:pointer;
@@ -1148,10 +1154,9 @@ a{
   -webkit-transition:all ease-in-out 250ms;
   -o-transition:all ease-in-out 250ms;
   transition:all ease-in-out 250ms; }
-  .button,.button:hover, .button:focus{
-  color:#3e3e3e;
-  background-color:white; }
   .button:hover, .button:focus{
+    color:#3e3e3e;
+    background-color:white;
     border-color:#cdcdcd;
     outline:0; }
 
@@ -1292,7 +1297,10 @@ input[type="checkbox"], input[type="radio"]{
   margin-right:1.5rem;
   display:inline; }
 
-label.checkbox, label.radio,.radio label,
+label.checkbox, label.radio{
+  font-weight:normal; }
+
+.radio label,
 .checkbox label{
   font-weight:normal; }
 
