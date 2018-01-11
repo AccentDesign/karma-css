@@ -14,7 +14,7 @@
     margin-bottom: $input-margin-bottom;
     border: $input-border;
     border-radius: $input-border-radius;
-    transition: all ease-in-out $input-transition-speed;
+    transition: $input-transition;
 }
 
 // input focus state 

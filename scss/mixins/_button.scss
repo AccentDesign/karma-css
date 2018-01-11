@@ -19,7 +19,7 @@
     cursor: pointer;
     box-sizing: border-box;
     user-select: none;
-    transition: all ease-in-out $button-transition-speed;
+    transition: $button-transition;
 }
 
 // the styles required to create a colored variation

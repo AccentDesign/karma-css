@@ -11,12 +11,21 @@ Changelog
     - .flip-y
     - .flip-both
 * Fix bug with anchor transition speed using wrong variable
+* Three new variables have been created to control transitions:
+    - $link-transition
+    - $button-transition
+    - $input-transition
 
 * BREAKING CHANGES
     - Mixin 'abs-position' renamed to 'position' and has additional optional parameter $position
         - @mixin position($top: auto, $right: auto, $bottom: auto, $left: auto, $position: absolute)
     - Mixin 'vertical-align' has been replaced with 'centerer'
         - @mixin centerer($horizontal: true, $vertical: true, $position: absolute)
+
+* DEPRECIATED VARIABLES 
+    - $link-transition-speed
+    - $button-transition-speed
+    - $input-transition-speed
 
 1.6.2 - 02-Jan-2018
 ~~~~~~~~~~~~~~~~~~~
@@ -32,112 +41,112 @@ Changelog
 1.6.0 - 23-Nov-2017
 ~~~~~~~~~~~~~~~~~~~
 
- * Added content columns mixin
- * Added code font to all code, kbd, pre, samp elements
+* Added content columns mixin
+* Added code font to all code, kbd, pre, samp elements
 
 1.5.1 - 23-Oct-2017
 ~~~~~~~~~~~~~~~~~~~
 
- * Added .no-print helper
+* Added .no-print helper
 
 1.5.0 - 02-Oct-2017
 ~~~~~~~~~~~~~~~~~~~
 
-  * Added mixin responsive-ratio
-  * Removed margin top from pre
-  * Added modernizr mixin for touch-hover
-  * Added modernizr mixin for transition-no-touch
-  * Added animation speeds for forms, links & buttons
-  * Added colour palette from http://clrs.cc/
-  * Added colour palette for social media from https://www.materialui.co/socialcolors
-  * Added .h1 > .h6
+* Added mixin responsive-ratio
+* Removed margin top from pre
+* Added modernizr mixin for touch-hover
+* Added modernizr mixin for transition-no-touch
+* Added animation speeds for forms, links & buttons
+* Added colour palette from http://clrs.cc/
+* Added colour palette for social media from https://www.materialui.co/socialcolors
+* Added .h1 > .h6
 
 1.4.1 - 21-Sep-2017
 ~~~~~~~~~~~~~~~~~~~
 
- * Added $code-font-family variable
+* Added $code-font-family variable
 
 1.4.0 - 20-Sep-2017
 ~~~~~~~~~~~~~~~~~~~
 
- * Added 4 new mixin to build inputs:
+* Added 4 new mixin to build inputs:
     - input
     - input-width
     - input-size
     - input-focus
- * Added 1 new mixin to build buttons:
+* Added 1 new mixin to build buttons:
     - button-size
- * Added some default values to the mixin button-hover
- * Added a transition to input focus
- * Added some flex and margin auto helpers
- 
- * BREAKING CHANGES
-    - variable $input-border-focus has been replaced with $input-border-color-focus
-    - Renaming of helper classes
-        - .hidden > .d-hidden
-        - .inline > .d-inline
-        - .inline-block > .d-inline-block
-        - .block > .d-block
-        - .flex > .d-flex
-        - .display-table > .d-table
-        - .display-table-cell > .d-table-cell
-      The originals have been moved into a `utilities/_helpers-depreciated.scss` which you can include in your own project
-      to avoid renaming any.
-        - `@include "karma-css/scss/utilities/helpers-depreciated";` 
+* Added some default values to the mixin button-hover
+* Added a transition to input focus
+* Added some flex and margin auto helpers
+
+* BREAKING CHANGES
+- variable $input-border-focus has been replaced with $input-border-color-focus
+- Renaming of helper classes
+    - .hidden > .d-hidden
+    - .inline > .d-inline
+    - .inline-block > .d-inline-block
+    - .block > .d-block
+    - .flex > .d-flex
+    - .display-table > .d-table
+    - .display-table-cell > .d-table-cell
+    The originals have been moved into a `utilities/_helpers-depreciated.scss` which you can include in your own project
+    to avoid renaming any.
+    - `@include "karma-css/scss/utilities/helpers-depreciated";` 
 
 1.3.6 - 08-Sep-2017
 ~~~~~~~~~~~~~~~~~~~
 
- * Added new mixin to vertical align elements using translate -50%
- 
+* Added new mixin to vertical align elements using translate -50%
+
 1.3.5 - 09-Aug-2017
 ~~~~~~~~~~~~~~~~~~~
 
- * Removed font size in nested ul's due to ever decreasing in deeply nested 
+* Removed font size in nested ul's due to ever decreasing in deeply nested 
 
 1.3.4 - 01-Aug-2017
 ~~~~~~~~~~~~~~~~~~~
 
- * Added variable $input-use-full-width to set either the max-width:100% or width:100%
- * Added new mixin input-width to get the above value
+* Added variable $input-use-full-width to set either the max-width:100% or width:100%
+* Added new mixin input-width to get the above value
 
 1.3.3 - 20-Jul-2017
 ~~~~~~~~~~~~~~~~~~~
- 
- * Added 3 new mixin to build buttons:
+
+* Added 3 new mixin to build buttons:
     - button
     - button-color-variation
     - button-hover
- * Created sample blog and thumbnail listing page
+* Created sample blog and thumbnail listing page
 
 1.3.2 - 19-Jul-2017
 ~~~~~~~~~~~~~~~~~~~
 
- * Removed duplicate blockquote margin bottom from core
- * Added variable $generic-margin-bottom for pre, dl, figure, table, p, ul, ol, form, blockquote
- * Added variable $header-margin-bottom for h1-h6
- * Added variable $button-default-bg-color for the base button
- 
+* Removed duplicate blockquote margin bottom from core
+* Added variable $generic-margin-bottom for pre, dl, figure, table, p, ul, ol, form, blockquote
+* Added variable $header-margin-bottom for h1-h6
+* Added variable $button-default-bg-color for the base button
+
 1.3.1 - 14-Jul-2017
 ~~~~~~~~~~~~~~~~~~~
 
- * Added default button examples to test.html
- * Added basic grid examples to test.html
- * Fixed 0px lint warning
- * Removed vertical align from button due to odd inline issue
- * Added variable $input-font-color to set all inputs, selects, textareas
- * Added variable $input-margin-bottom to set all  inputs, selects, textareas, fieldsets
- 
+* Added default button examples to test.html
+* Added basic grid examples to test.html
+* Fixed 0px lint warning
+* Removed vertical align from button due to odd inline issue
+* Added variable $input-font-color to set all inputs, selects, textareas
+* Added variable $input-margin-bottom to set all  inputs, selects, textareas, fieldsets
+
 1.3.0 - 05-Jul-2017
 ~~~~~~~~~~~~~~~~~~~
 
- * Added new variable `$input-background-focus` for when an input, select or textarea has focus.
- * Removed `push-*` and `pull-*` grid classes in favour of `order-*`.
- * Simplified gutter widths to single variable `$grid-gutter-width`.
+* Added new variable `$input-background-focus` for when an input, select or textarea has focus.
+* Removed `push-*` and `pull-*` grid classes in favour of `order-*`.
+* Simplified gutter widths to single variable `$grid-gutter-width`.
 
 1.2.3 - 02-Jul-2017
 ~~~~~~~~~~~~~~~~~~~
 
- * Added new variables that allow all form fields to be styled.
- * Reduced margins on `hr`, `ul` and `ol`.
- * Removed awkward defaults on inputs and textareas for ios.
+* Added new variables that allow all form fields to be styled.
+* Reduced margins on `hr`, `ul` and `ol`.
+* Removed awkward defaults on inputs and textareas for ios.
