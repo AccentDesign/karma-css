@@ -2,8 +2,8 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 %h {
-    margin: 0 0 $header-margin-bottom;
     font-weight: $heading-font-weight;
+    margin: 0 0 $header-margin-bottom;
     
     small {
         font-size: 65%;
@@ -49,11 +49,11 @@ h6, .h6 {
 }
 
 p {
-    margin-top: 0;
+    margin-bottom: $generic-margin-bottom;
 }
 
 blockquote {
-    margin: 0 0 $generic-margin-bottom;
+    margin-bottom: $generic-margin-bottom;
     padding: 1rem 1.5rem;
     border-left: 3px solid $border-color;
     

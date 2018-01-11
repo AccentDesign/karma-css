@@ -1,6 +1,10 @@
 // Form
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+form {
+    margin-bottom: $generic-margin-bottom;
+}
+
 input {
     &[type="date"],
     &[type="datetime"],

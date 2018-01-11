@@ -99,6 +99,7 @@ $colors: map-merge((
 ), $colors);
 
 
+
 // defined colors
 $body-background:               rgb(255, 255, 255) !default;
 $code-background:               rgb(240, 240, 240) !default;
@@ -112,9 +113,10 @@ $animation-speed-slow:          1000ms !default;
 $animation-speed-fast:          250ms !default;
 
 
+
 // misc
 $generic-margin-bottom:         1.5rem !default; // pre, dl, figure, table, p, ul, ol, form, blockquote
-$header-margin-bottom:          1rem !default; // h1-h6
+$header-margin-bottom:          1.5rem !default; // h1-h6
 $global-radius:                 .25rem !default;
 $darken-hover-percent:          10% !default; // used within hovers in links and buttons
 
@@ -145,6 +147,7 @@ $button-transition:             background-color ease-in-out $animation-speed-fa
 
 // the below applies to the default button class only `.button`
 $button-default-bg-color:       map-get($colors, white) !default;
+
 
 
 // forms
