@@ -131,6 +131,14 @@ $link-transition:               color ease-in-out $animation-speed-fast !default
 
 
 
+// lists
+$ul-list-padding-left:          0 !default;
+$ul-list-style:                 circle inside !default;
+$ol-list-padding-left:          0 !default;
+$ol-list-style:                 decimal inside !default;
+
+
+
 // buttons
 $buttons: () !default;
 $buttons: map-merge((

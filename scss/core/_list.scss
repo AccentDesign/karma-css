@@ -2,8 +2,8 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 ul {
-    padding-left: 0;
-    list-style: circle inside;
+    padding-left: $ul-list-padding-left;
+    list-style: $ul-list-style;
     margin-bottom: $generic-margin-bottom;
 
     ul, ol {
@@ -12,8 +12,8 @@ ul {
 }
 
 ol {
-    padding-left: 0;
-    list-style: decimal inside;
+    padding-left: $ol-list-padding-left;
+    list-style: $ol-list-style;
     margin-bottom: $generic-margin-bottom;
     
     ol, ul {
