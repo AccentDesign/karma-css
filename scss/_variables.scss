@@ -127,7 +127,7 @@ $link-color:                    map-get($colors, primary) !default;
 $link-color-hover:              darken($link-color, $darken-hover-percent) !default;
 $link-decoration:               none !default;
 $link-decoration-hover:         none !default;
-$link-transition:               color ease-in-out $animation-speed-fast !default;
+$link-transition:               color linear $animation-speed-fast !default;
 
 
 
@@ -151,7 +151,8 @@ $button-font-size:              1.5rem !default;
 $button-font-weight:            400 !default;
 $button-padding-y:              1rem !default;
 $button-padding-x:              1rem !default;
-$button-transition:             background-color ease-in-out $animation-speed-fast, border-color ease-in-out $animation-speed-fast !default;
+$button-transition:             background-color linear $animation-speed-fast,
+                                border-color linear $animation-speed-fast !default;
 
 // the below applies to the default button class only `.button`
 $button-default-bg-color:       map-get($colors, white) !default;
@@ -168,7 +169,8 @@ $input-font-color:              $font-color !default;
 $input-padding-y:               1rem !default;
 $input-padding-x:               1rem !default;
 $input-margin-bottom:           1.5rem !default;
-$input-transition:              border-color ease-in-out $animation-speed-fast !default;
+$input-transition:              background linear $animation-speed-fast,
+                                border-color linear $animation-speed-fast !default;
 
 $input-background-focus:        $input-background !default;
 $input-border-color-focus:      map-get($colors, primary) !default;
