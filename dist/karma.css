@@ -1299,15 +1299,7 @@ fieldset{
   margin-bottom:1.5rem; }
 
 input[type="checkbox"], input[type="radio"]{
-  margin-right:1.5rem;
-  display:inline; }
-
-label.checkbox, label.radio{
-  font-weight:normal; }
-
-.radio label,
-.checkbox label{
-  font-weight:normal; }
+  margin-right:1rem; }
 
 hr{
   margin:1.5rem 0;

@@ -56,27 +56,11 @@ fieldset {
     margin-bottom: $input-margin-bottom;
 }
 
-// try so make sensible defaults for radios and checkboxes
+// only set some simple margin as components will handle the style better
+// https://github.com/AccentDesign/karma-css-components
 input {
     &[type="checkbox"],
     &[type="radio"] {
-        margin-right: 1.5rem;
-        display: inline;
-    }
-}
-
-// either the label can carry the class
-label {
-    &.checkbox,
-    &.radio {
-        font-weight: normal;
-    }
-}
-
-// or label can be a sibling
-.radio,
-.checkbox {
-    label {
-        font-weight: normal;
+        margin-right: 1rem;
     }
 }
