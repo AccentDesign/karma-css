@@ -1,4 +1,4 @@
-/*! Karma-CSS v1.7.0 MIT License | http://karmacss.com | https://github.com/accentdesign/karma-css */
+/*! Karma-CSS v1.7.1 MIT License | http://karmacss.com | https://github.com/accentdesign/karma-css */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html{
   line-height:1.15;
@@ -1286,6 +1286,31 @@ select{
     outline:0; }
   select[multiple]{
     height:auto; }
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{
+  color:#b9b9b9;
+  opacity:1; }
+
+input::-moz-placeholder,
+textarea::-moz-placeholder{
+  color:#b9b9b9;
+  opacity:1; }
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder{
+  color:#b9b9b9;
+  opacity:1; }
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder{
+  color:#b9b9b9;
+  opacity:1; }
+
+input::placeholder,
+textarea::placeholder{
+  color:#b9b9b9;
+  opacity:1; }
 
 label,
 legend{

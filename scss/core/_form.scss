@@ -43,6 +43,12 @@ select {
     }
 }
 
+input::placeholder,
+textarea::placeholder {
+    color: $input-placeholder-color;
+    opacity: 1;
+}
+
 label,
 legend {
     display: block;
