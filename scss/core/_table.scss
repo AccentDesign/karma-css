@@ -17,14 +17,14 @@ th {
 }
 
 td {
-    border-top: 1px solid $border-color;
+    border-top: 1px solid $table-border-color;
     padding: $table-cell-padding;
     text-align: left;
 }
 
 // visual alternatives
 .table-bordered {
-    border: solid 1px $border-color;
+    border: solid 1px $table-border-color;
 }
 
 .table-headed th {
