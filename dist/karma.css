@@ -1360,6 +1360,7 @@ dd{
 table{
   border-collapse:collapse;
   border-spacing:0;
+  font-size:90%;
   margin-bottom:1.5rem;
   max-width:100%;
   width:100%; }
