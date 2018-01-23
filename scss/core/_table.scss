@@ -11,14 +11,15 @@ table {
     width: 100%;
 }
 
-th,
-td {
+th {
     padding: $table-cell-padding;
     text-align: left;
 }
 
 td {
     border-top: 1px solid $border-color;
+    padding: $table-cell-padding;
+    text-align: left;
 }
 
 // visual alternatives
