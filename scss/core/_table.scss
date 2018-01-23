@@ -11,6 +11,10 @@ table {
     width: 100%;
 }
 
+caption {
+    padding: $table-cell-padding;
+}
+
 th {
     padding: $table-cell-padding;
     text-align: left;

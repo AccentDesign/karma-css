@@ -1366,6 +1366,9 @@ table{
   max-width:100%;
   width:100%; }
 
+caption{
+  padding:0.85rem 0.85rem; }
+
 th{
   padding:0.85rem 0.85rem;
   text-align:left; }
