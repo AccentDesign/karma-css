@@ -1358,6 +1358,7 @@ dd{
   margin-bottom:.5rem; }
 
 table{
+  background-color:transparent;
   border-collapse:collapse;
   border-spacing:0;
   font-size:90%;
