@@ -1,8 +1,8 @@
 Changelog
 =========
 
-1.7.1 - IN DEVELOPMENT
-~~~~~~~~~~~~~~~~~~~~~~
+1.7.1 - 23-Jan-2018
+~~~~~~~~~~~~~~~~~~~
 
 * Remove undocumented css from radios and checkboxes
 * Added input placeholder color style
