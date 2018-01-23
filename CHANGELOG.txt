@@ -6,6 +6,10 @@ Changelog
 
 * Remove undocumented css from radios and checkboxes
 * Added input placeholder color style
+* Added new table variables
+    - $table-background-color
+    - $table-border-color
+    - $table-font-size
 
 1.7.0 - 11-Jan-2018
 ~~~~~~~~~~~~~~~~~~~

@@ -1358,19 +1358,25 @@ dd{
   margin-bottom:.5rem; }
 
 table{
+  background-color:transparent;
   border-collapse:collapse;
   border-spacing:0;
+  font-size:90%;
   margin-bottom:1.5rem;
   max-width:100%;
   width:100%; }
 
-th,
-td{
+caption{
+  padding:0.85rem 0.85rem; }
+
+th{
   padding:0.85rem 0.85rem;
   text-align:left; }
 
 td{
-  border-top:1px solid #e6e6e6; }
+  border-top:1px solid #e6e6e6;
+  padding:0.85rem 0.85rem;
+  text-align:left; }
 
 .table-bordered{
   border:solid 1px #e6e6e6; }
