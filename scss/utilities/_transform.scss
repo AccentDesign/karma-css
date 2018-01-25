@@ -1,0 +1,7 @@
+// Transform
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+.flip-x                     { @include flip($x: true); }
+.flip-y                     { @include flip($y: true); }
+.flip-both                  { @include flip($x: true, $y: true); }
