@@ -150,6 +150,7 @@ $buttons: map-merge((
 
 $button-font-size:              1.5rem !default;
 $button-font-weight:            400 !default;
+$button-line-height:            1.25 !default;        
 $button-padding-y:              1rem !default;
 $button-padding-x:              1rem !default;
 $button-transition:             background-color linear $animation-speed-fast,
