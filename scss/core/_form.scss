@@ -58,7 +58,7 @@ textarea {
 
 select {
     @include input;
-    @include input-size; 
+    @include input-size($fix-height: true); 
     @include input-width;
     @include input-focus;
     &[multiple] {
