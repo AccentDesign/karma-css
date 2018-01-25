@@ -45,5 +45,6 @@
         $border-width: .1rem) {
     font-size: $font-size;
     padding: $padding-y $padding-x;
-    height: input-height($padding-y, $font-size, $border-width);
+    // height is set to force selects, and all date type inputs as height varies
+    height: ($padding-y * 2) + ($font-size * 1.25) + ($border-width * 2);
 }
