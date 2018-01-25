@@ -39,6 +39,8 @@ input {
             margin: 0;
         }
 
+        // the date calendar controls are only available in webkit browsers
+        // and should not be relied upon globally
         @if $remove-input-date-controls {
             &::-webkit-clear-button,
             &::-webkit-inner-spin-button,
@@ -58,11 +60,11 @@ textarea {
 
 select {
     @include input;
-    @include input-size($fix-height: true); 
     @include input-width;
     @include input-focus;
-    &[multiple] {
-        height: auto;
+
+    &:not([multiple]) {
+        @include input-size($fix-height: true); 
     }
 }
 

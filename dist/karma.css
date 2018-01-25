@@ -1285,16 +1285,15 @@ select{
   -webkit-transition:background linear 250ms, border-color linear 250ms;
   -o-transition:background linear 250ms, border-color linear 250ms;
   transition:background linear 250ms, border-color linear 250ms;
-  font-size:1.5rem;
-  padding:1rem 1rem;
-  height:4.075rem;
   max-width:100%; }
   select:focus{
     background:white;
     border-color:#33c3f0;
     outline:0; }
-  select[multiple]{
-    height:auto; }
+  select:not([multiple]){
+    font-size:1.5rem;
+    padding:1rem 1rem;
+    height:4.075rem; }
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder{
