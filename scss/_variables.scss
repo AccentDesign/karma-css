@@ -4,6 +4,7 @@
 // Options
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+// enable all container, row, col, order classes
 $enable-grid-classes:           true !default;
 
 
@@ -149,7 +150,8 @@ $buttons: map-merge((
 
 $button-font-size:              1.5rem !default;
 $button-font-weight:            400 !default;
-$button-padding-y:              1rem !default;
+$button-line-height:            1.5 !default;        
+$button-padding-y:              .8rem !default;
 $button-padding-x:              1rem !default;
 $button-transition:             background-color linear $animation-speed-fast,
                                 border-color linear $animation-speed-fast !default;
@@ -166,7 +168,8 @@ $input-border-radius:           $global-radius !default;
 $input-border:                  1px solid $border-color !default;
 $input-font-size:               1.5rem !default;
 $input-font-color:              $font-color !default;
-$input-padding-y:               1rem !default;
+$input-line-height:             1.5 !default;
+$input-padding-y:               .8rem !default;
 $input-padding-x:               1rem !default;
 $input-placeholder-color:       rgb(185, 185, 185) !default;
 $input-margin-bottom:           1.5rem !default;
@@ -177,6 +180,10 @@ $input-background-focus:        $input-background !default;
 $input-border-color-focus:      map-get($colors, primary) !default;
 
 $label-font-weight:             600 !default;
+
+// the date calendar controls are only available in webkit browsers
+// and should not be relied upon globally
+$remove-input-date-controls:    true !default;
 
 
 

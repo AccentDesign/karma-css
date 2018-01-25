@@ -26,6 +26,31 @@ input {
     }
 }
 
+input {
+    &[type="date"],
+    &[type="datetime-local"],
+    &[type="month"],
+    &[type="week"] {
+        appearance: listbox; // see https://bugs.webkit.org/show_bug.cgi?id=139848
+
+        // removes the extra height in date controls in webkit 
+        &::-webkit-datetime-edit-fields-wrapper {
+            padding: 0;
+            margin: 0;
+        }
+
+        // the date calendar controls are only available in webkit browsers
+        // and should not be relied upon globally
+        @if $remove-input-date-controls {
+            &::-webkit-clear-button,
+            &::-webkit-inner-spin-button,
+            &::-webkit-calendar-picker-indicator {
+                display: none;
+            }
+        } 
+    }
+}
+
 textarea {
     appearance: none; // remove awkward defaults on ios
     @include input;
@@ -35,11 +60,11 @@ textarea {
 
 select {
     @include input;
-    @include input-size; 
     @include input-width;
     @include input-focus;
-    &[multiple] {
-        height: auto;
+
+    &:not([multiple]) {
+        @include input-size($fix-height: true); 
     }
 }
 

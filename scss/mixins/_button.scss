@@ -10,7 +10,7 @@
     font-family: $base-font-family;
     font-size: $button-font-size;
     font-weight: $button-font-weight;
-    line-height: 1.25;
+    line-height: $button-line-height;
     text-decoration: none;
     white-space: nowrap;
     background-color: $button-default-bg-color;

@@ -7,7 +7,7 @@
     font-size: $input-font-size;
     color: $input-font-color;
     padding: $input-padding-y $input-padding-x;
-    line-height: 1.25;
+    line-height: $input-line-height;
     background: $input-background;
     box-shadow: none;
     box-sizing: border-box;
@@ -42,8 +42,13 @@
         $padding-y: $input-padding-y, 
         $padding-x: $input-padding-x, 
         $font-size: $input-font-size, 
-        $border-width: .1rem) {
+        $border-width: .1rem,
+        $fix-height: false) {
     font-size: $font-size;
     padding: $padding-y $padding-x;
-    height: input-height($padding-y, $font-size, $border-width);
+
+    @if $fix-height {
+        // height is set to force the likes of selects to respect size/padding
+        height: ($padding-y * 2) + ($font-size * $input-line-height) + ($border-width * 2);
+    }
 }
