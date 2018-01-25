@@ -4,6 +4,11 @@ Changelog
 1.8.0 - IN DEVELOPMENT
 ~~~~~~~~~~~~~~~~~~~~~~
 
+* Refactor utilities into seperate files
+* Removed the need for the framework to set any input heights to make them all equal heights
+* Added new variable $input-line-height to set the line height of for fields
+* Added a new variable $remove-input-date-controls to remove the datepicker control from webkit browsers
+
 1.7.1 - 23-Jan-2018
 ~~~~~~~~~~~~~~~~~~~
 
