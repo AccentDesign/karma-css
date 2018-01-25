@@ -1134,13 +1134,13 @@ a{
 
 .button{
   display:inline-block;
-  padding:1rem 1rem;
+  padding:0.8rem 1rem;
   color:#3e3e3e;
   text-align:center;
   font-family:"Open Sans", sans-serif;
   font-size:1.5rem;
   font-weight:400;
-  line-height:1.25;
+  line-height:1.5;
   text-decoration:none;
   white-space:nowrap;
   background-color:white;
@@ -1213,8 +1213,8 @@ input[type="date"], input[type="datetime"], input[type="datetime-local"], input[
   appearance:none;
   font-size:1.5rem;
   color:#3e3e3e;
-  padding:1rem 1rem;
-  line-height:1.25;
+  padding:0.8rem 1rem;
+  line-height:1.5;
   background:white;
   -webkit-box-shadow:none;
   box-shadow:none;
@@ -1227,7 +1227,7 @@ input[type="date"], input[type="datetime"], input[type="datetime-local"], input[
   -o-transition:background linear 250ms, border-color linear 250ms;
   transition:background linear 250ms, border-color linear 250ms;
   font-size:1.5rem;
-  padding:1rem 1rem;
+  padding:0.8rem 1rem;
   max-width:100%; }
   input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="week"]:focus{
     background:white;
@@ -1250,8 +1250,8 @@ textarea{
   appearance:none;
   font-size:1.5rem;
   color:#3e3e3e;
-  padding:1rem 1rem;
-  line-height:1.25;
+  padding:0.8rem 1rem;
+  line-height:1.5;
   background:white;
   -webkit-box-shadow:none;
   box-shadow:none;
@@ -1272,8 +1272,8 @@ textarea{
 select{
   font-size:1.5rem;
   color:#3e3e3e;
-  padding:1rem 1rem;
-  line-height:1.25;
+  padding:0.8rem 1rem;
+  line-height:1.5;
   background:white;
   -webkit-box-shadow:none;
   box-shadow:none;
@@ -1292,8 +1292,8 @@ select{
     outline:0; }
   select:not([multiple]){
     font-size:1.5rem;
-    padding:1rem 1rem;
-    height:4.075rem; }
+    padding:0.8rem 1rem;
+    height:4.05rem; }
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder{
