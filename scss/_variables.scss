@@ -4,6 +4,7 @@
 // Options
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+// enable all container, row, col, order classes
 $enable-grid-classes:           true !default;
 
 
@@ -178,6 +179,10 @@ $input-background-focus:        $input-background !default;
 $input-border-color-focus:      map-get($colors, primary) !default;
 
 $label-font-weight:             600 !default;
+
+// the date calendar controls are only available in webkit browsers
+// and should not be relied upon globally
+$remove-input-date-controls:    true !default;
 
 
 

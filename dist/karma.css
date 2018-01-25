@@ -1235,6 +1235,16 @@ input[type="date"], input[type="datetime"], input[type="datetime-local"], input[
     border-color:#33c3f0;
     outline:0; }
 
+input[type="date"], input[type="datetime-local"], input[type="month"], input[type="week"]{
+  -webkit-appearance:listbox;
+  -moz-appearance:listbox;
+  appearance:listbox; }
+  input[type="date"]::-webkit-datetime-edit-fields-wrapper, input[type="datetime-local"]::-webkit-datetime-edit-fields-wrapper, input[type="month"]::-webkit-datetime-edit-fields-wrapper, input[type="week"]::-webkit-datetime-edit-fields-wrapper{
+    padding:0;
+    margin:0; }
+  input[type="date"]::-webkit-clear-button, input[type="date"]::-webkit-inner-spin-button, input[type="date"]::-webkit-calendar-picker-indicator, input[type="datetime-local"]::-webkit-clear-button, input[type="datetime-local"]::-webkit-inner-spin-button, input[type="datetime-local"]::-webkit-calendar-picker-indicator, input[type="month"]::-webkit-clear-button, input[type="month"]::-webkit-inner-spin-button, input[type="month"]::-webkit-calendar-picker-indicator, input[type="week"]::-webkit-clear-button, input[type="week"]::-webkit-inner-spin-button, input[type="week"]::-webkit-calendar-picker-indicator{
+    display:none; }
+
 textarea{
   -webkit-appearance:none;
   -moz-appearance:none;
