@@ -148,6 +148,7 @@ $buttons: map-merge((
         secondary:      map-get($colors, secondary)    map-get($colors, black)
 ), $buttons);
 
+$button-border-width:           1px !default;
 $button-font-size:              1.5rem !default;
 $button-font-weight:            400 !default;
 $button-line-height:            1.5 !default;        
@@ -157,7 +158,9 @@ $button-transition:             background-color linear $animation-speed-fast,
                                 border-color linear $animation-speed-fast !default;
 
 // the below applies to the default button class only `.button`
+$button-default-border-color:   $border-color !default;
 $button-default-bg-color:       map-get($colors, white) !default;
+$button-default-font-color:     $font-color !default;
 
 
 
@@ -184,6 +187,9 @@ $input-height:                  calc(#{$input-height-inner} + #{$input-height-bo
 $input-background-focus:        $input-background !default;
 $input-border-color-focus:      map-get($colors, primary) !default;
 
+
+
+// labels
 $label-font-weight:             600 !default;
 
 

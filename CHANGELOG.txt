@@ -9,6 +9,10 @@ Changelog
 * Added a new variable $input-line-height to set the line height of form fields
 * Added a new variables $button-line-height to set the line height of .button classes
 * Remove unnecessary position relative from grid column
+* Added more control over the default button class by adding:
+    - $button-default-border-color
+    - $button-default-font-color
+    - $button-border-width
 
 1.7.1 - 23-Jan-2018
 ~~~~~~~~~~~~~~~~~~~

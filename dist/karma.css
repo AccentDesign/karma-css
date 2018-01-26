@@ -1158,7 +1158,7 @@ a{
   transition:background-color linear 250ms, border-color linear 250ms; }
   .button:hover, .button:focus{
     color:#3e3e3e;
-    background-color:white;
+    background-color:#e6e6e6;
     border-color:#cdcdcd;
     outline:0; }
 
