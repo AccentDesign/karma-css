@@ -6,10 +6,10 @@ code, kbd, pre, samp {
 }
 
 code {
-    padding: .2rem .5rem;
+    padding: $code-inline-padding;
     white-space: nowrap;
     background: $code-background;
-    border: 1px solid $border-color;
+    border: $code-border-width solid $code-border-color;
     border-radius: $global-radius;
 }
 
@@ -18,7 +18,7 @@ pre {
 }
 
 pre > code {
-    padding: 1rem 1.5rem;
+    padding: $code-block-padding;
     display: block;
     white-space: pre;
     overflow-x: auto;

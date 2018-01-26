@@ -2,7 +2,7 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 hr {
-    margin: 1.5rem 0;
+    margin: $hr-margin;
     border-width: 0;
-    border-top: 1px solid $border-color;
+    border-top: $hr-border-width solid $hr-border-color;
 }

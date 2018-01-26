@@ -7,12 +7,24 @@ Changelog
 * Refactor utilities into seperate files
 * Removed the need for the framework to set any input heights to make them all equal heights
 * Added a new variable $input-line-height to set the line height of form fields
-* Added a new variables $button-line-height to set the line height of .button classes
+* Added a new variable $button-line-height to set the line height of .button classes
 * Remove unnecessary position relative from grid column
+* Added variables to set h1-h6 font weight, margins and line height
 * Added more control over the default button class by adding:
     - $button-default-border-color
     - $button-default-font-color
     - $button-border-width
+* Added new code variables:
+    - $code-border-width
+    - $code-border-color
+    - $code-inline-padding
+    - $code-block-padding
+* Added new hr variables:
+    - $hr-border-width
+    - $hr-border-color
+    - $hr-margin
+* Added new table variable:
+    - $table-border-width
 
 1.7.1 - 23-Jan-2018
 ~~~~~~~~~~~~~~~~~~~

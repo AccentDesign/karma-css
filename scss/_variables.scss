@@ -18,17 +18,40 @@ $base-line-height:              1.6 !default;
 $base-font-weight:              400 !default;
 $base-font-family:              "Open Sans", sans-serif !default;
 
-$code-font-family:              monospace, monospace !default; // https://github.com/necolas/normalize.css/issues/519#issuecomment-197131966
+$code-font-family:              monospace, monospace !default;
 
 // The font sizes for h1-h6.
-$h1-font-size: 2    * $base-font-size !default;
-$h2-font-size: 1.5  * $base-font-size !default;
-$h3-font-size: 1.17 * $base-font-size !default;
-$h4-font-size: 1    * $base-font-size !default;
-$h5-font-size: 0.83 * $base-font-size !default;
-$h6-font-size: 0.67 * $base-font-size !default;
+$h1-font-size:                  2    * $base-font-size !default;
+$h2-font-size:                  1.5  * $base-font-size !default;
+$h3-font-size:                  1.17 * $base-font-size !default;
+$h4-font-size:                  1    * $base-font-size !default;
+$h5-font-size:                  0.83 * $base-font-size !default;
+$h6-font-size:                  0.67 * $base-font-size !default;                 
 
-$heading-font-weight: 400 !default;
+$heading-font-weight:           400 !default;
+
+$h1-font-weight:                $heading-font-weight !default; 
+$h2-font-weight:                $heading-font-weight !default; 
+$h3-font-weight:                $heading-font-weight !default; 
+$h4-font-weight:                $heading-font-weight !default; 
+$h5-font-weight:                $heading-font-weight !default; 
+$h6-font-weight:                $heading-font-weight !default; 
+
+$heading-margin:                0 0 1.5rem !default;
+
+$h1-margin:                     $heading-margin !default; 
+$h2-margin:                     $heading-margin !default; 
+$h3-margin:                     $heading-margin !default; 
+$h4-margin:                     $heading-margin !default; 
+$h5-margin:                     $heading-margin !default; 
+$h6-margin:                     $heading-margin !default; 
+
+$h1-line-height:                1.2 !default; 
+$h2-line-height:                1.25 !default; 
+$h3-line-height:                1.3 !default; 
+$h4-line-height:                1.35 !default; 
+$h5-line-height:                1.5 !default; 
+$h6-line-height:                1.6 !default;  
 
 
 
@@ -103,9 +126,13 @@ $colors: map-merge((
 
 // defined colors
 $body-background:               rgb(255, 255, 255) !default;
-$code-background:               rgb(240, 240, 240) !default;
-$border-color:                  rgb(230, 230, 230) !default;
 $font-color:                    rgb(62, 62, 62) !default;
+
+
+
+// borders
+$border-width:                  1px !default;
+$border-color:                  rgb(230, 230, 230) !default;
 
 
 
@@ -117,7 +144,6 @@ $animation-speed-fast:          250ms !default;
 
 // misc
 $generic-margin-bottom:         1.5rem !default; // pre, dl, figure, table, p, ul, ol, form, blockquote
-$header-margin-bottom:          1.5rem !default; // h1-h6
 $global-radius:                 .25rem !default;
 $darken-hover-percent:          10% !default; // used within hovers in links and buttons
 
@@ -148,7 +174,7 @@ $buttons: map-merge((
         secondary:      map-get($colors, secondary)    map-get($colors, black)
 ), $buttons);
 
-$button-border-width:           1px !default;
+$button-border-width:           $border-width !default;
 $button-font-size:              1.5rem !default;
 $button-font-weight:            400 !default;
 $button-line-height:            1.5 !default;        
@@ -168,7 +194,7 @@ $button-default-font-color:     $font-color !default;
 $input-use-full-width:          false !default; // false = max-width:100%, true = width:100%
 $input-background:              rgb(255, 255, 255) !default;
 $input-border-radius:           $global-radius !default;
-$input-border-width:            1px !default;
+$input-border-width:            $border-width !default;
 $input-border-color:            $border-color !default;
 $input-font-size:               1.5rem !default;
 $input-font-color:              $font-color !default;
@@ -196,12 +222,29 @@ $label-font-weight:             600 !default;
 
 // tables
 $table-background-color:        transparent !default;
+$table-border-width:            $border-width !default;
 $table-border-color:            $border-color !default;
 $table-cell-padding:            .85rem .85rem !default;
 $table-font-size:               90% !default;
 $table-headed-color:            rgb(240, 240, 240) !default;
 $table-hover-color:             rgb(245, 245, 245) !default;
 $table-striped-color:           rgb(250, 250, 250) !default;
+
+
+
+// code
+$code-border-width:             $border-width !default;
+$code-border-color:             $border-color !default;
+$code-background:               rgb(240, 240, 240) !default;
+$code-inline-padding:           .2rem .5rem !default;
+$code-block-padding:            1rem 1.5rem !default;
+
+
+
+// hr
+$hr-border-width:               $border-width !default;
+$hr-border-color:               $border-color !default;
+$hr-margin:                     $generic-margin-bottom 0 !default;
 
 
 
