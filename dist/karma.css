@@ -1443,8 +1443,6 @@ blockquote{
   margin-bottom:1.5rem;
   padding:1rem 1.5rem;
   border-left:3px solid #e6e6e6; }
-  blockquote :last-child{
-    margin-bottom:0; }
 .align-top{
   vertical-align:top; }
 
