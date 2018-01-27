@@ -7,7 +7,7 @@ ul {
     margin-bottom: $generic-margin-bottom;
 
     ul, ol {
-        margin: 0 0 0 2rem;
+        margin: $ul-list-nested-margin;
     }
 }
 
@@ -17,7 +17,7 @@ ol {
     margin-bottom: $generic-margin-bottom;
     
     ol, ul {
-        margin: 0 0 0 2rem;
+        margin: $ol-list-nested-margin;
     }   
 }
 

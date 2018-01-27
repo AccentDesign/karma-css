@@ -161,8 +161,11 @@ $link-transition:               color linear $animation-speed-fast !default;
 // lists
 $ul-list-padding-left:          0 !default;
 $ul-list-style:                 circle inside !default;
+$ul-list-nested-margin:         0 0 0 2rem !default;
+
 $ol-list-padding-left:          0 !default;
 $ol-list-style:                 decimal inside !default;
+$ol-list-nested-margin:         0 0 0 2rem !default;
 
 
 
