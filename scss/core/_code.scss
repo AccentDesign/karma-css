@@ -10,7 +10,7 @@ code {
     white-space: nowrap;
     background: $code-background;
     border: $code-border-width solid $code-border-color;
-    border-radius: $global-radius;
+    border-radius: $code-border-radius;
 }
 
 pre {

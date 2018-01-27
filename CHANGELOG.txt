@@ -14,9 +14,11 @@ Changelog
     - $button-default-border-color
     - $button-default-font-color
     - $button-border-width
+    - $button-border-radius
 * Added new code variables:
     - $code-border-width
     - $code-border-color
+    - $code-border-radius
     - $code-inline-padding
     - $code-block-padding
 * Added new hr variables:
