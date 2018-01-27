@@ -4,7 +4,7 @@
 ul {
     padding-left: $ul-list-padding-left;
     list-style: $ul-list-style;
-    margin-bottom: $generic-margin-bottom;
+    margin-bottom: $ul-list-margin-bottom;
 
     ul, ol {
         margin: $ul-list-nested-margin;
@@ -14,7 +14,7 @@ ul {
 ol {
     padding-left: $ol-list-padding-left;
     list-style: $ol-list-style;
-    margin-bottom: $generic-margin-bottom;
+    margin-bottom: $ol-list-margin-bottom;
     
     ol, ul {
         margin: $ol-list-nested-margin;
@@ -22,7 +22,7 @@ ol {
 }
 
 dl {
-    margin-bottom: $generic-margin-bottom;
+    margin-bottom: $dl-margin-bottom;
 }
 
 dt {
@@ -30,5 +30,5 @@ dt {
 }
 
 dd {
-    margin-bottom: .5rem;
+    margin-bottom: $dd-margin-bottom;
 }

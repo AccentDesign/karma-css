@@ -10,6 +10,8 @@ Changelog
 * Added a new variable $button-line-height to set the line height of .button classes
 * Remove unnecessary position relative from grid column
 * Added variables to set h1-h6 font weight, margins and line height
+* Split all use of $generic-margin-bottom to seperate variables
+    - ie pre, dl, figure, table, p, ul, ol, form, blockquote
 * Added more control over the default button class by adding:
     - $button-default-border-color
     - $button-default-font-color

@@ -143,9 +143,19 @@ $animation-speed-fast:          250ms !default;
 
 
 // misc
-$generic-margin-bottom:         1.5rem !default; // pre, dl, figure, table, p, ul, ol, form, blockquote
+$generic-margin-bottom:         1.5rem !default; // used as a starting point for other variables
 $global-radius:                 .25rem !default;
 $darken-hover-percent:          10% !default; // used within hovers in links and buttons
+
+
+
+// paragraph
+$paragraph-margin-bottom:       $generic-margin-bottom !default;
+
+
+
+// image
+$figure-margin-bottom:           $generic-margin-bottom !default;
 
 
 
@@ -161,12 +171,16 @@ $link-transition:               color linear $animation-speed-fast !default;
 // lists
 $ul-list-padding-left:          0 !default;
 $ul-list-style:                 circle inside !default;
+$ul-list-margin-bottom:         $generic-margin-bottom !default;
 $ul-list-nested-margin:         0 0 0 2rem !default;
 
 $ol-list-padding-left:          0 !default;
 $ol-list-style:                 decimal inside !default;
+$ol-list-margin-bottom:         $generic-margin-bottom !default;
 $ol-list-nested-margin:         0 0 0 2rem !default;
 
+$dl-margin-bottom:              $generic-margin-bottom !default;
+$dd-margin-bottom:              .5rem !default;
 
 
 // buttons
@@ -195,6 +209,8 @@ $button-default-font-color:     $font-color !default;
 
 
 // forms
+$form-margin-bottom:            $generic-margin-bottom !default;
+
 $input-use-full-width:          false !default; // false = max-width:100%, true = width:100%
 $input-background:              rgb(255, 255, 255) !default;
 $input-border-radius:           $global-radius !default;
@@ -225,6 +241,7 @@ $label-font-weight:             600 !default;
 
 
 // tables
+$table-margin-bottom:           $generic-margin-bottom !default;
 $table-background-color:        transparent !default;
 $table-border-width:            $border-width !default;
 $table-border-color:            $border-color !default;
@@ -244,6 +261,8 @@ $code-background:               rgb(240, 240, 240) !default;
 $code-inline-padding:           .2rem .5rem !default;
 $code-block-padding:            1rem 1.5rem !default;
 
+$pre-margin-bottom:             $generic-margin-bottom !default;
+
 
 
 // blockquote
@@ -251,13 +270,14 @@ $blockquote-padding-x:          1.5rem !default;
 $blockquote-padding-y:          1rem !default;
 $blockquote-border-left-width:  3px !default;
 $blockquote-border-left-color:  $border-color !default;
+$blockquote-margin-bottom:      $generic-margin-bottom !default;
 
 
 
 // hr
 $hr-border-width:               $border-width !default;
 $hr-border-color:               $border-color !default;
-$hr-margin:                     $generic-margin-bottom 0 !default;
+$hr-margin:                     1.5rem 0 !default;
 
 
 

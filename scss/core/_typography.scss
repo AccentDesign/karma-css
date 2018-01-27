@@ -57,11 +57,11 @@ h6, .h6 {
 }
 
 p {
-    margin-bottom: $generic-margin-bottom;
+    margin-bottom: $paragraph-margin-bottom;
 }
 
 blockquote {
-    margin-bottom: $generic-margin-bottom;
+    margin-bottom: $blockquote-margin-bottom;
     padding: $blockquote-padding-y $blockquote-padding-x;
     border-left: $blockquote-border-left-width solid $blockquote-border-left-color;
 }
