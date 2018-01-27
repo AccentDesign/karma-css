@@ -25,6 +25,11 @@ Changelog
     - $hr-margin
 * Added new table variable:
     - $table-border-width
+* Added blockquote variables:
+    - $blockquote-padding-x
+    - $blockquote-padding-y
+    - $blockquote-border-left-width
+    - $blockquote-border-left-color
 
 1.7.1 - 23-Jan-2018
 ~~~~~~~~~~~~~~~~~~~

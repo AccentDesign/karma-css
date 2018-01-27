@@ -87,8 +87,8 @@ $colors: map-merge((
         // required base colours
         white:                  rgb(255, 255, 255),
         black:                  rgb(17, 17, 17),
-        primary:                  rgb(51, 195, 240),
-        secondary:                rgb(240, 240, 240),
+        primary:                rgb(51, 195, 240),
+        secondary:              rgb(240, 240, 240),
 
         // A nicer colour palette for the web via http://clrs.cc/
 
@@ -238,6 +238,14 @@ $code-border-color:             $border-color !default;
 $code-background:               rgb(240, 240, 240) !default;
 $code-inline-padding:           .2rem .5rem !default;
 $code-block-padding:            1rem 1.5rem !default;
+
+
+
+// blockquote
+$blockquote-padding-x:          1.5rem !default;
+$blockquote-padding-y:          1rem !default;
+$blockquote-border-left-width:  3px !default;
+$blockquote-border-left-color:  $border-color !default;
 
 
 
