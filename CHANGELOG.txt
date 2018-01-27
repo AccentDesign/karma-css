@@ -1,8 +1,8 @@
 Changelog
 =========
 
-1.8.0 - IN DEVELOPMENT
-~~~~~~~~~~~~~~~~~~~~~~
+1.8.0 - 27-Jan-2018
+~~~~~~~~~~~~~~~~~~~
 
 * Refactor utilities into seperate files
 * Removed the need for the framework to set any input heights to make them all equal heights
