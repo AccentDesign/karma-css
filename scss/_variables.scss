@@ -16,8 +16,10 @@ $enable-grid-classes:           true !default;
 $base-font-size:                15px !default;
 $base-line-height:              1.6 !default;
 $base-font-weight:              400 !default;
-$base-font-family:              "Open Sans", sans-serif !default;
 
+// Font Family
+$base-font-family:              "Open Sans", sans-serif !default;
+$header-font-family:            $base-font-family !default;
 $code-font-family:              monospace, monospace !default;
 
 // The font sizes for h1-h6.

@@ -1408,9 +1408,11 @@ td{
 .table-hover tbody tr:hover{
   background-color:whitesmoke; }
 
-h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h4 small, .h4 small, h5 small, .h5 small, h6 small, .h6 small{
-  font-size:65%;
-  line-height:1; }
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+  font-family:"Open Sans", sans-serif; }
+  h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h4 small, .h4 small, h5 small, .h5 small, h6 small, .h6 small{
+    font-size:65%;
+    line-height:1; }
 
 h1, .h1{
   font-weight:400;
