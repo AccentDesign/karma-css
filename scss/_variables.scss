@@ -258,9 +258,12 @@ $code-border-width:             $border-width !default;
 $code-border-color:             $border-color !default;
 $code-border-radius:            $global-radius !default;
 $code-background:               rgb(240, 240, 240) !default;
-$code-inline-padding:           .2rem .5rem !default;
-$code-block-padding:            1rem 1.5rem !default;
+$code-font-color:               $font-color !default;
+$code-font-size:                90% !default;
+$code-padding:                  .2rem .5rem !default;
 
+// preformatted block
+$pre-padding:                   1rem 1.5rem !default;
 $pre-margin-bottom:             $generic-margin-bottom !default;
 
 

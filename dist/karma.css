@@ -1,4 +1,4 @@
-/*! Karma-CSS v1.8.0 MIT License | http://karmacss.com | https://github.com/accentdesign/karma-css */
+/*! Karma-CSS v1.8.1 MIT License | http://karmacss.com | https://github.com/accentdesign/karma-css */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html{
   line-height:1.15;
@@ -1182,24 +1182,36 @@ a{
     border-color:#cacaca;
     outline:0; }
 
-code, kbd, pre, samp{
+code,
+kbd,
+pre,
+samp{
   font-family:monospace, monospace; }
 
 code{
-  padding:0.2rem 0.5rem;
-  white-space:nowrap;
   background:#f0f0f0;
   border:1px solid #e6e6e6;
-  border-radius:0.25rem; }
+  border-radius:0.25rem;
+  color:#3e3e3e;
+  font-size:90%;
+  padding:0.2rem 0.5rem;
+  word-break:break-word; }
 
 pre{
-  margin-bottom:1.5rem; }
-
-pre > code{
-  padding:1rem 1.5rem;
+  background:#f0f0f0;
+  border:1px solid #e6e6e6;
+  border-radius:0.25rem;
+  color:#3e3e3e;
   display:block;
-  white-space:pre;
-  overflow-x:auto; }
+  font-size:90%;
+  margin-bottom:1.5rem;
+  overflow-x:auto;
+  padding:1rem 1.5rem;
+  white-space:pre; }
+  pre code{
+    font-size:inherit;
+    color:inherit;
+    word-break:normal; }
 
 *[disabled]{
   cursor:not-allowed; }

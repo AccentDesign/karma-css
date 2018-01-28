@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.8.1 - IN DEVELOPMENT
+
+* Reworked pre and code elements to work as they should
+
 1.8.0 - 27-Jan-2018
 ~~~~~~~~~~~~~~~~~~~
 
