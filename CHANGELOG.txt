@@ -3,7 +3,10 @@ Changelog
 
 1.8.1 - IN DEVELOPMENT
 
-* Reworked pre and code elements to work as they should
+* Reworked pre and code elements to work as they should with new variables:
+    - $pre-font-size
+    - $pre-padding
+    - $pre-margin-bottom
 * Added ability to change the header font family
 
 1.8.0 - 27-Jan-2018
