@@ -1368,12 +1368,11 @@ ol{
 
 dl{
   margin-bottom:1.5rem; }
-
-dt{
-  font-weight:bold; }
-
-dd{
-  margin-bottom:0.5rem; }
+  dl dt{
+    font-weight:bold;
+    margin:0 0 0 0; }
+  dl dd{
+    margin:0 0 1.5rem 2rem; }
 
 table{
   background-color:transparent;
@@ -1389,12 +1388,14 @@ caption{
 
 th{
   padding:0.85rem 0.85rem;
-  text-align:left; }
+  text-align:left;
+  vertical-align:top; }
 
 td{
   border-top:1px solid #e6e6e6;
   padding:0.85rem 0.85rem;
-  text-align:left; }
+  text-align:left;
+  vertical-align:top; }
 
 .table-bordered{
   border:solid 1px #e6e6e6; }

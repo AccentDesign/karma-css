@@ -8,6 +8,11 @@ Changelog
     - $pre-padding
     - $pre-margin-bottom
 * Added ability to change the header font family
+* Vertical align td and th
+* Added new variables for definition lists:
+    - $dl-margin-bottom
+    - $dt-margin
+    - $dd-margin
 
 1.8.0 - 27-Jan-2018
 ~~~~~~~~~~~~~~~~~~~

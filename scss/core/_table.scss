@@ -18,12 +18,14 @@ caption {
 th {
     padding: $table-cell-padding;
     text-align: left;
+    vertical-align: top;
 }
 
 td {
     border-top: $table-border-width solid $table-border-color;
     padding: $table-cell-padding;
     text-align: left;
+    vertical-align: top;
 }
 
 // visual alternatives

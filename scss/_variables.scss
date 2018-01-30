@@ -182,7 +182,8 @@ $ol-list-margin-bottom:         $generic-margin-bottom !default;
 $ol-list-nested-margin:         0 0 0 2rem !default;
 
 $dl-margin-bottom:              $generic-margin-bottom !default;
-$dd-margin-bottom:              .5rem !default;
+$dt-margin:                     0 0 0 0 !default;
+$dd-margin:                     0 0 $generic-margin-bottom 2rem !default;
 
 
 // buttons

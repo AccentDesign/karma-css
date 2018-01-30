@@ -23,12 +23,13 @@ ol {
 
 dl {
     margin-bottom: $dl-margin-bottom;
-}
 
-dt {
-    font-weight: bold;
-}
-
-dd {
-    margin-bottom: $dd-margin-bottom;
+    dt {
+        font-weight: bold;
+        margin: $dt-margin;
+    }
+    
+    dd {
+        margin: $dd-margin;
+    }
 }
