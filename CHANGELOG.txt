@@ -13,6 +13,12 @@ Changelog
     - $dl-margin-bottom
     - $dt-margin
     - $dd-margin
+* Added helper to hide an element on a single breakpoint:
+    - hidden-xs
+    - hidden-sm
+    - hidden-md
+    - hidden-lg
+    - hidden-xl
 
 1.8.0 - 27-Jan-2018
 ~~~~~~~~~~~~~~~~~~~

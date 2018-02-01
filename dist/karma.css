@@ -1914,12 +1914,20 @@ blockquote{
   .hidden-xs-down{
     display:none !important; } }
 
+@media (min-width: null) and (max-width: 575px){
+  .hidden-xs{
+    display:none !important; } }
+
 @media (min-width: 576px){
   .hidden-sm-up{
     display:none !important; } }
 
 @media (max-width: 767px){
   .hidden-sm-down{
+    display:none !important; } }
+
+@media (min-width: 576px) and (max-width: 767px){
+  .hidden-sm{
     display:none !important; } }
 
 @media (min-width: 768px){
@@ -1930,6 +1938,10 @@ blockquote{
   .hidden-md-down{
     display:none !important; } }
 
+@media (min-width: 768px) and (max-width: 991px){
+  .hidden-md{
+    display:none !important; } }
+
 @media (min-width: 992px){
   .hidden-lg-up{
     display:none !important; } }
@@ -1938,11 +1950,19 @@ blockquote{
   .hidden-lg-down{
     display:none !important; } }
 
+@media (min-width: 992px) and (max-width: 1199px){
+  .hidden-lg{
+    display:none !important; } }
+
 @media (min-width: 1200px){
   .hidden-xl-up{
     display:none !important; } }
 
 .hidden-xl-down{
   display:none !important; }
+
+@media (min-width: 1200px) and (max-width: null){
+  .hidden-xl{
+    display:none !important; } }
 
 /*# sourceMappingURL=karma.css.map */
