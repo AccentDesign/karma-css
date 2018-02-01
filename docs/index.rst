@@ -11,5 +11,6 @@ Karma CSS
    :caption: Content:
 
    installation
+   layout
    utilities
    changelog
