@@ -324,15 +324,9 @@ Visibility
 
 .. admonition:: Usage
 
-    The below depends on the configured grid breakpoints
+    The below depends on the configured grid breakpoints ``xs``, ``sm``, ``md``, ``lg``, ``xl``
 
-    Defaults:
-
-    - xs
-    - sm 
-    - md 
-    - lg
-    - xl
+    For more details on breakpoints see :ref:`responsive-breakpoints` or :ref:`grid-options`.
 
 +-----------------------------+-----------------------------------------------------------------+
 | Class                       | Description                                                     |

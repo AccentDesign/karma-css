@@ -25,6 +25,8 @@ Use ``container-fluid`` for a full width container, spanning the entire width of
         <!-- Content here -->
     </div>
 
+.. _responsive-breakpoints:
+
 Responsive Breakpoints
 ======================
 
