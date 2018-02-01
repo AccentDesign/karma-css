@@ -11,3 +11,4 @@ KarmaCSS
    :caption: Content:
 
    installation
+   utilities
