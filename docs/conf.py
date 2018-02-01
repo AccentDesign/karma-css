@@ -49,7 +49,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'KarmaCSS'
+project = 'Karma CSS'
 copyright = '2018, Stuart George'
 author = 'Stuart George'
 
