@@ -13,6 +13,7 @@ Karma CSS
    installation
    layout
    grid
+   typography
    colours
    buttons
    forms
