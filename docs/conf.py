@@ -50,7 +50,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Karma CSS'
-copyright = '2018, Stuart George'
+copyright = '2018, Accent Design Group Ltd'
 author = 'Stuart George'
 
 # The version info for the project you're documenting, acts as replacement for
