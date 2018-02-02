@@ -21,6 +21,7 @@ master
     - ``hidden-md``
     - ``hidden-lg``
     - ``hidden-xl``
+* Added helper ``.list-style-reset`` to remove ``list-style``, ``padding`` and ``margin``
 
 v1.8.0
 ======

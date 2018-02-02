@@ -1804,6 +1804,11 @@ blockquote{
 .list-style-none{
   list-style:none !important; }
 
+.list-style-reset{
+  list-style:none !important;
+  padding:0;
+  margin:0; }
+
 .scroll-x{
   overflow-x:auto; }
 
