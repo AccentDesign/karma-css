@@ -2,6 +2,11 @@
 Changelog
 *********
 
+master
+======
+
+in development
+
 v1.8.1
 ======
 
