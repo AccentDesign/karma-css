@@ -17,6 +17,7 @@ Karma CSS
    buttons
    forms
    tables
+   code
    utilities
    variables
    changelog
