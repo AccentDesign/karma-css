@@ -13,5 +13,6 @@ Karma CSS
    installation
    layout
    grid
+   colours
    utilities
    changelog

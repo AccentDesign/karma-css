@@ -33,21 +33,17 @@ Colour
 
 .. admonition:: Usage
 
-   The colour helpers are created from the colours defined within the variables. By adding more, 
-   these will also be created as helpers.
+    The colour helpers are created from the colours defined within the variables. By adding more, 
+    these will also be created as helpers.
    
-   The below are just a selection:
+    The below are just a selection:
 
-   - white
-   - black 
-   - primary 
-   - secondary
+    - white
+    - black 
+    - primary 
+    - secondary
 
-   You can also get a colour by using the provided function
-
-   .. code-block:: scss
-
-       .mydiv { color: color(primary); }
+    You can also get a colour by using the provided function. See the :ref:`colours` section for more details.
 
 +---------------------------+--------------------------------------------------+
 | Class                     | Description                                      |
