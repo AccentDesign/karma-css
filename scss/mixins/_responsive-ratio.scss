@@ -1,17 +1,24 @@
 // Responsive Ratio
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// creating scalable elements (usually images / background images) that maintain a ratio
 
+
+/* 
+ * creating scalable elements (usually images, video placeholders, or background images) 
+ * that maintain a ratio. Either use the pseudo to scale it or not
+ *
+ * Usage:
+ * @include responsive-ratio(16, 9, true);
+ *
+ */
 @mixin responsive-ratio($x, $y, $pseudo: false) {
-    $padding: unquote( ( $y / $x ) * 100 + '%' );
     @if $pseudo {
         &:before {
             @include pseudo($pos: relative);
             width: 100%;
-            padding-top: $padding;
+            padding-top: percentage($y / $x);
         }
     } @else {
-        padding-top: $padding;
+        padding-top: percentage($y / $x);
     }
 }

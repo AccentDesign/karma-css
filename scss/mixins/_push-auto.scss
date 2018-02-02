@@ -1,6 +1,16 @@
 // Push Auto
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+
+
+/*
+ * useful for centrally aligning al element
+ * though the margin mixin can do the same thing.
+ *
+ * Usage:
+ * @include push--auto;
+ *
+ */
 @mixin push--auto {
     margin: { 
         left: auto;

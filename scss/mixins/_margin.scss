@@ -1,11 +1,23 @@
 // Margin
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// axis = ('', 'x', 'y', 't', 'r', 'b', 'l')
-// sizes in variables
-// @include margin('x', 1.5rem):
-//      margin-left: 1.5rem; margin-right: 1.5rem
 
+
+/*
+ * setting margin
+ * 
+ * Usage:
+ *
+ * >> @include margin('x', 1.5rem)
+ * margin-left: 1.5rem; margin-right: 1.5rem
+ * 
+ * >> @include margin('r', 1.5rem)
+ * margin-right: 1.5rem
+ *
+ * >> @include margin;
+ * margin: 0;
+ *
+ */
 @mixin margin($axis: '', $rem: 0) {
     @if $axis == 'x' {
         margin: {

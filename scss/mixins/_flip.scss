@@ -1,7 +1,20 @@
 // Flip
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// flip an elemrnt on it's x and/or y axis
+
+
+/*
+ * flip an element on its axis
+ *
+ * Usage:
+ * horizontally only:
+ * @include flip(true, false);
+ * vertically only:
+ * @include flip(false, true);
+ * horizontally and vertically:
+ * @include flip(true, true);
+ *
+ */
 @mixin flip($x: false, $y: false) {
     $scaleX: 1;
     $scaleY: 1;

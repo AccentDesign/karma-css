@@ -1,6 +1,17 @@
 // Box Shadow
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+
+
+/* 
+ * Adds a simple box shadow to an element
+ *
+ * Usage:
+ * @include box-shadow(3px, 3px, 10px, rgba(0, 0, 0, .54));
+ * or to inset:
+ * @include box-shadow(3px, 3px, 10px, rgba(0, 0, 0, .54), true);
+ *
+ */
 @mixin box-shadow($top, $left, $blur, $color, $inset: false) {
     @if $inset {
         box-shadow:inset $top $left $blur $color;
