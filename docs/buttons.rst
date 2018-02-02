@@ -6,10 +6,7 @@ Buttons
 
     <style>
         .example {
-            background: white;
-            border: 1px solid #eeeeee;
             margin-bottom: 2.5rem;
-            padding: 2rem;
         }
     </style>
 
