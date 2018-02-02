@@ -33,7 +33,7 @@
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
-    'releases'
+    # 'releases'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
