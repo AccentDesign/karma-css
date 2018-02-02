@@ -21,25 +21,21 @@
   ],
   "license": "MIT",
   "scripts": {
-    "watch": "gulp watch"
+    "css": "npm-run-all css-compile* --sequential css-prefix* css-minify*",
+    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/karma.scss dist/karma.css",
+    "css-prefix": "postcss --config postcss.config.js --replace \"dist/*.css\" \"!dist/*.min.css\"",
+    "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/karma.min.css dist/karma.css",
+    "watch-css": "nodemon --ignore dist/ -e scss -x \"npm run css\""
   },
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^7.2.5",
-    "gulp": "^3.9.1",
-    "gulp-cssmin": "^0.2.0",
-    "gulp-livereload": "^3.8.1",
-    "gulp-load-plugins": "^1.5.0",
-    "gulp-postcss": "^7.0.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-ruby-sass": "^3.0.0",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.3",
-    "gulp-watch": "^5.0.0",
+    "clean-css-cli": "^4.1.10",
+    "npm-run-all": "^4.1.2",
     "node-sass": "^4.7.2",
-    "postcss-discard-comments": "^2.0.4",
-    "postcss-discard-empty": "^2.1.0",
-    "run-sequence": "^2.2.1"
+    "nodemon": "^1.14.11",
+    "postcss-cli": "^4.1.1",
+    "postcss-discard-comments": "^2.0.4"
   },
   "browserslist": [
     "last 1 major version",

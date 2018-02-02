@@ -1,5 +1,5 @@
 test:
   override:
-    - gulp
+    - npm run css
   post:
     - cp -r dist $CIRCLE_ARTIFACTS
