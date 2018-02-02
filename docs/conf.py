@@ -159,8 +159,3 @@ texinfo_documents = [
 
 releases_github_path = 'accentdesign/karma-css'
 releases_unstable_prehistory = True
-
-
-html_context = {
-    'css_files': ['_static/css/custom.css'],
-}
