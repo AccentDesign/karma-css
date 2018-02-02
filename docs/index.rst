@@ -19,6 +19,7 @@ Karma CSS
    forms
    tables
    code
+   mixins/index
    utilities
    variables
    changelog
