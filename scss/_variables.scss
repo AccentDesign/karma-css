@@ -186,6 +186,7 @@ $dt-margin:                     0 0 0 0 !default;
 $dd-margin:                     0 0 $generic-margin-bottom 2rem !default;
 
 
+
 // buttons
 $buttons: () !default;
 $buttons: map-merge((
@@ -229,12 +230,13 @@ $input-margin-bottom:           1.5rem !default;
 $input-transition:              background linear $animation-speed-fast,
                                 border-color linear $animation-speed-fast !default;
 
+$input-background-focus:        $input-background !default;
+$input-border-color-focus:      map-get($colors, primary) !default;
+
+// these should not need changing, they are used to force selects to the same height as inputs
 $input-height-border:           $input-border-width * 2 !default;
 $input-height-inner:            ($input-padding-y * 2) + ($input-font-size * $input-line-height) !default;
 $input-height:                  calc(#{$input-height-inner} + #{$input-height-border}) !default;
-
-$input-background-focus:        $input-background !default;
-$input-border-color-focus:      map-get($colors, primary) !default;
 
 
 

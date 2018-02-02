@@ -3,6 +3,8 @@
 
 // https://www.npmjs.com/package/modernizr
 
+
+
 /*
  * Provide a hover effect for non-touch devices, turn it into an Active state for mobile, and maintain a fallback. 
  * @requires Modernizr as a JS dependency to get .no-touch classes
@@ -14,6 +16,7 @@
  *         color: purple; 
  *     }
  * }
+ *
  */
 @mixin touch-hover() {
     .no-js &:hover, // the fallback
@@ -26,11 +29,13 @@
 }
 
 
+
 /*
  * Applies transition to element but removes it from the same element on touch devices.
  * Useful for making all pseudo hover effects on mobile instant on click.
  *
  * @requires Modernizr
+ *
  */
 @mixin transition-no-touch($properties) {
     transition: $properties;

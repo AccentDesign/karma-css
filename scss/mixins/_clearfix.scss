@@ -1,6 +1,15 @@
 // Clearfix
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+
+
+/*
+ * used to clear a floating element
+ *
+ * Usage:
+ * @include clearfix;
+ *
+ */
 @mixin clearfix {
     &::after {
         content: "";

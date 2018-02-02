@@ -1,8 +1,17 @@
 // Inputs
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+// mixins to create form inputs
 
-// base input css
+
+
+/* 
+ * create a basic input
+ *
+ * Usage:
+ * @include input;
+ *
+ */
 @mixin input {
     font-size: $input-font-size;
     color: $input-font-color;
@@ -17,7 +26,15 @@
     transition: $input-transition;
 }
 
-// input focus state 
+
+
+/* 
+ * input styles for focus state
+ *
+ * Usage:
+ * @include input-focus(color(white), color(primary));
+ *
+ */
 @mixin input-focus(
         $background: $input-background-focus, 
         $border-color: $input-border-color-focus) {
@@ -28,7 +45,13 @@
     }
 }
 
-// returns the width of the form fields based on the variable used
+
+
+/*
+ * used internally to set the default width of form fields 
+ * based on the $input-use-full-width variable
+ *
+ */
 @mixin input-width {
     @if $input-use-full-width {
         width: 100%;
@@ -37,7 +60,15 @@
     }
 }
 
-// create an input size variation
+
+
+/* 
+ * input size variation
+ *
+ * Usage:
+ * @include input-size(1rem, 1rem, 15px);
+ *
+ */
 @mixin input-size(
         $padding-y: $input-padding-y, 
         $padding-x: $input-padding-x, 
