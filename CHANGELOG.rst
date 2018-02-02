@@ -2,7 +2,7 @@
 Changelog
 *********
 
-master
+v1.8.1
 ======
 
 * Reworked pre and code elements to work as they should with new variables
