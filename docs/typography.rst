@@ -2,19 +2,6 @@
 Typography
 **********
 
-.. raw:: html
-
-    <style>
-        .example {
-            margin-bottom: 2.5rem;
-        }
-        blockquote {
-            padding: 1rem 1.5rem;
-            border-left: 3px solid #e6e6e6;
-            margin-left: 0;
-        }
-    </style>
-
 Font
 ====
 
@@ -29,7 +16,7 @@ All heading ``h1`` through to ``h6`` are available.
 
 .. raw:: html
 
-    <div class="example">
+    <div class="mb-2h">
     <h1>h1. Karma heading</h1>
     <h2>h2. Karma heading</h2>
     <h3>h3. Karma heading</h3>
@@ -51,7 +38,7 @@ Use the included utility classes to recreate the small secondary heading text
 
 .. raw:: html
 
-    <div class="example">
+    <div class="mb-2h">
     <h1>h1. Karma heading <small class="muted">with some small faded text</small></h1>
     </div>
 
@@ -64,7 +51,7 @@ Inline Text
 
 .. raw:: html
 
-    <div class="example">
+    <div class="mb-2h">
     <p>You can use the mark tag to <mark>highlight</mark> text.</p>
     <p><del>This line of text is meant to be treated as deleted text.</del></p>
     <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
@@ -128,7 +115,7 @@ Address have basic styles
 
 .. raw:: html
 
-    <div class="example">
+    <div class="mb-2h">
     <address>
         Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br> 
         Visit us at:<br>

@@ -2,14 +2,6 @@
 Buttons
 *******
 
-.. raw:: html
-
-    <style>
-        .example {
-            margin-bottom: 2.5rem;
-        }
-    </style>
-
 Basic
 -----
 
@@ -18,7 +10,7 @@ styled as buttons by adding the class ``.button``:
 
 .. raw:: html
 
-    <div class="example">
+    <div class="mb-2h">
         <button class="button">button element</button>
         <input class="button" type="submit" value="submit input">
         <input class="button" type="button" value="button input">
@@ -39,7 +31,7 @@ Additionally so can anchor tags or anything else for that matter:
 
 .. raw:: html
 
-    <div class="example">
+    <div class="mb-2h">
         <a class="button" href="#">anchor button</a>
         <span class="button">just a span</span>
         <div class="button">or a div</div>
@@ -59,7 +51,7 @@ There are two created out of the box ``.button-primary`` and ``.button-secondary
 
 .. raw:: html
 
-    <div class="example">
+    <div class="mb-2h">
         <button class="button button-primary">button element</button>
         <button class="button button-secondary">button element</button>
     </div>

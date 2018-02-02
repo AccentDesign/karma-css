@@ -2,23 +2,6 @@
 Grid
 ****
 
-.. raw:: html
-
-    <style>
-        .example {
-            background: white;
-            border: 1px solid #eeeeee;
-            margin-bottom: 2.5rem;
-            padding: 2rem;
-        }
-        .example [class^=col] {
-            background-color: #f0f0f0;
-            border: 1px solid #e6e6e6;
-            padding-top: .75rem;
-            padding-bottom: .75rem;
-        }
-    </style>
-
 Intro
 =====
 
@@ -67,7 +50,7 @@ Here are two grid layouts that apply to every device and viewport, from ``xs`` t
 
 .. raw:: html
 
-    <div class="example">
+    <div class="example-grid">
     <div class="container">
         <div class="row">
             <div class="col">1 of 2</div>
@@ -102,7 +85,7 @@ You can also just set the width of one column and others will auto adjust
 
 .. raw:: html
 
-    <div class="example">
+    <div class="example-grid">
     <div class="container">
         <div class="row">
             <div class="col">1 of 3</div>
@@ -142,7 +125,7 @@ Just using ``.col`` or ``.col-*`` classes means the grid is the same across all 
 
 .. raw:: html
 
-    <div class="example">
+    <div class="example-grid">
     <div class="container">
         <div class="row">
             <div class="col">col</div>
@@ -180,7 +163,7 @@ on extra small devices before becoming horizontal on desktop (medium) devices.
 
 .. raw:: html
 
-    <div class="example">
+    <div class="example-grid">
     <div class="container">
         <div class="row">
             <div class="col-sm-8">col-sm-8</div>
@@ -216,7 +199,7 @@ for each tier as needed. See the example below for a better idea of how it all w
 
 .. raw:: html
 
-    <div class="example">
+    <div class="example-grid">
     <div class="container">
         <div class="row">
             <div class="col col-md-8">.col .col-md-8</div>
@@ -280,7 +263,7 @@ classes (including column widths, responsive tiers, reorders, and more).
 
 .. raw:: html
 
-    <div class="example">
+    <div class="example-grid">
     <div class="container">
         <div class="row no-gutters">
             <div class="col-12 col-sm-6 col-md-8">.col-12 .col-sm-6 .col-md-8</div>
@@ -305,7 +288,7 @@ Use the ``.order-*`` for controlling the visual order of your content.
 
 .. raw:: html
 
-    <div class="example">
+    <div class="example-grid">
     <div class="container">
         <div class="row">
             <div class="col order-md-2">.col .order-md-2</div>
@@ -331,7 +314,7 @@ margin of a column by * columns. For example, ``.offset-md-4`` moves ``.col-md-4
 
 .. raw:: html
 
-    <div class="example">
+    <div class="example-grid">
     <div class="container">
         <div class="row">
             <div class="col-md-4">.col-md-4</div>
