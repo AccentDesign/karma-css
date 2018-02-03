@@ -11,6 +11,7 @@ Karma CSS
    :caption: Content:
 
    installation
+   customizing
    layout
    grid
    typography
