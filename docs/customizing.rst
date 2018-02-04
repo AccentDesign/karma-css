@@ -75,5 +75,5 @@ This will be available with all the others.
 Compiling The CSS
 =================
 
-Of course you can compile it with what ever meas you wish. We use ``autoprefixer`` to add browser prefixes for the likes
+Of course you can compile it with what ever means you wish. We use ``autoprefixer`` to add browser prefixes for the likes
 of IE10. So bear that in mind when you decide.
