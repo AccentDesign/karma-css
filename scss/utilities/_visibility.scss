@@ -5,21 +5,20 @@
 //      .hidden-sm {...}
 //      .hidden-sm-up {...}
 //      .hidden-sm-down {...}
-
 @each $bp in map-keys($grid-breakpoints) {
-    .hidden-#{$bp}-up {
-        @include media-breakpoint-up($bp) {
-            display: none !important;
-        }
+  .hidden-#{$bp}-up {
+    @include media-breakpoint-up($bp) {
+      display: none !important; // stylelint-disable declaration-no-important
     }
-    .hidden-#{$bp}-down {
-        @include media-breakpoint-down($bp) {
-            display: none !important;
-        }
+  }
+  .hidden-#{$bp}-down {
+    @include media-breakpoint-down($bp) {
+      display: none !important;
     }
-    .hidden-#{$bp} {
-        @include media-breakpoint-only($bp) {
-            display: none !important;
-        }
+  }
+  .hidden-#{$bp} {
+    @include media-breakpoint-only($bp) {
+      display: none !important;
     }
+  }
 }

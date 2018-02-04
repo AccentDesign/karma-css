@@ -1,42 +1,42 @@
 // Code
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-code, 
-kbd, 
-pre, 
+code,
+kbd,
+pre,
 samp {
-    font-family: $code-font-family;
+  font-family: $code-font-family;
 }
 
 // inline code
 code {
-    background: $code-background;
-    border: $code-border-width solid $code-border-color;
-    border-radius: $code-border-radius;
-    color: $code-font-color;
-    font-size: $code-font-size;
-    padding: $code-padding;
-    word-break: break-word;
+  padding: $code-padding;
+  font-size: $code-font-size;
+  color: $code-font-color;
+  word-break: break-word;
+  background: $code-background;
+  border: $code-border-width solid $code-border-color;
+  border-radius: $code-border-radius;
 }
 
 // code block
 pre {
-    background: $code-background;
-    border: $code-border-width solid $code-border-color;
-    border-radius: $code-border-radius;
-    color: $code-font-color;
-    display: block;
-    font-size: $pre-font-size;
-    margin-bottom: $pre-margin-bottom;
-    overflow-x: auto;
-    padding: $pre-padding;
-    white-space: pre;
+  display: block;
+  padding: $pre-padding;
+  margin-bottom: $pre-margin-bottom;
+  overflow-x: auto;
+  font-size: $pre-font-size;
+  color: $code-font-color;
+  white-space: pre;
+  background: $code-background;
+  border: $code-border-width solid $code-border-color;
+  border-radius: $code-border-radius;
 
-    // inline code within
-    code {
-        font-size: inherit;
-        color: inherit;
-        word-break: normal;
-    }
+  // inline code within
+  code {
+    font-size: inherit;
+    color: inherit;
+    word-break: normal;
+  }
 
 }

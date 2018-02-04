@@ -1,34 +1,31 @@
 // Base Styles
 //––––––––––––––––––––––––––––––––––––––––––––––––––
+
 // NOTE
 // html is set to 62.5% so that all the REM measurements throughout karma-css
 // are based on 10px sizing. So basically 1.5rem = 15px :)
 
-/* box sizing */
+/* box sizing  & reset margin */
 * {
-    &,
-	&::before,
-	&::after {
-		box-sizing: border-box;
-    }
-}
-
-/* reset margin */
-* {
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
 }
 
 /* basic document styling */
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: $base-font-weight;
-    font-family: $base-font-family;
-    color: $font-color;
-    background: $body-background;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+  color: $font-color;
+  background: $body-background;
 }

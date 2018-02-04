@@ -1,8 +1,6 @@
 // Flip
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-
-
 /*
  * flip an element on its axis
  *
@@ -16,13 +14,13 @@
  *
  */
 @mixin flip($x: false, $y: false) {
-    $scaleX: 1;
-    $scaleY: 1;
-    @if $x {
-        $scaleX: -1;
-    }
-    @if $y {
-        $scaleY: -1;
-    }
-    transform: scale($scaleX, $scaleY);
+  $scaleX: 1;
+  $scaleY: 1;
+  @if $x {
+    $scaleX: -1;
+  }
+  @if $y {
+    $scaleY: -1;
+  }
+  transform: scale($scaleX, $scaleY);
 }

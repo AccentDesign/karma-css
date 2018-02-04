@@ -1,88 +1,85 @@
 // Form
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+// stylelint-disable selector-no-qualifying-type
+
 form {
-    margin-bottom: $form-margin-bottom;
+  margin-bottom: $form-margin-bottom;
 }
 
 input {
-    &[type="date"],
-    &[type="datetime"],
-    &[type="datetime-local"],
-    &[type="email"],
-    &[type="month"],
-    &[type="number"],
-    &[type="password"],
-    &[type="search"],
-    &[type="tel"],
-    &[type="text"],
-    &[type="url"],
-    &[type="week"] {
-        appearance: none; // remove awkward defaults on ios
-        @include input;
-        @include input-size; 
-        @include input-width;
-        @include input-focus;
-    }
-}
+  &[type="datetime"],
+  &[type="email"],
+  &[type="number"],
+  &[type="password"],
+  &[type="search"],
+  &[type="tel"],
+  &[type="text"],
+  &[type="url"] {
+    appearance: none; // remove awkward defaults on ios
+    @include input;
+    @include input-size;
+    @include input-width;
+    @include input-focus;
+  }
 
-input {
-    &[type="date"],
-    &[type="datetime-local"],
-    &[type="month"],
-    &[type="week"] {
-        appearance: listbox; // see https://bugs.webkit.org/show_bug.cgi?id=139848
+  &[type="date"],
+  &[type="datetime-local"],
+  &[type="month"],
+  &[type="week"] {
+    appearance: listbox;
+    @include input;
+    @include input-size;
+    @include input-width;
+    @include input-focus;
 
-        // removes the extra padding & margin in date controls in webkit 
-        &::-webkit-datetime-edit-fields-wrapper {
-            padding: 0;
-            margin: 0;
-        }
+    // removes the extra padding & margin in date controls in webkit 
+    &::-webkit-datetime-edit-fields-wrapper {
+      padding: 0;
+      margin: 0;
     }
+  }
+
+  // only set some simple margin as components will handle the style better
+  &[type="checkbox"],
+  &[type="radio"] {
+    margin-right: 1rem;
+  }
 }
 
 textarea {
-    appearance: none; // remove awkward defaults on ios
-    @include input;
-    @include input-width;
-    @include input-focus;
+  appearance: none; // remove awkward defaults on ios
+  @include input;
+  @include input-width;
+  @include input-focus;
 }
 
 select {
-    @include input;
-    @include input-size; 
-    @include input-width;
-    @include input-focus;
+  @include input;
+  @include input-size;
+  @include input-width;
+  @include input-focus;
 
-    &:not([multiple]) {
-        height: $input-height;
-    }
+  &:not([multiple]) {
+    height: $input-height;
+  }
 }
 
 input::placeholder,
 textarea::placeholder {
-    color: $input-placeholder-color;
-    opacity: 1;
+  color: $input-placeholder-color;
+  opacity: 1;
 }
 
 label,
 legend {
-    display: block;
-    margin-bottom: .5rem;
-    font-weight: $label-font-weight;
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: $label-font-weight;
 }
 
 fieldset {
-    padding: 0;
-    border-width: 0;
-    margin-bottom: $input-margin-bottom;
-}
-
-// only set some simple margin as components will handle the style better
-// https://github.com/AccentDesign/karma-css-components
-input {
-    &[type="checkbox"],
-    &[type="radio"] {
-        margin-right: 1rem;
-    }
+  padding: 0;
+  margin-bottom: $input-margin-bottom;
+  border-width: 0;
 }

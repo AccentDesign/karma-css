@@ -2,68 +2,74 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 %h {
-    font-family: $header-font-family;
-    
-    small {
-        font-size: 65%;
-        line-height: 1;
-    }
+  font-family: $header-font-family;
+
+  small {
+    font-size: 65%;
+    line-height: 1;
+  }
 }
 
-h1, .h1 {
-    @extend %h;
-    font-weight: $h1-font-weight;
-    margin: $h1-margin;
-    font-size: $h1-font-size;
-    line-height: $h1-line-height;
+h1,
+.h1 {
+  @extend %h;
+  margin: $h1-margin;
+  font-size: $h1-font-size;
+  font-weight: $h1-font-weight;
+  line-height: $h1-line-height;
 }
 
-h2, .h2 {
-    @extend %h;
-    font-weight: $h2-font-weight;
-    margin: $h2-margin;
-    font-size: $h2-font-size;
-    line-height: $h2-line-height;
+h2,
+.h2 {
+  @extend %h;
+  margin: $h2-margin;
+  font-size: $h2-font-size;
+  font-weight: $h2-font-weight;
+  line-height: $h2-line-height;
 }
 
-h3, .h3 {
-    @extend %h;
-    font-weight: $h3-font-weight;
-    margin: $h3-margin;
-    font-size: $h3-font-size;
-    line-height: $h3-line-height;
+h3,
+.h3 {
+  @extend %h;
+  margin: $h3-margin;
+  font-size: $h3-font-size;
+  font-weight: $h3-font-weight;
+  line-height: $h3-line-height;
 }
 
-h4, .h4 {
-    @extend %h;
-    font-weight: $h4-font-weight;
-    margin: $h4-margin;
-    font-size: $h4-font-size;
-    line-height: $h4-line-height;
+h4,
+.h4 {
+  @extend %h;
+  margin: $h4-margin;
+  font-size: $h4-font-size;
+  font-weight: $h4-font-weight;
+  line-height: $h4-line-height;
 }
 
-h5, .h5 {
-    @extend %h;
-    font-weight: $h5-font-weight;
-    margin: $h5-margin;
-    font-size: $h5-font-size;
-    line-height: $h5-line-height;
+h5,
+.h5 {
+  @extend %h;
+  margin: $h5-margin;
+  font-size: $h5-font-size;
+  font-weight: $h5-font-weight;
+  line-height: $h5-line-height;
 }
 
-h6, .h6 {
-    @extend %h;
-    font-weight: $h6-font-weight;
-    margin: $h6-margin;
-    font-size: $h6-font-size;
-    line-height: $h6-line-height;
+h6,
+.h6 {
+  @extend %h;
+  margin: $h6-margin;
+  font-size: $h6-font-size;
+  font-weight: $h6-font-weight;
+  line-height: $h6-line-height;
 }
 
 p {
-    margin-bottom: $paragraph-margin-bottom;
+  margin-bottom: $paragraph-margin-bottom;
 }
 
 blockquote {
-    margin-bottom: $blockquote-margin-bottom;
-    padding: $blockquote-padding-y $blockquote-padding-x;
-    border-left: $blockquote-border-left-width solid $blockquote-border-left-color;
+  padding: $blockquote-padding-y $blockquote-padding-x;
+  margin-bottom: $blockquote-margin-bottom;
+  border-left: $blockquote-border-left-width solid $blockquote-border-left-color;
 }

@@ -1,8 +1,6 @@
 // Clearfix
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-
-
 /*
  * used to clear a floating element
  *
@@ -11,9 +9,9 @@
  *
  */
 @mixin clearfix {
-    &::after {
-        content: "";
-        display: block;
-        clear: both;
-    }
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
 }

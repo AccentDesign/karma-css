@@ -1,16 +1,14 @@
 // Margin
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-
-
 /*
  * setting margin
- * 
+ *
  * Usage:
  *
  * >> @include margin('x', 1.5rem)
  * margin-left: 1.5rem; margin-right: 1.5rem
- * 
+ *
  * >> @include margin('r', 1.5rem)
  * margin-right: 1.5rem
  *
@@ -18,26 +16,26 @@
  * margin: 0;
  *
  */
-@mixin margin($axis: '', $rem: 0) {
-    @if $axis == 'x' {
-        margin: {
-            left: $rem;
-            right: $rem;
-        }
-    } @else if $axis == 'y' {
-        margin: {
-            top: $rem;
-            bottom: $rem;
-        }
-    } @else if $axis == 't' {
-        margin-top: $rem;
-    } @else if $axis == 'r' {
-        margin-right: $rem;
-    } @else if $axis == 'b' {
-        margin-bottom: $rem;
-    } @else if $axis == 'l' {
-        margin-left: $rem;
-    } @else {
-        margin: $rem;
+@mixin margin($axis: "", $rem: 0) {
+  @if $axis == "x" {
+    margin: {
+      right: $rem;
+      left: $rem;
     }
+  } @else if $axis == "y" {
+    margin: {
+      top: $rem;
+      bottom: $rem;
+    }
+  } @else if $axis == "t" {
+    margin-top: $rem;
+  } @else if $axis == "r" {
+    margin-right: $rem;
+  } @else if $axis == "b" {
+    margin-bottom: $rem;
+  } @else if $axis == "l" {
+    margin-left: $rem;
+  } @else {
+    margin: $rem;
+  }
 }

@@ -2,10 +2,10 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 @function zindex($layer) {
-    // get z-index by name
-    @if not map-has-key($z-layers, $layer) {
-      @warn "No layer found for `#{$layer}` in $z-layers map. Property omitted.";
-    }
+  // get z-index by name
+  @if not map-has-key($z-layers, $layer) {
+    @warn "No layer found for `#{$layer}` in $z-layers map. Property omitted.";
+  }
 
-    @return map-get($z-layers, $layer);
+  @return map-get($z-layers, $layer);
 }

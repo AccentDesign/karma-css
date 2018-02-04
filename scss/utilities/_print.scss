@@ -1,10 +1,9 @@
 // print
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-
 @media print {
-    .no-print, 
-    .no-print * {
-        display: none !important;
-    }
+  .no-print,
+  .no-print * {
+    display: none !important; // stylelint-disable declaration-no-important
+  }
 }

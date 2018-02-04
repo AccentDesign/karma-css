@@ -1,9 +1,7 @@
 // Centerer
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-
-
-/* 
+/*
  * position an element centrally
  * ensure parent element has position: relative;
  *
@@ -17,16 +15,16 @@
  *
  */
 @mixin centerer($horizontal: true, $vertical: true, $position: absolute) {
-    position: $position;
-    @if ($horizontal and $vertical) {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    } @else if ($horizontal) {
-        left: 50%;
-        transform: translate(-50%, 0);
-    } @else if ($vertical) {
-        top: 50%;
-        transform: translate(0, -50%);
-    }
+  position: $position;
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  } @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
 }
