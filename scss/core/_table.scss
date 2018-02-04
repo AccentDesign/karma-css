@@ -2,45 +2,45 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 table {
-    background-color: $table-background-color;
-    border-collapse: collapse;
-    border-spacing: 0;
-    font-size: $table-font-size;
-    margin-bottom: $table-margin-bottom;
-    max-width: 100%;
-    width: 100%;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: $table-margin-bottom;
+  font-size: $table-font-size;
+  border-spacing: 0;
+  border-collapse: collapse;
+  background-color: $table-background-color;
 }
 
 caption {
-    padding: $table-cell-padding;
+  padding: $table-cell-padding;
 }
 
 th {
-    padding: $table-cell-padding;
-    text-align: left;
-    vertical-align: top;
+  padding: $table-cell-padding;
+  text-align: left;
+  vertical-align: top;
 }
 
 td {
-    border-top: $table-border-width solid $table-border-color;
-    padding: $table-cell-padding;
-    text-align: left;
-    vertical-align: top;
+  padding: $table-cell-padding;
+  text-align: left;
+  vertical-align: top;
+  border-top: $table-border-width solid $table-border-color;
 }
 
 // visual alternatives
 .table-bordered {
-    border: solid $table-border-width $table-border-color;
+  border: solid $table-border-width $table-border-color;
 }
 
 .table-headed th {
-    background-color: $table-headed-color;
+  background-color: $table-headed-color;
 }
 
 .table-striped tbody tr:nth-child(odd) {
-    background-color: $table-striped-color;
+  background-color: $table-striped-color;
 }
 
 .table-hover tbody tr:hover {
-    background-color: $table-hover-color;
+  background-color: $table-hover-color;
 }

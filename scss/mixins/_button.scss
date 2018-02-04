@@ -3,82 +3,74 @@
 
 // mixins to create buttons
 
-
-
-/* 
- * create a basic button
- *
- * Usage:
- * @include button;
- *
- */
+/*
+* create a basic button
+*
+* Usage:
+* @include button;
+*
+*/
 @mixin button {
-    display: inline-block;
-    padding: $button-padding-y $button-padding-x;
-    color: $button-default-font-color;
-    text-align: center;
-    font-family: $base-font-family;
-    font-size: $button-font-size;
-    font-weight: $button-font-weight;
-    line-height: $button-line-height;
-    text-decoration: none;
-    white-space: nowrap;
-    background-color: $button-default-bg-color;
-    border-radius: $button-border-radius;
-    border: $button-border-width solid $button-default-border-color;
-    cursor: pointer;
-    box-sizing: border-box;
-    user-select: none;
-    transition: $button-transition;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: $button-padding-y $button-padding-x;
+  font-family: $base-font-family;
+  font-size: $button-font-size;
+  font-weight: $button-font-weight;
+  line-height: $button-line-height;
+  color: $button-default-font-color;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  background-color: $button-default-bg-color;
+  border: $button-border-width solid $button-default-border-color;
+  border-radius: $button-border-radius;
+  transition: $button-transition;
 }
 
-
-
-/* 
- * button styles required to create a colored variation
- *
- * Usage:
- * @include button-hover(color(white), color(black), color(secondary));
- *
- */
+/*
+* button styles required to create a colored variation
+*
+* Usage:
+* @include button-hover(color(white), color(black), color(secondary));
+*
+*/
 @mixin button-color-variation($color, $background-color, $border-color) {
+  color: $color;
+  background-color: $background-color;
+  border-color: $border-color;
+}
+
+/*
+* button hover and focus state
+*
+* Usage:
+* @include button-hover(color(white), color(black), color(secondary));
+*
+*/
+@mixin button-hover($color, $background-color, $border-color) {
+  &:hover,
+  &:focus {
     color: $color;
     background-color: $background-color;
     border-color: $border-color;
+    outline: 0;
+  }
 }
 
-
-
-/* 
- * button hover and focus state 
- *
- * Usage:
- * @include button-hover(color(white), color(black), color(secondary));
- *
- */
-@mixin button-hover($color, $background-color, $border-color) {
-    &:hover,
-    &:focus {
-        color: $color;
-        background-color: $background-color;
-        border-color: $border-color;
-        outline: 0;
-    }
-}
-
-
-
-/* 
- * button size variation
- *
- * Usage:
- * @include button-size(1rem, 1rem, 15px);
- *
- */
+/*
+* button size variation
+*
+* Usage:
+* @include button-size(1rem, 1rem, 15px);
+*
+*/
 @mixin button-size(
-        $padding-y: $button-padding-y, 
-        $padding-x: $button-padding-x, 
-        $font-size: $button-font-size) {
-    font-size: $font-size;
-    padding: $padding-y $padding-x;
+  $padding-y: $button-padding-y,
+  $padding-x: $button-padding-x,
+  $font-size: $button-font-size) {
+  padding: $padding-y $padding-x;
+  font-size: $font-size;
 }

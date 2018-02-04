@@ -3,9 +3,7 @@
 
 // mixins to create form inputs
 
-
-
-/* 
+/*
  * create a basic input
  *
  * Usage:
@@ -13,22 +11,20 @@
  *
  */
 @mixin input {
-    font-size: $input-font-size;
-    color: $input-font-color;
-    padding: $input-padding-y $input-padding-x;
-    line-height: $input-line-height;
-    background: $input-background;
-    box-shadow: none;
-    box-sizing: border-box;
-    margin-bottom: $input-margin-bottom;
-    border: $input-border-width solid $input-border-color;
-    border-radius: $input-border-radius;
-    transition: $input-transition;
+  box-sizing: border-box;
+  padding: $input-padding-y $input-padding-x;
+  margin-bottom: $input-margin-bottom;
+  font-size: $input-font-size;
+  line-height: $input-line-height;
+  color: $input-font-color;
+  background: $input-background;
+  border: $input-border-width solid $input-border-color;
+  border-radius: $input-border-radius;
+  box-shadow: none;
+  transition: $input-transition;
 }
 
-
-
-/* 
+/*
  * input styles for focus state
  *
  * Usage:
@@ -36,33 +32,29 @@
  *
  */
 @mixin input-focus(
-        $background: $input-background-focus, 
-        $border-color: $input-border-color-focus) {
-    &:focus {
-        background: $background;
-        border-color: $border-color;
-        outline: 0;
-    }
+  $background: $input-background-focus,
+  $border-color: $input-border-color-focus) {
+  &:focus {
+    background: $background;
+    border-color: $border-color;
+    outline: 0;
+  }
 }
 
-
-
 /*
- * used internally to set the default width of form fields 
+ * used internally to set the default width of form fields
  * based on the $input-use-full-width variable
  *
  */
 @mixin input-width {
-    @if $input-use-full-width {
-        width: 100%;
-    } @else {
-        max-width: 100%;
-    }
+  @if $input-use-full-width {
+    width: 100%;
+  } @else {
+    max-width: 100%;
+  }
 }
 
-
-
-/* 
+/*
  * input size variation
  *
  * Usage:
@@ -70,9 +62,9 @@
  *
  */
 @mixin input-size(
-        $padding-y: $input-padding-y, 
-        $padding-x: $input-padding-x, 
-        $font-size: $input-font-size) {
-    font-size: $font-size;
-    padding: $padding-y $padding-x;
+  $padding-y: $input-padding-y,
+  $padding-x: $input-padding-x,
+  $font-size: $input-font-size) {
+  padding: $padding-y $padding-x;
+  font-size: $font-size;
 }

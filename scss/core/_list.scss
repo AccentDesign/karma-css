@@ -2,34 +2,36 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 ul {
-    padding-left: $ul-list-padding-left;
-    list-style: $ul-list-style;
-    margin-bottom: $ul-list-margin-bottom;
+  padding-left: $ul-list-padding-left;
+  margin-bottom: $ul-list-margin-bottom;
+  list-style: $ul-list-style;
 
-    ul, ol {
-        margin: $ul-list-nested-margin;
-    }
+  ul,
+  ol {
+    margin: $ul-list-nested-margin;
+  }
 }
 
 ol {
-    padding-left: $ol-list-padding-left;
-    list-style: $ol-list-style;
-    margin-bottom: $ol-list-margin-bottom;
-    
-    ol, ul {
-        margin: $ol-list-nested-margin;
-    }   
+  padding-left: $ol-list-padding-left;
+  margin-bottom: $ol-list-margin-bottom;
+  list-style: $ol-list-style;
+
+  ol,
+  ul {
+    margin: $ol-list-nested-margin;
+  }
 }
 
 dl {
-    margin-bottom: $dl-margin-bottom;
+  margin-bottom: $dl-margin-bottom;
 
-    dt {
-        font-weight: bold;
-        margin: $dt-margin;
-    }
-    
-    dd {
-        margin: $dd-margin;
-    }
+  dt {
+    margin: $dt-margin;
+    font-weight: 600;
+  }
+
+  dd {
+    margin: $dd-margin;
+  }
 }

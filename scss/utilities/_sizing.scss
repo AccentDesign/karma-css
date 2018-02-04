@@ -1,7 +1,17 @@
 // width and height
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-.full-height                { height: 100%; }
-.full-visual-height         { height: 100vh; }
-.full-width                 { width: 100%; box-sizing: border-box; }
-.max-full-width             { max-width: 100%; box-sizing: border-box; }
+.full-height {
+  height: 100%;
+}
+.full-visual-height {
+  height: 100vh;
+}
+.full-width {
+  box-sizing: border-box;
+  width: 100%;
+}
+.max-full-width {
+  box-sizing: border-box;
+  max-width: 100%;
+}

@@ -1,8 +1,6 @@
 // Content Column
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-
-
 /*
  * allowing for content to be spread evenly between specified number of columns
  * be sure to allow for the content travel from the bottom of one column
@@ -14,6 +12,6 @@
  *
  */
 @mixin col-overflow($col: 2, $gap: 2rem) {
-    column-count: $col;
-    column-gap: $gap;
+  column-count: $col;
+  column-gap: $gap;
 }

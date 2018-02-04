@@ -1,6 +1,12 @@
 // List
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+.list-style-none {
+  list-style: none !important; // stylelint-disable declaration-no-important
+}
 
-.list-style-none            { list-style: none !important; }
-.list-style-reset           { list-style: none !important; padding: 0; margin: 0; }
+.list-style-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none !important;
+}

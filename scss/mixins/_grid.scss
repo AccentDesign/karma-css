@@ -3,59 +3,51 @@
 
 // The main mixins used to create the grid containers, rows and columns
 
-
-
 /*
- * used in .container and .container-fluid
- *
- */
+* used in .container and .container-fluid
+*
+*/
 @mixin make-container() {
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: ($grid-gutter-width / 2);
-    padding-left:  ($grid-gutter-width / 2);
+  padding-right: ($grid-gutter-width / 2);
+  padding-left: ($grid-gutter-width / 2);
+  margin-right: auto;
+  margin-left: auto;
 }
 
-
-
 /*
- * For each breakpoint, define the maximum width of the container
- *
- */
+* For each breakpoint, define the maximum width of the container
+*
+*/
 @mixin make-container-max-widths($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
-    @each $breakpoint, $container-max-width in $max-widths {
-        @include media-breakpoint-up($breakpoint, $breakpoints) {
-            width: $container-max-width;
-            max-width: 100%;
-        }
+  @each $breakpoint, $container-max-width in $max-widths {
+    @include media-breakpoint-up($breakpoint, $breakpoints) {
+      width: $container-max-width;
+      max-width: 100%;
     }
+  }
 }
 
-
-
 /*
- * make a grid row
- *
- */
+* make a grid row
+*
+*/
 @mixin make-row() {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: ($grid-gutter-width / -2);
-    margin-left:  ($grid-gutter-width / -2);
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: ($grid-gutter-width / -2);
+  margin-left: ($grid-gutter-width / -2);
 }
 
-
-
 /*
- * make a grid column
- *
- * $size: number of columns wide
- * $columns: number of columns in the row
- * 
- */
+* make a grid column
+*
+* $size: number of columns wide
+* $columns: number of columns in the row
+*
+*/
 @mixin make-col($size, $columns: $grid-columns) {
-    flex: 0 0 percentage($size / $columns);
-    // Add a `max-width` to ensure content within each column does not blow out
-    // the width of the column. Applies to IE10+ and Firefox.
-    max-width: percentage($size / $columns);
+  flex: 0 0 percentage($size / $columns);
+  // Add a `max-width` to ensure content within each column does not blow out
+  // the width of the column. Applies to IE10+ and Firefox.
+  max-width: percentage($size / $columns);
 }

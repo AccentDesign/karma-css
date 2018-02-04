@@ -1,7 +1,6 @@
 // Text
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-
 .text-left                  { text-align: left; }
 .text-right                 { text-align: right; }
 .text-center                { text-align: center; }
@@ -13,4 +12,4 @@
 .small                      { font-size: 80%; }
 .uppercase                  { text-transform: uppercase; }
 
-.text-shadow                { text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
+.text-shadow                { text-shadow: 0 2px 4px rgba(0, 0, 0, .5); }
