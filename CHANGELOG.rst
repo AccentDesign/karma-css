@@ -5,7 +5,10 @@ Changelog
 master
 ======
 
-in development
+* Added 3 new colour functions that take in a colour name and returns
+    - ``color-darken()`` darken
+    - ``color-lighten()`` lighten
+    - ``color-a()`` add an alpha
 
 v1.8.1
 ======

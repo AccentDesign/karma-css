@@ -1,11 +1,27 @@
 // Color
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-@function color($color) {
-    // get color by name
-    @if not map-has-key($colors, $color) {
-      @warn "No color found for `#{$color}` in $colors map. Property omitted.";
-    }
 
-    @return map-get($colors, $color);
+// get color by name
+@function color($color) {
+  // get color by name
+  @if not map-has-key($colors, $color) {
+    @warn "No color found for `#{$color}` in $colors map. Property omitted.";
+  }
+  @return map-get($colors, $color);
+}
+
+// lighten a color by its name
+@function color-lighten($color, $amount) {
+  @return lighten(color($color), $amount);
+}
+
+// darken a color by its name
+@function color-darken($color, $amount) {
+  @return darken(color($color), $amount);
+}
+
+// get a color by its name with alpha
+@function color-a($color, $alpha) {
+  @return rgba(color($color), $alpha);
 }

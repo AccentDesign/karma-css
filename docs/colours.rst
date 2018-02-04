@@ -155,8 +155,21 @@ You can define additional colours in your variables. Simply add the following ``
 Helpers
 =======
 
-There is a handy function you can use in your css to get a colour by its name:
+There is a handy function you can use in your css to get a colour by its name: 
 
-.. code-block:: scss
+.. code-block:: css
 
        .mydiv { border-color: color(primary); }
+
+As well as others to either lighten, darken or apply opacity
+
+.. code-block:: css
+
+        // return a colour by its name and darken it by 10%
+        .mydiv { background-color: color-darken(primary, 10%); }
+
+        // return a colour by its name and lighten it by 10%
+        .mydiv { background-color: color-lighten(primary, 10%); }
+
+        // return a colour by its name and apply an alpha of .8
+        .mydiv { background-color: color-a(primary, .8); }
