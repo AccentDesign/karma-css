@@ -69,5 +69,5 @@ Additional colours can easily be added to your variables, you just need a name, 
     // "button-danger" that has red background and border with white text
     $buttons: (
         // name         color                          font-color
-        danger:         map-get($colors, red)          map-get($colors, white)
+        danger:         map-get($colors, "red")        map-get($colors, "white")
     );

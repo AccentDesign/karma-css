@@ -67,7 +67,7 @@ Say you want to add the colour ``whitesmoke``, in your ``_variables.scss`` all y
 .. code-block:: scss
 
     $colors: (
-      whitesmoke: rgb(245, 245, 245)
+      "whitesmoke": rgb(245, 245, 245)
     );
 
 This will be available with all the others.

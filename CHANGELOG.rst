@@ -12,6 +12,11 @@ master
   - ``color-lighten()`` lighten
   - ``color-a()`` add an alpha
 
+Breaking Changes
+----------------
+
+* When defining colours and using the ``color()`` function you must wrap the name in parentheses eg ``color("primary")``
+
 v1.8.1
 ======
 

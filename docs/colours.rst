@@ -148,8 +148,8 @@ You can define additional colours in your variables. Simply add the following ``
     // additionally you can redefine the colours in karma by adding them here too
     // so adding `primary` will overwrite the primary colour.
     $colors: (
-        somecolor:        rgb(0,0,0),
-        othercolor:       rgb(240,230,220)
+      "somecolor":        rgb(0,0,0),
+      "othercolor":       rgb(240,230,220)
     );
 
 Helpers
@@ -159,7 +159,7 @@ There is a handy function you can use in your css to get a colour by its name:
 
 .. code-block:: css
 
-       .mydiv { border-color: color(primary); }
+       .mydiv { border-color: color("primary"); }
 
 As well as others to either lighten, darken or apply opacity
 

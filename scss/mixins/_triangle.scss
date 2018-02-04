@@ -7,9 +7,9 @@
  *
  * Usage:
  * pointing down
- * @include css-triangle(color(red), down, 10px)
+ * @include css-triangle(color("red"), down, 10px)
  * also has rounded corners
- * @include css-triangle(color(red), down, 10px, $round: true)
+ * @include css-triangle(color("red"), down, 10px, $round: true)
  *
  */
 @mixin css-triangle($color, $direction, $size: 6px, $position: absolute, $round: false){
