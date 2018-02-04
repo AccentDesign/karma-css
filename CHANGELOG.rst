@@ -6,29 +6,36 @@ master
 ======
 
 * Added 3 new colour functions that take in a colour name and returns
-    - ``color-darken()`` darken
-    - ``color-lighten()`` lighten
-    - ``color-a()`` add an alpha
+  
+  - ``color-darken()`` darken
+  - ``color-lighten()`` lighten
+  - ``color-a()`` add an alpha
 
 v1.8.1
 ======
 
 * Reworked pre and code elements to work as they should with new variables
-    - ``$pre-font-size``
-    - ``$pre-padding``
-    - ``$pre-margin-bottom``
+
+  - ``$pre-font-size``
+  - ``$pre-padding``
+  - ``$pre-margin-bottom``
+
 * Added ability to change the header font family
 * Vertical align ``td`` and ``th``
 * Added new variables for definition lists
-    - ``$dl-margin-bottom``
-    - ``$dt-margin``
-    - ``$dd-margin``
+
+  - ``$dl-margin-bottom``
+  - ``$dt-margin``
+  - ``$dd-margin``
+
 * Added helper to hide an element on a single breakpoint
-    - ``hidden-xs``
-    - ``hidden-sm``
-    - ``hidden-md``
-    - ``hidden-lg``
-    - ``hidden-xl``
+
+  - ``hidden-xs``
+  - ``hidden-sm``
+  - ``hidden-md``
+  - ``hidden-lg``
+  - ``hidden-xl``
+
 * Added helper ``.list-style-reset`` to remove ``list-style``, ``padding`` and ``margin``
 
 v1.8.0
@@ -42,27 +49,36 @@ v1.8.0
 * Added variables to set ``h1``-``h6`` font weight, margins and line height
 * Split all use of ``$generic-margin-bottom`` to seperate variables
 * Added more control over the default button class by adding
-    - ``$button-default-border-color``
-    - ``$button-default-font-color``
-    - ``$button-border-width``
-    - ``$button-border-radius``
+
+  - ``$button-default-border-color``
+  - ``$button-default-font-color``
+  - ``$button-border-width``
+  - ``$button-border-radius``
+
 * Added new code variables
-    - ``$code-border-width``
-    - ``$code-border-color``
-    - ``$code-border-radius``
-    - ``$code-inline-padding``
-    - ``$code-block-padding``
+
+  - ``$code-border-width``
+  - ``$code-border-color``
+  - ``$code-border-radius``
+  - ``$code-inline-padding``
+  - ``$code-block-padding``
+
 * Added new hr variables
-    - ``$hr-border-width``
-    - ``$hr-border-color``
-    - ``$hr-margin``
+
+  - ``$hr-border-width``
+  - ``$hr-border-color``
+  - ``$hr-margin``
+
 * Added new table variable
-    - ``$table-border-width``
+  
+  - ``$table-border-width``
+
 * Added blockquote variables
-    - ``$blockquote-padding-x``
-    - ``$blockquote-padding-y``
-    - ``$blockquote-border-left-width``
-    - ``$blockquote-border-left-color``
+  
+  - ``$blockquote-padding-x``
+  - ``$blockquote-padding-y``
+  - ``$blockquote-border-left-width``
+  - ``$blockquote-border-left-color``
 
 v1.7.1
 ======
@@ -70,9 +86,10 @@ v1.7.1
 * Remove undocumented css from radios and checkboxes
 * Added input placeholder color style
 * Added new table variables
-    - ``$table-background-color``
-    - ``$table-border-color``
-    - ``$table-font-size``
+  
+  - ``$table-background-color``
+  - ``$table-border-color``
+  - ``$table-font-size``
 
 v1.7.0
 ======
@@ -80,14 +97,18 @@ v1.7.0
 * You only now need to define additional or overwrite existing colours and buttons within your variables
 * Added a new mixin flip to flip an element on it's x/y/both axis's
 * Added new css helpers
-    - ``.flip-x``
-    - ``.flip-y``
-    - ``.flip-both``
+  
+  - ``.flip-x``
+  - ``.flip-y``
+  - ``.flip-both``
+
 * Fix bug with anchor transition speed using wrong variable
 * Three new variables have been created to control transitions
-    - ``$link-transition``
-    - ``$button-transition``
-    - ``$input-transition``
+
+  - ``$link-transition``
+  - ``$button-transition``
+  - ``$input-transition``
+
 * ul and ol styles are now in the variables
 
 Breaking Changes
@@ -99,9 +120,9 @@ Breaking Changes
 Depreciated
 ----------- 
 
-- ``$link-transition-speed``
-- ``$button-transition-speed``
-- ``$input-transition-speed``
+* ``$link-transition-speed``
+* ``$button-transition-speed``
+* ``$input-transition-speed``
 
 v1.6.2
 ======
@@ -146,12 +167,16 @@ v1.4.0
 ======
 
 * Added 4 new mixin to build inputs
-    - ``input``
-    - ``input-width``
-    - ``input-size``
-    - ``input-focus``
+
+  - ``input``
+  - ``input-width``
+  - ``input-size``
+  - ``input-focus``
+
 * Added 1 new mixin to build buttons
-    - ``button-size``
+
+  - ``button-size``
+
 * Added some default values to the mixin button-hover
 * Added a transition to input focus
 * Added some flex and margin auto helpers
@@ -160,13 +185,14 @@ v1.4.0
 
 * variable ``$input-border-focus`` has been replaced with ``$input-border-color-focus``
 * Renaming of helper classes
-    - ``.hidden`` > ``.d-hidden``
-    - ``.inline`` > ``.d-inline``
-    - ``.inline-block`` > ``.d-inline-block``
-    - ``.block`` > ``.d-block``
-    - ``.flex`` > ``.d-flex``
-    - ``.display-table`` > ``.d-table``
-    - ``.display-table-cell`` > ``.d-table-cell``
+  
+  - ``.hidden`` > ``.d-hidden``
+  - ``.inline`` > ``.d-inline``
+  - ``.inline-block`` > ``.d-inline-block``
+  - ``.block`` > ``.d-block``
+  - ``.flex`` > ``.d-flex``
+  - ``.display-table`` > ``.d-table``
+  - ``.display-table-cell`` > ``.d-table-cell``
 
 The originals have been moved into a ``utilities/_helpers-depreciated.scss`` which you can include in your own project
 to avoid renaming any. ``@include "karma-css/scss/utilities/helpers-depreciated";``
@@ -191,9 +217,11 @@ v1.3.3
 ======
 
 * Added 3 new mixin to build buttons
-    - ``button``
-    - ``button-color-variation``
-    - ``button-hover``
+
+  - ``button``
+  - ``button-color-variation``
+  - ``button-hover``
+
 * Created sample blog and thumbnail listing page
 
 v1.3.2
