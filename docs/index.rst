@@ -6,9 +6,34 @@
 Karma CSS
 =========
 
+Karma CSS is a great starting point if you only want a barebones boilerplate. Includes normalize, 
+a powerful mobile-first flexbox grid system, all base styles and the ability to customize the defaults for most
+of the styled elements.
+
+We support all major browsers
+
+* Chrome >= 45
+* Firefox >= 38
+* Edge >= 12
+* Explorer >= 10
+* iOS >= 9
+* Safari >= 9
+* Android >= 4.4
+* Opera >= 30
+
+These docs are hosted with thanks to `Read the Docs <https://readthedocs.org/>`_ with a theme built with Karma, 
+though not yet published as a python package you are welcome to use it if you wish using:
+
+.. code-block:: bash
+
+    pip install git+https://github.com/AccentDesign/karma_sphinx_theme.git
+
+You can view an example set of all elements styled at 
+`karma-sphinx-theme.readthedocs.io <http://karma-sphinx-theme.readthedocs.io/>`_.
+
 .. toctree::
    :maxdepth: 1
-   :caption: Content:
+   :caption: Content
 
    installation
    customizing
