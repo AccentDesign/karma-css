@@ -5,6 +5,7 @@ Changelog
 master
 ======
 
+* Added scss linting
 * Added 3 new colour functions that take in a colour name and returns
   
   - ``color-darken()`` darken

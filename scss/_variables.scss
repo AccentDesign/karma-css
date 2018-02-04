@@ -194,7 +194,7 @@ $button-transition:             background-color linear $animation-speed-fast, b
 
 // the below applies to the default button class only `.button`
 $button-default-border-color:   $border-color !default;
-$button-default-bg-color:       map-get($colors, white) !default;
+$button-default-bg-color:       map-get($colors, white) !default; // stylelint-disable color-named
 $button-default-font-color:     $font-color !default;
 
 

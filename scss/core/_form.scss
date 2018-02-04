@@ -8,15 +8,19 @@ form {
 }
 
 input {
+  &[type="date"],
   &[type="datetime"],
+  &[type="datetime-local"],
   &[type="email"],
+  &[type="month"],
   &[type="number"],
   &[type="password"],
   &[type="search"],
   &[type="tel"],
   &[type="text"],
-  &[type="url"] {
-    appearance: none; // remove awkward defaults on ios
+  &[type="url"],
+  &[type="week"] {
+    appearance: none;
     @include input;
     @include input-size;
     @include input-width;
@@ -28,12 +32,8 @@ input {
   &[type="month"],
   &[type="week"] {
     appearance: listbox;
-    @include input;
-    @include input-size;
-    @include input-width;
-    @include input-focus;
 
-    // removes the extra padding & margin in date controls in webkit 
+    // stop date controls in webkit being taller
     &::-webkit-datetime-edit-fields-wrapper {
       padding: 0;
       margin: 0;
@@ -65,8 +65,7 @@ select {
   }
 }
 
-input::placeholder,
-textarea::placeholder {
+::placeholder {
   color: $input-placeholder-color;
   opacity: 1;
 }
