@@ -28,7 +28,7 @@
  * input styles for focus state
  *
  * Usage:
- * @include input-focus(color(white), color(primary));
+ * @include input-focus(color("white"), color("primary"));
  *
  */
 @mixin input-focus(

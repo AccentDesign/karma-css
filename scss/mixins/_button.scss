@@ -34,7 +34,7 @@
 * button styles required to create a colored variation
 *
 * Usage:
-* @include button-hover(color(white), color(black), color(secondary));
+* @include button-hover(color("white"), color("black"), color("secondary"));
 *
 */
 @mixin button-color-variation($color, $background-color, $border-color) {
@@ -47,7 +47,7 @@
 * button hover and focus state
 *
 * Usage:
-* @include button-hover(color(white), color(black), color(secondary));
+* @include button-hover(color("white"), color("black"), color("secondary"));
 *
 */
 @mixin button-hover($color, $background-color, $border-color) {
