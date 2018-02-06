@@ -4,6 +4,6 @@
 @media print {
   .no-print,
   .no-print * {
-    display: none !important; // stylelint-disable declaration-no-important
+    display: none !important; // stylelint-disable-line declaration-no-important
   }
 }
