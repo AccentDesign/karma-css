@@ -1,15 +1,13 @@
 // Inputs
-//––––––––––––––––––––––––––––––––––––––––––––––––––
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 // mixins to create form inputs
 
-/*
- * create a basic input
- *
- * Usage:
- * @include input;
- *
- */
+// create a basic input
+//
+// Usage:
+// @include input;
+//
 @mixin input {
   box-sizing: border-box;
   padding: $input-padding-y $input-padding-x;
@@ -24,13 +22,11 @@
   transition: $input-transition;
 }
 
-/*
- * input styles for focus state
- *
- * Usage:
- * @include input-focus(color("white"), color("primary"));
- *
- */
+// input styles for focus state
+//
+// Usage:
+// @include input-focus(color("white"), color("primary"));
+//
 @mixin input-focus(
   $background: $input-background-focus,
   $border-color: $input-border-color-focus) {
@@ -41,11 +37,9 @@
   }
 }
 
-/*
- * used internally to set the default width of form fields
- * based on the $input-use-full-width variable
- *
- */
+// used internally to set the default width of form fields
+// based on the $input-use-full-width variable
+//
 @mixin input-width {
   @if $input-use-full-width {
     width: 100%;
@@ -54,13 +48,11 @@
   }
 }
 
-/*
- * input size variation
- *
- * Usage:
- * @include input-size(1rem, 1rem, 15px);
- *
- */
+// input size variation
+//
+// Usage:
+// @include input-size(1rem, 1rem, 15px);
+//
 @mixin input-size(
   $padding-y: $input-padding-y,
   $padding-x: $input-padding-x,

@@ -1,21 +1,21 @@
 // Import 
-//–––––––––––––––––––––––––––––––––––––––––––––––––– 
+// –––––––––––––––––––––––––––––––––––––––––––––––––– 
 
 @import "credits";
 
-/* normalize */
+// normalize
 @import "core/normalize";
 
-/* system wide functions */
+// system wide functions
 @import "functions";
 
-/* system wide mixins */
+// system wide mixins
 @import "mixins";
 
-/* grid */
+// grid
 @import "core/grid";
 
-/* core building blocks */
+// core building blocks
 @import "core/base";
 @import "core/anchor";
 @import "core/button";

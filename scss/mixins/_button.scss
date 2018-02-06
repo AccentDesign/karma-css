@@ -1,15 +1,13 @@
 // Button
-//––––––––––––––––––––––––––––––––––––––––––––––––––
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 // mixins to create buttons
 
-/*
-* create a basic button
-*
-* Usage:
-* @include button;
-*
-*/
+// create a basic button
+//
+// Usage:
+// @include button;
+//
 @mixin button {
   box-sizing: border-box;
   display: inline-block;
@@ -30,26 +28,22 @@
   transition: $button-transition;
 }
 
-/*
-* button styles required to create a colored variation
-*
-* Usage:
-* @include button-hover(color("white"), color("black"), color("secondary"));
-*
-*/
+// button styles required to create a colored variation
+//
+// Usage:
+// @include button-hover(color("white"), color("black"), color("secondary"));
+//
 @mixin button-color-variation($color, $background-color, $border-color) {
   color: $color;
   background-color: $background-color;
   border-color: $border-color;
 }
 
-/*
-* button hover and focus state
-*
-* Usage:
-* @include button-hover(color("white"), color("black"), color("secondary"));
-*
-*/
+// button hover and focus state
+//
+// Usage:
+// @include button-hover(color("white"), color("black"), color("secondary"));
+//
 @mixin button-hover($color, $background-color, $border-color) {
   &:hover,
   &:focus {
@@ -60,13 +54,11 @@
   }
 }
 
-/*
-* button size variation
-*
-* Usage:
-* @include button-size(1rem, 1rem, 15px);
-*
-*/
+// button size variation
+//
+// Usage:
+// @include button-size(1rem, 1rem, 15px);
+//
 @mixin button-size(
   $padding-y: $button-padding-y,
   $padding-x: $button-padding-x,

@@ -1,16 +1,14 @@
 // Position
-//––––––––––––––––––––––––––––––––––––––––––––––––––
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-/*
- * position an element
- * be sure to set the parent elements position to relative then this will use its full bounds
- * usefull for cards where the anchor is a child of the card to make the whole card clickable
- *
- * Usage:
- * >> @include position(0,0,0,0)
- * top: 0; right: 0; bottom: 0; left: 0; position: absolute;
- *
- */
+// position an element
+// be sure to set the parent elements position to relative then this will use its full bounds
+// usefull for cards where the anchor is a child of the card to make the whole card clickable
+//
+// Usage:
+// >> @include position(0,0,0,0)
+// top: 0; right: 0; bottom: 0; left: 0; position: absolute;
+//
 @mixin position($top: auto, $right: auto, $bottom: auto, $left: auto, $position: absolute) {
   position: $position;
   top: $top;

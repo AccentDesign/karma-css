@@ -1,13 +1,11 @@
 // Truncate
-//––––––––––––––––––––––––––––––––––––––––––––––––––
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-/*
- * truncate text at defined width
- *
- * Usage:
- * @include truncate(100px);
- *
- */
+// truncate text at defined width
+//
+// Usage:
+// @include truncate(100px);
+//
 @mixin truncate($truncation-boundary) {
   max-width: $truncation-boundary;
   overflow: hidden;
