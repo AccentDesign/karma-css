@@ -13,6 +13,7 @@ master
   - ``color-a()`` add an alpha
 
 * Added ``.d-grid`` for ``display: grid``
+* Added new button classes ``.button-clear`` and ``.button-outline`` that can be applied to any base or coloured button
 
 Breaking Changes
 ----------------

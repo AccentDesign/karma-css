@@ -61,6 +61,42 @@ There are two created out of the box ``.button-primary`` and ``.button-secondary
     <button class="button button-primary">button element</button>
     <button class="button button-secondary">button element</button>
 
+Outline Buttons
+---------------
+
+By adding the class ``.button-outline`` you can have a button with a transparent background. The text colour
+is the main colour of the button.
+
+.. raw:: html
+
+    <div class="mb-2h">
+        <button class="button button-outline">button element</button>
+        <button class="button button-outline button-primary">button element</button>
+    </div>
+
+.. code-block:: html
+
+    <button class="button button-outline">button element</button>
+    <button class="button button-outline button-primary">button element</button>
+
+Clear Buttons
+-------------
+
+By adding the class ``.button-clear`` you can have a button with a transparent background and border. The text colour
+is the main colour of the button.
+
+.. raw:: html
+
+    <div class="mb-2h">
+        <button class="button button-clear">button element</button>
+        <button class="button button-clear button-primary">button element</button>
+    </div>
+
+.. code-block:: html
+
+    <button class="button button-clear">button element</button>
+    <button class="button button-clear button-primary">button element</button>
+
 Additional colours can easily be added to your variables, you just need a name, colour and font color:
 
 .. code-block:: scss

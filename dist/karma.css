@@ -1322,6 +1322,31 @@ a:hover {
   outline: 0;
 }
 
+.button.button-outline {
+  background-color: transparent;
+  transition: background-color linear 250ms, border-color linear 250ms, color linear 250ms;
+}
+
+.button.button-outline:hover, .button.button-outline:focus {
+  color: #252525;
+  background-color: transparent;
+  border-color: #cdcdcd;
+  outline: 0;
+}
+
+.button.button-clear {
+  background-color: transparent;
+  border-color: transparent;
+  transition: background-color linear 250ms, border-color linear 250ms, color linear 250ms;
+}
+
+.button.button-clear:hover, .button.button-clear:focus {
+  color: #252525;
+  background-color: transparent;
+  border-color: transparent;
+  outline: 0;
+}
+
 .button.button-primary {
   color: white;
   background-color: #33c3f0;
@@ -1335,6 +1360,32 @@ a:hover {
   outline: 0;
 }
 
+.button.button-outline.button-primary {
+  color: #33c3f0;
+  background-color: transparent;
+  border-color: #33c3f0;
+}
+
+.button.button-outline.button-primary:hover, .button.button-outline.button-primary:focus {
+  color: #10aee0;
+  background-color: transparent;
+  border-color: #10aee0;
+  outline: 0;
+}
+
+.button.button-clear.button-primary {
+  color: #33c3f0;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.button.button-clear.button-primary:hover, .button.button-clear.button-primary:focus {
+  color: #10aee0;
+  background-color: transparent;
+  border-color: transparent;
+  outline: 0;
+}
+
 .button.button-secondary {
   color: #111111;
   background-color: #f0f0f0;
@@ -1345,6 +1396,32 @@ a:hover {
   color: #111111;
   background-color: #d7d7d7;
   border-color: #cacaca;
+  outline: 0;
+}
+
+.button.button-outline.button-secondary {
+  color: #f0f0f0;
+  background-color: transparent;
+  border-color: #f0f0f0;
+}
+
+.button.button-outline.button-secondary:hover, .button.button-outline.button-secondary:focus {
+  color: #d7d7d7;
+  background-color: transparent;
+  border-color: #d7d7d7;
+  outline: 0;
+}
+
+.button.button-clear.button-secondary {
+  color: #f0f0f0;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.button.button-clear.button-secondary:hover, .button.button-clear.button-secondary:focus {
+  color: #d7d7d7;
+  background-color: transparent;
+  border-color: transparent;
   outline: 0;
 }
 
