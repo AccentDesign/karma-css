@@ -22,11 +22,11 @@ We support all major browsers
 * Opera >= 30
 
 These docs are hosted with thanks to `Read the Docs <https://readthedocs.org/>`_ with a theme built with Karma, 
-though not yet published as a python package you are welcome to use it if you wish using:
+feel free you use it yourself if you so wish:
 
 .. code-block:: bash
 
-    pip install git+https://github.com/AccentDesign/karma_sphinx_theme.git
+    pip install karma_sphinx_theme
 
 You can view an example set of all elements styled at 
 `karma-sphinx-theme.readthedocs.io <http://karma-sphinx-theme.readthedocs.io/>`_.
