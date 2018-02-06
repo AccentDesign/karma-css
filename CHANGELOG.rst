@@ -12,6 +12,8 @@ master
   - ``color-lighten()`` lighten
   - ``color-a()`` add an alpha
 
+* Added ``.d-grid`` for ``display: grid``
+
 Breaking Changes
 ----------------
 
