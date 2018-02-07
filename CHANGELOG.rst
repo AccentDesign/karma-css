@@ -8,7 +8,7 @@ master
 * Added scss linting
 * Removed normalize and styled only supported browsers.
 * Added 3 new colour functions that take in a colour name and returns
-  
+
   - ``color-darken()`` darken
   - ``color-lighten()`` lighten
   - ``color-a()`` add an alpha
@@ -16,6 +16,7 @@ master
 * Added ``.d-grid`` for ``display: grid``
 * Added new button classes ``.button-clear`` and ``.button-outline`` that can be applied to any base or coloured button
 * Added new variables
+
   - ``$strong-font-weight``
   - ``$lead-font-weight``
   - ``$small-font-size``
