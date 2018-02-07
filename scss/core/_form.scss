@@ -7,49 +7,51 @@ form {
   margin-bottom: $form-margin-bottom;
 }
 
-input {
-  &[type="date"],
-  &[type="datetime"],
-  &[type="datetime-local"],
-  &[type="email"],
-  &[type="month"],
-  &[type="number"],
-  &[type="password"],
-  &[type="search"],
-  &[type="tel"],
-  &[type="text"],
-  &[type="url"],
-  &[type="week"] {
-    appearance: none;
-    @include input;
-    @include input-size;
-    @include input-width;
-    @include input-focus;
-  }
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="url"],
+[type="week"] {
+  @include input;
+  @include input-size;
+  @include input-width;
+  @include input-focus;
+}
 
-  &[type="date"],
-  &[type="datetime-local"],
-  &[type="month"],
-  &[type="week"] {
-    appearance: listbox;
+// only set some simple margin as components will handle the style better
+[type="checkbox"],
+[type="radio"] {
+  margin-right: 1rem;
+}
 
-    // stop date controls in webkit being taller
-    &::-webkit-datetime-edit-fields-wrapper {
-      padding: 0;
-      margin: 0;
-    }
-  }
+// Correct the cursor style of increment and decrement buttons in Chrome.
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
 
-  // only set some simple margin as components will handle the style better
-  &[type="checkbox"],
-  &[type="radio"] {
-    margin-right: 1rem;
-  }
+// stop date controls in webkit being taller
+::-webkit-datetime-edit-fields-wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+// placeholder text
+::placeholder {
+  color: $input-placeholder-color;
+  opacity: 1;
 }
 
 textarea {
-  appearance: none; // remove awkward defaults on ios
   @include input;
+  @include input-size;
   @include input-width;
   @include input-focus;
 }
@@ -59,26 +61,30 @@ select {
   @include input-size;
   @include input-width;
   @include input-focus;
+  text-transform: none;
 
   &:not([multiple]) {
     height: $input-height;
   }
 }
 
-::placeholder {
-  color: $input-placeholder-color;
-  opacity: 1;
-}
-
-label,
-legend {
+label {
   display: block;
   margin-bottom: .5rem;
   font-weight: $label-font-weight;
 }
 
+legend {
+  box-sizing: border-box;
+  display: block;
+  max-width: 100%;
+  margin-bottom: .5rem;
+  font-weight: $label-font-weight;
+  color: inherit;
+  white-space: normal;
+}
+
 fieldset {
-  padding: 0;
   margin-bottom: $input-margin-bottom;
   border-width: 0;
 }

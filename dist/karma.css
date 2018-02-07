@@ -1,238 +1,4 @@
 /*! Karma-CSS v1.9.0 MIT License | http://karmacss.com | https://github.com/accentdesign/karma-css */
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
-html {
-  line-height: 1.15;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
-  margin: 0;
-}
-
-article,
-aside,
-footer,
-header,
-nav,
-section {
-  display: block;
-}
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-figcaption,
-figure,
-main {
-  display: block;
-}
-
-figure {
-  margin: 1em 40px;
-}
-
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
-
-pre {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-a {
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-}
-
-abbr[title] {
-  border-bottom: none;
-  text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
-}
-
-b,
-strong {
-  font-weight: inherit;
-}
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-dfn {
-  font-style: italic;
-}
-
-mark {
-  background-color: #ff0;
-  color: #000;
-}
-
-small {
-  font-size: 80%;
-}
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-audio,
-video {
-  display: inline-block;
-}
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-img {
-  border-style: none;
-}
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: "Open Sans", sans-serif;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-}
-
-button,
-input {
-  overflow: visible;
-}
-
-button,
-select {
-  text-transform: none;
-}
-
-button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-legend {
-  box-sizing: border-box;
-  color: inherit;
-  display: table;
-  max-width: 100%;
-  padding: 0;
-  white-space: normal;
-}
-
-progress {
-  display: inline-block;
-  vertical-align: baseline;
-}
-
-textarea {
-  overflow: auto;
-}
-
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-[type="search"] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px;
-}
-
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit;
-}
-
-details,
-menu {
-  display: block;
-}
-
-summary {
-  display: list-item;
-}
-
-canvas {
-  display: inline-block;
-}
-
-template {
-  display: none;
-}
-
-[hidden] {
-  display: none;
-}
-
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -1270,21 +1036,31 @@ template {
 
 html {
   font-size: 62.5%;
+  line-height: 1.6;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   font-weight: 400;
-  line-height: 1.6;
   color: #3e3e3e;
   background: white;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  display: block;
 }
 
 a {
   color: #33c3f0;
   text-decoration: none;
+  background-color: transparent;
   transition: color linear 250ms;
+  -webkit-text-decoration-skip: objects;
 }
 
 a:hover {
@@ -1292,11 +1068,17 @@ a:hover {
   text-decoration: none;
 }
 
+::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
 .button {
   box-sizing: border-box;
   display: inline-block;
   padding: 0.8rem 1rem;
-  font-family: "Open Sans", sans-serif;
+  overflow: visible;
+  font-family: inherit;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.5;
@@ -1469,14 +1251,22 @@ form {
   margin-bottom: 1.5rem;
 }
 
-input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="week"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="url"],
+[type="week"] {
   box-sizing: border-box;
-  padding: 0.8rem 1rem;
   margin-bottom: 1.5rem;
-  font-size: 1.5rem;
+  overflow: visible;
+  font-family: inherit;
   line-height: 1.5;
   color: #3e3e3e;
   background: white;
@@ -1489,76 +1279,36 @@ input[type="date"], input[type="datetime"], input[type="datetime-local"], input[
   max-width: 100%;
 }
 
-input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="week"]:focus {
+[type="date"]:focus,
+[type="datetime"]:focus,
+[type="datetime-local"]:focus,
+[type="email"]:focus,
+[type="month"]:focus,
+[type="number"]:focus,
+[type="password"]:focus,
+[type="search"]:focus,
+[type="tel"]:focus,
+[type="text"]:focus,
+[type="url"]:focus,
+[type="week"]:focus {
   background: white;
   border-color: #33c3f0;
   outline: 0;
 }
 
-input[type="date"], input[type="datetime-local"], input[type="month"], input[type="week"] {
-  -webkit-appearance: listbox;
-  -moz-appearance: listbox;
-  appearance: listbox;
-}
-
-input[type="date"]::-webkit-datetime-edit-fields-wrapper, input[type="datetime-local"]::-webkit-datetime-edit-fields-wrapper, input[type="month"]::-webkit-datetime-edit-fields-wrapper, input[type="week"]::-webkit-datetime-edit-fields-wrapper {
-  padding: 0;
-  margin: 0;
-}
-
-input[type="checkbox"], input[type="radio"] {
+[type="checkbox"],
+[type="radio"] {
   margin-right: 1rem;
 }
 
-textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  box-sizing: border-box;
-  padding: 0.8rem 1rem;
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  color: #3e3e3e;
-  background: white;
-  border: 1px solid #e6e6e6;
-  border-radius: 0.25rem;
-  box-shadow: none;
-  transition: background linear 250ms, border-color linear 250ms;
-  max-width: 100%;
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
 }
 
-textarea:focus {
-  background: white;
-  border-color: #33c3f0;
-  outline: 0;
-}
-
-select {
-  box-sizing: border-box;
-  padding: 0.8rem 1rem;
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  color: #3e3e3e;
-  background: white;
-  border: 1px solid #e6e6e6;
-  border-radius: 0.25rem;
-  box-shadow: none;
-  transition: background linear 250ms, border-color linear 250ms;
-  padding: 0.8rem 1rem;
-  font-size: 1.5rem;
-  max-width: 100%;
-}
-
-select:focus {
-  background: white;
-  border-color: #33c3f0;
-  outline: 0;
-}
-
-select:not([multiple]) {
-  height: calc(3.85rem + 2px);
+::-webkit-datetime-edit-fields-wrapper {
+  padding: 0;
+  margin: 0;
 }
 
 ::-webkit-input-placeholder {
@@ -1586,26 +1336,97 @@ select:not([multiple]) {
   opacity: 1;
 }
 
-label,
-legend {
+textarea {
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+  overflow: visible;
+  font-family: inherit;
+  line-height: 1.5;
+  color: #3e3e3e;
+  background: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 0.25rem;
+  box-shadow: none;
+  transition: background linear 250ms, border-color linear 250ms;
+  padding: 0.8rem 1rem;
+  font-size: 1.5rem;
+  max-width: 100%;
+}
+
+textarea:focus {
+  background: white;
+  border-color: #33c3f0;
+  outline: 0;
+}
+
+select {
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+  overflow: visible;
+  font-family: inherit;
+  line-height: 1.5;
+  color: #3e3e3e;
+  background: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 0.25rem;
+  box-shadow: none;
+  transition: background linear 250ms, border-color linear 250ms;
+  padding: 0.8rem 1rem;
+  font-size: 1.5rem;
+  max-width: 100%;
+  text-transform: none;
+}
+
+select:focus {
+  background: white;
+  border-color: #33c3f0;
+  outline: 0;
+}
+
+select:not([multiple]) {
+  height: calc(3.85rem + 2px);
+}
+
+label {
   display: block;
   margin-bottom: .5rem;
   font-weight: 600;
 }
 
+legend {
+  box-sizing: border-box;
+  display: block;
+  max-width: 100%;
+  margin-bottom: .5rem;
+  font-weight: 600;
+  color: inherit;
+  white-space: normal;
+}
+
 fieldset {
-  padding: 0;
   margin-bottom: 1.5rem;
   border-width: 0;
 }
 
 hr {
+  box-sizing: content-box;
+  height: 0;
   margin: 1.5rem 0;
-  border-width: 0;
+  overflow: visible;
+  border: 0;
   border-top: 1px solid #e6e6e6;
 }
 
+img {
+  border-style: none;
+}
+
+figcaption {
+  display: block;
+}
+
 figure {
+  display: block;
   margin: 0 0 1.5rem;
 }
 
@@ -1629,6 +1450,10 @@ ol {
 ol ol,
 ol ul {
   margin: 0 0 0 2rem;
+}
+
+li {
+  display: block;
 }
 
 dl {
@@ -1756,6 +1581,11 @@ h6,
   line-height: 1.6;
 }
 
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
 p {
   margin-bottom: 1.5rem;
 }
@@ -1764,6 +1594,31 @@ blockquote {
   padding: 1rem 1.5rem;
   margin-bottom: 1.5rem;
   border-left: 3px solid #e6e6e6;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
 }
 
 .align-top {
@@ -2277,6 +2132,10 @@ blockquote {
 
 .text-just {
   text-align: justify;
+}
+
+.strong {
+  font-weight: 700;
 }
 
 .lead {

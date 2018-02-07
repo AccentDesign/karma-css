@@ -6,7 +6,8 @@
 Karma CSS
 =========
 
-Karma CSS is a great starting point if you only want a barebones boilerplate. Includes normalize, 
+Karma CSS is a great starting point if you only want a barebones boilerplate.
+Includes All fixes from Normalize.css for supported browsers, 
 a powerful mobile-first flexbox grid system, all base styles and the ability to customize the defaults for most
 of the styled elements.
 

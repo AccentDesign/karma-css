@@ -6,10 +6,11 @@
 .text-center                { text-align: center; }
 .text-just                  { text-align: justify; }
 
-.lead                       { font-weight: 300; }
+.strong                     { font-weight: $strong-font-weight; }
+.lead                       { font-weight: $lead-font-weight; }
 .muted                      { opacity: .7; }
 .nowrap                     { white-space: nowrap; }
-.small                      { font-size: 80%; }
+.small                      { font-size: $small-font-size; }
 .uppercase                  { text-transform: uppercase; }
 
 .text-shadow                { text-shadow: 0 2px 4px rgba(0, 0, 0, .5); }

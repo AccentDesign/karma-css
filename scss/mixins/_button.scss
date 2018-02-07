@@ -12,7 +12,8 @@
   box-sizing: border-box;
   display: inline-block;
   padding: $button-padding-y $button-padding-x;
-  font-family: $base-font-family;
+  overflow: visible;
+  font-family: inherit;
   font-size: $button-font-size;
   font-weight: $button-font-weight;
   line-height: $button-line-height;

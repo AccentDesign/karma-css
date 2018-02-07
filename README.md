@@ -13,7 +13,7 @@ We support all modern browsers and back to IE10, please see the full [list](http
 
 ## Whats included?
 
-* Normalize
+* All fixes from Normalize.css for supported browsers 
 * A powerful flex based grid system that has multiple configurable breakpoints and columns.
 * Variables to:
     * customize the default look of form fields, buttons, tables, fonts and more.
