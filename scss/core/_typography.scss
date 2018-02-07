@@ -64,6 +64,10 @@ h6,
   line-height: $h6-line-height;
 }
 
+abbr[title] { // stylelint-disable-line selector-no-qualifying-type
+  text-decoration: underline dotted;
+}
+
 p {
   margin-bottom: $paragraph-margin-bottom;
 }
@@ -72,4 +76,29 @@ blockquote {
   padding: $blockquote-padding-y $blockquote-padding-x;
   margin-bottom: $blockquote-margin-bottom;
   border-left: $blockquote-border-left-width solid $blockquote-border-left-color;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
 }

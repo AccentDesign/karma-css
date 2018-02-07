@@ -1,6 +1,11 @@
 // Button
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
+::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
 // default buttons style
 .button {
   @include button;

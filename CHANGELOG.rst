@@ -6,6 +6,7 @@ master
 ======
 
 * Added scss linting
+* Removed normalize and styled only supported browsers.
 * Added 3 new colour functions that take in a colour name and returns
   
   - ``color-darken()`` darken

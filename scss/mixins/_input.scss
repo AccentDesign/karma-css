@@ -10,9 +10,9 @@
 //
 @mixin input {
   box-sizing: border-box;
-  padding: $input-padding-y $input-padding-x;
   margin-bottom: $input-margin-bottom;
-  font-size: $input-font-size;
+  overflow: visible;
+  font-family: inherit;
   line-height: $input-line-height;
   color: $input-font-color;
   background: $input-background;
