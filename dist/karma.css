@@ -2134,6 +2134,10 @@ sup {
   text-align: justify;
 }
 
+.strong {
+  font-weight: 700;
+}
+
 .lead {
   font-weight: 300;
 }

@@ -80,11 +80,11 @@ blockquote {
 
 b,
 strong {
-  font-weight: 700;
+  font-weight: $strong-font-weight;
 }
 
 small {
-  font-size: 80%;
+  font-size: $small-font-size;
 }
 
 sub,
