@@ -1,4 +1,4 @@
-/*! Karma-CSS v1.9.1 MIT License | http://karmacss.com | https://github.com/accentdesign/karma-css */
+/*! Karma-CSS v1.9.2 MIT License | http://karmacss.com | https://github.com/accentdesign/karma-css */
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -1068,6 +1068,13 @@ a:hover {
   text-decoration: none;
 }
 
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
 ::-moz-focus-inner {
   padding: 0;
   border: 0;
@@ -1277,6 +1284,7 @@ form {
   padding: 0.8rem 1rem;
   font-size: 1.5rem;
   max-width: 100%;
+  -webkit-appearance: none;
 }
 
 [type="date"]:focus,
@@ -1294,6 +1302,13 @@ form {
   background: white;
   border-color: #33c3f0;
   outline: 0;
+}
+
+[type="date"],
+[type="datetime-local"],
+[type="month"],
+[type="week"] {
+  -webkit-appearance: listbox;
 }
 
 [type="checkbox"],
@@ -1351,6 +1366,7 @@ textarea {
   padding: 0.8rem 1rem;
   font-size: 1.5rem;
   max-width: 100%;
+  -webkit-appearance: none;
 }
 
 textarea:focus {

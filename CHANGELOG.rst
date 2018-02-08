@@ -7,6 +7,11 @@ master
 
 in development
 
+v1.9.2
+======
+
+* Re added missing webkit resets on inputs and buttons
+
 v1.9.1
 ======
 

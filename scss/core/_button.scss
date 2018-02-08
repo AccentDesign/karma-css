@@ -1,6 +1,13 @@
 // Button
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;	// stylelint-disable-line property-no-vendor-prefix
+}
+
 ::-moz-focus-inner {
   padding: 0;
   border: 0;
