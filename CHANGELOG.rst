@@ -7,6 +7,11 @@ master
 
 in development
 
+v1.9.3
+======
+
+* stop date type inputs collapsing height on ios
+
 v1.9.2
 ======
 
