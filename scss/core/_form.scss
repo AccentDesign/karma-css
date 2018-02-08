@@ -7,36 +7,38 @@ form {
   margin-bottom: $form-margin-bottom;
 }
 
-[type="date"],
-[type="datetime"],
-[type="datetime-local"],
-[type="email"],
-[type="month"],
-[type="number"],
-[type="password"],
-[type="search"],
-[type="tel"],
-[type="text"],
-[type="url"],
-[type="week"] {
-  @include input;
-  @include input-size;
-  @include input-width;
-  @include input-focus;
-  -webkit-appearance: none; // stylelint-disable-line property-no-vendor-prefix
-}
+input {
+  &[type="date"],
+  &[type="datetime"],
+  &[type="datetime-local"],
+  &[type="email"],
+  &[type="month"],
+  &[type="number"],
+  &[type="password"],
+  &[type="search"],
+  &[type="tel"],
+  &[type="text"],
+  &[type="url"],
+  &[type="week"] {
+    @include input;
+    @include input-size;
+    @include input-width;
+    @include input-focus;
+    -webkit-appearance: none; // stylelint-disable-line property-no-vendor-prefix
+  }
 
-[type="date"],
-[type="datetime-local"],
-[type="month"],
-[type="week"] {
-  -webkit-appearance: listbox; // stylelint-disable-line property-no-vendor-prefix
-}
+  &[type="date"],
+  &[type="datetime-local"],
+  &[type="month"],
+  &[type="week"] {
+    -webkit-appearance: listbox; // stylelint-disable-line property-no-vendor-prefix
+  }
 
-// only set some simple margin as components will handle the style better
-[type="checkbox"],
-[type="radio"] {
-  margin-right: 1rem;
+  // only set some simple margin as components will handle the style better
+  &[type="checkbox"],
+  &[type="radio"] {
+    margin-right: 1rem;
+  }
 }
 
 // Correct the cursor style of increment and decrement buttons in Chrome.
