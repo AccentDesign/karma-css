@@ -28,10 +28,12 @@ input {
   }
 
   &[type="date"],
+  &[type="datetime"],
   &[type="datetime-local"],
   &[type="month"],
   &[type="week"] {
     -webkit-appearance: listbox; // stylelint-disable-line property-no-vendor-prefix
+    height: $input-height;
   }
 
   // only set some simple margin as components will handle the style better
@@ -65,6 +67,7 @@ textarea {
   @include input-width;
   @include input-focus;
   -webkit-appearance: none; // stylelint-disable-line property-no-vendor-prefix
+  overflow: auto;
 }
 
 select {

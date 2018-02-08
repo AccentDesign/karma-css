@@ -1261,7 +1261,6 @@ form {
 input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="week"] {
   box-sizing: border-box;
   margin-bottom: 1.5rem;
-  overflow: visible;
   font-family: inherit;
   line-height: 1.5;
   color: #3e3e3e;
@@ -1282,8 +1281,9 @@ input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-loc
   outline: 0;
 }
 
-input[type="date"], input[type="datetime-local"], input[type="month"], input[type="week"] {
+input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"] {
   -webkit-appearance: listbox;
+  height: calc(3.85rem + 2px);
 }
 
 input[type="checkbox"], input[type="radio"] {
@@ -1328,7 +1328,6 @@ input[type="checkbox"], input[type="radio"] {
 textarea {
   box-sizing: border-box;
   margin-bottom: 1.5rem;
-  overflow: visible;
   font-family: inherit;
   line-height: 1.5;
   color: #3e3e3e;
@@ -1341,6 +1340,7 @@ textarea {
   font-size: 1.5rem;
   max-width: 100%;
   -webkit-appearance: none;
+  overflow: auto;
 }
 
 textarea:focus {
@@ -1352,7 +1352,6 @@ textarea:focus {
 select {
   box-sizing: border-box;
   margin-bottom: 1.5rem;
-  overflow: visible;
   font-family: inherit;
   line-height: 1.5;
   color: #3e3e3e;

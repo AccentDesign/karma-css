@@ -11,7 +11,6 @@
 @mixin input {
   box-sizing: border-box;
   margin-bottom: $input-margin-bottom;
-  overflow: visible;
   font-family: inherit;
   line-height: $input-line-height;
   color: $input-font-color;
@@ -41,10 +40,9 @@
 // based on the $input-use-full-width variable
 //
 @mixin input-width {
+  max-width: 100%; // will stop the ability to stretch a textarea beyond 100% width
   @if $input-use-full-width {
     width: 100%;
-  } @else {
-    max-width: 100%;
   }
 }
 
