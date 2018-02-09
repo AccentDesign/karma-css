@@ -5,6 +5,12 @@ Changelog
 master
 ======
 
+in development
+
+v1.9.4
+======
+
+* remove block from ``li``
 * new utility helpers
 
   - ``.move`` cursor move
