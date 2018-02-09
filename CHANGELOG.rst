@@ -5,7 +5,9 @@ Changelog
 master
 ======
 
-in development
+* new utility helpers
+
+  - ``.move`` cursor move
 
 v1.9.3
 ======
