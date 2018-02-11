@@ -5,7 +5,9 @@ Changelog
 master
 ======
 
-in development
+* added new variables
+
+  - ``$header-font-color``
 
 v1.9.4
 ======
