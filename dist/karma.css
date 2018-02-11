@@ -1060,7 +1060,6 @@ a {
   text-decoration: none;
   background-color: transparent;
   transition: color linear 250ms;
-  -webkit-text-decoration-skip: objects;
 }
 
 a:hover {
