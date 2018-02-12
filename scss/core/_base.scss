@@ -20,8 +20,6 @@
 html {
   font-size: 62.5%;
   line-height: $base-line-height;
-  -ms-text-size-adjust: 100%; // stylelint-disable-line property-no-vendor-prefix
-  -webkit-text-size-adjust: 100%; // stylelint-disable-line property-no-vendor-prefix
 }
 
 body {
@@ -30,8 +28,6 @@ body {
   font-weight: $base-font-weight;
   color: $font-color;
   background: $body-background;
-  -moz-osx-font-smoothing: grayscale; // stylelint-disable-line property-no-vendor-prefix
-  -webkit-font-smoothing: antialiased; // stylelint-disable-line property-no-vendor-prefix
 }
 
 main {
