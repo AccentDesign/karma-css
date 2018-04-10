@@ -5,6 +5,11 @@ Changelog
 master
 ======
 
+* in development
+
+v1.9.5
+======
+
 * added new variables
 
   - ``$header-font-color``
