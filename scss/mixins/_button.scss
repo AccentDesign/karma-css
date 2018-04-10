@@ -32,7 +32,7 @@
 // button styles required to create a colored variation
 //
 // Usage:
-// @include button-hover(color("white"), color("black"), color("secondary"));
+// @include button-color-variation(color("white"), color("black"), color("secondary"));
 //
 @mixin button-color-variation($color, $background-color, $border-color) {
   color: $color;
