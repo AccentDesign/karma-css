@@ -19,7 +19,7 @@ Then simply run the following:
 .. code-block:: bash
 
     npm install
-    npm run watch
+    npm run watch-css
 
 Other Installation Methods
 ==========================

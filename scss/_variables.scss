@@ -254,6 +254,7 @@ $code-font-color:               $font-color !default;
 $code-font-size:                100% !default;
 $code-padding:                  .2rem .5rem !default;
 
+
 // preformatted block
 $pre-font-size:                 90% !default;
 $pre-padding:                   1rem 1.5rem !default;
@@ -274,8 +275,7 @@ $hr-border-color:               $border-color !default;
 $hr-margin:                     1.5rem 0 !default;
 
 
-// defined z-indexes
-// and get with zindex('default')
+// defined z-indexes and get with zindex('default')
 $z-layers: (
   "default": 1
 ) !default;

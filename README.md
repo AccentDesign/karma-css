@@ -9,7 +9,7 @@ Karma CSS is a mobile first, responsive CSS boilerplate framework built on top o
 
 Our aim is to provide a sensible set css defaults that DO NOT impose any style on the end result. But provides enough building blocks to quickly get started and aid construction of your site. 
 
-We support all modern browsers and back to IE10, please see the full [list](http://karmacss.readthedocs.io).
+We support all modern browsers and back to IE10, please see the full [list](https://karmacss.com).
 
 ## Whats included?
 
@@ -35,7 +35,7 @@ Though simple, with minimal effort, overriding 4 variables and adding 70 lines o
 
 ## Where can I read more?
 
-The documentation can be found on [Read the Docs](http://karmacss.readthedocs.io).
+The documentation can be found on [Read the Docs](https://karmacss.com).
 
 ## Can I contribute?
 
@@ -43,7 +43,7 @@ We welcome all comments and contributions via [Github](https://github.com/Accent
 
 ## Customizing
 
-View the [customization guide](http://karmacss.readthedocs.io/en/latest/customizing.html) or clone the starter project on [Github](https://github.com/AccentDesign/karma-css-starter).
+View the [customization guide](https://karmacss.com/en/latest/customizing.html) or clone the starter project on [Github](https://github.com/AccentDesign/karma-css-starter).
 
 All you will need to do is
 ```bash
