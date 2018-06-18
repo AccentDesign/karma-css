@@ -1,9 +1,0 @@
-machine:
-  node:
-    version: 6
-
-test:
-  override:
-    - npm run css
-  post:
-    - cp -r dist $CIRCLE_ARTIFACTS
