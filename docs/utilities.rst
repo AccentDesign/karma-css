@@ -355,13 +355,13 @@ Visibility
 +-----------------------------+-----------------------------------------------------------------+
 | ``hidden-xl-down``          | Hide this element on the xl breakpoint and lower                |
 +-----------------------------+-----------------------------------------------------------------+
-| ``hidden-xs-up``            | Hide this element on the xs breakpoint and lower                |
+| ``hidden-xs-up``            | Hide this element on the xs breakpoint and higher               |
 +-----------------------------+-----------------------------------------------------------------+
 | ``hidden-sm-up``            | Hide this element on the sm breakpoint and higher               |
 +-----------------------------+-----------------------------------------------------------------+
-| ``hidden-md-up``            | Hide this element on the md breakpoint and lower                |
+| ``hidden-md-up``            | Hide this element on the md breakpoint and higher               |
 +-----------------------------+-----------------------------------------------------------------+
-| ``hidden-lg-up``            | Hide this element on the lg breakpoint and lower                |
+| ``hidden-lg-up``            | Hide this element on the lg breakpoint and higher               |
 +-----------------------------+-----------------------------------------------------------------+
-| ``hidden-xl-up``            | Hide this element on the xl breakpoint and lower                |
+| ``hidden-xl-up``            | Hide this element on the xl breakpoint and higher               |
 +-----------------------------+-----------------------------------------------------------------+
