@@ -1,6 +1,6 @@
 {
   "name": "karma-css",
-  "version": "1.9.5",
+  "version": "1.9.6",
   "description": "The Official Sass Version of Karma-CSS: A Simple, Responsive Boilerplate for Mobile-Friendly Development.",
   "repository": {
     "type": "git",
@@ -30,17 +30,17 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "^7.2.5",
+    "autoprefixer": "^9.1.5",
     "clean-css-cli": "^4.1.10",
     "node-sass": "^4.7.2",
     "nodemon": "^1.14.11",
     "npm-run-all": "^4.1.2",
-    "postcss-cli": "^5.0.0",
-    "stylelint": "^8.4.0",
+    "postcss-cli": "^6.0.0",
+    "stylelint": "^9.5.0",
     "stylelint-config-recommended-scss": "^3.0.0",
     "stylelint-config-standard": "^18.0.0",
-    "stylelint-order": "^0.8.0",
-    "stylelint-scss": "^2.2.0"
+    "stylelint-order": "^1.0.0",
+    "stylelint-scss": "^3.3.0"
   },
   "browserslist": [
     "last 1 major version",

@@ -7,6 +7,11 @@ master
 
 * in development
 
+v1.9.6
+======
+
+* fix wrong variables being passed to box-shadow mixin
+
 v1.9.5
 ======
 
