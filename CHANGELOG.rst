@@ -5,7 +5,7 @@ Changelog
 master
 ======
 
-* in development
+* Set muted opacity via a variable ``$muted-opacity``
 
 v1.9.6
 ======
