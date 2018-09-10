@@ -1,4 +1,4 @@
-/*! Karma-CSS v1.9.6 MIT License | http://karmacss.com | https://github.com/accentdesign/karma-css */
+/*! Karma-CSS v1.9.7 MIT License | http://karmacss.com | https://github.com/accentdesign/karma-css */
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -1372,13 +1372,7 @@ h1,
   color: #3e3e3e;
 }
 
-h1 small,
-.h1 small, h2 small,
-.h2 small, h3 small,
-.h3 small, h4 small,
-.h4 small, h5 small,
-.h5 small, h6 small,
-.h6 small {
+h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h4 small, .h4 small, h5 small, .h5 small, h6 small, .h6 small {
   font-size: 65%;
   line-height: 1;
 }
@@ -1978,7 +1972,7 @@ sup {
 }
 
 .muted {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .nowrap {
