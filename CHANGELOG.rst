@@ -2,14 +2,10 @@
 Changelog
 *********
 
-v1.9.8
-======
-
-* fix table variations applying to child tables 
-
 v1.9.7
 ======
 
+* fix table variations applying to child tables 
 * Set muted opacity via a variable ``$muted-opacity``
 
 v1.9.6
