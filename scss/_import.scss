@@ -9,11 +9,13 @@
 // system wide mixins
 @import "mixins";
 
+// base
+@import "core/base";
+
 // grid
 @import "core/grid";
 
 // core building blocks
-@import "core/base";
 @import "core/anchor";
 @import "core/button";
 @import "core/code";
