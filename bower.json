@@ -1,23 +1,19 @@
 {
-  "name": "karma-css",
-  "description": "The Official Sass Version of Karma-CSS: A Simple, Responsive Boilerplate for Mobile-Friendly Development.",
+  "name": "start-css-boilerplate",
+  "description": "The Official Sass Version of Start CSS Boilerplate: A Simple, Responsive Starting Point for Mobile-Friendly Development.",
   "main": [
-    "scss/karma.scss"
+    "scss/boilerplate.scss"
   ],
   "dependencies": {},
-  "authors": [
-    "Accent Design <npm@accentdesign.co.uk>"
-  ],
   "license": "MIT",
   "keywords": [
-    "karma",
+    "start",
     "css",
     "sass",
     "scss",
     "responsive",
     "boilerplate"
   ],
-  "homepage": "http://karmacss.com",
   "ignore": [
     "**/.*",
     "node_modules",

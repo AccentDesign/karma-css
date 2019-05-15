@@ -1,4 +1,31 @@
-/*! Karma-CSS v1.9.8 MIT License | http://karmacss.com | https://github.com/accentdesign/karma-css */
+/*! */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #3e3e3e;
+  background: white;
+}
+
+main {
+  display: block;
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -891,33 +918,6 @@
   .offset-xl-11 {
     margin-left: 91.666667%;
   }
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-*::before, *::after {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-  line-height: 1.6;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  color: #3e3e3e;
-  background: white;
-}
-
-main {
-  display: block;
 }
 
 a {
@@ -2094,4 +2094,4 @@ sup {
     display: none !important;
   }
 }
-/*# sourceMappingURL=karma.css.map */
+/*# sourceMappingURL=boilerplate.css.map */

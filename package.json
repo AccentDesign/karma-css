@@ -1,18 +1,16 @@
 {
-  "name": "karma-css",
-  "version": "1.9.8",
-  "description": "The Official Sass Version of Karma-CSS: A Simple, Responsive Boilerplate for Mobile-Friendly Development.",
+  "name": "start-css-boilerplate",
+  "version": "0.1.0",
+  "description": "The Official Sass Version of Start CSS Boilerplate: A Simple, Responsive Starting Point for Mobile-Friendly Development.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/accentdesign/karma-css"
+    "url": "https://github.com/benaccent/start-css-boilerplate"
   },
   "bugs": {
-    "url": "https://github.com/accentdesign/karma-css/issues"
+    "url": "https://github.com/benaccent/start-css-boilerplate/issues"
   },
-  "homepage": "http://karmacss.com",
-  "author": "Accent Design <npm@accentdesign.co.uk>",
   "keywords": [
-    "karma",
+    "start",
     "css",
     "sass",
     "scss",
@@ -22,10 +20,10 @@
   "license": "MIT",
   "scripts": {
     "css": "npm-run-all --parallel css-lint* css-compile* --sequential css-prefix* css-minify*",
-    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/karma.scss dist/karma.css",
+    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/boilerplate.scss dist/boilerplate.css",
     "css-lint": "stylelint --syntax scss \"scss/**/*.scss\"",
     "css-prefix": "postcss --config build/postcss.config.js --replace \"dist/*.css\" \"!dist/*.min.css\"",
-    "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/karma.min.css dist/karma.css",
+    "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/boilerplate.min.css dist/boilerplate.css",
     "watch-css": "nodemon --ignore dist/ -e scss -x \"npm run css\""
   },
   "dependencies": {},
