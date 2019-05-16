@@ -1,8 +1,7 @@
 // CSS Triangle
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// css triangle
-// you are just left to move it into position
+// You are just left to move it into position
 //
 // Usage:
 // pointing down
@@ -11,31 +10,31 @@
 // @include css-triangle(color("red"), down, 10px, $round: true)
 //
 @mixin css-triangle($color, $direction, $size: 6px, $position: absolute, $round: false){
-  @include pseudo($pos: $position);
-  width: 0;
-  height: 0;
-  @if $round {
-    border-radius: 3px;
-  }
-  @if $direction == down {
-    margin-top: 0 - round($size / 2.5);
-    border-top: $size solid $color;
-    border-right: $size solid transparent;
-    border-left: $size solid transparent;
-  } @else if $direction == up {
-    margin-bottom: 0 - round($size / 2.5);
-    border-right: $size solid transparent;
-    border-bottom: $size solid $color;
-    border-left: $size solid transparent;
-  } @else if $direction == right {
-    margin-right: -$size;
-    border-top: $size solid transparent;
-    border-bottom: $size solid transparent;
-    border-left: $size solid $color;
-  } @else if  $direction == left {
-    margin-left: -$size;
-    border-top: $size solid transparent;
-    border-right: $size solid $color;
-    border-bottom: $size solid transparent;
-  }
+    @if $round {
+        border-radius: 3px;
+    }
+    @if $direction == down {
+        border-top: $size solid $color;
+        border-right: $size solid transparent;
+        border-left: $size solid transparent;
+        margin-top: 0 - round($size / 2.5);
+    } @else if $direction == up {
+        border-right: $size solid transparent;
+        border-bottom: $size solid $color;
+        border-left: $size solid transparent;
+        margin-bottom: 0 - round($size / 2.5);
+    } @else if $direction == right {
+        border-top: $size solid transparent;
+        border-bottom: $size solid transparent;
+        border-left: $size solid $color;
+        margin-right: -$size;
+    } @else if  $direction == left {
+        border-top: $size solid transparent;
+        border-right: $size solid $color;
+        border-bottom: $size solid transparent;
+        margin-left: -$size;
+    }
+    height: 0;
+    @include pseudo($pos: $position);
+    width: 0;
 }

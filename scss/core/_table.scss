@@ -2,50 +2,40 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 table {
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: $table-margin-bottom;
-  font-size: $table-font-size;
-  border-spacing: 0;
-  border-collapse: collapse;
-  background-color: $table-background-color;
+    background-color: $table-background-color;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: $table-font-size;
+    margin-bottom: $table-margin-bottom;
+    max-width: 100%;
+    width: 100%;
 }
 
-caption {
-  padding: $table-cell-padding;
-}
+caption { padding: $table-cell-padding; }
 
 th {
-  padding: $table-cell-padding;
-  text-align: left;
-  vertical-align: top;
+    padding: $table-cell-padding;
+    text-align: left;
+    vertical-align: top;
 }
 
 td {
-  padding: $table-cell-padding;
-  text-align: left;
-  vertical-align: top;
-  border-top: $table-border-width solid $table-border-color;
+    border-top: $table-border-width solid $table-border-color;
+    padding: $table-cell-padding;
+    text-align: left;
+    vertical-align: top;
 }
 
-// visual alternatives
-.table-bordered {
-  border: solid $table-border-width $table-border-color;
-}
+// Visual alternatives
+.table-bordered { border: solid $table-border-width $table-border-color; }
 
 /* stylelint-disable selector-max-type */
 
 .table-headed > thead > tr > th,
-.table-headed > tbody > tr > th {
-  background-color: $table-headed-color;
-}
+.table-headed > tbody > tr > th { background-color: $table-headed-color; }
 
 /* stylelint-enable selector-max-type */
 
-.table-striped > tbody > tr:nth-child(odd) {
-  background-color: $table-striped-color;
-}
+.table-striped > tbody > tr:nth-child(odd) { background-color: $table-striped-color; }
 
-.table-hover > tbody > tr:hover {
-  background-color: $table-hover-color;
-}
+.table-hover > tbody > tr:hover { background-color: $table-hover-color; }

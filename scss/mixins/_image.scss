@@ -1,15 +1,14 @@
 // Image
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// base image fluid mixin
+// Base image fluid mixin
 //
 // Usage:
 // @include img-fluid;
 //
 @mixin img-fluid() {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  min-height: 1px;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    min-height: 1px;
 }

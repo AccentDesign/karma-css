@@ -1,7 +1,7 @@
 // Padding
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// setting padding
+// Setting padding
 //
 // Usage:
 //
@@ -15,25 +15,25 @@
 // padding: 0;
 //
 @mixin padding($axis: "", $rem: 0) {
-  @if $axis == "x" {
-    padding: {
-      right: $rem;
-      left: $rem;
+    @if $axis == "x" {
+        padding: {
+            right: $rem;
+            left: $rem;
+        }
+    } @else if $axis == "y" {
+        padding: {
+            top: $rem;
+            bottom: $rem;
+        }
+    } @else if $axis == "t" {
+        padding-top: $rem;
+    } @else if $axis == "r" {
+        padding-right: $rem;
+    } @else if $axis == "b" {
+        padding-bottom: $rem;
+    } @else if $axis == "l" {
+        padding-left: $rem;
+    } @else {
+        padding: $rem;
     }
-  } @else if $axis == "y" {
-    padding: {
-      top: $rem;
-      bottom: $rem;
-    }
-  } @else if $axis == "t" {
-    padding-top: $rem;
-  } @else if $axis == "r" {
-    padding-right: $rem;
-  } @else if $axis == "b" {
-    padding-bottom: $rem;
-  } @else if $axis == "l" {
-    padding-left: $rem;
-  } @else {
-    padding: $rem;
-  }
 }

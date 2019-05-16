@@ -1,26 +1,25 @@
 // Color
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// get color by name
+// Get color by name
 @function color($color) {
-  // get color by name
-  @if not map-has-key($colors, $color) {
-    @warn "No color found for `#{$color}` in $colors map. Ensure the name is surrounded in parentheses, eg color(\"#{$color}\").";
-  }
-  @return map-get($colors, $color);
+    @if not map-has-key($colors, $color) {
+        @warn "No color found for `#{$color}` in $colors map. Ensure the name is surrounded in parentheses, eg color(\"#{$color}\").";
+    }
+    @return map-get($colors, $color);
 }
 
-// lighten a color by its name
+// Lighten a color by its name
 @function color-lighten($color, $amount) {
-  @return lighten(color($color), $amount);
+    @return lighten(color($color), $amount);
 }
 
-// darken a color by its name
+// Darken a color by its name
 @function color-darken($color, $amount) {
-  @return darken(color($color), $amount);
+    @return darken(color($color), $amount);
 }
 
-// get a color by its name with alpha
+// Get a color by its name with alpha
 @function color-a($color, $alpha) {
-  @return rgba(color($color), $alpha);
+    @return rgba(color($color), $alpha);
 }

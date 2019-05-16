@@ -1,16 +1,14 @@
 // Pseudo
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// pseudu
-//
-// useful for when styling :before or :after
-// you neally always need these 3
+// Useful for when styling :before or :after
+// you nearly always need these 3
 //
 // Usage:
 // @include pseudo;
 //
 @mixin pseudo($display: block, $pos: absolute, $content: "") {
-  position: $pos;
-  display: $display;
-  content: $content;
+    content: $content;
+    display: $display;
+    position: $pos;
 }

@@ -2,8 +2,8 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 @media print {
-  .no-print,
-  .no-print * {
-    display: none !important; // stylelint-disable-line declaration-no-important
-  }
+    .no-print,
+    .no-print * {
+        display: none !important; // stylelint-disable-line declaration-no-important
+    }
 }

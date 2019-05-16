@@ -1,15 +1,15 @@
 // Clearfix
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// used to clear a floating element
+// Used to clear a floating element
 //
 // Usage:
 // @include clearfix;
 //
 @mixin clearfix {
-  &::after {
-    display: block;
-    clear: both;
-    content: "";
-  }
+    &::after {
+        clear: both;
+        content: "";
+        display: block;
+    }
 }
