@@ -3,5 +3,4 @@
 ._*
 .idea
 *.log
-docs/_build
 node_modules
