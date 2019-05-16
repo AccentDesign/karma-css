@@ -1466,6 +1466,12 @@ small{
   font-size:80%;
 }
 
+mark{
+  background-color:#33c3f0;
+  color:#3e3e3e;
+  padding:0 0.5rem;
+}
+
 sub,
 sup{
   font-size:75%;

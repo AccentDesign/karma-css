@@ -81,6 +81,12 @@ strong { font-weight: $strong-font-weight; }
 
 small { font-size: $small-font-size; }
 
+mark {
+    background-color: $mark-bg-color;
+    color: $mark-font-color;
+    padding: 0 $mark-padding-x;
+}
+
 sub,
 sup {
     font-size: 75%;
