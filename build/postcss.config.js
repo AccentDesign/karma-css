@@ -7,6 +7,7 @@ module.exports = {
         sourcesContent: true
     },
     plugins: {
+        'postcss-discard-comments': {},
         autoprefixer: {
             cascade: false
         },
