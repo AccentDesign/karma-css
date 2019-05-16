@@ -1889,10 +1889,23 @@ sup{
   list-style:none !important;
 }
 
-.list-style-reset{
+.list-style-reset, .list-inline{
   list-style:none !important;
   margin:0;
   padding:0;
+}
+
+.list-inline li{
+  display:inline-block;
+  margin:0 1rem;
+}
+
+.list-inline li:first-child{
+  margin-left:0;
+}
+
+.list-inline li:last-child{
+  margin-right:0;
 }
 
 .scroll-x{
