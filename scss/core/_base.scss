@@ -25,6 +25,10 @@ body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     font-weight: $base-font-weight;
+    @if $body-overflow-x-hidden {
+        overflow-x: hidden;
+    }
+    position: relative;
 }
 
 main { display: block; }

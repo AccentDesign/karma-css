@@ -129,6 +129,10 @@ $font-color:                    rgb(62, 62, 62) !default;
 $header-font-color:             $font-color !default;
 
 
+// Body
+$body-overflow-x-hidden:        true !default;
+
+
 // Borders
 $border-width:                  1px !default;
 $border-color:                  rgb(230, 230, 230) !default;
@@ -139,8 +143,15 @@ $animation-speed-slow:          1000ms !default;
 $animation-speed-fast:          250ms !default;
 
 
+// Spacing
+$base-spacer:                   1rem !default; // used as a base to build semantic classes for margin & padding
+$base-spacer-x:                 $base-spacer !default;
+$base-spacer-y:                 $base-spacer !default;
+
+$generic-margin-bottom:         1.5rem !default; // used as a starting point for other variables applied to elements
+
+
 // Misc
-$generic-margin-bottom:         1.5rem !default; // used as a starting point for other variables
 $global-radius:                 .25rem !default;
 $darken-hover-percent:          10% !default; // used within hovers in links and buttons
 $muted-opacity:                 .7 !default; // opacity thats set in the .muted helper class
