@@ -1,0 +1,36 @@
+// Gradient
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Usage:
+// Producing smoother, more aesthetically pleasing gradients.
+// @include gradient(color("black"), 'to bottom'));
+//
+@mixin gradient($startColor, $direction) {
+    $coordinates: (
+        0: 1,
+        19: .738,
+        34: .541,
+        47: .382,
+        56.5: .278,
+        65: .194,
+        73: .126,
+        80.2: .075,
+        86.1: .042,
+        91: .021,
+        95.2: .008,
+        98.2: .002,
+        100: 0
+    );
+
+    $hue: hue($startColor);
+    $saturation: saturation($startColor);
+    $lightness: lightness($startColor);
+    $stops: ();
+
+    @each $colorStop, $alphaValue in $coordinates {
+        $stop: hsla($hue, $saturation, $lightness, $alphaValue) percentage($colorStop/100);
+        $stops: append($stops, $stop, comma);
+    }
+
+    background: linear-gradient(unquote($direction), $stops);
+}
