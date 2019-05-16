@@ -2,7 +2,7 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 %h {
-    color: $header-font-color;
+    color: var(--header-font-color, $header-font-color);
     font-family: $header-font-family;
     small {
         font-size: 65%;

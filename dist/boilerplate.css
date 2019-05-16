@@ -1,4 +1,11 @@
 /*! Start CSS Boilerplate */
+:root{
+  --base-font-size:15px;
+  --body-background:white;
+  --font-color:#3e3e3e;
+  --header-font-color:#3e3e3e;
+}
+
 *{
   box-sizing:border-box;
   margin:0;
@@ -15,10 +22,10 @@ html{
 }
 
 body{
-  background:white;
-  color:#3e3e3e;
+  background:var(--body-background, white);
+  color:var(--font-color, #3e3e3e);
   font-family:"Open Sans", sans-serif;
-  font-size:15px;
+  font-size:var(--base-font-size, 15px);
   font-weight:400;
   overflow-x:hidden;
   position:relative;
@@ -1385,7 +1392,7 @@ h1,
 .h4, h5,
 .h5, h6,
 .h6{
-  color:#3e3e3e;
+  color:var(--header-font-color, #3e3e3e);
   font-family:"Open Sans", sans-serif;
 }
 
