@@ -1,0 +1,32 @@
+// Grid
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// use in conjunction with .d-grid to align the grid items along the inline (row) axis
+.grid-justify-items-start       { align-items: start; }
+.grid-justify-items-end         { align-items: end; }
+.grid-justify-items-center      { align-items: center; }
+.grid-justify-items-stretch     { align-items: stretch; }
+
+// use in conjunction with .d-grid to align the grid items along the block (column) axis
+.grid-align-items-start         { align-items: start; }
+.grid-align-items-end           { align-items: end; }
+.grid-align-items-center        { align-items: center; }
+.grid-align-items-stretch       { align-items: stretch; }
+
+// use in conjunction with .d-grid to align the grid along the inline (row) axis
+.grid-justify-content-start     { justify-content: start; }
+.grid-justify-content-end       { justify-content: end; }
+.grid-justify-content-center    { justify-content: center; }
+.grid-justify-content-stretch   { justify-content: stretch; }
+.grid-justify-content-between   { justify-content: space-between; }
+.grid-justify-content-around    { justify-content: space-around; }
+.grid-justify-content-evenly    { justify-content: space-evenly; }
+
+// use in conjunction with .d-grid to align the grid along the block (column) axis
+.grid-align-content-start       { align-content: start; }
+.grid-align-content-end         { align-content: end; }
+.grid-align-content-center      { align-content: center; }
+.grid-align-content-stretch     { align-content: stretch; }
+.grid-align-content-between     { align-content: space-between; }
+.grid-align-content-around      { align-content: space-around; }
+.grid-align-content-evenly      { align-content: space-evenly; }

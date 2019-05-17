@@ -1,0 +1,52 @@
+// Grid
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Basic CSS Grid maker
+//
+// Remember that 'display: grid' has an extreme effect upon its immediate
+// child elements so these elements grid-column & grid-row properties
+// will have to be explicitly set in your SCSS.
+//
+// Usage:
+// @include css-grid(1fr 1fr 1fr, 1fr 1fr 1fr, 15px);
+//
+@mixin css-grid($columns, $rows, $spacing: 30px) {
+    display: grid;
+    grid-gap: $spacing;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+}
+
+// Set properties and place an array of grid items
+//
+// $gridItems: array of grid items where each element represents the
+// corresponding nth-child of an element with 'display: grid'.
+// The order of the property values in an array item are as follows:
+//      (
+//          $startCol, $colspan, $startRow, $rowspan
+//      )
+//      $startCol: first grid column where item is placed
+//      $colspan: number of columns the item fills
+//      $startRow: first grid row where item is placed
+//      $rowspan: number of rows the item fills
+//
+// Usage:
+// @include place-css-grid-items(
+//      (
+//          1 3 1 1,
+//          1 2 2 1,
+//          1 1 2 2,
+//          1 3 3 1
+//      )
+// );
+//
+@mixin place-css-grid-items($items: $gridItems) {
+    $i: 1;
+    @each $startCol, $colspan, $startRow, $rowspan in $items {
+        &:nth-child(#{$i}) {
+            grid-column: $startCol / span $colspan;
+            grid-row: $startRow / span $rowspan;
+        }
+        $i: $i + 1;
+    }
+}
