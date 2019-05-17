@@ -1,7 +1,63 @@
-// CSS Triangle
+// CSS Shapes
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// You are just left to move it into position
+// Square
+//
+// Usage:
+// @include css-square(color("red"), 20px)
+// also has rounded corners
+// @include css-square(color("red"), 20px, $round: true)
+//
+@mixin css-square($color, $size: 12px, $round: false){
+    background: $color;
+    @if $round {
+        border-radius: $global-radius;
+    }
+    height: $size;
+    width: $size;
+}
+
+// Rectangle
+//
+// Usage:
+// @include css-rectangle(color("red"), 20px, 10px)
+// also has rounded corners
+// @include css-rectangle(color("red"), 20px, 10px, $round: true)
+//
+@mixin css-rectangle($color, $width: 12px, $height: 6px, $round: false){
+    background: $color;
+    @if $round {
+        border-radius: $global-radius;
+    }
+    height: $height;
+    width: $width;
+}
+
+// Circle
+//
+// Usage:
+// @include css-circle(color("red"), 20px)
+//
+@mixin css-circle($color, $size: 12px){
+    background: $color;
+    border-radius: 50%;
+    height: $size;
+    width: $size;
+}
+
+// Oval
+//
+// Usage:
+// @include css-oval(color("red"), 20px, 10px)
+//
+@mixin css-oval($color, $width: 12px, $height: 6px){
+    background: $color;
+    border-radius: 50%;
+    height: $height;
+    width: $width;
+}
+
+// Triangle
 //
 // Usage:
 // pointing down
@@ -11,7 +67,7 @@
 //
 @mixin css-triangle($color, $direction, $size: 6px, $position: absolute, $round: false){
     @if $round {
-        border-radius: 3px;
+        border-radius: $global-radius;
     }
     @if $direction == down {
         border-top: $size solid $color;
