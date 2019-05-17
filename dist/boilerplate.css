@@ -1787,6 +1787,21 @@ sup{
   flex-direction:column-reverse;
 }
 
+.flex-nowrap{
+  -ms-flex-wrap:nowrap;
+  flex-wrap:nowrap;
+}
+
+.flex-wrap{
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+}
+
+.flex-wrap-reverse{
+  -ms-flex-wrap:wrap-reverse;
+  flex-wrap:wrap-reverse;
+}
+
 .justify-content-start{
   -ms-flex-pack:start;
   justify-content:flex-start;
@@ -1810,6 +1825,11 @@ sup{
 .justify-content-around{
   -ms-flex-pack:distribute;
   justify-content:space-around;
+}
+
+.justify-content-evenly{
+  -ms-flex-pack:space-evenly;
+  justify-content:space-evenly;
 }
 
 .align-items-start{
@@ -1837,19 +1857,34 @@ sup{
   align-items:stretch;
 }
 
-.flex-nowrap{
-  -ms-flex-wrap:nowrap;
-  flex-wrap:nowrap;
+.align-content-start{
+  -ms-flex-line-pack:start;
+  align-content:flex-start;
 }
 
-.flex-wrap{
-  -ms-flex-wrap:wrap;
-  flex-wrap:wrap;
+.align-content-end{
+  -ms-flex-line-pack:end;
+  align-content:flex-end;
 }
 
-.flex-wrap-reverse{
-  -ms-flex-wrap:wrap-reverse;
-  flex-wrap:wrap-reverse;
+.align-content-center{
+  -ms-flex-line-pack:center;
+  align-content:center;
+}
+
+.align-content-between{
+  -ms-flex-line-pack:justify;
+  align-content:space-between;
+}
+
+.align-content-around{
+  -ms-flex-line-pack:distribute;
+  align-content:space-around;
+}
+
+.align-content-stretch{
+  -ms-flex-line-pack:stretch;
+  align-content:stretch;
 }
 
 .align-self-start{
