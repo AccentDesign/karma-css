@@ -1,7 +1,7 @@
-// Grid Framework
+// Container Grid Framework
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-@mixin make-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+@mixin make-container-grid-columns($columns: $container-grid-columns, $gutter: $container-grid-gutter-width, $breakpoints: $viewport-breakpoints) {
     // Common properties for all breakpoints
     %grid-column {
         min-height: 1px; // This prevent columns from collapsing when empty
@@ -39,7 +39,7 @@
 
             @for $i from 1 through $columns {
                 .col#{$infix}-#{$i} {
-                    @include make-col($i, $columns);
+                    @include make-container-col($i, $columns);
                 }
             }
 

@@ -5,7 +5,10 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 // Enable all container, row, col, order classes
-$enable-grid-classes:           true !default;
+$enable-container-grid-classes: true !default;
+
+// Prevent horizontal scroll of <body> element
+$body-overflow-x-hidden:        true !default;
 
 
 // Typography
@@ -59,10 +62,10 @@ $lead-font-weight:              300 !default;
 $small-font-size:               80% !default;
 
 
-// Grid
+// Container Grid
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-$grid-breakpoints: (
+$viewport-breakpoints: (
     xs: 0,
     sm: 576px,
     md: 768px,
@@ -77,8 +80,8 @@ $container-max-widths: (
     xl: 1140px
 ) !default;
 
-$grid-columns:                  12 !default;
-$grid-gutter-width:             30px !default;
+$container-grid-columns:        12 !default;
+$container-grid-gutter-width:   30px !default;
 
 
 // Styling
@@ -129,10 +132,6 @@ $font-color:                    rgb(62, 62, 62) !default;
 $header-font-color:             $font-color !default;
 
 
-// Body
-$body-overflow-x-hidden:        true !default;
-
-
 // Borders
 $border-width:                  1px !default;
 $border-color:                  rgb(230, 230, 230) !default;
@@ -162,7 +161,7 @@ $paragraph-margin-bottom:       $generic-margin-bottom !default;
 
 
 // Image
-$figure-margin-bottom:           $generic-margin-bottom !default;
+$figure-margin-bottom:          $generic-margin-bottom !default;
 
 
 // Links

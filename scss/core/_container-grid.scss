@@ -1,7 +1,7 @@
-// Grid
+// Container Grid
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-@if $enable-grid-classes {
+@if $enable-container-grid-classes {
 
     // Containers
     .container {
@@ -17,7 +17,7 @@
 
     // Row
     .row {
-        @include make-row();
+        @include make-container-row();
     }
 
     // No gutters.
@@ -32,5 +32,5 @@
     }
 
     // Columns
-    @include make-grid-columns();
+    @include make-container-grid-columns();
 }

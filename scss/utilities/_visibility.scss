@@ -5,7 +5,7 @@
 //      .hidden-sm {...}
 //      .hidden-sm-up {...}
 //      .hidden-sm-down {...}
-@each $bp in map-keys($grid-breakpoints) {
+@each $bp in map-keys($viewport-breakpoints) {
     .hidden-#{$bp}-up {
         @include media-breakpoint-up($bp) {
             display: none !important; // stylelint-disable-line declaration-no-important
