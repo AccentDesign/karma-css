@@ -1,0 +1,20 @@
+// Ratio
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Creating scalable elements (usually images, video placeholders, or background images)
+// that maintain a ratio. Either use the pseudo to scale it or not
+//
+// Usage:
+// @include ratio(16, 9, true);
+//
+@mixin ratio($x, $y, $pseudo: false) {
+    @if $pseudo {
+        &::before {
+            padding-top: percentage($y / $x);
+            @include pseudo($pos: relative);
+            width: 100%;
+        }
+    } @else {
+        padding-top: percentage($y / $x);
+    }
+}

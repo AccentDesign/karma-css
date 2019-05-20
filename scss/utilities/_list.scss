@@ -2,11 +2,21 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 .list-style-none {
-  list-style: none !important; // stylelint-disable-line declaration-no-important
+    list-style: none !important; // stylelint-disable-line declaration-no-important
 }
 
 .list-style-reset {
-  padding: 0;
-  margin: 0;
-  list-style: none !important; // stylelint-disable-line declaration-no-important
+    list-style: none !important; // stylelint-disable-line declaration-no-important
+    margin: 0;
+    padding: 0;
+}
+
+.list-inline {
+    @extend .list-style-reset;
+    li {
+        display: inline-block;
+        margin: 0 $list-inline-elem-margin-x;
+        &:first-child { margin-left: 0; }
+        &:last-child { margin-right: 0; }
+    }
 }

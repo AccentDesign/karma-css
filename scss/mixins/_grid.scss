@@ -1,45 +1,52 @@
-/// Grid
+// Grid
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// The main mixins used to create the grid containers, rows and columns
-
-// used in .container and .container-fluid
+// Basic CSS Grid maker
 //
-@mixin make-container() {
-  padding-right: ($grid-gutter-width / 2);
-  padding-left: ($grid-gutter-width / 2);
-  margin-right: auto;
-  margin-left: auto;
+// Remember that 'display: grid' has an extreme effect upon its immediate
+// child elements so these elements grid-column & grid-row properties
+// will have to be explicitly set in your SCSS.
+//
+// Usage:
+// @include css-grid(1fr 1fr 1fr, 1fr 1fr 1fr, 15px);
+//
+@mixin css-grid($columns, $rows, $spacing: 30px) {
+    display: grid;
+    grid-gap: $spacing;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
 }
 
-// For each breakpoint, define the maximum width of the container
+// Set properties and place an array of grid items
 //
-@mixin make-container-max-widths($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
-  @each $breakpoint, $container-max-width in $max-widths {
-    @include media-breakpoint-up($breakpoint, $breakpoints) {
-      width: $container-max-width;
-      max-width: 100%;
+// $gridItems: array of grid items where each element represents the
+// corresponding nth-child of an element with 'display: grid'.
+// The order of the property values in an array item are as follows:
+//      (
+//          $startCol, $colspan, $startRow, $rowspan
+//      )
+//      $startCol: first grid column where item is placed
+//      $colspan: number of columns the item fills
+//      $startRow: first grid row where item is placed
+//      $rowspan: number of rows the item fills
+//
+// Usage:
+// @include place-css-grid-items(
+//      (
+//          1 3 1 1,
+//          1 2 2 1,
+//          1 1 2 2,
+//          1 3 3 1
+//      )
+// );
+//
+@mixin place-css-grid-items($items: $gridItems) {
+    $i: 1;
+    @each $startCol, $colspan, $startRow, $rowspan in $items {
+        &:nth-child(#{$i}) {
+            grid-column: $startCol / span $colspan;
+            grid-row: $startRow / span $rowspan;
+        }
+        $i: $i + 1;
     }
-  }
-}
-
-// make a grid row
-//
-@mixin make-row() {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: ($grid-gutter-width / -2);
-  margin-left: ($grid-gutter-width / -2);
-}
-
-// make a grid column
-//
-// $size: number of columns wide
-// $columns: number of columns in the row
-//
-@mixin make-col($size, $columns: $grid-columns) {
-  flex: 0 0 percentage($size / $columns);
-  // Add a `max-width` to ensure content within each column does not blow out
-  // the width of the column. Applies to IE10+ and Firefox.
-  max-width: percentage($size / $columns);
 }

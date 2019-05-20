@@ -2,10 +2,10 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 hr {
-  box-sizing: content-box;
-  height: 0;
-  margin: $hr-margin;
-  overflow: visible;
-  border: 0;
-  border-top: $hr-border-width solid $hr-border-color;
+    border: 0;
+    border-top: $hr-border-width solid $hr-border-color;
+    box-sizing: content-box;
+    height: 0;
+    margin: $hr-margin;
+    overflow: visible;
 }

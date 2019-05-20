@@ -1,0 +1,60 @@
+// Container Grid Framework
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@mixin make-container-grid-columns($columns: $container-grid-columns, $gutter: $container-grid-gutter-width, $breakpoints: $viewport-breakpoints) {
+    // Common properties for all breakpoints
+    %grid-column {
+        min-height: 1px; // This prevent columns from collapsing when empty
+        padding-right: ($gutter / 2);
+        padding-left: ($gutter / 2);
+        width: 100%;
+    }
+
+    @each $breakpoint in map-keys($breakpoints) {
+        $infix: breakpoint-infix($breakpoint, $breakpoints);
+
+        // Allow columns to stretch full width below their breakpoints
+        @for $i from 1 through $columns {
+            .col#{$infix}-#{$i} {
+                @extend %grid-column;
+            }
+        }
+        .col#{$infix},
+        .col#{$infix}-auto {
+            @extend %grid-column;
+        }
+
+        @include media-breakpoint-up($breakpoint, $breakpoints) {
+            // Provide basic `.col-{bp}` classes for equal-width flexbox columns
+            .col#{$infix} {
+                flex-basis: 0;
+                flex-grow: 1;
+                max-width: 100%;
+            }
+            .col#{$infix}-auto {
+                flex: 0 0 auto;
+                max-width: none; // Reset earlier grid tiers
+                width: auto;
+            }
+
+            @for $i from 1 through $columns {
+                .col#{$infix}-#{$i} {
+                    @include make-container-col($i, $columns);
+                }
+            }
+
+            @for $i from 1 through $columns {
+                .order#{$infix}-#{$i} {
+                    order: $i;
+                }
+            }
+
+            // Here we dont need the full width as you cannot offset by 100%
+            @for $i from 0 through ($columns - 1) {
+                .offset#{$infix}-#{$i} {
+                    margin-left: percentage($i / $columns);
+                }
+            }
+        }
+    }
+}

@@ -3,19 +3,19 @@
 
 @import "credits";
 
-// system wide functions
+// System wide functions
 @import "functions";
 
-// system wide mixins
+// System wide mixins
 @import "mixins";
 
-// base
+// Base
 @import "core/base";
 
-// grid
-@import "core/grid";
+// Container Grid
+@import "core/container-grid";
 
-// core building blocks
+// Core building blocks
 @import "core/anchor";
 @import "core/button";
 @import "core/code";

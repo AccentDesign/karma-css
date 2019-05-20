@@ -2,13 +2,12 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 a {
-  color: $link-color;
-  text-decoration: $link-decoration;
-  background-color: transparent;
-  transition: $link-transition;
-
-  &:hover {
-    color: $link-color-hover;
-    text-decoration: $link-decoration-hover;
-  }
+    background-color: transparent;
+    color: $link-color;
+    text-decoration: $link-decoration;
+    transition: $link-transition;
+    &:hover {
+        color: $link-color-hover;
+        text-decoration: $link-decoration-hover;
+    }
 }

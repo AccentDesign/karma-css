@@ -1,35 +1,41 @@
 // Base Styles
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// NOTE
-// html is set to 62.5% so that all the REM measurements throughout karma-css
-// are based on 10px sizing. So basically 1.5rem = 15px :)
-
-// box sizing  & reset margin
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  &::before,
-  &::after {
-    box-sizing: border-box;
-  }
+// CSS variables
+:root {
+    --base-font-size: #{$base-font-size};
+    --body-background: #{$body-background};
+    --font-color: #{$font-color};
+    --header-font-color: #{$header-font-color};
 }
 
-// basic document styling
+// Box sizing & reset margin
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    &::before,
+    &::after { box-sizing: border-box; }
+}
+
+// Basic document styling
+// html is set to 62.5% so that all the REM measurements throughout Start CSS
+// are based on 10px sizing. So basically 1.5rem = 15px :)
 html {
-  font-size: 62.5%;
-  line-height: $base-line-height;
+    font-size: 62.5%;
+    line-height: $base-line-height;
 }
 
 body {
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  font-weight: $base-font-weight;
-  color: $font-color;
-  background: $body-background;
+    background: var(--body-background, $body-background);
+    color: var(--font-color, $font-color);
+    font-family: $base-font-family;
+    font-size: var(--base-font-size, $base-font-size);
+    font-weight: $base-font-weight;
+    @if $body-overflow-x-hidden {
+        overflow-x: hidden;
+    }
+    position: relative;
 }
 
-main {
-  display: block;
-}
+main { display: block; }

@@ -1,69 +1,66 @@
 // Button
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// mixins to create buttons
+// Mixins to create buttons
 
-// create a basic button
+// Create a basic button
 //
 // Usage:
 // @include button;
 //
 @mixin button {
-  box-sizing: border-box;
-  display: inline-block;
-  padding: $button-padding-y $button-padding-x;
-  overflow: visible;
-  font-family: inherit;
-  font-size: $button-font-size;
-  font-weight: $button-font-weight;
-  line-height: $button-line-height;
-  color: $button-default-font-color;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-  cursor: pointer;
-  user-select: none;
-  background-color: $button-default-bg-color;
-  border: $button-border-width solid $button-default-border-color;
-  border-radius: $button-border-radius;
-  transition: $button-transition;
+    background-color: $button-default-bg-color;
+    border: $button-border-width solid $button-default-border-color;
+    border-radius: $button-border-radius;
+    box-sizing: border-box;
+    color: $button-default-font-color;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
+    line-height: $button-line-height;
+    overflow: visible;
+    padding: $button-padding-y $button-padding-x;
+    text-align: center;
+    text-decoration: none;
+    transition: $button-transition;
+    user-select: none;
+    white-space: nowrap;
 }
 
-// button styles required to create a colored variation
+// Button styles required to create a colored variation
 //
 // Usage:
 // @include button-color-variation(color("white"), color("black"), color("secondary"));
 //
 @mixin button-color-variation($color, $background-color, $border-color) {
-  color: $color;
-  background-color: $background-color;
-  border-color: $border-color;
+    background-color: $background-color;
+    border-color: $border-color;
+    color: $color;
 }
 
-// button hover and focus state
+// Button hover and focus state
 //
 // Usage:
 // @include button-hover(color("white"), color("black"), color("secondary"));
 //
 @mixin button-hover($color, $background-color, $border-color) {
-  &:hover,
-  &:focus {
-    color: $color;
-    background-color: $background-color;
-    border-color: $border-color;
-    outline: 0;
-  }
+    &:hover,
+    &:focus {
+        background-color: $background-color;
+        border-color: $border-color;
+        color: $color;
+        outline: 0;
+    }
 }
 
-// button size variation
+// Button size variation
 //
 // Usage:
 // @include button-size(1rem, 1rem, 15px);
 //
-@mixin button-size(
-  $padding-y: $button-padding-y,
-  $padding-x: $button-padding-x,
-  $font-size: $button-font-size) {
-  padding: $padding-y $padding-x;
-  font-size: $font-size;
+@mixin button-size($padding-y: $button-padding-y, $padding-x: $button-padding-x, $font-size: $button-font-size) {
+    font-size: $font-size;
+    padding: $padding-y $padding-x;
 }

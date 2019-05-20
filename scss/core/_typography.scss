@@ -2,104 +2,99 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 %h {
-  font-family: $header-font-family;
-  color: $header-font-color;
-
-  small {
-    font-size: 65%;
-    line-height: 1;
-  }
+    color: var(--header-font-color, $header-font-color);
+    font-family: $header-font-family;
+    small {
+        font-size: 65%;
+        line-height: 1;
+    }
 }
 
 h1,
 .h1 {
-  @extend %h;
-  margin: $h1-margin;
-  font-size: $h1-font-size;
-  font-weight: $h1-font-weight;
-  line-height: $h1-line-height;
+    @extend %h;
+    font-size: $h1-font-size;
+    font-weight: $h1-font-weight;
+    line-height: $h1-line-height;
+    margin: $h1-margin;
 }
 
 h2,
 .h2 {
-  @extend %h;
-  margin: $h2-margin;
-  font-size: $h2-font-size;
-  font-weight: $h2-font-weight;
-  line-height: $h2-line-height;
+    @extend %h;
+    font-size: $h2-font-size;
+    font-weight: $h2-font-weight;
+    line-height: $h2-line-height;
+    margin: $h2-margin;
 }
 
 h3,
 .h3 {
-  @extend %h;
-  margin: $h3-margin;
-  font-size: $h3-font-size;
-  font-weight: $h3-font-weight;
-  line-height: $h3-line-height;
+    @extend %h;
+    font-size: $h3-font-size;
+    font-weight: $h3-font-weight;
+    line-height: $h3-line-height;
+    margin: $h3-margin;
 }
 
 h4,
 .h4 {
-  @extend %h;
-  margin: $h4-margin;
-  font-size: $h4-font-size;
-  font-weight: $h4-font-weight;
-  line-height: $h4-line-height;
+    @extend %h;
+    font-size: $h4-font-size;
+    font-weight: $h4-font-weight;
+    line-height: $h4-line-height;
+    margin: $h4-margin;
 }
 
 h5,
 .h5 {
-  @extend %h;
-  margin: $h5-margin;
-  font-size: $h5-font-size;
-  font-weight: $h5-font-weight;
-  line-height: $h5-line-height;
+    @extend %h;
+    font-size: $h5-font-size;
+    font-weight: $h5-font-weight;
+    line-height: $h5-line-height;
+    margin: $h5-margin;
 }
 
 h6,
 .h6 {
-  @extend %h;
-  margin: $h6-margin;
-  font-size: $h6-font-size;
-  font-weight: $h6-font-weight;
-  line-height: $h6-line-height;
+    @extend %h;
+    font-size: $h6-font-size;
+    font-weight: $h6-font-weight;
+    line-height: $h6-line-height;
+    margin: $h6-margin;
 }
 
 abbr[title] { // stylelint-disable-line selector-no-qualifying-type
-  text-decoration: underline dotted;
+    text-decoration: underline dotted;
 }
 
-p {
-  margin-bottom: $paragraph-margin-bottom;
-}
+p { margin-bottom: $paragraph-margin-bottom; }
 
 blockquote {
-  padding: $blockquote-padding-y $blockquote-padding-x;
-  margin-bottom: $blockquote-margin-bottom;
-  border-left: $blockquote-border-left-width solid $blockquote-border-left-color;
+    border-left: $blockquote-border-left-width solid $blockquote-border-left-color;
+    margin-bottom: $blockquote-margin-bottom;
+    padding: $blockquote-padding-y $blockquote-padding-x;
 }
 
 b,
-strong {
-  font-weight: $strong-font-weight;
-}
+strong { font-weight: $strong-font-weight; }
 
-small {
-  font-size: $small-font-size;
+small { font-size: $small-font-size; }
+
+mark {
+    background-color: $mark-bg-color;
+    color: $mark-font-color;
+    padding: 0 $mark-padding-x;
 }
 
 sub,
 sup {
-  position: relative;
-  font-size: 75%;
-  line-height: 0;
-  vertical-align: baseline;
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
 }
 
-sub {
-  bottom: -.25em;
-}
+sub { bottom: -.25em; }
 
-sup {
-  top: -.5em;
-}
+sup { top: -.5em; }

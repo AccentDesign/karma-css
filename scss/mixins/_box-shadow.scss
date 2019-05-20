@@ -9,9 +9,9 @@
 // @include box-shadow(3px, 3px, 10px, rgba(0, 0, 0, .54), true);
 //
 @mixin box-shadow($left, $top, $blur, $color, $inset: false) {
-  @if $inset {
-    box-shadow: inset $left $top $blur $color;
-  } @else {
-    box-shadow: $left $top $blur $color;
-  }
+    @if $inset {
+        box-shadow: inset $left $top $blur $color;
+    } @else {
+        box-shadow: $left $top $blur $color;
+    }
 }

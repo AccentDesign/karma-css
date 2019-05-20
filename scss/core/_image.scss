@@ -1,15 +1,11 @@
 // Image
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-img {
-  border-style: none;
-}
+img { border-style: none; }
 
-figcaption {
-  display: block;
-}
+figcaption { display: block; }
 
 figure {
-  display: block;
-  margin: 0 0 $figure-margin-bottom;
+    display: block;
+    margin: 0 0 $figure-margin-bottom;
 }
