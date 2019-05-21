@@ -61,6 +61,7 @@ textarea {
     @include input-width;
     @include input-focus;
     -webkit-appearance: none; // stylelint-disable-line property-no-vendor-prefix
+    min-height: $textarea-min-height;
     overflow: auto;
 }
 
@@ -83,13 +84,16 @@ legend {
     box-sizing: border-box;
     color: inherit;
     display: block;
+    font-size: 80%;
     font-weight: $label-font-weight;
-    margin-bottom: .5rem;
     max-width: 100%;
+    padding: $legend-padding;
     white-space: normal;
 }
 
 fieldset {
-    border-width: 0;
+    border-color: $border-color;
+    border-width: $border-width;
     margin-bottom: $input-margin-bottom;
+    padding: $fieldset-padding;
 }

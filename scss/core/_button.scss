@@ -26,14 +26,14 @@ button,
 
     &.button-outline {
         background-color: transparent;
-        transition: $button-transition, color linear $animation-speed-fast;
+        transition: $button-transition, color $easing-default $animation-speed-fast;
         @include button-hover($btn-font-hover, transparent, $btn-border-hover);
     }
 
     &.button-clear {
         background-color: transparent;
         border-color: transparent;
-        transition: $button-transition, color linear $animation-speed-fast;
+        transition: $button-transition, color $easing-default $animation-speed-fast;
         @include button-hover($btn-font-hover, transparent, transparent);
     }
 }

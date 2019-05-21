@@ -5,6 +5,7 @@ ul {
     list-style: $ul-list-style;
     margin-bottom: $ul-list-margin-bottom;
     padding-left: $ul-list-padding-left;
+    li { margin-bottom: $ul-list-item-spacing; }
     ul,
     ol { margin: $ul-list-nested-margin; }
 }
@@ -13,6 +14,7 @@ ol {
     list-style: $ol-list-style;
     margin-bottom: $ol-list-margin-bottom;
     padding-left: $ol-list-padding-left;
+    li { margin-bottom: $ul-list-item-spacing; }
     ul,
     ol { margin: $ol-list-nested-margin; }
 }

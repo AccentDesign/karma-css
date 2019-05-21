@@ -1,0 +1,16 @@
+// Nav
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+nav ul {
+    list-style: none !important; // stylelint-disable-line declaration-no-important
+    margin: 0;
+    padding: 0;
+    text-transform: $nav-text-transform;
+}
+
+.nav-inline ul li {
+    display: inline-block;
+    margin: 0 $nav-inline-elem-margin-x;
+    &:first-child { margin-left: 0; }
+    &:last-child { margin-right: 0; }
+}

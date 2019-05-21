@@ -1,0 +1,11 @@
+// Spacing
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Get spacing value by variant name
+@function spacing($variant: normal) {
+    $value: map-get($spacings, $variant);
+    @if $value == null {
+        @error "Spacing variant `#{$variant}` not found.";
+    }
+    @return $value;
+}
