@@ -149,6 +149,15 @@ $base-spacer:                   1rem !default; // used as a base to build semant
 $base-spacer-y:                 $base-spacer !default;
 $base-spacer-x:                 $base-spacer !default;
 
+$spacings: (
+    none: 0,
+    extra-tight: $base-spacer / 3,
+    tight: $base-spacer / 2,
+    normal: $base-spacer,
+    loose: $base-spacer * 2,
+    extra-loose: $base-spacer * 3
+) !default; // these variants can be used in your Sass using the spacing() function
+
 $generic-margin-bottom:         1.5rem !default; // used as a starting point for other variables applied to elements
 
 
