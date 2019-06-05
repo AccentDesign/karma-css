@@ -19,17 +19,22 @@
   ],
   "license": "MIT",
   "scripts": {
-    "css": "npm-run-all --parallel css-lint* css-compile* --sequential css-prefix* css-minify*",
+    "css": "npm-run-all --parallel css-lint* css-compile* --sequential css-prefix* css-minify* fontello-dist*",
     "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/boilerplate.scss dist/boilerplate.css",
     "css-lint": "stylelint --syntax scss \"scss/**/*.scss\"",
     "css-prefix": "postcss --config build/postcss.config.js --replace \"dist/*.css\" \"!dist/*.min.css\"",
     "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/boilerplate.min.css dist/boilerplate.css",
+    "fontello-dist": "cpy 'scss/core/iconography/font/*' dist/font",
+    "fontello-install": "fontello-cli install --config scss/core/iconography/config.json --css scss/core/iconography/css --font scss/core/iconography/font",
+    "fontello-web": "fontello-cli open --config scss/core/iconography/config.json",
     "watch-css": "nodemon --ignore dist/ -e scss -x \"npm run css\""
   },
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^9.1.5",
     "clean-css-cli": "^4.1.10",
+    "cpy-cli": "^1.0.1",
+    "fontello-cli": "^0.4.0",
     "node-sass": "^4.7.2",
     "nodemon": "^1.14.11",
     "npm-run-all": "^4.1.2",

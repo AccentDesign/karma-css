@@ -301,6 +301,7 @@ $pre-margin-bottom:             $generic-margin-bottom !default;
 // Blockquote
 $blockquote-padding-x:          1.5rem !default;
 $blockquote-padding-y:          1.5rem !default;
+$blockquote-background:         map-get($colors, "smoke") !default;
 $blockquote-border-left-width:  .5rem !default;
 $blockquote-border-left-color:  map-get($colors, "primary") !default;
 $blockquote-margin-bottom:      $generic-margin-bottom !default;

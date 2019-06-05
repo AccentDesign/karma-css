@@ -71,6 +71,7 @@ abbr[title] { // stylelint-disable-line selector-no-qualifying-type
 p { margin-bottom: $paragraph-margin-bottom; }
 
 blockquote {
+    background: $blockquote-background;
     border-left: $blockquote-border-left-width solid $blockquote-border-left-color;
     margin-bottom: $blockquote-margin-bottom;
     padding: $blockquote-padding-y $blockquote-padding-x;
