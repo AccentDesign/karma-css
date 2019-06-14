@@ -1,5 +1,6 @@
 /*! Karma-CSS v1.9.8 MIT License | http://karmacss.com | https://github.com/accentdesign/karma-css */
 .container {
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -8,29 +9,25 @@
 
 @media (min-width: 576px) {
   .container {
-    width: 540px;
-    max-width: 100%;
+    max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    width: 720px;
-    max-width: 100%;
+    max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    width: 960px;
-    max-width: 100%;
+    max-width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    width: 1140px;
-    max-width: 100%;
+    max-width: 1140px;
   }
 }
 
@@ -68,8 +65,8 @@
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
 .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
 .col-xl-auto {
+  position: relative;
   width: 100%;
-  min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -86,7 +83,7 @@
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   width: auto;
-  max-width: none;
+  max-width: 100%;
 }
 
 .col-1 {
@@ -277,7 +274,7 @@
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: auto;
-    max-width: none;
+    max-width: 100%;
   }
   .col-sm-1 {
     -ms-flex: 0 0 8.333333%;
@@ -434,7 +431,7 @@
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: auto;
-    max-width: none;
+    max-width: 100%;
   }
   .col-md-1 {
     -ms-flex: 0 0 8.333333%;
@@ -591,7 +588,7 @@
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: auto;
-    max-width: none;
+    max-width: 100%;
   }
   .col-lg-1 {
     -ms-flex: 0 0 8.333333%;
@@ -748,7 +745,7 @@
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: auto;
-    max-width: none;
+    max-width: 100%;
   }
   .col-xl-1 {
     -ms-flex: 0 0 8.333333%;
