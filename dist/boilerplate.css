@@ -948,13 +948,13 @@ main{
 
 a{
   background-color:transparent;
-  color:#7cc6fe;
+  color:#0ad3ff;
   text-decoration:none;
   transition:color 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 a:hover{
-  color:#49b0fe;
+  color:#00b0d6;
   text-decoration:none;
 }
 
@@ -1028,80 +1028,80 @@ button,
 }
 
 .button.button-primary{
-  background-color:#7cc6fe;
-  border-color:#63bbfe;
+  background-color:#0ad3ff;
+  border-color:#00c4f0;
   color:white;
 }
 
 .button.button-primary:hover, .button.button-primary:focus{
-  background-color:#49b0fe;
-  border-color:#30a5fd;
+  background-color:#00b0d6;
+  border-color:#009bbd;
   color:white;
   outline:0;
 }
 
 .button.button-outline.button-primary{
   background-color:transparent;
-  border-color:#7cc6fe;
-  color:#7cc6fe;
+  border-color:#0ad3ff;
+  color:#0ad3ff;
 }
 
 .button.button-outline.button-primary:hover, .button.button-outline.button-primary:focus{
   background-color:transparent;
-  border-color:#49b0fe;
-  color:#49b0fe;
+  border-color:#00b0d6;
+  color:#00b0d6;
   outline:0;
 }
 
 .button.button-clear.button-primary{
   background-color:transparent;
   border-color:transparent;
-  color:#7cc6fe;
+  color:#0ad3ff;
 }
 
 .button.button-clear.button-primary:hover, .button.button-clear.button-primary:focus{
   background-color:transparent;
   border-color:transparent;
-  color:#49b0fe;
+  color:#00b0d6;
   outline:0;
 }
 
 .button.button-secondary{
-  background-color:#ffb473;
-  border-color:#ffa65a;
+  background-color:#ebecee;
+  border-color:#dddfe2;
   color:white;
 }
 
 .button.button-secondary:hover, .button.button-secondary:focus{
-  background-color:#ff9940;
-  border-color:#ff8b27;
+  background-color:#cfd2d7;
+  border-color:#c2c5cb;
   color:white;
   outline:0;
 }
 
 .button.button-outline.button-secondary{
   background-color:transparent;
-  border-color:#ffb473;
-  color:#ffb473;
+  border-color:#ebecee;
+  color:#ebecee;
 }
 
 .button.button-outline.button-secondary:hover, .button.button-outline.button-secondary:focus{
   background-color:transparent;
-  border-color:#ff9940;
-  color:#ff9940;
+  border-color:#cfd2d7;
+  color:#cfd2d7;
   outline:0;
 }
 
 .button.button-clear.button-secondary{
   background-color:transparent;
   border-color:transparent;
-  color:#ffb473;
+  color:#ebecee;
 }
 
 .button.button-clear.button-secondary:hover, .button.button-clear.button-secondary:focus{
   background-color:transparent;
   border-color:transparent;
-  color:#ff9940;
+  color:#cfd2d7;
   outline:0;
 }
 
@@ -1168,7 +1168,7 @@ input[type="date"], input[type="datetime"], input[type="datetime-local"], input[
 
 input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="week"]:focus{
   background:white;
-  border-color:#7cc6fe;
+  border-color:#0ad3ff;
   outline:0;
 }
 
@@ -1237,7 +1237,7 @@ textarea{
 
 textarea:focus{
   background:white;
-  border-color:#7cc6fe;
+  border-color:#0ad3ff;
   outline:0;
 }
 
@@ -1260,7 +1260,7 @@ select{
 
 select:focus{
   background:white;
-  border-color:#7cc6fe;
+  border-color:#0ad3ff;
   outline:0;
 }
 
@@ -1570,7 +1570,7 @@ p{
 
 blockquote{
   background:#f0f0f0;
-  border-left:0.5rem solid #7cc6fe;
+  border-left:0.5rem solid #0ad3ff;
   margin-bottom:1.5rem;
   padding:1.5rem 1.5rem;
 }
@@ -1585,7 +1585,7 @@ small{
 }
 
 mark{
-  background-color:#7cc6fe;
+  background-color:#0ad3ff;
   color:#3e3e3e;
   padding:0 0.5rem;
 }
@@ -1645,19 +1645,19 @@ sup{
 }
 
 .b-primary{
-  background-color:#7cc6fe;
+  background-color:#0ad3ff;
 }
 
 .c-primary{
-  color:#7cc6fe;
+  color:#0ad3ff;
 }
 
 .b-secondary{
-  background-color:#ffb473;
+  background-color:#ebecee;
 }
 
 .c-secondary{
-  color:#ffb473;
+  color:#ebecee;
 }
 
 .b-aqua{
