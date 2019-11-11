@@ -11,11 +11,13 @@
       display: none !important; // stylelint-disable-line declaration-no-important
     }
   }
+
   .hidden-#{$bp}-down {
     @include media-breakpoint-down($bp) {
       display: none !important; // stylelint-disable-line declaration-no-important
     }
   }
+
   .hidden-#{$bp} {
     @include media-breakpoint-only($bp) {
       display: none !important; // stylelint-disable-line declaration-no-important

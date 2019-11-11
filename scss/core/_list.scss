@@ -5,22 +5,22 @@ ul {
   padding-left: $ul-list-padding-left;
   margin-bottom: $ul-list-margin-bottom;
   list-style: $ul-list-style;
-
-  ul,
-  ol {
-    margin: $ul-list-nested-margin;
-  }
 }
 
 ol {
   padding-left: $ol-list-padding-left;
   margin-bottom: $ol-list-margin-bottom;
   list-style: $ol-list-style;
+}
 
-  ol,
-  ul {
-    margin: $ol-list-nested-margin;
-  }
+ul ul,
+ul ol {
+  margin: $ul-list-nested-margin;
+}
+
+ol ol,
+ol ul {
+  margin: $ol-list-nested-margin;
 }
 
 dl {

@@ -20,20 +20,32 @@
       right: $rem;
       left: $rem;
     }
-  } @else if $axis == "y" {
+  }
+
+  @else if $axis == "y" {
     margin: {
       top: $rem;
       bottom: $rem;
     }
-  } @else if $axis == "t" {
+  }
+
+  @else if $axis == "t" {
     margin-top: $rem;
-  } @else if $axis == "r" {
+  }
+
+  @else if $axis == "r" {
     margin-right: $rem;
-  } @else if $axis == "b" {
+  }
+
+  @else if $axis == "b" {
     margin-bottom: $rem;
-  } @else if $axis == "l" {
+  }
+
+  @else if $axis == "l" {
     margin-left: $rem;
-  } @else {
+  }
+
+  @else {
     margin: $rem;
   }
 }

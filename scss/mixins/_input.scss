@@ -41,6 +41,7 @@
 //
 @mixin input-width {
   max-width: 100%; // will stop the ability to stretch a textarea beyond 100% width
+
   @if $input-use-full-width {
     width: 100%;
   }

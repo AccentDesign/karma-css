@@ -20,20 +20,32 @@
       right: $rem;
       left: $rem;
     }
-  } @else if $axis == "y" {
+  }
+
+  @else if $axis == "y" {
     padding: {
       top: $rem;
       bottom: $rem;
     }
-  } @else if $axis == "t" {
+  }
+
+  @else if $axis == "t" {
     padding-top: $rem;
-  } @else if $axis == "r" {
+  }
+
+  @else if $axis == "r" {
     padding-right: $rem;
-  } @else if $axis == "b" {
+  }
+
+  @else if $axis == "b" {
     padding-bottom: $rem;
-  } @else if $axis == "l" {
+  }
+
+  @else if $axis == "l" {
     padding-left: $rem;
-  } @else {
+  }
+
+  @else {
     padding: $rem;
   }
 }

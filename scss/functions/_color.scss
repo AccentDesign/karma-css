@@ -7,6 +7,7 @@
   @if not map-has-key($colors, $color) {
     @warn "No color found for `#{$color}` in $colors map. Ensure the name is surrounded in parentheses, eg color(\"#{$color}\").";
   }
+
   @return map-get($colors, $color);
 }
 

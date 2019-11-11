@@ -14,6 +14,7 @@
 h1,
 .h1 {
   @extend %h;
+
   margin: $h1-margin;
   font-size: $h1-font-size;
   font-weight: $h1-font-weight;
@@ -23,6 +24,7 @@ h1,
 h2,
 .h2 {
   @extend %h;
+
   margin: $h2-margin;
   font-size: $h2-font-size;
   font-weight: $h2-font-weight;
@@ -32,6 +34,7 @@ h2,
 h3,
 .h3 {
   @extend %h;
+
   margin: $h3-margin;
   font-size: $h3-font-size;
   font-weight: $h3-font-weight;
@@ -41,6 +44,7 @@ h3,
 h4,
 .h4 {
   @extend %h;
+
   margin: $h4-margin;
   font-size: $h4-font-size;
   font-weight: $h4-font-weight;
@@ -50,6 +54,7 @@ h4,
 h5,
 .h5 {
   @extend %h;
+
   margin: $h5-margin;
   font-size: $h5-font-size;
   font-weight: $h5-font-weight;
@@ -59,6 +64,7 @@ h5,
 h6,
 .h6 {
   @extend %h;
+
   margin: $h6-margin;
   font-size: $h6-font-size;
   font-weight: $h6-font-weight;
@@ -97,9 +103,9 @@ sup {
 }
 
 sub {
-  bottom: -.25em;
+  bottom: -0.25em;
 }
 
 sup {
-  top: -.5em;
+  top: -0.5em;
 }

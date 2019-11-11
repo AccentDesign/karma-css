@@ -19,6 +19,7 @@
         @extend %grid-column;
       }
     }
+
     .col#{$infix},
     .col#{$infix}-auto {
       @extend %grid-column;
@@ -31,6 +32,7 @@
         flex-grow: 1;
         max-width: 100%;
       }
+
       .col#{$infix}-auto {
         flex: 0 0 auto;
         width: auto;

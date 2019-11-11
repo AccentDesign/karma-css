@@ -27,6 +27,7 @@ button,
   &.button-outline {
     background-color: transparent;
     transition: $button-transition, color linear $animation-speed-fast;
+
     @include button-hover($btn-font-hover, transparent, $btn-border-hover);
   }
 
@@ -34,6 +35,7 @@ button,
     background-color: transparent;
     border-color: transparent;
     transition: $button-transition, color linear $animation-speed-fast;
+
     @include button-hover($btn-font-hover, transparent, transparent);
   }
 }
@@ -66,5 +68,4 @@ button,
     @include button-color-variation($btn-bg, transparent, transparent);
     @include button-hover($btn-bg-hover, transparent, transparent);
   }
-
 }
