@@ -30,17 +30,17 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "^9.1.5",
-    "clean-css-cli": "^4.1.10",
-    "node-sass": "^4.7.2",
-    "nodemon": "^1.14.11",
-    "npm-run-all": "^4.1.2",
-    "postcss-cli": "^6.0.0",
-    "stylelint": "^9.5.0",
-    "stylelint-config-recommended-scss": "^3.0.0",
-    "stylelint-config-standard": "^18.0.0",
-    "stylelint-order": "^1.0.0",
-    "stylelint-scss": "^3.3.0"
+    "autoprefixer": "^9.7.5",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0",
+    "stylelint": "^13.3.0",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.0.0",
+    "stylelint-scss": "^3.16.0"
   },
   "browserslist": [
     "last 1 major version",
