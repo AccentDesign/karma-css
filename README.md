@@ -1,6 +1,7 @@
 # Karma CSS
 
 ![Test](https://github.com/AccentDesign/karma-css/workflows/Test/badge.svg)
+![Docs](https://github.com/AccentDesign/karma-css/workflows/Deploy%20to%20GitHub%20Pages/badge.svg?branch=master)
 [![npm version](https://badge.fury.io/js/karma-css.svg)](https://www.npmjs.com/package/karma-css)
 
 Karma CSS is a mobile first, responsive CSS boilerplate framework built on top of normalize and a powerful flexbox grid system.
