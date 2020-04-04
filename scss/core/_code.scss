@@ -11,8 +11,8 @@ samp {
 // inline code
 code {
   padding: $code-padding;
-  font-size: $code-font-size;
   color: $code-font-color;
+  font-size: $code-font-size;
   word-break: break-word;
   background: $code-background;
   border: $code-border-width solid $code-border-color;
@@ -22,11 +22,11 @@ code {
 // code block
 pre {
   display: block;
-  padding: $pre-padding;
   margin-bottom: $pre-margin-bottom;
+  padding: $pre-padding;
   overflow-x: auto;
-  font-size: $pre-font-size;
   color: $code-font-color;
+  font-size: $pre-font-size;
   white-space: pre;
   background: $code-background;
   border: $code-border-width solid $code-border-color;
@@ -34,8 +34,8 @@ pre {
 
   // inline code within
   code {
-    font-size: inherit;
     color: inherit;
+    font-size: inherit;
     word-break: normal;
   }
 }

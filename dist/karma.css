@@ -1,10 +1,10 @@
 /*! Karma-CSS v1.9.8 MIT License | http://karmacss.com | https://github.com/accentdesign/karma-css */
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 @media (min-width: 576px) {
@@ -33,10 +33,10 @@
 
 .container-fluid {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .row {
@@ -892,8 +892,8 @@
 
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 *::before, *::after {
@@ -910,10 +910,10 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px;
-  font-weight: 400;
   color: #3e3e3e;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
   background: white;
 }
 
@@ -946,27 +946,27 @@ button,
 }
 
 .button {
-  box-sizing: border-box;
   display: inline-block;
+  box-sizing: border-box;
   padding: 0.8rem 1rem;
   overflow: visible;
-  font-family: inherit;
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 1.5;
   color: #3e3e3e;
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-family: inherit;
+  line-height: 1.5;
+  white-space: nowrap;
   text-align: center;
   text-decoration: none;
-  white-space: nowrap;
+  background-color: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 0.25rem;
   cursor: pointer;
+  transition: background-color linear 250ms, border-color linear 250ms;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: white;
-  border: 1px solid #e6e6e6;
-  border-radius: 0.25rem;
-  transition: background-color linear 250ms, border-color linear 250ms;
 }
 
 .button:hover, .button:focus {
@@ -1088,8 +1088,8 @@ samp {
 
 code {
   padding: 0.2rem 0.5rem;
-  font-size: 100%;
   color: #3e3e3e;
+  font-size: 100%;
   word-break: break-word;
   background: #f0f0f0;
   border: 1px solid #e6e6e6;
@@ -1098,11 +1098,11 @@ code {
 
 pre {
   display: block;
-  padding: 1rem 1.5rem;
   margin-bottom: 1.5rem;
+  padding: 1rem 1.5rem;
   overflow-x: auto;
-  font-size: 90%;
   color: #3e3e3e;
+  font-size: 90%;
   white-space: pre;
   background: #f0f0f0;
   border: 1px solid #e6e6e6;
@@ -1110,8 +1110,8 @@ pre {
 }
 
 pre code {
-  font-size: inherit;
   color: inherit;
+  font-size: inherit;
   word-break: normal;
 }
 
@@ -1126,9 +1126,9 @@ form {
 input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="week"] {
   box-sizing: border-box;
   margin-bottom: 1.5rem;
+  color: #3e3e3e;
   font-family: inherit;
   line-height: 1.5;
-  color: #3e3e3e;
   background: white;
   border: 1px solid #e6e6e6;
   border-radius: 0.25rem;
@@ -1147,8 +1147,8 @@ input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-loc
 }
 
 input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"] {
-  -webkit-appearance: listbox;
   height: calc(3.85rem + 2px);
+  -webkit-appearance: listbox;
 }
 
 input[type="checkbox"], input[type="radio"] {
@@ -1161,8 +1161,8 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 ::-webkit-datetime-edit-fields-wrapper {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 ::-webkit-input-placeholder {
@@ -1193,9 +1193,9 @@ input[type="checkbox"], input[type="radio"] {
 textarea {
   box-sizing: border-box;
   margin-bottom: 1.5rem;
+  color: #3e3e3e;
   font-family: inherit;
   line-height: 1.5;
-  color: #3e3e3e;
   background: white;
   border: 1px solid #e6e6e6;
   border-radius: 0.25rem;
@@ -1204,8 +1204,8 @@ textarea {
   padding: 0.8rem 1rem;
   font-size: 1.5rem;
   max-width: 100%;
-  -webkit-appearance: none;
   overflow: auto;
+  -webkit-appearance: none;
 }
 
 textarea:focus {
@@ -1217,9 +1217,9 @@ textarea:focus {
 select {
   box-sizing: border-box;
   margin-bottom: 1.5rem;
+  color: #3e3e3e;
   font-family: inherit;
   line-height: 1.5;
-  color: #3e3e3e;
   background: white;
   border: 1px solid #e6e6e6;
   border-radius: 0.25rem;
@@ -1248,12 +1248,12 @@ label {
 }
 
 legend {
-  box-sizing: border-box;
   display: block;
+  box-sizing: border-box;
   max-width: 100%;
   margin-bottom: 0.5rem;
-  font-weight: 600;
   color: inherit;
+  font-weight: 600;
   white-space: normal;
 }
 
@@ -1285,14 +1285,14 @@ figure {
 }
 
 ul {
-  padding-left: 0;
   margin-bottom: 1.5rem;
+  padding-left: 0;
   list-style: circle inside;
 }
 
 ol {
-  padding-left: 0;
   margin-bottom: 1.5rem;
+  padding-left: 0;
   list-style: decimal inside;
 }
 
@@ -1324,9 +1324,9 @@ table {
   max-width: 100%;
   margin-bottom: 1.5rem;
   font-size: 90%;
-  border-spacing: 0;
-  border-collapse: collapse;
   background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 caption {
@@ -1372,8 +1372,8 @@ h1,
 .h4, h5,
 .h5, h6,
 .h6 {
-  font-family: "Open Sans", sans-serif;
   color: #3e3e3e;
+  font-family: "Open Sans", sans-serif;
 }
 
 h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h4 small, .h4 small, h5 small, .h5 small, h6 small, .h6 small {
@@ -1384,48 +1384,48 @@ h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h4 small, .h4 sma
 h1,
 .h1 {
   margin: 0 0 1.5rem;
-  font-size: 30px;
   font-weight: 400;
+  font-size: 30px;
   line-height: 1.2;
 }
 
 h2,
 .h2 {
   margin: 0 0 1.5rem;
-  font-size: 22.5px;
   font-weight: 400;
+  font-size: 22.5px;
   line-height: 1.25;
 }
 
 h3,
 .h3 {
   margin: 0 0 1.5rem;
-  font-size: 17.55px;
   font-weight: 400;
+  font-size: 17.55px;
   line-height: 1.3;
 }
 
 h4,
 .h4 {
   margin: 0 0 1.5rem;
-  font-size: 15px;
   font-weight: 400;
+  font-size: 15px;
   line-height: 1.35;
 }
 
 h5,
 .h5 {
   margin: 0 0 1.5rem;
-  font-size: 12.45px;
   font-weight: 400;
+  font-size: 12.45px;
   line-height: 1.5;
 }
 
 h6,
 .h6 {
   margin: 0 0 1.5rem;
-  font-size: 10.05px;
   font-weight: 400;
+  font-size: 10.05px;
   line-height: 1.6;
 }
 
@@ -1439,8 +1439,8 @@ p {
 }
 
 blockquote {
-  padding: 1rem 1.5rem;
   margin-bottom: 1.5rem;
+  padding: 1rem 1.5rem;
   border-left: 3px solid #e6e6e6;
 }
 
@@ -1872,8 +1872,8 @@ sup {
 }
 
 .list-style-reset {
-  padding: 0;
   margin: 0;
+  padding: 0;
   list-style: none !important;
 }
 

@@ -11,9 +11,9 @@
 @mixin input {
   box-sizing: border-box;
   margin-bottom: $input-margin-bottom;
+  color: $input-font-color;
   font-family: inherit;
   line-height: $input-line-height;
-  color: $input-font-color;
   background: $input-background;
   border: $input-border-width solid $input-border-color;
   border-radius: $input-border-radius;
