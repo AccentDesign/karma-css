@@ -36,7 +36,7 @@ Though simple, with minimal effort, overriding 4 variables and adding 70 lines o
 
 ## Where can I read more?
 
-The documentation can be found on [Read the Docs](https://karmacss.com).
+The documentation can be found [Here](https://karmacss.com).
 
 ## Can I contribute?
 
