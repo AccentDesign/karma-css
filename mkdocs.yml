@@ -1,0 +1,51 @@
+site_name: Karma CSS
+
+theme:
+  name: 'material'
+
+repo_name: AccentDesign/karma-css
+repo_url: https://github.com/AccentDesign/karma-css
+edit_uri: ""
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Customizing: customizing.md
+  - Layout: layout.md
+  - Grid: grid.md
+  - Typography: typography.md
+  - Colours: colours.md
+  - Buttons: buttons.md
+  - Forms: forms.md
+  - Tables: tables.md
+  - Code: code.md
+  - Mixins:
+    - Box Shadow: mixins/box-shadow.md
+    - Button: mixins/button.md
+    - Centerer: mixins/centerer.md
+    - Clearfix: mixins/clearfix.md
+    - Content Column: mixins/content-column.md
+    - Flip: mixins/flip.md
+    - Grid: mixins/grid.md
+    - Image: mixins/image.md
+    - Input: mixins/input.md
+    - Margin: mixins/margin.md
+    - Modernizr: mixins/modernizr.md
+    - Padding: mixins/padding.md
+    - Position: mixins/position.md
+    - Pseudo: mixins/pseudo.md
+    - Push Auto: mixins/push-auto.md
+    - Responsive Ratio: mixins/responsive-ratio.md
+    - Triangle: mixins/triangle.md
+    - Truncate: mixins/truncate.md
+  - Utility Helpers: utilities.md
+  - Variables: variables.md
+  - Changelog: changelog.md
+
+markdown_extensions:
+- markdown.extensions.codehilite:
+    guess_lang: false
+- markdown_include.include:
+    base_path: docs
+- admonition
+- codehilite
