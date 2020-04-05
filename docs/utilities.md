@@ -183,6 +183,27 @@ Below is a list of all the utilites and their description within Karma CSS.
     <tr><td><code>flip-both</code></td><td>Flips an element on both axis</td></tr>
 </table>
 
+## Transition
+
+<table>
+    <tr>
+        <td><code>preload-transitions</code></td>
+        <td>Sets all transitions to none, tipically used during page loads then removed when loaded to stop a flickering effect. See usage below.</td>
+    </tr>
+</table>
+
+```html
+<body class="preload-transitions">
+    <!-- place at end of body -->
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded",function(){
+            let node = document.querySelector(".preload-transitions");
+            node.classList.remove("preload-transitions");
+        });
+    </script>
+</body>
+```
+
 ## Visibility
 
 !!! note

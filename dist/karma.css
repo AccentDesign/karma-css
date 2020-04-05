@@ -2010,6 +2010,10 @@ sup {
   transform: scale(-1, -1);
 }
 
+.preload-transitions {
+  transition: none !important;
+}
+
 .hidden-xs-up {
   display: none !important;
 }

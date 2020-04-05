@@ -4,6 +4,7 @@
 
 * update grid styles
 * use predefined linting rules for ordering
+* added transition helpers
 
 ## v1.9.7
 
