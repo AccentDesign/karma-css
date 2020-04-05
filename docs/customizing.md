@@ -5,7 +5,7 @@
 The quickest possible way to get started is to 
 [download the quickstart project](https://github.com/AccentDesign/karma-css-starter/archive/master.zip)
 from Github, all you need to do 
-is run ``npm install`` and ``npm run watch-css``.
+is run `npm install` and `npm run watch-css`.
 
 ## File Structure
 
@@ -26,7 +26,7 @@ your-project/
 
 ## Importing
 
-In your ``style.scss``, you’ll import Karma’s source files. Copy the below as a starting point:
+In your `style.scss`, you’ll import Karma’s source files. Copy the below as a starting point:
 
 ```scss
 /* ensure you import your own variables here before ours */

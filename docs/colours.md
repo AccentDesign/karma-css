@@ -35,12 +35,12 @@ Base set of popular social media colours.
 
 <script async src="//jsfiddle.net/stuartaccent/6159dcLa/embed/result/"></script>
 
-For each defined color there are two classes created ``.b-{color}`` to set the background and the 
-class ``.c-{color}`` to set the colour (text).
+For each defined color there are two classes created `.b-{color}` to set the background and the 
+class `.c-{color}` to set the colour (text).
 
 ## Adding Your Own Colours
 
-You can define additional colours in your variables. Simply add the following ``$colors`` variable:
+You can define additional colours in your variables. Simply add the following `$colors` variable:
 
 ```scss
 // any colours defined here will create helpers for background and text colour

@@ -81,7 +81,7 @@ You can add or remove breakpoints as well as the number of columns in the grid.
 
 ### Equal Width Columns
 
-Here are two grid layouts that apply to every device and viewport, from ``xs`` to ``xl``.
+Here are two grid layouts that apply to every device and viewport, from `xs` to `xl`.
 
 <script async src="//jsfiddle.net/stuartaccent/9b6fj5a1/embed/html,result/"></script>
 
@@ -95,13 +95,13 @@ You can also just set the width of one column and others will auto adjust
 
 ### All Breakpoints
 
-Just using ``.col`` or ``.col-*`` classes means the grid is the same across all devices.
+Just using `.col` or `.col-*` classes means the grid is the same across all devices.
 
 <script async src="//jsfiddle.net/stuartaccent/x302pbzr/embed/html,result/"></script>
 
 ### Stacked to Horizontal
 
-Using a single set of ``.col-sm-*`` classes, you can create a basic grid system that starts out stacked 
+Using a single set of `.col-sm-*` classes, you can create a basic grid system that starts out stacked 
 on extra small devices before becoming horizontal on desktop (small) devices.
 
 <script async src="//jsfiddle.net/stuartaccent/fweqa143/embed/html,result/"></script>
@@ -115,8 +115,8 @@ for each tier as needed. See the example below for a better idea of how it all w
 
 ## No Gutters
 
-The gutters between columns in our predefined grid classes can be removed with ``.no-gutters``. 
-This removes the negative margins from ``.row`` and the horizontal padding from all immediate children columns.
+The gutters between columns in our predefined grid classes can be removed with `.no-gutters`. 
+This removes the negative margins from `.row` and the horizontal padding from all immediate children columns.
 
 Here’s the source code for creating these styles. Note that column overrides are scoped to only the first 
 children columns and are targeted via attribute selector. While this generates a more specific selector, 
@@ -142,13 +142,13 @@ classes (including column widths, responsive tiers, reorders, and more).
 
 ## Ordering
 
-Use the ``.order-*`` for controlling the visual order of your content.
+Use the `.order-*` for controlling the visual order of your content.
 
 <script async src="//jsfiddle.net/stuartaccent/hk7obqn0/embed/html,result/"></script>
 
 ## Offsetting Columns
 
-Move columns to the right using ``.offset-md-*`` classes. These classes increase the left 
-margin of a column by * columns. For example, ``.offset-md-4`` moves ``.col-md-4`` over four columns.
+Move columns to the right using `.offset-md-*` classes. These classes increase the left 
+margin of a column by * columns. For example, `.offset-md-4` moves `.col-md-4` over four columns.
 
 <script async src="//jsfiddle.net/stuartaccent/61dgjteL/embed/html,result/"></script>

@@ -2,13 +2,13 @@
 
 ## Font
 
-The base type is ``Open Sans`` at 15px over 1.6 line height (24px), html is set to 62.5% 
+The base type is `Open Sans` at 15px over 1.6 line height (24px), html is set to 62.5% 
 so that all the REM measurements throughout Karma CSS are based on 10px sizing. 
 So basically 1.5rem = 15px.
 
 ## Headings
 
-All heading ``h1`` through to ``h6`` are available.
+All heading `h1` through to `h6` are available.
 
 <script async src="//jsfiddle.net/stuartaccent/yfp71xjL/embed/html,result/"></script>
 

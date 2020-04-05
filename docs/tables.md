@@ -11,10 +11,10 @@ they have a width of 100% so they fill their parent element.
 
 There are several additional classes that can be applied to tables:
 
-* ``table-bordered`` apply a border to the table
-* ``table-hover`` highlight row on hover
-* ``table-striped`` alternating row background colors
-* ``table-headed`` add background color to the header
+* `table-bordered` apply a border to the table
+* `table-hover` highlight row on hover
+* `table-striped` alternating row background colors
+* `table-headed` add background color to the header
 
 All colors are defined in variables. Example with all additional classes.
 
