@@ -54,7 +54,7 @@ Below is a list of all the utilites and their description within Karma CSS.
 
 <table>
     <tr><td><code>d-block</code></td><td>Display as a block element</td></tr>
-    <tr><td><code>d-hidden</code></td><td>Display as a hidden element</td></tr>
+    <tr><td><code>d-hidden</code></td><td>Display as a hidden element, includes <code>[x-cloak]</code> for alpine.js</td></tr>
     <tr><td><code>d-flex</code></td><td>Display as a flex element</td></tr>
     <tr><td><code>d-grid</code></td><td>Display as a grid element</td></tr>
     <tr><td><code>d-inline</code></td><td>Display as an inline element</td></tr>

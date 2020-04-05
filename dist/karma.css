@@ -1707,6 +1707,7 @@ sup {
   display: block;
 }
 
+[x-cloak],
 .d-hidden {
   display: none !important;
 }

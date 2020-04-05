@@ -5,6 +5,7 @@
 * update grid styles
 * use predefined linting rules for ordering
 * added transition helpers
+* added x-cloak for alpine.js
 
 ## v1.9.7
 

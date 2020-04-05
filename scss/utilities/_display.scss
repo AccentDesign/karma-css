@@ -2,7 +2,12 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 .d-block { display: block; }
-.d-hidden { display: none !important; } // stylelint-disable-line declaration-no-important
+
+[x-cloak],
+.d-hidden {
+  display: none !important;  // stylelint-disable-line declaration-no-important
+}
+
 .d-flex { display: flex; }
 .d-grid { display: grid; }
 .d-inline { display: inline; }
