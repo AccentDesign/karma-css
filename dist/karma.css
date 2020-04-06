@@ -1,4 +1,4 @@
-/*! Karma-CSS v1.9.8 MIT License | http://karmacss.com | https://github.com/accentdesign/karma-css */
+/*! Karma-CSS v2.0.0 MIT License | http://karmacss.com | https://github.com/accentdesign/karma-css */
 .container {
   width: 100%;
   margin-right: auto;
@@ -925,7 +925,7 @@ a {
   color: #33c3f0;
   text-decoration: none;
   background-color: transparent;
-  transition: color linear 250ms;
+  transition: color linear 0.18s;
 }
 
 a:hover {
@@ -962,7 +962,7 @@ button,
   border: 1px solid #e6e6e6;
   border-radius: 0.25rem;
   cursor: pointer;
-  transition: background-color linear 250ms, border-color linear 250ms;
+  transition: background-color linear 0.18s, border-color linear 0.18s;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -978,7 +978,7 @@ button,
 
 .button.button-outline {
   background-color: transparent;
-  transition: background-color linear 250ms, border-color linear 250ms, color linear 250ms;
+  transition: background-color linear 0.18s, border-color linear 0.18s, color linear 0.18s;
 }
 
 .button.button-outline:hover, .button.button-outline:focus {
@@ -991,7 +991,7 @@ button,
 .button.button-clear {
   background-color: transparent;
   border-color: transparent;
-  transition: background-color linear 250ms, border-color linear 250ms, color linear 250ms;
+  transition: background-color linear 0.18s, border-color linear 0.18s, color linear 0.18s;
 }
 
 .button.button-clear:hover, .button.button-clear:focus {
@@ -1133,7 +1133,7 @@ input[type="date"], input[type="datetime"], input[type="datetime-local"], input[
   border: 1px solid #e6e6e6;
   border-radius: 0.25rem;
   box-shadow: none;
-  transition: background linear 250ms, border-color linear 250ms;
+  transition: background linear 0.18s, border-color linear 0.18s;
   padding: 0.8rem 1rem;
   font-size: 1.5rem;
   max-width: 100%;
@@ -1200,7 +1200,7 @@ textarea {
   border: 1px solid #e6e6e6;
   border-radius: 0.25rem;
   box-shadow: none;
-  transition: background linear 250ms, border-color linear 250ms;
+  transition: background linear 0.18s, border-color linear 0.18s;
   padding: 0.8rem 1rem;
   font-size: 1.5rem;
   max-width: 100%;
@@ -1224,7 +1224,7 @@ select {
   border: 1px solid #e6e6e6;
   border-radius: 0.25rem;
   box-shadow: none;
-  transition: background linear 250ms, border-color linear 250ms;
+  transition: background linear 0.18s, border-color linear 0.18s;
   padding: 0.8rem 1rem;
   font-size: 1.5rem;
   max-width: 100%;

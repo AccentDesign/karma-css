@@ -129,8 +129,8 @@ $border-width:                  1px !default;
 $border-color:                  rgb(230, 230, 230) !default;
 
 // animation
-$animation-speed-slow:          1000ms !default;
-$animation-speed-fast:          250ms !default;
+$animation-speed-slow:          0.5s !default;
+$animation-speed-fast:          0.18s !default;
 
 // misc
 $generic-margin-bottom:         1.5rem !default; // used as a starting point for other variables
@@ -142,7 +142,7 @@ $muted-opacity:                 0.7 !default; // opacity thats set in the .muted
 $paragraph-margin-bottom:       $generic-margin-bottom !default;
 
 // image
-$figure-margin-bottom:           $generic-margin-bottom !default;
+$figure-margin-bottom:          $generic-margin-bottom !default;
 
 // links
 $link-color:                    map-get($colors, "primary") !default;
