@@ -1,0 +1,36 @@
+// Alert
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// variables
+$alert-border-darken-percent:   10% !default;
+$alert-margin-bottom:           $generic-margin-bottom !default;
+$alert-padding:                 1.5rem 2rem !default;
+$alerts: (
+  // name     background                      font-color
+  success:    color-lighten("green", 35%)     $font-color,
+  danger:     color-lighten("red", 30%)       $font-color,
+  warning:    color-lighten("yellow", 35%)    $font-color,
+  info:       color-lighten("aqua", 15%)      $font-color
+) !default;
+
+// base styles
+.alert {
+  position: relative;
+  margin-bottom: $alert-margin-bottom;
+  padding: $alert-padding;
+  border: $border-width solid $border-color;
+  border-radius: $global-radius;
+}
+
+// colour variations
+@each $name, $colors in $alerts {
+  $alert-bg: nth($colors, 1);
+  $alert-font: nth($colors, 2);
+  $alert-border: darken($alert-bg, $alert-border-darken-percent);
+
+  .alert-#{$name} {
+    color: $alert-font;
+    background: $alert-bg;
+    border: $border-width solid $alert-border;
+  }
+}

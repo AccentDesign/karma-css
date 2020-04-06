@@ -1,0 +1,88 @@
+// Messages
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// variables
+$messages: (
+  // name     background            font-color
+  success:    color("green")        color("white"),
+  danger:     color("red")          color("white"),
+  warning:    color("yellow")       $font-color,
+  info:       color("aqua")         $font-color
+) !default;
+$messages-position:             bottomright !default;
+
+$message-border-radius:         $global-radius !default;
+$message-margin-bottom:         1rem !default;
+$message-padding:               1rem 1.5rem !default;
+
+// base styles
+.messages {
+  @if $messages-position == topleft {
+    @include position($left: 10px, $top: 10px, $position: fixed);
+  }
+
+  @else if $messages-position == topright {
+    @include position($right: 10px, $top: 10px, $position: fixed);
+  }
+
+  @else if $messages-position == bottomleft {
+    @include position($left: 10px, $bottom: 0, $position: fixed);
+  }
+
+  @else if $messages-position == bottomright {
+    @include position($right: 10px, $bottom: 0, $position: fixed);
+  }
+
+  margin-bottom: 0;
+  list-style-type: none;
+
+  @include media-breakpoint-down(xs) {
+    right: 10px;
+    left: 10px;
+  }
+
+  li {
+    margin-bottom: $message-margin-bottom;
+    padding: $message-padding;
+    color: color("white");
+    background: color("black");
+    border-radius: $message-border-radius;
+
+    @include media-breakpoint-down(xs) {
+      width: 100%;
+    }
+
+    @include media-breakpoint-up(xs) {
+      @if $messages-position == topleft {
+        float: left;
+        clear: left;
+      }
+
+      @else if $messages-position == topright {
+        float: right;
+        clear: right;
+      }
+
+      @else if $messages-position == bottomleft {
+        float: left;
+        clear: left;
+      }
+
+      @else if $messages-position == bottomright {
+        float: right;
+        clear: right;
+      }
+    }
+
+    // colour variations
+    @each $name, $colors in $messages {
+      $msg-bg: nth($colors, 1);
+      $msg-font: nth($colors, 2);
+
+      &.message-#{$name} {
+        color: $msg-font;
+        background: $msg-bg;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+// Input Group
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// variables
+$input-group-addon-padding-x:   $input-padding-x !default;
+$input-group-margin-bottom:     $input-margin-bottom !default;
+
+// base styles
+.input-group {
+  @include input-width;
+
+  display: inline-flex;
+  margin-bottom: $input-group-margin-bottom;
+  vertical-align: top;
+
+  * {
+    margin-bottom: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  > input,
+  > select,
+  > .icon-input {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+  }
+
+  .input-group-addon {
+    display: flex;
+    align-items: center;
+    padding: 0 $input-group-addon-padding-x;
+    white-space: nowrap;
+  }
+
+  > *:first-child,
+  > *:first-child.icon-input > input {
+    border-top-left-radius: $input-border-radius !important;
+    border-bottom-left-radius: $input-border-radius !important;
+  }
+
+  > *:last-child,
+  > *:last-child.icon-input > input {
+    border-top-right-radius: $input-border-radius !important;
+    border-bottom-right-radius: $input-border-radius !important;
+  }
+}
