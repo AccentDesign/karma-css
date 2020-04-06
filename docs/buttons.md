@@ -11,7 +11,7 @@ styled as buttons by adding the class `.button`.
 
 Additionally so can anchor tags or anything else for that matter.
 
-<script async src="//jsfiddle.net/stuartaccent/9u2tvrjw/embed/html,result/"></script>
+<script async src="//jsfiddle.net/stuartaccent/voedx1ja/embed/html,result/"></script>
 
 ## Coloured
 
