@@ -20,6 +20,7 @@ jobs:
     - run: |
         pip install mkdocs mkdocs-material markdown-include
         mkdocs build -d docs_public
+        echo "karmacss.com" > docs_public/CNAME
     - name: GitHub Pages Deploy
       uses: maxheld83/ghpages@v0.2.1
       env:
