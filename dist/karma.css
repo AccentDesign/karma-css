@@ -2011,7 +2011,7 @@ sup {
   transform: scale(-1, -1);
 }
 
-.preload-transitions {
+.preload-transitions * {
   transition: none !important;
 }
 
