@@ -44,7 +44,7 @@ We welcome all comments and contributions via [Github](https://github.com/Accent
 
 ## Customizing
 
-View the [customization guide](https://karmacss.com/en/latest/customizing.html) or clone the starter project on [Github](https://github.com/AccentDesign/karma-css-starter).
+View the [customization guide](https://karmacss.com/customizing/) or clone the starter project on [Github](https://github.com/AccentDesign/karma-css-starter).
 
 All you will need to do is
 ```bash
