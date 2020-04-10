@@ -6,7 +6,7 @@ flexbox grid system, all base styles and the ability to customize the defaults f
 most of the styled elements.
 
 !!! attention "New in version 2 of Karma CSS!"
-    We have introduced components into Karma CSS., these include:
+    We have introduced components into Karma CSS. These include:
 
     * [Alerts](components/alert.md)
     * [Button Groups](components/button-group.md)
