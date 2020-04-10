@@ -49,6 +49,7 @@ nav:
     - Tooltips: components/tooltip.md
   - Variables: variables.md
   - Changelog: changelog.md
+  - Samples: samples.md
 
 markdown_extensions:
 - markdown.extensions.codehilite:
