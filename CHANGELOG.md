@@ -1,5 +1,16 @@
 # Changelog
 
+## v2.0.0
+
+* addition of components
+
+  - alerts
+  - button-groups
+  - icon-inputs
+  - input-groups
+  - messages
+  - tooltips
+
 ## v1.9.8
 
 * update grid styles

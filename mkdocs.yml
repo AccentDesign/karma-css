@@ -39,6 +39,14 @@ nav:
     - Triangle: mixins/triangle.md
     - Truncate: mixins/truncate.md
   - Utility Helpers: utilities.md
+  - Components:
+    - Getting Started: components/index.md
+    - Alerts: components/alert.md
+    - Button groups: components/button-group.md
+    - Icon inputs: components/icon-input.md
+    - Input groups: components/input-group.md
+    - Messages: components/message.md
+    - Tooltips: components/tooltip.md
   - Variables: variables.md
   - Changelog: changelog.md
 

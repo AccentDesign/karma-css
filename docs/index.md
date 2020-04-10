@@ -5,6 +5,16 @@ Includes All fixes from Normalize.css for supported browsers, a powerful mobile-
 flexbox grid system, all base styles and the ability to customize the defaults for 
 most of the styled elements.
 
+!!! attention "New in version 2 of Karma CSS!"
+    We have introduced components into Karma CSS., these include:
+
+    * [Alerts](components/alert.md)
+    * [Button Groups](components/button-group.md)
+    * [Icon Inputs](components/icon-input.md)
+    * [Input Groups](components/input-group.md)
+    * [Messages](components/message.md)
+    * [Tooltips](components/tooltip.md)
+
 ## Why create another library? 
 
 In a nutshell we wanted a basic set of styles that we can apply to our projects that mainly provide
