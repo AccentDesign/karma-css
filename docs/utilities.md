@@ -93,7 +93,7 @@ Below is a list of all the utilites and their description within Karma CSS.
 </table>
 <table>
     <tr><td><code>flex-nowrap</code></td><td>Single-line which may cause the container to overflow</td></tr>
-    <tr><td><code>flex-wrap</code></td><td>Lulti-lines, direction is defined by <code>flex-direction</code></td></tr>
+    <tr><td><code>flex-wrap</code></td><td>Multi-lines, direction is defined by <code>flex-direction</code></td></tr>
     <tr><td><code>flex-wrap-reverse</code></td><td>Multi-lines, opposite to direction defined by <code>flex-direction</code></td></tr>
 </table>
 
