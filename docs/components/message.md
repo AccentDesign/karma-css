@@ -6,6 +6,13 @@ Show a toast like message.
 
 <script async src="//jsfiddle.net/stuartaccent/xsbv60Lh/embed/html,result/"></script>
 
+## Animation
+
+The below uses [Alpine.js](https://github.com/alpinejs/alpine) to control the showing and hiding
+of the message.
+
+<script async src="//jsfiddle.net/stuartaccent/k068buw1/embed/html,css,result/"></script>
+
 ## Variables
 
 Below are the default variables, adjust any of these before you import the component.
