@@ -76,5 +76,5 @@ $ git clone https://github.com/accentdesign/karma-css.git
 
 Or alternatively the CDN if you only want the defaults
 ```html
-<link rel="stylesheet" href="https://unpkg.com/karma-css@<version>/dist/karma.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/karma-css@latest/dist/karma.min.css">
 ```

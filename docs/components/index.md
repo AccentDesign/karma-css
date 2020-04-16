@@ -5,7 +5,7 @@ So if you do not want the scss included in your project or dont need to adjust a
 the default variables you can link the css directly in.
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/karma-css@latest/dist/karma-components.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/karma-css@latest/dist/karma-components.min.css">
 ```
 
 ## Building from Source

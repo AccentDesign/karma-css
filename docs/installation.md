@@ -41,5 +41,5 @@ git clone https://github.com/AccentDesign/karma-css.git
 Or if you only want the default grid, styles and utility helpers you can use a cdn:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/karma-css@latest/dist/karma.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/karma-css@latest/dist/karma.min.css">
 ```
