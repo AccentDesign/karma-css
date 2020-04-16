@@ -4,7 +4,7 @@ Alert styles.
 
 ## Example
 
-<script async src="//jsfiddle.net/stuartaccent/njatcx3p/embed/html,result/"></script>
+<script async src="//jsfiddle.net/karmacss/njatcx3p/embed/html,result/"></script>
 
 ## Variables
 

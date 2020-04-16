@@ -83,13 +83,13 @@ You can add or remove breakpoints as well as the number of columns in the grid.
 
 Here are two grid layouts that apply to every device and viewport, from `xs` to `xl`.
 
-<script async src="//jsfiddle.net/stuartaccent/9b6fj5a1/embed/html,result/"></script>
+<script async src="//jsfiddle.net/karmacss/9b6fj5a1/embed/html,result/"></script>
 
 ### Setting One Column Width
 
 You can also just set the width of one column and others will auto adjust
 
-<script async src="//jsfiddle.net/stuartaccent/4xwbq8jv/embed/html,result/"></script>
+<script async src="//jsfiddle.net/karmacss/4xwbq8jv/embed/html,result/"></script>
 
 ## Responsive
 
@@ -97,21 +97,21 @@ You can also just set the width of one column and others will auto adjust
 
 Just using `.col` or `.col-*` classes means the grid is the same across all devices.
 
-<script async src="//jsfiddle.net/stuartaccent/x302pbzr/embed/html,result/"></script>
+<script async src="//jsfiddle.net/karmacss/x302pbzr/embed/html,result/"></script>
 
 ### Stacked to Horizontal
 
 Using a single set of `.col-sm-*` classes, you can create a basic grid system that starts out stacked 
 on extra small devices before becoming horizontal on desktop (small) devices.
 
-<script async src="//jsfiddle.net/stuartaccent/fweqa143/embed/html,result/"></script>
+<script async src="//jsfiddle.net/karmacss/fweqa143/embed/html,result/"></script>
 
 ### Mix and Match
 
 Don’t want your columns to simply stack in some grid tiers? Use a combination of different classes 
 for each tier as needed. See the example below for a better idea of how it all works.
 
-<script async src="//jsfiddle.net/stuartaccent/sp4z87do/embed/html,result/"></script>
+<script async src="//jsfiddle.net/karmacss/sp4z87do/embed/html,result/"></script>
 
 ## No Gutters
 
@@ -138,17 +138,17 @@ column padding can still be further customised with spacing utilities.
 In practice, here’s how it looks. Note you can continue to use this with all other predefined grid 
 classes (including column widths, responsive tiers, reorders, and more).
 
-<script async src="//jsfiddle.net/stuartaccent/3to0npLh/embed/html,result/"></script>
+<script async src="//jsfiddle.net/karmacss/3to0npLh/embed/html,result/"></script>
 
 ## Ordering
 
 Use the `.order-*` for controlling the visual order of your content.
 
-<script async src="//jsfiddle.net/stuartaccent/hk7obqn0/embed/html,result/"></script>
+<script async src="//jsfiddle.net/karmacss/hk7obqn0/embed/html,result/"></script>
 
 ## Offsetting Columns
 
 Move columns to the right using `.offset-md-*` classes. These classes increase the left 
 margin of a column by * columns. For example, `.offset-md-4` moves `.col-md-4` over four columns.
 
-<script async src="//jsfiddle.net/stuartaccent/61dgjteL/embed/html,result/"></script>
+<script async src="//jsfiddle.net/karmacss/61dgjteL/embed/html,result/"></script>

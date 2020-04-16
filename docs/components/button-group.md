@@ -4,7 +4,7 @@ Useful for displaying several buttons together.
 
 ## Example
 
-<script async src="//jsfiddle.net/stuartaccent/2fxa83m1/embed/html,result/"></script>
+<script async src="//jsfiddle.net/karmacss/2fxa83m1/embed/html,result/"></script>
 
 ## Variables
 

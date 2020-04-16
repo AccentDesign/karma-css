@@ -12,16 +12,16 @@ Some simple templates built with Karma CSS.
 
 A simple blog template written only using the default styles in Karma CSS.
 
-[View template](https://jsfiddle.net/stuartaccent/g5f8xpym/embedded/result/)
+[View template](https://jsfiddle.net/karmacss/g5f8xpym/embedded/result/)
 
 ## Gallery
 
 A simple image gallery template written only using the default styles in Karma CSS.
 
-[View template](https://jsfiddle.net/stuartaccent/2456tnbw/embedded/result/)
+[View template](https://jsfiddle.net/karmacss/2456tnbw/embedded/result/)
 
 ## Login
 
 A simple login template written only using the default styles in Karma CSS.
 
-[View template](https://jsfiddle.net/stuartaccent/2Ltfxhwj/embedded/result/)
+[View template](https://jsfiddle.net/karmacss/2Ltfxhwj/embedded/result/)

@@ -4,7 +4,7 @@ Attach an icon into an input.
 
 ## Example
 
-<script async src="//jsfiddle.net/stuartaccent/a8js7gf9/embed/html,result/"></script>
+<script async src="//jsfiddle.net/karmacss/a8js7gf9/embed/html,result/"></script>
 
 ## Variables
 

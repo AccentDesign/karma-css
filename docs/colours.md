@@ -9,31 +9,31 @@ The default colours defined in Karma CSS are as follows.
 Base set of colours that are required within the framework. Karma CSS by default 
 depends on these colours being defined.
 
-<script async src="//jsfiddle.net/stuartaccent/9ftazwsb/embed/result/"></script>
+<script async src="//jsfiddle.net/karmacss/9ftazwsb/embed/result/"></script>
 
 ### Cool
 
 An alternative cool colour palette.
 
-<script async src="//jsfiddle.net/stuartaccent/5tu3ew2a/embed/result/"></script>
+<script async src="//jsfiddle.net/karmacss/5tu3ew2a/embed/result/"></script>
 
 ### Warm
 
 An alternative warm colour palette.
 
-<script async src="//jsfiddle.net/stuartaccent/41r3y0zo/embed/result/"></script>
+<script async src="//jsfiddle.net/karmacss/41r3y0zo/embed/result/"></script>
 
 ### Greyscale
 
 Base set of greyscale colours.
 
-<script async src="//jsfiddle.net/stuartaccent/wzbq7ath/embed/result/"></script>
+<script async src="//jsfiddle.net/karmacss/wzbq7ath/embed/result/"></script>
 
 ### Social Media
 
 Base set of popular social media colours.
 
-<script async src="//jsfiddle.net/stuartaccent/6159dcLa/embed/result/"></script>
+<script async src="//jsfiddle.net/karmacss/6159dcLa/embed/result/"></script>
 
 For each defined color there are two classes created `.b-{color}` to set the background and the 
 class `.c-{color}` to set the colour (text).

@@ -4,7 +4,7 @@ Tooltip helper. These are pseudo based so they only work on elements that can ha
 
 ## Example
 
-<script async src="//jsfiddle.net/stuartaccent/6c24xkgz/embed/html,result/"></script>
+<script async src="//jsfiddle.net/karmacss/6c24xkgz/embed/html,result/"></script>
 
 ## Variables
 
