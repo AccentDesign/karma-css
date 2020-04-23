@@ -1127,6 +1127,7 @@ input[type="date"], input[type="datetime"], input[type="datetime-local"], input[
   box-sizing: border-box;
   margin-bottom: 1.5rem;
   color: #3e3e3e;
+  font-weight: 400;
   font-family: inherit;
   line-height: 1.5;
   background: white;
@@ -1194,6 +1195,7 @@ textarea {
   box-sizing: border-box;
   margin-bottom: 1.5rem;
   color: #3e3e3e;
+  font-weight: 400;
   font-family: inherit;
   line-height: 1.5;
   background: white;
@@ -1218,6 +1220,7 @@ select {
   box-sizing: border-box;
   margin-bottom: 1.5rem;
   color: #3e3e3e;
+  font-weight: 400;
   font-family: inherit;
   line-height: 1.5;
   background: white;
