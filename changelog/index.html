@@ -1,0 +1,1767 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.1.1">
+    
+    
+      
+        <title>Changelog - Karma CSS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.a676eddb.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#changelog" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="Karma CSS" class="md-header-nav__button md-logo" aria-label="Karma CSS">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,8A3,3 0 0,0 15,5A3,3 0 0,0 12,2A3,3 0 0,0 9,5A3,3 0 0,0 12,8M12,11.54C9.64,9.35 6.5,8 3,8V19C6.5,19 9.64,20.35 12,22.54C14.36,20.35 17.5,19 21,19V8C17.5,8 14.36,9.35 12,11.54Z" /></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Karma CSS
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Changelog
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/AccentDesign/karma-css" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AccentDesign/karma-css
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Karma CSS" class="md-nav__button md-logo" aria-label="Karma CSS">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,8A3,3 0 0,0 15,5A3,3 0 0,0 12,2A3,3 0 0,0 9,5A3,3 0 0,0 12,8M12,11.54C9.64,9.35 6.5,8 3,8V19C6.5,19 9.64,20.35 12,22.54C14.36,20.35 17.5,19 21,19V8C17.5,8 14.36,9.35 12,11.54Z" /></svg>
+
+    </a>
+    Karma CSS
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/AccentDesign/karma-css" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AccentDesign/karma-css
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../installation/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../customizing/" title="Customizing" class="md-nav__link">
+      Customizing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../layout/" title="Layout" class="md-nav__link">
+      Layout
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../grid/" title="Grid" class="md-nav__link">
+      Grid
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../typography/" title="Typography" class="md-nav__link">
+      Typography
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../colours/" title="Colours" class="md-nav__link">
+      Colours
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../buttons/" title="Buttons" class="md-nav__link">
+      Buttons
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../forms/" title="Forms" class="md-nav__link">
+      Forms
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../tables/" title="Tables" class="md-nav__link">
+      Tables
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../code/" title="Code" class="md-nav__link">
+      Code
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+    
+    <label class="md-nav__link" for="nav-12">
+      Mixins
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Mixins" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+        </span>
+        Mixins
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mixins/box-shadow/" title="Box Shadow" class="md-nav__link">
+      Box Shadow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mixins/button/" title="Button" class="md-nav__link">
+      Button
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mixins/centerer/" title="Centerer" class="md-nav__link">
+      Centerer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mixins/clearfix/" title="Clearfix" class="md-nav__link">
+      Clearfix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mixins/content-column/" title="Content Column" class="md-nav__link">
+      Content Column
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mixins/flip/" title="Flip" class="md-nav__link">
+      Flip
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mixins/grid/" title="Grid" class="md-nav__link">
+      Grid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mixins/image/" title="Image" class="md-nav__link">
+      Image
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mixins/input/" title="Input" class="md-nav__link">
+      Input
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mixins/margin/" title="Margin" class="md-nav__link">
+      Margin
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mixins/modernizr/" title="Modernizr" class="md-nav__link">
+      Modernizr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mixins/padding/" title="Padding" class="md-nav__link">
+      Padding
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mixins/position/" title="Position" class="md-nav__link">
+      Position
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mixins/pseudo/" title="Pseudo" class="md-nav__link">
+      Pseudo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mixins/push-auto/" title="Push Auto" class="md-nav__link">
+      Push Auto
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mixins/responsive-ratio/" title="Responsive Ratio" class="md-nav__link">
+      Responsive Ratio
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mixins/triangle/" title="Triangle" class="md-nav__link">
+      Triangle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mixins/truncate/" title="Truncate" class="md-nav__link">
+      Truncate
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../utilities/" title="Utility Helpers" class="md-nav__link">
+      Utility Helpers
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
+    
+    <label class="md-nav__link" for="nav-14">
+      Components
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Components" data-md-level="1">
+      <label class="md-nav__title" for="nav-14">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+        </span>
+        Components
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../components/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../components/alert/" title="Alerts" class="md-nav__link">
+      Alerts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../components/button-group/" title="Button groups" class="md-nav__link">
+      Button groups
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../components/icon-input/" title="Icon inputs" class="md-nav__link">
+      Icon inputs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../components/input-group/" title="Input groups" class="md-nav__link">
+      Input groups
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../components/message/" title="Messages" class="md-nav__link">
+      Messages
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../components/tooltip/" title="Tooltips" class="md-nav__link">
+      Tooltips
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../variables/" title="Variables" class="md-nav__link">
+      Variables
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Changelog
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Changelog" class="md-nav__link md-nav__link--active">
+      Changelog
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v201" class="md-nav__link">
+    v2.0.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v200" class="md-nav__link">
+    v2.0.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v198" class="md-nav__link">
+    v1.9.8
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v197" class="md-nav__link">
+    v1.9.7
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v196" class="md-nav__link">
+    v1.9.6
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v195" class="md-nav__link">
+    v1.9.5
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v194" class="md-nav__link">
+    v1.9.4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v193" class="md-nav__link">
+    v1.9.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v192" class="md-nav__link">
+    v1.9.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v191" class="md-nav__link">
+    v1.9.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v190" class="md-nav__link">
+    v1.9.0
+  </a>
+  
+    <nav class="md-nav" aria-label="v1.9.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breaking-changes" class="md-nav__link">
+    Breaking Changes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v181" class="md-nav__link">
+    v1.8.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v180" class="md-nav__link">
+    v1.8.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v171" class="md-nav__link">
+    v1.7.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v170" class="md-nav__link">
+    v1.7.0
+  </a>
+  
+    <nav class="md-nav" aria-label="v1.7.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breaking-changes_1" class="md-nav__link">
+    Breaking Changes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#depreciated" class="md-nav__link">
+    Depreciated
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v162" class="md-nav__link">
+    v1.6.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v161" class="md-nav__link">
+    v1.6.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v160" class="md-nav__link">
+    v1.6.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v151" class="md-nav__link">
+    v1.5.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v150" class="md-nav__link">
+    v1.5.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v141" class="md-nav__link">
+    v1.4.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v140" class="md-nav__link">
+    v1.4.0
+  </a>
+  
+    <nav class="md-nav" aria-label="v1.4.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breaking-changes_2" class="md-nav__link">
+    Breaking Changes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v136" class="md-nav__link">
+    v1.3.6
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v135" class="md-nav__link">
+    v1.3.5
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v134" class="md-nav__link">
+    v1.3.4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v133" class="md-nav__link">
+    v1.3.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v132" class="md-nav__link">
+    v1.3.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v131" class="md-nav__link">
+    v1.3.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v130" class="md-nav__link">
+    v1.3.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v123" class="md-nav__link">
+    v1.2.3
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../samples/" title="Samples" class="md-nav__link">
+      Samples
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v201" class="md-nav__link">
+    v2.0.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v200" class="md-nav__link">
+    v2.0.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v198" class="md-nav__link">
+    v1.9.8
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v197" class="md-nav__link">
+    v1.9.7
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v196" class="md-nav__link">
+    v1.9.6
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v195" class="md-nav__link">
+    v1.9.5
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v194" class="md-nav__link">
+    v1.9.4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v193" class="md-nav__link">
+    v1.9.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v192" class="md-nav__link">
+    v1.9.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v191" class="md-nav__link">
+    v1.9.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v190" class="md-nav__link">
+    v1.9.0
+  </a>
+  
+    <nav class="md-nav" aria-label="v1.9.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breaking-changes" class="md-nav__link">
+    Breaking Changes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v181" class="md-nav__link">
+    v1.8.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v180" class="md-nav__link">
+    v1.8.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v171" class="md-nav__link">
+    v1.7.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v170" class="md-nav__link">
+    v1.7.0
+  </a>
+  
+    <nav class="md-nav" aria-label="v1.7.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breaking-changes_1" class="md-nav__link">
+    Breaking Changes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#depreciated" class="md-nav__link">
+    Depreciated
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v162" class="md-nav__link">
+    v1.6.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v161" class="md-nav__link">
+    v1.6.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v160" class="md-nav__link">
+    v1.6.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v151" class="md-nav__link">
+    v1.5.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v150" class="md-nav__link">
+    v1.5.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v141" class="md-nav__link">
+    v1.4.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v140" class="md-nav__link">
+    v1.4.0
+  </a>
+  
+    <nav class="md-nav" aria-label="v1.4.0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breaking-changes_2" class="md-nav__link">
+    Breaking Changes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v136" class="md-nav__link">
+    v1.3.6
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v135" class="md-nav__link">
+    v1.3.5
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v134" class="md-nav__link">
+    v1.3.4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v133" class="md-nav__link">
+    v1.3.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v132" class="md-nav__link">
+    v1.3.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v131" class="md-nav__link">
+    v1.3.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v130" class="md-nav__link">
+    v1.3.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v123" class="md-nav__link">
+    v1.2.3
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="changelog">Changelog</h1>
+<h2 id="v201">v2.0.1</h2>
+<ul>
+<li>added new variable <code>$input-font-weight</code></li>
+</ul>
+<h2 id="v200">v2.0.0</h2>
+<ul>
+<li>
+<p>addition of components</p>
+</li>
+<li>
+<p>alerts</p>
+</li>
+<li>button-groups</li>
+<li>icon-inputs</li>
+<li>input-groups</li>
+<li>messages</li>
+<li>tooltips</li>
+</ul>
+<h2 id="v198">v1.9.8</h2>
+<ul>
+<li>update grid styles</li>
+<li>use predefined linting rules for ordering</li>
+<li>added transition helpers</li>
+<li>added x-cloak for alpine.js</li>
+</ul>
+<h2 id="v197">v1.9.7</h2>
+<ul>
+<li>fix table variations applying to child tables </li>
+<li>Set muted opacity via a variable <code>$muted-opacity</code></li>
+</ul>
+<h2 id="v196">v1.9.6</h2>
+<ul>
+<li>fix wrong variables being passed to box-shadow mixin</li>
+</ul>
+<h2 id="v195">v1.9.5</h2>
+<ul>
+<li>
+<p>added new variables</p>
+</li>
+<li>
+<p><code>$header-font-color</code></p>
+</li>
+</ul>
+<h2 id="v194">v1.9.4</h2>
+<ul>
+<li>remove block from <code>li</code></li>
+<li>
+<p>new utility helpers</p>
+</li>
+<li>
+<p><code>.move</code> cursor move</p>
+</li>
+</ul>
+<h2 id="v193">v1.9.3</h2>
+<ul>
+<li>stop date type inputs collapsing height on ios</li>
+</ul>
+<h2 id="v192">v1.9.2</h2>
+<ul>
+<li>Re added missing webkit resets on inputs and buttons</li>
+</ul>
+<h2 id="v191">v1.9.1</h2>
+<ul>
+<li>re publish as readme not updating</li>
+</ul>
+<h2 id="v190">v1.9.0</h2>
+<ul>
+<li>Added scss linting</li>
+<li>Removed normalize and styled only supported browsers.</li>
+<li>
+<p>Added 3 new colour functions that take in a colour name and returns</p>
+</li>
+<li>
+<p><code>color-darken()</code> darken</p>
+</li>
+<li><code>color-lighten()</code> lighten</li>
+<li>
+<p><code>color-a()</code> add an alpha</p>
+</li>
+<li>
+<p>Added <code>.d-grid</code> for <code>display: grid</code></p>
+</li>
+<li>Added new button classes <code>.button-clear</code> and <code>.button-outline</code> that can be applied to any base or coloured button</li>
+<li>
+<p>Added new variables</p>
+</li>
+<li>
+<p><code>$strong-font-weight</code></p>
+</li>
+<li><code>$lead-font-weight</code></li>
+<li><code>$small-font-size</code></li>
+</ul>
+<h3 id="breaking-changes">Breaking Changes</h3>
+<ul>
+<li>When defining colours and using the <code>color()</code> function you must wrap the name in parentheses eg <code>color("primary")</code></li>
+</ul>
+<h2 id="v181">v1.8.1</h2>
+<ul>
+<li>
+<p>Reworked pre and code elements to work as they should with new variables</p>
+</li>
+<li>
+<p><code>$pre-font-size</code></p>
+</li>
+<li><code>$pre-padding</code></li>
+<li>
+<p><code>$pre-margin-bottom</code></p>
+</li>
+<li>
+<p>Added ability to change the header font family</p>
+</li>
+<li>Vertical align <code>td</code> and <code>th</code></li>
+<li>
+<p>Added new variables for definition lists</p>
+</li>
+<li>
+<p><code>$dl-margin-bottom</code></p>
+</li>
+<li><code>$dt-margin</code></li>
+<li>
+<p><code>$dd-margin</code></p>
+</li>
+<li>
+<p>Added helper to hide an element on a single breakpoint</p>
+</li>
+<li>
+<p><code>hidden-xs</code></p>
+</li>
+<li><code>hidden-sm</code></li>
+<li><code>hidden-md</code></li>
+<li><code>hidden-lg</code></li>
+<li>
+<p><code>hidden-xl</code></p>
+</li>
+<li>
+<p>Added helper <code>.list-style-reset</code> to remove <code>list-style</code>, <code>padding</code> and <code>margin</code></p>
+</li>
+</ul>
+<h2 id="v180">v1.8.0</h2>
+<ul>
+<li>Refactor utilities into seperate files</li>
+<li>Removed the need for the framework to set any input heights to make them all equal heights</li>
+<li>Added a new variable <code>$input-line-height</code> to set the line height of form fields</li>
+<li>Added a new variable <code>$button-line-height</code> to set the line height of <code>.button</code> classes</li>
+<li>Remove unnecessary position relative from grid column</li>
+<li>Added variables to set <code>h1</code>-<code>h6</code> font weight, margins and line height</li>
+<li>Split all use of <code>$generic-margin-bottom</code> to seperate variables</li>
+<li>
+<p>Added more control over the default button class by adding</p>
+</li>
+<li>
+<p><code>$button-default-border-color</code></p>
+</li>
+<li><code>$button-default-font-color</code></li>
+<li><code>$button-border-width</code></li>
+<li>
+<p><code>$button-border-radius</code></p>
+</li>
+<li>
+<p>Added new code variables</p>
+</li>
+<li>
+<p><code>$code-border-width</code></p>
+</li>
+<li><code>$code-border-color</code></li>
+<li><code>$code-border-radius</code></li>
+<li><code>$code-inline-padding</code></li>
+<li>
+<p><code>$code-block-padding</code></p>
+</li>
+<li>
+<p>Added new hr variables</p>
+</li>
+<li>
+<p><code>$hr-border-width</code></p>
+</li>
+<li><code>$hr-border-color</code></li>
+<li>
+<p><code>$hr-margin</code></p>
+</li>
+<li>
+<p>Added new table variable</p>
+</li>
+<li>
+<p><code>$table-border-width</code></p>
+</li>
+<li>
+<p>Added blockquote variables</p>
+</li>
+<li>
+<p><code>$blockquote-padding-x</code></p>
+</li>
+<li><code>$blockquote-padding-y</code></li>
+<li><code>$blockquote-border-left-width</code></li>
+<li><code>$blockquote-border-left-color</code></li>
+</ul>
+<h2 id="v171">v1.7.1</h2>
+<ul>
+<li>Remove undocumented css from radios and checkboxes</li>
+<li>Added input placeholder color style</li>
+<li>
+<p>Added new table variables</p>
+</li>
+<li>
+<p><code>$table-background-color</code></p>
+</li>
+<li><code>$table-border-color</code></li>
+<li><code>$table-font-size</code></li>
+</ul>
+<h2 id="v170">v1.7.0</h2>
+<ul>
+<li>You only now need to define additional or overwrite existing colours and buttons within your variables</li>
+<li>Added a new mixin flip to flip an element on it's x/y/both axis's</li>
+<li>
+<p>Added new css helpers</p>
+</li>
+<li>
+<p><code>.flip-x</code></p>
+</li>
+<li><code>.flip-y</code></li>
+<li>
+<p><code>.flip-both</code></p>
+</li>
+<li>
+<p>Fix bug with anchor transition speed using wrong variable</p>
+</li>
+<li>
+<p>Three new variables have been created to control transitions</p>
+</li>
+<li>
+<p><code>$link-transition</code></p>
+</li>
+<li><code>$button-transition</code></li>
+<li>
+<p><code>$input-transition</code></p>
+</li>
+<li>
+<p>ul and ol styles are now in the variables</p>
+</li>
+</ul>
+<h3 id="breaking-changes_1">Breaking Changes</h3>
+<ul>
+<li>Mixin <code>abs-position</code> renamed to <code>position</code> and has additional optional parameter <code>$position</code></li>
+<li>Mixin <code>vertical-align</code> has been replaced with <code>centerer</code></li>
+</ul>
+<h3 id="depreciated">Depreciated</h3>
+<ul>
+<li><code>$link-transition-speed</code></li>
+<li><code>$button-transition-speed</code></li>
+<li><code>$input-transition-speed</code></li>
+</ul>
+<h2 id="v162">v1.6.2</h2>
+<ul>
+<li>Remove font size in code element</li>
+<li>Remove bottom margin on last child of blockquote</li>
+</ul>
+<h2 id="v161">v1.6.1</h2>
+<ul>
+<li>Refactor <code>img-fluid</code> to use a mixin</li>
+</ul>
+<h2 id="v160">v1.6.0</h2>
+<ul>
+<li>Added content columns mixin</li>
+<li>Added code font to all <code>code</code>, <code>kbd</code>, <code>pre</code>, <code>samp</code> elements</li>
+</ul>
+<h2 id="v151">v1.5.1</h2>
+<ul>
+<li>Added <code>.no-print</code> helper</li>
+</ul>
+<h2 id="v150">v1.5.0</h2>
+<ul>
+<li>Added mixin responsive-ratio</li>
+<li>Removed margin top from pre</li>
+<li>Added modernizr mixin for touch-hover</li>
+<li>Added modernizr mixin for transition-no-touch</li>
+<li>Added animation speeds for forms, links &amp; buttons</li>
+<li>Added colour palette from http://clrs.cc/</li>
+<li>Added colour palette for social media from https://www.materialui.co/socialcolors</li>
+<li>Added <code>.h1</code> &gt; <code>.h6</code></li>
+</ul>
+<h2 id="v141">v1.4.1</h2>
+<ul>
+<li>Added <code>$code-font-family</code> variable</li>
+</ul>
+<h2 id="v140">v1.4.0</h2>
+<ul>
+<li>
+<p>Added 4 new mixin to build inputs</p>
+</li>
+<li>
+<p><code>input</code></p>
+</li>
+<li><code>input-width</code></li>
+<li><code>input-size</code></li>
+<li>
+<p><code>input-focus</code></p>
+</li>
+<li>
+<p>Added 1 new mixin to build buttons</p>
+</li>
+<li>
+<p><code>button-size</code></p>
+</li>
+<li>
+<p>Added some default values to the mixin button-hover</p>
+</li>
+<li>Added a transition to input focus</li>
+<li>Added some flex and margin auto helpers</li>
+</ul>
+<h3 id="breaking-changes_2">Breaking Changes</h3>
+<ul>
+<li>variable <code>$input-border-focus</code> has been replaced with <code>$input-border-color-focus</code></li>
+<li>
+<p>Renaming of helper classes</p>
+</li>
+<li>
+<p><code>.hidden</code> &gt; <code>.d-hidden</code></p>
+</li>
+<li><code>.inline</code> &gt; <code>.d-inline</code></li>
+<li><code>.inline-block</code> &gt; <code>.d-inline-block</code></li>
+<li><code>.block</code> &gt; <code>.d-block</code></li>
+<li><code>.flex</code> &gt; <code>.d-flex</code></li>
+<li><code>.display-table</code> &gt; <code>.d-table</code></li>
+<li><code>.display-table-cell</code> &gt; <code>.d-table-cell</code></li>
+</ul>
+<p>The originals have been moved into a <code>utilities/_helpers-depreciated.scss</code> which you can include in your own project
+to avoid renaming any. <code>@include "karma-css/scss/utilities/helpers-depreciated";</code></p>
+<h2 id="v136">v1.3.6</h2>
+<ul>
+<li>Added new mixin to vertical align elements using translate -50%</li>
+</ul>
+<h2 id="v135">v1.3.5</h2>
+<ul>
+<li>Removed font size in nested ul's due to ever decreasing in deeply nested </li>
+</ul>
+<h2 id="v134">v1.3.4</h2>
+<ul>
+<li>Added variable <code>$input-use-full-width</code> to set either the <code>max-width:100%</code> or <code>width:100%</code></li>
+<li>Added new mixin <code>input-width</code> to get the above value</li>
+</ul>
+<h2 id="v133">v1.3.3</h2>
+<ul>
+<li>
+<p>Added 3 new mixin to build buttons</p>
+</li>
+<li>
+<p><code>button</code></p>
+</li>
+<li><code>button-color-variation</code></li>
+<li>
+<p><code>button-hover</code></p>
+</li>
+<li>
+<p>Created sample blog and thumbnail listing page</p>
+</li>
+</ul>
+<h2 id="v132">v1.3.2</h2>
+<ul>
+<li>Removed duplicate blockquote margin bottom from core</li>
+<li>Added variable <code>$generic-margin-bottom</code> for <code>pre</code>, <code>dl</code>, <code>figure</code>, <code>table</code>, <code>p</code>, <code>ul</code>, <code>ol</code>, <code>form</code>, <code>blockquote</code></li>
+<li>Added variable <code>$header-margin-bottom</code> for <code>h1</code>-<code>h6</code></li>
+<li>Added variable <code>$button-default-bg-color</code> for the base button</li>
+</ul>
+<h2 id="v131">v1.3.1</h2>
+<ul>
+<li>Added default button examples to test.html</li>
+<li>Added basic grid examples to test.html</li>
+<li>Fixed 0px lint warning</li>
+<li>Removed vertical align from button due to odd inline issue</li>
+<li>Added variable <code>$input-font-color</code> to set all <code>inputs</code>, <code>selects</code>, <code>textareas</code></li>
+<li>Added variable <code>$input-margin-bottom</code> to set all <code>inputs</code>, <code>selects</code>, <code>textareas</code>, <code>fieldsets</code></li>
+</ul>
+<h2 id="v130">v1.3.0</h2>
+<ul>
+<li>Added new variable <code>$input-background-focus</code> for when an <code>input</code>, <code>select</code> or <code>textarea</code> has focus</li>
+<li>Removed <code>push-*</code> and <code>pull-*</code> grid classes in favour of <code>order-*</code></li>
+<li>Simplified gutter widths to single variable <code>$grid-gutter-width</code></li>
+</ul>
+<h2 id="v123">v1.2.3</h2>
+<ul>
+<li>Added new variables that allow all form fields to be styled</li>
+<li>Reduced margins on <code>hr</code>, <code>ul</code> and <code>ol</code></li>
+<li>Removed awkward defaults on inputs and textareas for ios</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../variables/" title="Variables" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Variables
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../samples/" title="Samples" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Samples
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" /></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.c51dfa35.min.js"></script>
+      <script src="../assets/javascripts/bundle.eaaa3931.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.58d22e8e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
