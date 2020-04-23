@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.0.1
+
+* added new variable `$input-font-weight`
+
 ## v2.0.0
 
 * addition of components
