@@ -1,17 +1,13 @@
-// Display
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
+/**
+ * Display
+ */
 
-.d-block { display: block; }
-
-[x-cloak],
-.d-hidden {
-  display: none !important;  // stylelint-disable-line declaration-no-important
-}
-
-.d-flex { display: flex; }
-.d-grid { display: grid; }
-.d-inline { display: inline; }
-.d-inline-block { display: inline-block; }
-.d-inline-flex { display: inline-flex; }
-.d-table { display: table; }
-.d-table-cell { display: table-cell; }
+.display-block { display: block; }
+.display-flex { display: flex; }
+.display-grid { display: grid; }
+.display-hidden { display: none; }
+.display-inline { display: inline; }
+.display-inline-block { display: inline-block; }
+.display-inline-flex { display: inline-flex; }
+.display-table { display: table; }
+.display-table-cell { display: table-cell; }

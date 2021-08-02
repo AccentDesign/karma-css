@@ -1,6 +1,7 @@
-// Cursor
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
+/**
+ * Cursor
+ */
 
-.disabled { cursor: not-allowed; }
-.move { cursor: move; }
-.pointer { cursor: pointer; }
+.cursor-not-allowed { cursor: not-allowed; }
+.cursor-move { cursor: move; }
+.cursor-pointer { cursor: pointer; }

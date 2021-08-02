@@ -1,0 +1,95 @@
+/**
+ * Button
+ */
+
+// Reboot based on :
+// - normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css
+// - sanitize.css v13.0.0 | CC0 1.0 Universal | github.com/csstools/sanitize.css
+// ––––––––––––––––––––
+
+// 1. Change the font styles in all browsers
+// 2. Remove the margin on controls in Safari
+// 3. Show the overflow in Edge
+button {
+  margin: 0; // 2
+  overflow: visible; // 3
+  font-family: inherit; // 1
+  text-transform: none; // 1
+}
+
+// Correct the inability to style buttons in iOS and Safari
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+// Karma
+// ––––––––––––––––––––
+
+button {
+  display: block;
+  width: 100%;
+  margin-bottom: var(--spacing);
+}
+
+[role="button"] {
+  display: inline-block;
+  text-decoration: none;
+}
+
+// Button (primary)
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+[role="button"] {
+  --background-color: var(--primary);
+  --border-color: var(--primary);
+  --color: var(--primary-inverse);
+  --box-shadow: var(--button-box-shadow, 0 0 0 rgba(0, 0, 0, 0));
+  padding: var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
+  outline: none;
+  background-color: var(--background-color);
+  box-shadow: var(--box-shadow);
+  color: var(--color);
+  font-weight: var(--font-weight);
+  font-size: 1rem;
+  line-height: var(--line-height);
+  text-align: center;
+  cursor: pointer;
+
+  &:is([aria-current], :hover, :active, :focus) {
+    --background-color: var(--primary-hover);
+    --border-color: var(--primary-hover);
+    --box-shadow: var(--button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0));
+    --color: var(--primary-inverse);
+  }
+
+  &:focus {
+    --box-shadow: var(--button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0)),
+      0 0 0 var(--outline-width) var(--primary-focus);
+  }
+}
+
+// Button Outline (primary)
+:is(button, input[type="submit"], input[type="button"], [role="button"]).outline,
+input[type="reset"].outline {
+  --background-color: transparent;
+  --color: var(--primary);
+
+  &:is([aria-current], :hover, :active, :focus) {
+    --background-color: transparent;
+    --color: var(--primary-hover);
+  }
+}
+
+// Button [disabled]
+:where(button, [type="submit"], [type="button"], [type="reset"], [role="button"])[disabled],
+:where(fieldset[disabled]) :is(button, [type="submit"], [type="button"], [type="reset"], [role="button"]) {
+  opacity: 0.5;
+  pointer-events: none;
+}

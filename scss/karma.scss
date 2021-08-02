@@ -1,8 +1,36 @@
-// core
+/*!
+ * karma-css v3.0.0 (https://karmacss.com)
+ * Copyright 2017-2023 - Licensed under MIT
+ */
+
+// Functions
+@import "functions";
+
+// Config
 @import "variables";
-@import "import";
 
-// add your custom modules here
+// Theming
+@import "themes/default";
 
-// utilities
+// Layout
+@import "layout/document";
+@import "layout/container";
+@import "layout/grid";
+@import "layout/section";
+
+// Content
+@import "content/typography";
+@import "content/button";
+@import "content/code";
+@import "content/embedded";
+@import "content/form";
+@import "content/form-box-elements";
+@import "content/miscs";
+@import "content/table";
+
+// Components
+@import "components/accordion";
+@import "components/dropdown";
+
+// Utilities
 @import "utilities";

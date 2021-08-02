@@ -1,5 +1,8 @@
-// CSS Triangle
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
+/**
+ * Triangle
+ */
+
+@use 'sass:math';
 
 // css triangle
 // you are just left to move it into position
@@ -21,14 +24,14 @@
   }
 
   @if $direction == down {
-    margin-top: 0 - round($size / 2.5);
+    margin-top: 0 - round(math.div($size, 2.5));
     border-top: $size solid $color;
     border-right: $size solid transparent;
     border-left: $size solid transparent;
   }
 
   @else if $direction == up {
-    margin-bottom: 0 - round($size / 2.5);
+    margin-bottom: 0 - round(math.div($size, 2.5));
     border-right: $size solid transparent;
     border-bottom: $size solid $color;
     border-left: $size solid transparent;

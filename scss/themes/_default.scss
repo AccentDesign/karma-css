@@ -1,0 +1,24 @@
+/**
+ * Theme: default
+ */
+
+// Mixins
+@import "../mixins";
+
+// Variables
+@import "../variables";
+@import "default/colors";
+
+// Commons styles
+@import "default/styles";
+
+// Light theme (Default)
+@import "default/light";
+
+// Accent-color
+progress,
+[type="checkbox"],
+[type="radio"],
+[type="range"] {
+  accent-color: var(--primary);
+}

@@ -1,6 +1,6 @@
 {
   "name": "karma-css",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "The Official Sass Version of Karma-CSS: A Simple, Responsive Boilerplate for Mobile-Friendly Development.",
   "repository": {
     "type": "git",
@@ -21,38 +21,27 @@
   ],
   "license": "MIT",
   "scripts": {
-    "css": "npm-run-all --parallel css-lint* css-compile* --sequential css-prefix* css-minify*",
-    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true scss/karma.scss dist/karma.css && node-sass --output-style expanded --source-map true --source-map-contents true scss/karma-components.scss dist/karma-components.css",
-    "css-lint": "stylelint --syntax scss \"scss/**/*.scss\"",
-    "css-prefix": "postcss --config build/postcss.config.js --replace \"dist/*.css\" \"!dist/*.min.css\"",
-    "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/karma.min.css dist/karma.css && cleancss --level 1 --source-map --source-map-inline-sources --output dist/karma-components.min.css dist/karma-components.css",
-    "watch-css": "nodemon --ignore dist/ -e scss -x \"npm run css\""
+    "build:karma": "npm-run-all css:compile:karma css:prefix:karma css:minify:karma --silent",
+    "css:compile:karma": "sass --style expanded --source-map --embed-sources --no-error-css scss/:css/",
+    "css:prefix:karma": "postcss --config css --replace css/*.css !css/*.min.css",
+    "css:minify:karma": "cleancss -O1 --with-rebase --source-map --source-map-inline-sources --batch --batch-suffix .min css/*.css !css/*.min.css",
+    "watch:css": "nodemon --watch scss/ --ext scss --exec 'npm run build:karma'"
   },
-  "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "^9.7.5",
-    "clean-css-cli": "^4.3.0",
-    "node-sass": "^4.13.1",
-    "nodemon": "^2.0.2",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^7.1.0",
-    "stylelint": "^13.3.0",
-    "stylelint-config-rational-order": "^0.1.2",
-    "stylelint-config-recommended-scss": "^4.2.0",
-    "stylelint-config-standard": "^20.0.0",
-    "stylelint-order": "^4.0.0",
-    "stylelint-scss": "^3.16.0"
+    "autoprefixer": "10.4.13",
+    "clean-css-cli": "5.6.2",
+    "css-declaration-sorter": "6.3.1",
+    "nodemon": "2.0.20",
+    "npm-run-all": "4.1.5",
+    "postcss": "8.4.21",
+    "postcss-cli": "10.1.0",
+    "postcss-scss": "4.0.6",
+    "sass": "1.57.1"
   },
   "browserslist": [
-    "last 1 major version",
-    ">= 1%",
-    "Chrome >= 45",
-    "Firefox >= 38",
-    "Edge >= 12",
-    "Explorer >= 10",
-    "iOS >= 9",
-    "Safari >= 9",
-    "Android >= 4.4",
-    "Opera >= 30"
+    ">= 0.5%",
+    "last 2 major versions",
+    "not dead",
+    "not ie > 0"
   ]
 }

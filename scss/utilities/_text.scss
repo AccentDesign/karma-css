@@ -1,16 +1,15 @@
-// Text
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
+/**
+ * Text
+ */
 
 .text-left { text-align: left; }
 .text-right { text-align: right; }
 .text-center { text-align: center; }
-.text-just { text-align: justify; }
+.text-justify { text-align: justify; }
 
-.strong { font-weight: $strong-font-weight; }
-.lead { font-weight: $lead-font-weight; }
-.muted { opacity: $muted-opacity; }
+.strong { @extend strong; }
+.lead { font-weight: 300; }
+.muted { --color: var(--muted-color); }
 .nowrap { white-space: nowrap; }
-.small { font-size: $small-font-size; }
+.small { @extend small; }
 .uppercase { text-transform: uppercase; }
-
-.text-shadow { text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }

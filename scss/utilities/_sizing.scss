@@ -1,20 +1,15 @@
-// width and height
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
+/**
+ * Width and Height
+ */
 
-.full-height {
-  height: 100%;
-}
+.h-full { height: 100%; }
+.h-screen { height: 100vh; }
+.h-min { height: min-content; }
+.h-max { height: max-content; }
+.h-fit { height: fit-content; }
 
-.full-visual-height {
-  height: 100vh;
-}
-
-.full-width {
-  box-sizing: border-box;
-  width: 100%;
-}
-
-.max-full-width {
-  box-sizing: border-box;
-  max-width: 100%;
-}
+.w-full { width: 100%; }
+.w-screen { width: 100vh; }
+.w-min { width: min-content; }
+.w-max { width: max-content; }
+.w-fit { width: fit-content; }

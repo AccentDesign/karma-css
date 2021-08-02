@@ -1,34 +1,29 @@
-// Flex
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
+/**
+ * Flex
+ */
 
-// directions
 .flex-row { flex-direction: row; }
 .flex-column { flex-direction: column; }
 
-// reverse directions
 .flex-row-reverse { flex-direction: row-reverse; }
 .flex-column-reverse { flex-direction: column-reverse; }
 
-// use in conjunction with .d-flex to justify the items within the container
 .justify-content-start { justify-content: flex-start; }
 .justify-content-end { justify-content: flex-end; }
 .justify-content-center { justify-content: center; }
 .justify-content-between { justify-content: space-between; }
 .justify-content-around { justify-content: space-around; }
 
-// use in conjunction with .d-flex to align the items within the container
 .align-items-start { align-items: flex-start; }
 .align-items-end { align-items: flex-end; }
 .align-items-center { align-items: center; }
 .align-items-baseline { align-items: baseline; }
 .align-items-stretch { align-items: stretch; }
 
-// use in conjunction with .d-flex to apply wrapping of the items within the container
 .flex-nowrap { flex-wrap: nowrap; }
 .flex-wrap { flex-wrap: wrap; }
 .flex-wrap-reverse { flex-wrap: wrap-reverse; }
 
-// use in conjunction with .d-flex on the parent container to align each item individually
 .align-self-start { align-self: flex-start; }
 .align-self-end { align-self: flex-end; }
 .align-self-center { align-self: center; }

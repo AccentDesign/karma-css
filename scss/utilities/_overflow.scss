@@ -1,5 +1,7 @@
-// Overflow
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
+/**
+ * Overflow
+ */
 
-.scroll-x { overflow-x: auto; }
-.noscroll { overflow: hidden; }
+.overflow-x { overflow-x: auto; }
+.overflow-y { overflow-y: auto; }
+.overflow-hidden { overflow: hidden; }

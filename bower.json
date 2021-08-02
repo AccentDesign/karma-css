@@ -17,7 +17,7 @@
     "responsive",
     "boilerplate"
   ],
-  "homepage": "http://karmacss.com",
+  "homepage": "https://karmacss.com",
   "ignore": [
     "**/.*",
     "node_modules",

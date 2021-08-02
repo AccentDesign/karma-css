@@ -1,4 +1,11 @@
-// Image
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
+/**
+ * Image
+ */
 
-.img-fluid { @include img-fluid; }
+.image-fluid {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 1px;
+}

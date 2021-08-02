@@ -1,66 +1,18 @@
-// Variables
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
+// Enable container and container-fluid classes
+$enable-container-classes: true !default;
 
-// Options
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
+// Responsive
+// ––––––––––––––––––––
 
-// enable all container, row, col, order classes
-$enable-grid-classes:           true !default;
+// xs: Extra small (portrait phones)
+// sm: Small(landscape phones)
+// md: Medium(tablets)
+// lg: Large(desktops)
+// xl: Extra large (large desktops)
 
-// Typography
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-
-// Base font
-$base-font-size:                15px !default;
-$base-line-height:              1.6 !default;
-$base-font-weight:              400 !default;
-
-// Font Family
-$base-font-family:              "Open Sans", sans-serif !default;
-$header-font-family:            $base-font-family !default;
-$code-font-family:              monospace, monospace !default;
-
-// The font sizes for h1-h6.
-$h1-font-size:                  2    * $base-font-size !default;
-$h2-font-size:                  1.5  * $base-font-size !default;
-$h3-font-size:                  1.17 * $base-font-size !default;
-$h4-font-size:                  1    * $base-font-size !default;
-$h5-font-size:                  0.83  * $base-font-size !default;
-$h6-font-size:                  0.67  * $base-font-size !default;
-
-$heading-font-weight:           400 !default;
-
-$h1-font-weight:                $heading-font-weight !default;
-$h2-font-weight:                $heading-font-weight !default;
-$h3-font-weight:                $heading-font-weight !default;
-$h4-font-weight:                $heading-font-weight !default;
-$h5-font-weight:                $heading-font-weight !default;
-$h6-font-weight:                $heading-font-weight !default;
-
-$heading-margin:                0 0 1.5rem !default;
-
-$h1-margin:                     $heading-margin !default;
-$h2-margin:                     $heading-margin !default;
-$h3-margin:                     $heading-margin !default;
-$h4-margin:                     $heading-margin !default;
-$h5-margin:                     $heading-margin !default;
-$h6-margin:                     $heading-margin !default;
-
-$h1-line-height:                1.2 !default;
-$h2-line-height:                1.25 !default;
-$h3-line-height:                1.3 !default;
-$h4-line-height:                1.35 !default;
-$h5-line-height:                1.5 !default;
-$h6-line-height:                1.6 !default;
-
-$strong-font-weight:            700 !default;
-$lead-font-weight:              300 !default;
-$small-font-size:               80% !default;
-
-// Grid
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-
-$grid-breakpoints: (
+// Breakpoints
+// 'null' disable the breakpoint
+$breakpoints: (
   xs: 0,
   sm: 576px,
   md: 768px,
@@ -68,196 +20,9 @@ $grid-breakpoints: (
   xl: 1200px
 ) !default;
 
-$container-max-widths: (
+$viewports: (
   sm: 540px,
   md: 720px,
   lg: 960px,
   xl: 1140px
-) !default;
-
-$grid-columns:                  12 !default;
-$grid-gutter-width:             30px !default;
-
-// Styling
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-
-// colours
-$colors: () !default;
-$colors: map-merge(
-  (
-    // required base colours
-    "white":                  rgb(255, 255, 255),
-    "black":                  rgb(17, 17, 17),
-    "primary":                rgb(51, 195, 240),
-    "secondary":              rgb(240, 240, 240),
-    // Cool
-    "aqua":                   rgb(127, 219, 255),
-    "blue":                   rgb(0, 116, 217),
-    "navy":                   rgb(0, 31, 63),
-    "teal":                   rgb(57, 204, 204),
-    "green":                  rgb(46, 204, 64),
-    "olive":                  rgb(61, 153, 112),
-    "lime":                   rgb(1, 255, 112),
-    // Warm
-    "yellow":                 rgb(255, 220, 0),
-    "orange":                 rgb(255, 133, 27),
-    "red":                    rgb(255, 65, 54),
-    "fuchsia":                rgb(240, 18, 190),
-    "purple":                 rgb(177, 13, 201),
-    "maroon":                 rgb(133, 20, 75),
-    // Other Greyscale
-    "silver":                 rgb(221, 221, 221),
-    "gray":                   rgb(170, 170, 170),
-    // Social media, more can be found at https://www.materialui.co/socialcolors
-    "facebook":               rgb(59, 89, 153),
-    "twitter":                rgb(85, 172, 238),
-    "linkedin":               rgb(0, 119, 181),
-    "googleplus":             rgb(221, 75, 57),
-    "instagram":              rgb(228, 64, 95),
-    "pinterest":              rgb(189, 8, 28)
-  ),
-  $colors
-);
-
-// defined colors
-$body-background:               rgb(255, 255, 255) !default;
-$font-color:                    rgb(62, 62, 62) !default;
-$header-font-color:             $font-color !default;
-
-// borders
-$border-width:                  1px !default;
-$border-color:                  rgb(230, 230, 230) !default;
-
-// animation
-$animation-speed-slow:          0.5s !default;
-$animation-speed-fast:          0.18s !default;
-
-// misc
-$generic-margin-bottom:         1.5rem !default; // used as a starting point for other variables
-$global-radius:                 0.25rem !default;
-$darken-hover-percent:          10% !default; // used within hovers in links and buttons
-$muted-opacity:                 0.7 !default; // opacity thats set in the .muted helper class
-
-// paragraph
-$paragraph-margin-bottom:       $generic-margin-bottom !default;
-
-// image
-$figure-margin-bottom:          $generic-margin-bottom !default;
-
-// links
-$link-color:                    map-get($colors, "primary") !default;
-$link-color-hover:              darken($link-color, $darken-hover-percent) !default;
-$link-decoration:               none !default;
-$link-decoration-hover:         none !default;
-$link-transition:               color linear $animation-speed-fast !default;
-
-// lists
-$ul-list-padding-left:          0 !default;
-$ul-list-style:                 circle inside !default;
-$ul-list-margin-bottom:         $generic-margin-bottom !default;
-$ul-list-nested-margin:         0 0 0 2rem !default;
-
-$ol-list-padding-left:          0 !default;
-$ol-list-style:                 decimal inside !default;
-$ol-list-margin-bottom:         $generic-margin-bottom !default;
-$ol-list-nested-margin:         0 0 0 2rem !default;
-
-$dl-margin-bottom:              $generic-margin-bottom !default;
-$dt-margin:                     0 0 0 0 !default;
-$dd-margin:                     0 0 $generic-margin-bottom 2rem !default;
-
-// buttons
-$buttons: () !default;
-$buttons: map-merge(
-  (
-    // name         color                          font-color
-    primary:        map-get($colors, "primary")      map-get($colors, "white"),
-    secondary:      map-get($colors, "secondary")    map-get($colors, "black")
-  ),
-  $buttons
-);
-
-$button-border-width:           $border-width !default;
-$button-border-radius:          $global-radius !default;
-$button-font-size:              1.5rem !default;
-$button-font-weight:            400 !default;
-$button-line-height:            1.5 !default;
-$button-padding-y:              0.8rem !default;
-$button-padding-x:              1rem !default;
-$button-transition:             background-color linear $animation-speed-fast, border-color linear $animation-speed-fast !default;
-
-// the below applies to the default button class only `.button`
-$button-default-border-color:   $border-color !default;
-$button-default-bg-color:       map-get($colors, "white") !default;
-$button-default-font-color:     $font-color !default;
-
-// forms
-$form-margin-bottom:            $generic-margin-bottom !default;
-
-$input-use-full-width:          false !default; // false = max-width:100%, true = width:100%
-$input-background:              rgb(255, 255, 255) !default;
-$input-border-radius:           $global-radius !default;
-$input-border-width:            $border-width !default;
-$input-border-color:            $border-color !default;
-$input-font-size:               1.5rem !default;
-$input-font-weight:             $base-font-weight !default;
-$input-font-color:              $font-color !default;
-$input-line-height:             1.5 !default;
-$input-padding-y:               0.8rem !default;
-$input-padding-x:               1rem !default;
-$input-placeholder-color:       rgb(185, 185, 185) !default;
-$input-margin-bottom:           1.5rem !default;
-$input-transition:              background linear $animation-speed-fast, border-color linear $animation-speed-fast !default;
-
-$input-background-focus:        $input-background !default;
-$input-border-color-focus:      map-get($colors, primary) !default;
-
-// these should not need changing, they are used to force selects to the same height as inputs
-$input-height-border:           $input-border-width * 2 !default;
-$input-height-inner:            ($input-padding-y * 2) + ($input-font-size * $input-line-height) !default;
-$input-height:                  calc(#{$input-height-inner} + #{$input-height-border}) !default;
-
-// labels
-$label-font-weight:             600 !default;
-
-// tables
-$table-margin-bottom:           $generic-margin-bottom !default;
-$table-background-color:        transparent !default;
-$table-border-width:            $border-width !default;
-$table-border-color:            $border-color !default;
-$table-cell-padding:            0.85rem 0.85rem !default;
-$table-font-size:               90% !default;
-$table-headed-color:            rgb(240, 240, 240) !default;
-$table-hover-color:             rgb(245, 245, 245) !default;
-$table-striped-color:           rgb(250, 250, 250) !default;
-
-// code
-$code-border-width:             $border-width !default;
-$code-border-color:             $border-color !default;
-$code-border-radius:            $global-radius !default;
-$code-background:               rgb(240, 240, 240) !default;
-$code-font-color:               $font-color !default;
-$code-font-size:                100% !default;
-$code-padding:                  0.2rem 0.5rem !default;
-
-// preformatted block
-$pre-font-size:                 90% !default;
-$pre-padding:                   1rem 1.5rem !default;
-$pre-margin-bottom:             $generic-margin-bottom !default;
-
-// blockquote
-$blockquote-padding-x:          1.5rem !default;
-$blockquote-padding-y:          1rem !default;
-$blockquote-border-left-width:  3px !default;
-$blockquote-border-left-color:  $border-color !default;
-$blockquote-margin-bottom:      $generic-margin-bottom !default;
-
-// hr
-$hr-border-width:               $border-width !default;
-$hr-border-color:               $border-color !default;
-$hr-margin:                     1.5rem 0 !default;
-
-// defined z-indexes and get with zindex('default')
-$z-layers: (
-  "default": 1
 ) !default;
