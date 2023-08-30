@@ -2,7 +2,7 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 // flip an element on its axis
-//
+// ...
 // Usage:
 // horizontally only:
 // @include flip(true, false);
@@ -10,18 +10,18 @@
 // @include flip(false, true);
 // horizontally and vertically:
 // @include flip(true, true);
-//
+// ...
 @mixin flip($x: false, $y: false) {
-  $scaleX: 1;
-  $scaleY: 1;
+  $scale-x: 1;
+  $scale-y: 1;
 
   @if $x {
-    $scaleX: -1;
+    $scale-x: -1;
   }
 
   @if $y {
-    $scaleY: -1;
+    $scale-y: -1;
   }
 
-  transform: scale($scaleX, $scaleY);
+  transform: scale($scale-x, $scale-y);
 }

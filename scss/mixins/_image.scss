@@ -2,10 +2,10 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 // base image fluid mixin
-//
+// ...
 // Usage:
 // @include img-fluid;
-//
+// ...
 @mixin img-fluid() {
   display: block;
   width: 100%;

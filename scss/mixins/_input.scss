@@ -4,10 +4,10 @@
 // mixins to create form inputs
 
 // create a basic input
-//
+// ...
 // Usage:
 // @include input;
-//
+// ...
 @mixin input {
   box-sizing: border-box;
   margin-bottom: $input-margin-bottom;
@@ -23,10 +23,10 @@
 }
 
 // input styles for focus state
-//
+// ...
 // Usage:
 // @include input-focus(color("white"), color("primary"));
-//
+// ...
 @mixin input-focus(
   $background: $input-background-focus,
   $border-color: $input-border-color-focus) {
@@ -39,7 +39,7 @@
 
 // used internally to set the default width of form fields
 // based on the $input-use-full-width variable
-//
+// ...
 @mixin input-width {
   max-width: 100%; // will stop the ability to stretch a textarea beyond 100% width
 
@@ -49,10 +49,10 @@
 }
 
 // input size variation
-//
+// ...
 // Usage:
 // @include input-size(1rem, 1rem, 15px);
-//
+// ...
 @mixin input-size(
   $padding-y: $input-padding-y,
   $padding-x: $input-padding-x,

@@ -1,23 +1,23 @@
 // Responsive Ratio
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
+@use 'sass:math';
+
 // creating scalable elements (usually images, video placeholders, or background images)
 // that maintain a ratio. Either use the pseudo to scale it or not
-//
+// ...
 // Usage:
 // @include responsive-ratio(16, 9, true);
-//
+// ...
 @mixin responsive-ratio($x, $y, $pseudo: false) {
   @if $pseudo {
     &::before {
       @include pseudo($pos: relative);
 
       width: 100%;
-      padding-top: percentage($y / $x);
+      padding-top: math.percentage($y / $x);
     }
-  }
-
-  @else {
-    padding-top: percentage($y / $x);
+  } @else {
+    padding-top: math.percentage($y / $x);
   }
 }

@@ -4,10 +4,10 @@
 // mixins to create buttons
 
 // create a basic button
-//
+// ...
 // Usage:
 // @include button;
-//
+// ...
 @mixin button {
   display: inline-block;
   box-sizing: border-box;
@@ -30,10 +30,10 @@
 }
 
 // button styles required to create a colored variation
-//
+// ...
 // Usage:
 // @include button-color-variation(color("white"), color("black"), color("secondary"));
-//
+// ...
 @mixin button-color-variation($color, $background-color, $border-color) {
   color: $color;
   background-color: $background-color;
@@ -41,10 +41,10 @@
 }
 
 // button hover and focus state
-//
+// ...
 // Usage:
 // @include button-hover(color("white"), color("black"), color("secondary"));
-//
+// ...
 @mixin button-hover($color, $background-color, $border-color) {
   &:hover,
   &:focus {
@@ -56,10 +56,10 @@
 }
 
 // button size variation
-//
+// ...
 // Usage:
 // @include button-size(1rem, 1rem, 15px);
-//
+// ...
 @mixin button-size(
   $padding-y: $button-padding-y,
   $padding-x: $button-padding-x,

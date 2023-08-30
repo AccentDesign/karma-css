@@ -1,6 +1,10 @@
 // Button
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
+@use 'sass:color';
+@use 'sass:list';
+@use 'sass:math';
+
 button,
 [type="button"],
 [type="reset"],
@@ -17,12 +21,12 @@ button,
 .button {
   @include button;
 
-  $btn-border-hover: darken($button-default-border-color, $darken-hover-percent);
-  $btn-bg-hover: darken($button-default-bg-color, $darken-hover-percent);
+  $btn-border-hover: color.adjust($button-default-border-color, $lightness: - $darken-hover-percent);
+  $btn-bg-hover: color.adjust($button-default-bg-color, $lightness: - $darken-hover-percent);
 
   @include button-hover($button-default-font-color, $btn-bg-hover, $btn-border-hover);
 
-  $btn-font-hover: darken($button-default-font-color, $darken-hover-percent);
+  $btn-font-hover: color.adjust($button-default-font-color, $lightness: - $darken-hover-percent);
 
   &.button-outline {
     background-color: transparent;
@@ -43,13 +47,13 @@ button,
 // button color variations
 @each $button, $colors in $buttons {
   // start with a border color half of the $darken-hover-percent to get a slight visual contrast
-  $btn-border: darken(nth($colors, 1), ($darken-hover-percent / 2));
-  $btn-font: nth($colors, 2);
-  $btn-bg: nth($colors, 1);
+  $btn-border: color.adjust(list.nth($colors, 1), $lightness: - math.div($darken-hover-percent, 2));
+  $btn-font: list.nth($colors, 2);
+  $btn-bg: list.nth($colors, 1);
 
   // then when we roll over we will user the full percentage to adjust the colors
-  $btn-border-hover: darken($btn-border, $darken-hover-percent);
-  $btn-bg-hover: darken($btn-bg, $darken-hover-percent);
+  $btn-border-hover: color.adjust($btn-border, $lightness: - $darken-hover-percent);
+  $btn-bg-hover: color.adjust($btn-bg, $lightness: - $darken-hover-percent);
 
   // basic coloured button
   .button.button-#{$button} {
