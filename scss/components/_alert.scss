@@ -1,10 +1,13 @@
 // Alert
-//––––––––––––––––––––––––––––––––––––––––––––––––––
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@use 'sass:color';
+@use 'sass:list';
 
 // variables
-$alert-border-darken-percent:   10% !default;
-$alert-margin-bottom:           $generic-margin-bottom !default;
-$alert-padding:                 1.5rem 2rem !default;
+$alert-border-darken-percent: 10% !default;
+$alert-margin-bottom: $generic-margin-bottom !default;
+$alert-padding: 1.5rem 2rem !default;
 $alerts: (
   // name     background                      font-color
   success:    color-lighten("green", 35%)     $font-color,
@@ -24,9 +27,9 @@ $alerts: (
 
 // colour variations
 @each $name, $colors in $alerts {
-  $alert-bg: nth($colors, 1);
-  $alert-font: nth($colors, 2);
-  $alert-border: darken($alert-bg, $alert-border-darken-percent);
+  $alert-bg: list.nth($colors, 1);
+  $alert-font: list.nth($colors, 2);
+  $alert-border: color.adjust($alert-bg, $lightness: - $alert-border-darken-percent);
 
   .alert-#{$name} {
     color: $alert-font;

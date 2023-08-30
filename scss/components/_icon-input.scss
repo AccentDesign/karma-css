@@ -1,10 +1,10 @@
 // Icon Input
-//––––––––––––––––––––––––––––––––––––––––––––––––––
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 // variables
-$icon-input-icon-class-prefix:  'fa-' !default;
-$icon-input-icon-width:         2.65em !default;
-$icon-input-margin-bottom:      $input-margin-bottom !default;
+$icon-input-icon-class-prefix: 'fa-' !default;
+$icon-input-icon-width: 2.65em !default;
+$icon-input-margin-bottom: $input-margin-bottom !default;
 
 .icon-input {
   @include input-width;

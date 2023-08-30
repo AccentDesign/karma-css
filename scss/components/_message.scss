@@ -1,5 +1,7 @@
 // Messages
-//––––––––––––––––––––––––––––––––––––––––––––––––––
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@use 'sass:list';
 
 // variables
 $messages: (
@@ -9,27 +11,20 @@ $messages: (
   warning:    color("yellow")       $font-color,
   info:       color("aqua")         $font-color
 ) !default;
-$messages-position:             bottomright !default;
-
-$message-border-radius:         $global-radius !default;
-$message-margin-bottom:         1rem !default;
-$message-padding:               1rem 1.5rem !default;
+$messages-position: bottomright !default;
+$message-border-radius: $global-radius !default;
+$message-margin-bottom: 1rem !default;
+$message-padding: 1rem 1.5rem !default;
 
 // base styles
 .messages {
   @if $messages-position == topleft {
     @include position($left: 10px, $top: 10px, $position: fixed);
-  }
-
-  @else if $messages-position == topright {
+  } @else if $messages-position == topright {
     @include position($right: 10px, $top: 10px, $position: fixed);
-  }
-
-  @else if $messages-position == bottomleft {
+  } @else if $messages-position == bottomleft {
     @include position($left: 10px, $bottom: 0, $position: fixed);
-  }
-
-  @else if $messages-position == bottomright {
+  } @else if $messages-position == bottomright {
     @include position($right: 10px, $bottom: 0, $position: fixed);
   }
 
@@ -56,19 +51,13 @@ $message-padding:               1rem 1.5rem !default;
       @if $messages-position == topleft {
         float: left;
         clear: left;
-      }
-
-      @else if $messages-position == topright {
+      } @else if $messages-position == topright {
         float: right;
         clear: right;
-      }
-
-      @else if $messages-position == bottomleft {
+      } @else if $messages-position == bottomleft {
         float: left;
         clear: left;
-      }
-
-      @else if $messages-position == bottomright {
+      } @else if $messages-position == bottomright {
         float: right;
         clear: right;
       }
@@ -76,8 +65,8 @@ $message-padding:               1rem 1.5rem !default;
 
     // colour variations
     @each $name, $colors in $messages {
-      $msg-bg: nth($colors, 1);
-      $msg-font: nth($colors, 2);
+      $msg-bg: list.nth($colors, 1);
+      $msg-font: list.nth($colors, 2);
 
       &.message-#{$name} {
         color: $msg-font;

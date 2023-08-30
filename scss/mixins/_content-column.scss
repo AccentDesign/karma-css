@@ -4,11 +4,11 @@
 // allowing for content to be spread evenly between specified number of columns
 // be sure to allow for the content travel from the bottom of one column
 // to the top of the next without scrolling in your designs
-//
+// ...
 // Usage:
 // To spread the content across 2 columns with a gap of 3rem:
 // @include col-overflow(2, 3rem);
-//
+// ...
 @mixin col-overflow($col: 2, $gap: 2rem) {
   column-count: $col;
   column-gap: $gap;

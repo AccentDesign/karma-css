@@ -1,5 +1,5 @@
 // Button Group
-//––––––––––––––––––––––––––––––––––––––––––––––––––
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 // variables
 $button-group-collapse-borders: false !default;
@@ -23,7 +23,7 @@ $button-group-collapse-borders: false !default;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 
-    @if ($button-group-collapse-borders) {
+    @if  $button-group-collapse-borders {
       border-right: 0;
     }
   }

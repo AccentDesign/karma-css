@@ -1,16 +1,20 @@
 {
-   "extends":[
+   "extends": [
       "stylelint-config-standard",
+      "stylelint-config-standard-scss",
       "stylelint-config-recommended-scss",
       "stylelint-config-rational-order"
    ],
-   "plugins":[
+   "plugins": [
       "stylelint-order"
    ],
    "rules": {
+      "media-query-no-invalid": null,
+      "scss/at-mixin-pattern": null,
+      "scss/at-extend-no-missing-placeholder": null,
       "order/order": [
          "custom-properties",
          "declarations"
-      ],
+      ]
    }
 }

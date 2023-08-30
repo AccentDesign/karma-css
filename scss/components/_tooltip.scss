@@ -1,17 +1,19 @@
 // Tooltips
 // because these are pseudo based they only work on elements that have content
-//––––––––––––––––––––––––––––––––––––––––––––––––––
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-$tooltip-background:            color("black") !default;
-$tooltip-text-color:            color("white") !default;
-$tooltip-font-size:             90% !default;
-$tooltip-padding:               0.5rem 1rem !default;
-$tooltip-arrow-height:          6px !default;
-$tooltip-border-radius:         $global-radius !default;
-$tooltip-transition:            opacity $animation-speed-fast ease-in-out !default;
+@use 'sass:map';
+
+$tooltip-background: color("black") !default;
+$tooltip-text-color: color("white") !default;
+$tooltip-font-size: 90% !default;
+$tooltip-padding: 0.5rem 1rem !default;
+$tooltip-arrow-height: 6px !default;
+$tooltip-border-radius: $global-radius !default;
+$tooltip-transition: opacity $animation-speed-fast ease-in-out !default;
 
 // add the zindex to your
-$z-layers:                      map-merge(("tooltip": 100 ), $z-layers);
+$z-layers: map.merge(("tooltip": 100 ), $z-layers);
 
 // base styles
 [data-tooltip] {
